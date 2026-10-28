@@ -1,0 +1,19 @@
+{
+  "verified_on": "2026-10-28",
+  "source_url": "https://storage.googleapis.com/storage/v1/b/openpi-assets/o?prefix=checkpoints%2Fpi0_libero%2F&maxResults=3&fields=items(name%2Csize)%2CnextPageToken",
+  "scope": "Partial public object listing; not a checkpoint download or inference test",
+  "items": [
+    {
+      "name": "checkpoints/pi0_libero/assets/physical-intelligence/libero/norm_stats.json",
+      "size": "4507"
+    },
+    {
+      "name": "checkpoints/pi0_libero/params/_METADATA",
+      "size": "21156"
+    },
+    {
+      "name": "checkpoints/pi0_libero/params/_sharding",
+      "size": "12457"
+    }
+  ]
+}
