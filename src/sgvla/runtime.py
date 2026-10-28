@@ -27,9 +27,9 @@ class Runtime:
         if config["render_backend"] not in ("egl", "osmesa"):
             raise ValueError("render_backend must be egl or osmesa")
         if config["model_config"] != "pi0_libero":
-            raise ValueError("D1 adapter is verified only for pi0_libero")
+            raise ValueError("Part 2 adapter is verified only for pi0_libero")
         if config["task_suite"] != "libero_spatial" or config["max_steps"] != 220:
-            raise ValueError("D1 smoke is Spatial only, with the official 220-step limit")
+            raise ValueError("Part 2 smoke is Spatial only, with the official 220-step limit")
         for key in ("replan_steps", "num_steps", "resize_size"):
             if not isinstance(config[key], int) or config[key] < 1:
                 raise ValueError(f"{key} must be a positive integer")

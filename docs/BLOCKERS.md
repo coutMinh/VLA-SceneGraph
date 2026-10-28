@@ -1,23 +1,15 @@
-# D1 execution status
+# Open work and runtime constraints by Part
 
-Date: 2026-10-28 (Asia/Saigon).
+Updated 2026-10-28 (Asia/Saigon).
 
-| Item | Status | Follow-up |
+| Scope | Current state | Required next work |
 |---|---|---|
-| Official source and checkpoint metadata | Verified; see `SETUP_NOTES.md` | None |
-| Molab GPU/runtime | RTX PRO 6000 Blackwell; JAX GPU JIT and pi0_libero checkpoint load passed | Server stopped after smoke run |
-| Rendering | EGL device initialization failed; OSMesa rendered and decoded both camera videos | OSMesa is configured for the current runtime |
-| G1 dummy inference | Passed | Evidence in `docs/evidence/molab/work/results/runs/dummy-d575feeb4253/` |
-| G1 smoke episode | Passed: Spatial task 0/init state 0, policy success after 74 steps | One smoke run only; not a benchmark estimate |
-| GitHub publication | Baseline published to coutMinh/VLA-SceneGraph; Linux CI passed | This G1 run's evidence is archived in this repository |
-| Student reading | Study matrix and notes are prepared; the planned 2–3 hour reading is student activity | Complete the reading and record personal notes separately |
-| D2 full suite / Part 4 prototype | Not started | Continue in plan order after D1 review |
+| Part 1 | Four verified 2D/video entries; personal reading unconfirmed | Complete the 3D/4D/manipulation comparison and diffusion/FM study |
+| Part 2 setup | GPU, checkpoint, dummy and smoke passed | Reuse setup; inspect current molab status after reconnect/restart |
+| Part 2 E0 | Not implemented or run | Resumable evaluator, object-pose traces, controlled official-client comparison, then full Spatial suite |
+| Part 3 | No analysis experiments have run | Reuse E0 baseline, implement E1–E5 and review trajectories |
+| Part 4 | Not implemented | Select limitation after Part 3 evidence review |
 
-The pairing endpoint briefly returned HTTP 403 while the detached jobs continued.
-The same execution channel recovered, both jobs were inspected, evidence was
-collected, G1 passed, and the server was stopped. No D1 execution blocker remains.
+There is no unresolved blocker to the completed smoke. JAX runs on the observed GPU; the pinned server PyTorch build does not. EGL failed; OSMesa works. See [runtime compatibility](RUNTIME_COMPATIBILITY.md). Molab storage quota remains unknown, and restarts stop detached jobs. Archived PID/job-state files are historical records, not current processes.
 
-If a later runtime fails: pinned openpi JAX -> explicit openpi PyTorch conversion
--> same setup on an already available Colab/Kaggle GPU -> verify SmolVLA checkpoint
--> OpenVLA-OFT. Paid resources require user approval. Preserve failing logs and
-record backend/environment deviations; do not invent a result.
+The current request reorganizes documentation, names and stored artifacts; no new E0/E1–E6 evaluation was requested or run. Further implementation should follow the requested Part. Paid compute and missing secrets require explicit user input; ordinary authorized implementation does not need repeated confirmation. Submission deadline 2026-11-03 22:00 VNT remains an assumption to verify with the supervisor.

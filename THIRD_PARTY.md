@@ -6,7 +6,7 @@
 | [LIBERO](https://github.com/Lifelong-Robot-Learning/LIBERO) | `f78abd68ee283de9f9be3c8f7e2a9ad60246e95c` | Simulator, fixed initial states, tasks and assets through openpi's submodule | MIT; see also asset notices |
 
 Upstream repositories are cloned outside this repository. No third-party source
-files or weights are vendored here. Our D1 rollout follows the official client's
+files or weights are vendored here. Our Part 2 smoke rollout follows the official client's
 control ordering and imports its environment/quaternion helpers directly.
 Its implementation has separate logging, unique video paths and explicit failure
 handling. The PyTorch fallback copies upstream transformers replacement files

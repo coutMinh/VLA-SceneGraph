@@ -1,4 +1,4 @@
-# D1: verified upstream facts
+# Part 2 · Verified upstream facts
 
 Verified on 2026-10-28 against openpi commit
 `215abfb217dbac7d5f1273282331b9b1866c0479` (not a floating `main`).
@@ -10,7 +10,7 @@ Runtime environments, checkpoints and results live outside this repository.
 Primary: **pi0_libero**, explicit config and checkpoint
 `gs://openpi-assets/checkpoints/pi0_libero`.
 `src/openpi/training/config.py:653` defines the config; public GCS object metadata
-was checked separately (see `evidence/pi0_libero_objects.json`). An object listing
+was checked separately (archived source listing; see `ARTIFACTS.md`). An object listing
 does not demonstrate a complete download or working inference.
 
 Important: `scripts/serve_policy.py:82` defaults LIBERO to **pi05_libero**.
@@ -18,7 +18,7 @@ Using `--env LIBERO` alone would change our selected model. Our server loads the
 explicit pi0 config through the official policy factory.
 
 `pi0_fast_libero` and `pi05_libero` configs also exist (config.py:700, :744).
-FAST weights have not been downloaded or verified here; D1 does not need them.
+FAST weights have not been downloaded or verified here; the Part 2 smoke does not need them.
 The official example's current results table is for **pi0.5**, not pi0. Do not
 attribute those success rates to pi0.
 
@@ -47,12 +47,12 @@ attribute those success rates to pi0.
   of all 12,014,131,888 checkpoint bytes (11.2 GiB).
 - EGL device initialization did not work. Installing the observed missing
   OpenGL/OSMesa packages and selecting OSMesa allowed a five-control-step render
-  probe whose agentview and wrist MP4s both decoded. The D1 config now defaults
+  probe whose agentview and wrist MP4s both decoded. The Part 2 smoke config now defaults
   to this observed working renderer. See `RUNTIME_COMPATIBILITY.md`.
 - Pairing briefly returned HTTP 403 after the dummy job was launched; the
   execution channel recovered. Dummy inference and the Spatial task 0/init state
-  0 smoke episode passed, G1 passed for the recorded config hash, and the server
-  was stopped. Full evidence and videos are under `evidence/molab/`.
+  0 smoke episode passed, the Part 2 smoke check passed for the recorded config hash, and the server
+  was stopped. The retained report/videos are under `../results/part2/smoke_2026-10-28/`; `ARTIFACTS.md` maps the full archive.
 
 Runtime follow-up: molab's installed `uv venv --help` exposes `--allow-existing`.
 The client installer uses it to reuse a partially installed environment when
@@ -94,18 +94,17 @@ From `examples/libero/main.py` at this commit:
 | pi0 chunk horizon | 50 (`models/pi0_config.py:27`) |
 | pi0 FM steps | 10 (`models/pi0.py`, `sample_actions`) |
 
-D1 runs only Spatial/task 0/init 0. It is a **smoke test**, never a benchmark
-estimate. G1 requires a valid dummy action chunk, actual GPU evidence and a
+The completed Part 2 smoke runs only Spatial/task 0/init 0. It is a **smoke test**, never a benchmark
+estimate. The smoke check requires a valid dummy action chunk, actual GPU evidence and a
 complete episode with decodable MP4; the episode does not have to succeed.
-Do not start D2 full evaluation until G1 passes.
+The smoke check has passed. Part 2 E0 still requires the resumable evaluator and official-client comparison.
 
 ## Flow convention correction for the plan
 
 `models/pi0.py`, `compute_loss`, uses
 `x_t = t * noise + (1-t) * actions`, target `noise-actions`,
 `t ~ Beta(1.5,1)*0.999+0.001`; inference integrates from t=1 to t=0
-with `dt=-1/num_steps`. The plan's draft interpolation uses the opposite
-coefficient order. Use the code convention consistently in the D3 document.
+with `dt=-1/num_steps`. PLAN_CODEX.md has been corrected to this convention; use it consistently in Part 1b and the Part 2 pipeline document.
 
 ## Source links
 
@@ -114,4 +113,5 @@ coefficient order. Use the code convention consistently in the D3 document.
 - [Pinned model configs](https://github.com/Physical-Intelligence/openpi/blob/215abfb217dbac7d5f1273282331b9b1866c0479/src/openpi/training/config.py)
 - [Pinned converter](https://github.com/Physical-Intelligence/openpi/blob/215abfb217dbac7d5f1273282331b9b1866c0479/examples/convert_jax_model_to_pytorch.py)
 
-These are source-verification findings, not reproduced model results.
+Source claims above refer to the pinned upstream. Observed setup/smoke results
+are reported under `results/part2/`; no full-suite reproduction is claimed.

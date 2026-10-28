@@ -20,7 +20,7 @@ def main():
         type=Path,
         default=Path(os.environ.get("SGVLA_WORK", str(Path.home() / "vla_scenegraph_work"))),
     )
-    parser.add_argument("--config", type=Path, default=REPO / "configs/d1.json")
+    parser.add_argument("--config", type=Path, default=REPO / "configs/part2_smoke.json")
     commands = parser.add_subparsers(dest="command", required=True)
     commands.add_parser("init-config")
     commands.add_parser("gate")
@@ -37,16 +37,19 @@ def main():
     args = parser.parse_args()
     runtime = Runtime(args.work.expanduser().resolve(), args.config.expanduser().resolve())
     if args.command == "init-config":
-        path = runtime.work / "configs/d1.json"
+        path = runtime.work / "configs/part2_smoke.json"
         if not path.exists():
-            write_json(path, runtime.config)
+            # Keep previous runtime choices and their hashes when adopting part-based names.
+            legacy = runtime.work / "configs/d1.json"
+            source = Runtime(runtime.work, legacy) if legacy.exists() else runtime
+            write_json(path, source.config)
         result = {"config": str(path), "existing_configs_preserved": True}
     elif args.command == "status":
         result = [status(runtime, name) for name in ACTIONS]
     elif args.command == "gate":
-        from sgvla.gate import check_g1
+        from sgvla.gate import check_smoke
 
-        result = check_g1(runtime)
+        result = check_smoke(runtime)
         print(json.dumps(result, indent=2))
         if not result["passed"]:
             raise SystemExit(1)

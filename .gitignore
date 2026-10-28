@@ -1,6 +1,7 @@
 .venv/
 .venv-linux/
 __pycache__/
+__marimo__/
 *.py[cod]
 *.egg-info/
 .pytest_cache/
@@ -12,7 +13,13 @@ build/
 !.env.example
 results/runs/
 results/logs/
-docs/molab_probe.json
+# Live runtime state is external; reviewed result packages live in results/part2/.
+/docs/*.json
+/docs/*_freeze.txt
+/jobs/
+/envs/
+/cache/
+/artifacts/
 third_party/
 checkpoints/
 data/

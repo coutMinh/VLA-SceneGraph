@@ -1,10 +1,12 @@
-# D1 execution on molab
+# Part 2 · Setup and smoke on molab
 
-Use the separately delivered `molab/vla_scenegraph/d1.py` notebook, or the Linux
+Use the separately delivered `molab/vla_scenegraph/part2_reproduce.py` notebook, or the Linux
 terminal commands below. Source verification is in [SETUP_NOTES](docs/SETUP_NOTES.md).
-GPU availability on molab must be measured there; local CPU checks do not pass G1.
+GPU availability on molab must be measured there; local CPU checks do not pass the Part 2 smoke check.
 
-## Bootstrap (Linux terminal alternative)
+The completed smoke and results are reported by Part in [PART_STATUS](docs/PART_STATUS.md). Reuse existing environments/checkpoint. `init-config` copies a legacy runtime `configs/d1.json` to `configs/part2_smoke.json` without changing values or overwriting an existing new config; original evidence remains valid. Old raw gate files may still carry the historical label `G1`.
+
+## Bootstrap (molab terminal alternative)
 
 ```sh
 export SGVLA_WORK="$HOME/vla_scenegraph_work"
@@ -13,7 +15,7 @@ git clone https://github.com/coutMinh/VLA-SceneGraph.git "$SGVLA_WORK/VLA-SceneG
 cd "$SGVLA_WORK/VLA-SceneGraph"
 export PYTHONPATH="$PWD/src"
 python -m sgvla init-config
-export SGVLA_CONFIG="$SGVLA_WORK/configs/d1.json"
+export SGVLA_CONFIG="$SGVLA_WORK/configs/part2_smoke.json"
 ```
 
 The commands below use the runtime config explicitly. The notebook does this
@@ -38,7 +40,7 @@ python -m sgvla --config "$SGVLA_CONFIG" gate
 `run <action>` runs a step in the foreground instead. `start` detaches the job,
 stores the PID with its Linux boot/start identity, and prevents duplicate starts.
 Install/conversion jobs are serialized against other jobs. Config values are
-snapshotted and hashed; results for a different config do not pass G1.
+snapshotted and hashed; results for a different config do not pass the Part 2 smoke check.
 
 ## Evidence and acceptance
 
@@ -51,8 +53,8 @@ snapshotted and hashed; results for a different config do not pass G1.
 - `results/runs/<run_id>/`: metrics, provenance manifest, action/state traces and
   agentview/wrist MP4s. Dummy/render/smoke runs append to `results/registry.csv`,
   including failed attempts that reach the run stage. Setup/probe jobs use job logs.
-- `docs/g1.json`: must say `passed: true`, with GPU, dummy and smoke checks true.
-  A valid completed episode can be a **task failure**; D1 tests execution, not quality.
+- `docs/smoke_check.json`: must say `passed: true`, with GPU, dummy and smoke checks true.
+  A valid completed episode can be a **task failure**; the smoke validates the execution path.
 
 The smoke uses Spatial task 0, fixed init state 0, simulator seed 7, 10 settling
 steps, 256 render -> 224 policy images, 180-degree rotation of both images,
@@ -60,7 +62,7 @@ steps, 256 render -> 224 policy images, 180-degree rotation of both images,
 control steps. Video is encoded and decoded before it is accepted. It is not a
 suite-level success estimate or a parity check against official evaluation.
 The dummy call consumes policy randomness before smoke; restart the policy server
-for D2's controlled comparison. The official server default is pi0.5; our explicit
+for Part 2's controlled official-client comparison. The official server default is pi0.5; our explicit
 pi0 factory avoids silently switching models.
 
 ## Runtime failures
@@ -88,8 +90,8 @@ Stop an old server before changing its config/backend. Use the notebook stop
 control or `python -m sgvla stop server`; only the recorded, matching process
 group is signalled. Restarting molab also stops background jobs. On restart,
 dead jobs show interrupted; rerun the step. Completed checkpoint caches and
-venvs persist if molab retains the work directory. D1 smoke creates a fresh
-single-episode run; per-episode full-evaluation resumability belongs to D2.
+venvs persist if molab retains the work directory. Part 2 smoke creates a fresh
+single-episode run; per-episode full-evaluation resumability is the next Part 2/E0 deliverable.
 
 If both backends fail, preserve diagnostics and use the same pinned stack on an
 already available Colab/Kaggle GPU. Verify alternative model/checkpoint availability

@@ -1,9 +1,0 @@
-{
-  "config": "/home/marimo/vla_scenegraph_work/jobs/render-ab0d4dc4eb83.config.json",
-  "id": "render-ab0d4dc4eb83",
-  "log": "/home/marimo/vla_scenegraph_work/results/logs/render-ab0d4dc4eb83.log",
-  "name": "render",
-  "pid": 2822,
-  "process_identity": "9d59d951-f413-49f4-b920-fb7dcca19b6a:138783",
-  "started_at_utc": "2026-10-28T08:00:28.677449+00:00"
-}

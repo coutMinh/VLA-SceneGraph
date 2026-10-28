@@ -1,9 +1,0 @@
-{
-  "config": "/home/marimo/vla_scenegraph_work/jobs/server-a6999f3f8354.config.json",
-  "id": "server-a6999f3f8354",
-  "log": "/home/marimo/vla_scenegraph_work/results/logs/server-a6999f3f8354.log",
-  "name": "server",
-  "pid": 3122,
-  "process_identity": "9d59d951-f413-49f4-b920-fb7dcca19b6a:141961",
-  "started_at_utc": "2026-10-28T08:01:00.455890+00:00"
-}

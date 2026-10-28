@@ -1,9 +1,0 @@
-{
-  "config": "/home/marimo/vla_scenegraph_work/jobs/smoke-a081cbb0b0ab.config.json",
-  "id": "smoke-a081cbb0b0ab",
-  "log": "/home/marimo/vla_scenegraph_work/results/logs/smoke-a081cbb0b0ab.log",
-  "name": "smoke",
-  "pid": 4722,
-  "process_identity": "9d59d951-f413-49f4-b920-fb7dcca19b6a:186687",
-  "started_at_utc": "2026-10-28T08:08:27.714073+00:00"
-}

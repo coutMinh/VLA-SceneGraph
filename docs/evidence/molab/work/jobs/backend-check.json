@@ -1,9 +1,0 @@
-{
-  "config": "/home/marimo/vla_scenegraph_work/jobs/backend-check-3df26aa299bb.config.json",
-  "id": "backend-check-3df26aa299bb",
-  "log": "/home/marimo/vla_scenegraph_work/results/logs/backend-check-3df26aa299bb.log",
-  "name": "backend-check",
-  "pid": 2691,
-  "process_identity": "9d59d951-f413-49f4-b920-fb7dcca19b6a:133424",
-  "started_at_utc": "2026-10-28T07:59:35.085447+00:00"
-}

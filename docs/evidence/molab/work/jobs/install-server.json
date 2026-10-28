@@ -1,9 +1,0 @@
-{
-  "config": "/home/marimo/vla_scenegraph_work/jobs/install-server-434ce988e800.config.json",
-  "id": "install-server-434ce988e800",
-  "log": "/home/marimo/vla_scenegraph_work/results/logs/install-server-434ce988e800.log",
-  "name": "install-server",
-  "pid": 594,
-  "process_identity": "9d59d951-f413-49f4-b920-fb7dcca19b6a:52075",
-  "started_at_utc": "2026-10-28T07:46:01.591668+00:00"
-}

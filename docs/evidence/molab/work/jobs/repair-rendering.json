@@ -1,9 +1,0 @@
-{
-  "config": "/home/marimo/vla_scenegraph_work/jobs/repair-rendering-abf918d65f60.config.json",
-  "id": "repair-rendering-abf918d65f60",
-  "log": "/home/marimo/vla_scenegraph_work/results/logs/repair-rendering-abf918d65f60.log",
-  "name": "repair-rendering",
-  "pid": 2318,
-  "process_identity": "9d59d951-f413-49f4-b920-fb7dcca19b6a:126147",
-  "started_at_utc": "2026-10-28T07:58:22.311157+00:00"
-}

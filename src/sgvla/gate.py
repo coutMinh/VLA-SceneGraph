@@ -1,4 +1,4 @@
-"""G1 is based on artifacts from real GPU and simulator jobs, never a manual checkbox."""
+"""Validate the Part 2 smoke using real GPU, policy and simulator artifacts."""
 
 from __future__ import annotations
 
@@ -7,7 +7,7 @@ from pathlib import Path
 from sgvla.io import digest, read_json, utc_now, write_json
 
 
-def check_g1(runtime):
+def check_smoke(runtime):
     expected = runtime.config_hash
     checks = {}
     try:
@@ -40,11 +40,11 @@ def check_g1(runtime):
         except (OSError, KeyError, ValueError):
             checks[stage] = False
     report = {
-        "gate": "G1",
+        "gate": "part2_smoke",
         "checked_at_utc": utc_now(),
         "checks": checks,
         "passed": all(checks.values()),
         "config_sha256": expected,
     }
-    write_json(runtime.work / "docs/g1.json", report)
+    write_json(runtime.work / "docs/smoke_check.json", report)
     return report

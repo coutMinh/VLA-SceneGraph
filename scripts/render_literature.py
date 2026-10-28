@@ -23,9 +23,9 @@ def render(source):
         "reading_scope",
     ]
     lines = [
-        "# Literature matrix · D1",
+        "# Part 1a · Literature matrix",
         "",
-        "Four verified 2D/video sources. D2 adds 3D/4D and manipulation sources;",
+        "Four verified 2D/video sources. Part 1a still needs 3D/4D and manipulation sources;",
         "this is not the final ten-source matrix. CSV is the source of truth.",
         "",
         "| " + " | ".join(columns) + " |",

@@ -1,4 +1,4 @@
-"""D1 single-episode loop. D2's multi-episode evaluator is deliberately not started yet."""
+"""Part 2 single-episode smoke loop; full-suite evaluation is a separate deliverable."""
 
 from __future__ import annotations
 
