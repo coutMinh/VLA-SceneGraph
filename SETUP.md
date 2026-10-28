@@ -65,6 +65,11 @@ pi0 factory avoids silently switching models.
 
 ## Runtime failures
 
+If client import fails with `cannot enable executable stack`, run the explicit
+`repair-client` action, then retry `render`. This observed glibc compatibility
+repair and its recorded binary hashes are explained in
+[RUNTIME_COMPATIBILITY.md](docs/RUNTIME_COMPATIBILITY.md).
+
 If EGL fails, preserve the log, change `render_backend` in the runtime config to
 `osmesa`, then repeat backend-check/render and restart the server with that config.
 OSMesa must actually be installed on the host. The installer does not assume

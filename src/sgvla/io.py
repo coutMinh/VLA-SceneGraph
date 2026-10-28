@@ -35,7 +35,11 @@ def write_json(path, data):
 
 
 def digest(path):
-    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+    checksum = hashlib.sha256()
+    with Path(path).open("rb") as stream:
+        for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+            checksum.update(chunk)
+    return checksum.hexdigest()
 
 
 @contextmanager

@@ -16,6 +16,7 @@ ACTIONS = (
     "probe",
     "install-server",
     "install-client",
+    "repair-client",
     "backend-check",
     "download",
     "convert",
@@ -66,7 +67,7 @@ def start(runtime, name):
         if current["status"] == "running":
             return current
         active = [action for action in ACTIONS if status(runtime, action)["status"] == "running"]
-        mutating = {"install-server", "install-client", "convert"}
+        mutating = {"install-server", "install-client", "repair-client", "convert"}
         if (name in mutating and active) or (set(active) & mutating):
             raise RuntimeError(
                 "Finish the active job before changing its environments: " + str(active)
@@ -171,6 +172,10 @@ def execute(runtime, name, run_id):
         return setup.install(runtime, name[len("install-") :])
     if name == "convert":
         return setup.convert(runtime)
+    if name == "repair-client":
+        from sgvla.baselines.openpi.compat import repair_client
+
+        return repair_client(runtime)
     env_name = "client" if name in ("dummy", "render", "smoke") else "server"
     timeout = None if name in ("server", "download") else 1800
     return runtime.module(
