@@ -42,6 +42,10 @@ attribute those success rates to pi0.
   A library load or `nvidia-smi` alone is insufficient: run a JIT matrix multiply
   and checkpoint inference before accepting GPU support.
 
+Runtime follow-up: molab's installed `uv venv --help` exposes `--allow-existing`.
+The client installer uses it to reuse a partially installed environment when
+retrying after an interrupted job, rather than recreating the environment.
+
 ## PyTorch fallback (available, not yet run)
 
 README.md:190 documents pi0/pi0.5 PyTorch support. The official converter is

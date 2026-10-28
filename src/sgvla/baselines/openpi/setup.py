@@ -58,7 +58,7 @@ def install(runtime, target):
             check=True,
         )
     elif target == "client":
-        runtime.call([*uv, "venv", "--python", "3.8", env_path])
+        runtime.call([*uv, "venv", "--allow-existing", "--python", "3.8", env_path])
         runtime.call(
             [
                 *uv,
