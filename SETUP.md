@@ -74,6 +74,8 @@ If EGL fails, preserve the log, change `render_backend` in the runtime config to
 `osmesa`, then repeat backend-check/render and restart the server with that config.
 OSMesa must actually be installed on the host. The installer does not assume
 root access or silently run apt; probe findings determine the required system fix.
+On the observed root-enabled molab image, the explicit `repair-rendering` action
+installs `libopengl0` and `libosmesa6` and records their versions before retrying.
 
 If JAX fails but PyTorch GPU kernels work, change `backend` to `pytorch`, rerun
 backend-check and download, then run `convert`. This calls the official converter,

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import ctypes.util
 import os
 import shutil
 import subprocess
@@ -65,3 +66,27 @@ def repair_client(runtime):
     if check.returncode:
         raise RuntimeError("Client import still fails after ELF repair:\n" + check.stderr)
     print("Client torch import passes after clearing executable GNU_STACK metadata.")
+
+
+def repair_rendering(runtime):
+    """Install the system loaders observed missing from the headless molab image."""
+    if not hasattr(os, "geteuid") or os.geteuid() != 0:
+        raise RuntimeError("Install libopengl0 and libosmesa6 on the host, then retry rendering")
+    runtime.call(["apt-get", "update"], timeout=180)
+    runtime.call(
+        ["apt-get", "install", "-y", "--no-install-recommends", "libopengl0", "libosmesa6"],
+        timeout=180,
+    )
+    versions = subprocess.check_output(
+        ["dpkg-query", "-W", "libopengl0", "libosmesa6"], text=True
+    ).strip()
+    write_json(
+        runtime.work / "docs/render_libraries.json",
+        {
+            "installed_at_utc": utc_now(),
+            "packages": versions,
+            "OpenGL": ctypes.util.find_library("OpenGL"),
+            "OSMesa": ctypes.util.find_library("OSMesa"),
+        },
+    )
+    print(versions)

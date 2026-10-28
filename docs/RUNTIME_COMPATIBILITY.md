@@ -21,3 +21,11 @@ client's `torch/lib` directory. It does not change upstream source or disable
 the host's stack protections. Before/after hashes and the tool version are saved
 to `$SGVLA_WORK/docs/client_compatibility.json`; a fresh torch import must pass.
 Actual rendering and G1 are still required after that import check.
+
+After the torch repair, the first render reached MuJoCo but failed to initialize
+an EGL device display. The runtime also lacked `libOpenGL.so.0`.
+`repair-rendering` installs the missing OpenGL loader and OSMesa software renderer
+on a root-enabled Linux host, recording the actual package versions in
+`docs/render_libraries.json`. Retry EGL first; if device initialization still
+fails, switch the runtime config to `osmesa` and rerun backend-check/render.
+The policy server remains JAX on the NVIDIA GPU; only image rendering changes.
