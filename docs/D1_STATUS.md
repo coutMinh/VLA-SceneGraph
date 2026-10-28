@@ -7,6 +7,7 @@
 | Prepare runtime probe, two environments, download and smoke | Implemented; actual molab installation and GPU execution pending |
 | 2D/video study matrix | Four verified sources; study/literature_matrix.csv and reading_notes/d1_2d.md |
 | Student reading (2–3 hours) | Student activity; not inferred from agent-prepared notes |
+| Publication and CPU verification | Published; 14 tests passed on each Linux Python 3.8/3.11/3.13; external notebook passed structure and clean-clone startup checks |
 | G1 | **Not run on molab**; no completed episode or benchmark results claimed |
 
 The codebase is named `VLA-SceneGraph/` per the user's repository choice; this
