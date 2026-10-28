@@ -3,8 +3,10 @@
 Official VLA reproduction and scene graph experiments for Assignment 3.
 The D1 baseline is **pi0_libero**, using a pinned, unmodified openpi checkout.
 
-**Status:** source verification and D1 tooling are implemented. Molab GPU
-inference and G1 are **not yet run**. No benchmark success rate is claimed.
+**Status:** D1 tooling and G1 smoke check are complete. On molab's RTX PRO 6000
+Blackwell, pi0_libero passed one LIBERO Spatial task 0/init state 0 episode
+(74 steps, task success). This validates the execution path only; it is not a
+benchmark estimate or the full evaluation. See [captured molab evidence](docs/evidence/molab/README.md).
 
 ## Layout
 

@@ -1,0 +1,9 @@
+{
+  "config": "/home/marimo/vla_scenegraph_work/jobs/repair-client-506c235adfaf.config.json",
+  "id": "repair-client-506c235adfaf",
+  "log": "/home/marimo/vla_scenegraph_work/results/logs/repair-client-506c235adfaf.log",
+  "name": "repair-client",
+  "pid": 1910,
+  "process_identity": "9d59d951-f413-49f4-b920-fb7dcca19b6a:108774",
+  "started_at_utc": "2026-10-28T07:55:28.581800+00:00"
+}

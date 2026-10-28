@@ -12,7 +12,7 @@
   "task_suite": "libero_spatial",
   "task_id": 0,
   "init_state_id": 0,
-  "render_backend": "egl",
+  "render_backend": "osmesa",
   "resize_size": 224,
   "replan_steps": 5,
   "settling_steps": 10,

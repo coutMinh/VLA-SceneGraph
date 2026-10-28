@@ -1,0 +1,20 @@
+{
+  "backend": "jax",
+  "checkpoint": "gs://openpi-assets/checkpoints/pi0_libero",
+  "host": "127.0.0.1",
+  "init_state_id": 0,
+  "libero_commit": "f78abd68ee283de9f9be3c8f7e2a9ad60246e95c",
+  "max_steps": 220,
+  "model_config": "pi0_libero",
+  "num_steps": 10,
+  "openpi_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+  "openpi_url": "https://github.com/Physical-Intelligence/openpi.git",
+  "port": 8000,
+  "render_backend": "osmesa",
+  "replan_steps": 5,
+  "resize_size": 224,
+  "seed": 7,
+  "settling_steps": 10,
+  "task_id": 0,
+  "task_suite": "libero_spatial"
+}

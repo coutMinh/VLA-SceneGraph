@@ -1,0 +1,9 @@
+{
+  "config": "/home/marimo/vla_scenegraph_work/jobs/dummy-d575feeb4253.config.json",
+  "id": "dummy-d575feeb4253",
+  "log": "/home/marimo/vla_scenegraph_work/results/logs/dummy-d575feeb4253.log",
+  "name": "dummy",
+  "pid": 3578,
+  "process_identity": "9d59d951-f413-49f4-b920-fb7dcca19b6a:162627",
+  "started_at_utc": "2026-10-28T08:04:27.113052+00:00"
+}

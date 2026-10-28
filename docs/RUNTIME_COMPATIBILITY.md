@@ -20,12 +20,16 @@ available, and clears the flag only on affected shared libraries in the isolated
 client's `torch/lib` directory. It does not change upstream source or disable
 the host's stack protections. Before/after hashes and the tool version are saved
 to `$SGVLA_WORK/docs/client_compatibility.json`; a fresh torch import must pass.
-Actual rendering and G1 are still required after that import check.
+The client torch import passed after the repair. The actual render probe and
+policy-driven G1 smoke episode later passed with OSMesa. See `evidence/molab/`
+for the captured run artifacts.
 
 After the torch repair, the first render reached MuJoCo but failed to initialize
 an EGL device display. The runtime also lacked `libOpenGL.so.0`.
 `repair-rendering` installs the missing OpenGL loader and OSMesa software renderer
 on a root-enabled Linux host, recording the actual package versions in
-`docs/render_libraries.json`. Retry EGL first; if device initialization still
-fails, switch the runtime config to `osmesa` and rerun backend-check/render.
-The policy server remains JAX on the NVIDIA GPU; only image rendering changes.
+`docs/render_libraries.json`. EGL device initialization still failed after the
+repair, so the runtime config was switched to `osmesa`; backend-check passed and
+render run `render-ab0d4dc4eb83` completed with both camera videos decoded. The
+repository's D1 config now defaults to the tested OSMesa backend. The policy
+server remains JAX on the NVIDIA GPU; only image rendering changes.

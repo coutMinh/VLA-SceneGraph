@@ -1,0 +1,9 @@
+{
+  "config": "/home/marimo/vla_scenegraph_work/jobs/install-client-f9ac9fdfd05f.config.json",
+  "id": "install-client-f9ac9fdfd05f",
+  "log": "/home/marimo/vla_scenegraph_work/results/logs/install-client-f9ac9fdfd05f.log",
+  "name": "install-client",
+  "pid": 1080,
+  "process_identity": "9d59d951-f413-49f4-b920-fb7dcca19b6a:69720",
+  "started_at_utc": "2026-10-28T07:48:58.048036+00:00"
+}

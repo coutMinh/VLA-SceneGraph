@@ -1,0 +1,17 @@
+{
+  "backend": "jax",
+  "config_sha256": "3974be2ae6ea751c4f679ac154b8844b6e0e353697851e9fd7a1f6bd0613d658",
+  "jax": {
+    "device": "cuda:0",
+    "ok": true
+  },
+  "jax_version": "0.5.3",
+  "numpy_version": "1.26.4",
+  "observed_at_utc": "2026-10-28T07:59:35.251338+00:00",
+  "pytorch": {
+    "error": "CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+    "ok": false
+  },
+  "torch_version": "2.7.1",
+  "transformers_version": "4.53.2"
+}

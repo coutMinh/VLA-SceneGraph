@@ -1,0 +1,9 @@
+{
+  "config": "/home/marimo/vla_scenegraph_work/jobs/download-aa24c8285a93.config.json",
+  "id": "download-aa24c8285a93",
+  "log": "/home/marimo/vla_scenegraph_work/results/logs/download-aa24c8285a93.log",
+  "name": "download",
+  "pid": 1612,
+  "process_identity": "9d59d951-f413-49f4-b920-fb7dcca19b6a:82276",
+  "started_at_utc": "2026-10-28T07:51:03.603154+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "benchmark_estimate": false,
+  "config_sha256": "3974be2ae6ea751c4f679ac154b8844b6e0e353697851e9fd7a1f6bd0613d658",
+  "decoded_video_frames": 5,
+  "init_state_id": 0,
+  "kind": "render_probe",
+  "policy_call_seconds": [],
+  "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+  "settling_steps": 10,
+  "status": "completed",
+  "steps": 5,
+  "success": false,
+  "suite": "libero_spatial",
+  "task_id": 0,
+  "video": "/home/marimo/vla_scenegraph_work/results/runs/render-ab0d4dc4eb83/agentview.mp4",
+  "video_sha256": "63f1c9eb2e396ee5bdd94f62782a0c97d8d7162513c6c4346dca196b2d16cfec",
+  "wrist_video": "/home/marimo/vla_scenegraph_work/results/runs/render-ab0d4dc4eb83/wrist.mp4",
+  "wrist_video_sha256": "4cc4fc839af7a013fa2730f85cc2de0d0d9cf1769159fd0713aa8fc1c87ef793"
+}

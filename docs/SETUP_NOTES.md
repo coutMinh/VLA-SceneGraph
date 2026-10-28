@@ -37,10 +37,22 @@ attribute those success rates to pi0.
   old numpy/JAX/LIBERO stack into that kernel.
 - Upstream supports Ubuntu (tested on 22.04), not Windows. README specifies
   inference VRAM **>8 GB**; this is not a guarantee for every GPU or backend.
-- Reported Blackwell/96 GB, driver, EGL, storage quota and cloud access remain
-  **unverified on molab** until the probe and actual kernels run there.
-  A library load or `nvidia-smi` alone is insufficient: run a JIT matrix multiply
-  and checkpoint inference before accepting GPU support.
+- Observed molab GPU: NVIDIA RTX PRO 6000 Blackwell Server Edition, driver
+  595.71.05, 97,887 MiB reported memory and SM 12.0. Pinned JAX 0.5.3 passed a
+  GPU JIT matrix operation; the selected pi0_libero checkpoint loaded and its
+  server listened on localhost:8000. One separate Spatial smoke episode passed;
+  this does not verify the full benchmark.
+- Molab's usable storage quota remains unknown. GCS public metadata and Hugging
+  Face public API access returned HTTP 200. The download log records completion
+  of all 12,014,131,888 checkpoint bytes (11.2 GiB).
+- EGL device initialization did not work. Installing the observed missing
+  OpenGL/OSMesa packages and selecting OSMesa allowed a five-control-step render
+  probe whose agentview and wrist MP4s both decoded. The D1 config now defaults
+  to this observed working renderer. See `RUNTIME_COMPATIBILITY.md`.
+- Pairing briefly returned HTTP 403 after the dummy job was launched; the
+  execution channel recovered. Dummy inference and the Spatial task 0/init state
+  0 smoke episode passed, G1 passed for the recorded config hash, and the server
+  was stopped. Full evidence and videos are under `evidence/molab/`.
 
 Runtime follow-up: molab's installed `uv venv --help` exposes `--allow-existing`.
 The client installer uses it to reuse a partially installed environment when

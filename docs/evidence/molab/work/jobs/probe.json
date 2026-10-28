@@ -1,0 +1,9 @@
+{
+  "config": "/home/marimo/vla_scenegraph_work/jobs/probe-8db74084fefd.config.json",
+  "id": "probe-8db74084fefd",
+  "log": "/home/marimo/vla_scenegraph_work/results/logs/probe-8db74084fefd.log",
+  "name": "probe",
+  "pid": 576,
+  "process_identity": "9d59d951-f413-49f4-b920-fb7dcca19b6a:49161",
+  "started_at_utc": "2026-10-28T07:45:32.456861+00:00"
+}
