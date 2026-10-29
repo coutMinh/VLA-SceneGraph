@@ -42,6 +42,12 @@ class Runtime:
         return hashlib.sha256(encoded).hexdigest()
 
     @property
+    def policy_hash(self):
+        from sgvla.eval.manifest import policy_fingerprint
+
+        return policy_fingerprint(self.config)
+
+    @property
     def upstream(self):
         return self.work / "third_party" / "openpi"
 

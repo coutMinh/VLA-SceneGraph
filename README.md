@@ -6,18 +6,20 @@ Implementation and progress are organized by Part and experiment ID, independent
 | Part | Status | Entry point |
 |---|---|---|
 | 1 — Study | Four verified 2D/video scene-graph sources and notes; study incomplete | [Literature matrix](study/literature_matrix.md) |
-| 2 — Reproduction | Official pi0_libero setup/smoke passed on molab; E0 full suite pending | [Smoke report and videos](results/part2/smoke_2026-10-28/README.md), [setup](SETUP.md) |
-| 3 — Analysis | E1–E5 and optional E6 not run | [Part status](docs/PART_STATUS.md) |
+| 2 — Reproduction | Setup/smoke passed; resumable E0 evaluator and parity harness implemented, GPU runs pending | [E0 procedure](repro/E0.md), [smoke](results/part2/smoke_2026-10-28/README.md), [setup](SETUP.md) |
+| 3 — Analysis | Spatial (S1, S2/S2-ctrl) and temporal (T1/T1-ctrl) conditions not run | [Part status](docs/PART_STATUS.md) |
 | 4 — Improvement | Proposal/prototype not implemented | [Part status](docs/PART_STATUS.md) |
 
-The smoke succeeded on one LIBERO Spatial task 0/init state 0 episode after 74 steps. It validates execution and is not a benchmark estimate. The full evaluator with per-episode resume, object poses and official-client comparison is the next Part 2 implementation.
+The smoke succeeded on one LIBERO Spatial task 0/init state 0 episode after 74 steps. It validates execution and is not a benchmark estimate. The E0 implementation now supports a fixed 50-episode Spatial manifest, validated resume, all-object-pose traces, seeded policy requests and a three-state official-client parity gate. GPU parity and E0 have not run: Molab was exhausted and the user requested implementation only. The pilot will not be reported as a full official-suite reproduction.
 
 ## Layout
 
 ```text
 src/sgvla/baselines/openpi/      # official baseline setup/server/smoke adapter
+src/sgvla/eval/                 # scene verification, manifests, traces, parity and E0
 src/sgvla/                      # CLI, jobs, probe, registry, smoke check
 configs/part2_smoke.json        # pinned model and tested OSMesa config
+configs/e0_manifest.json        # fixed 50-episode pilot; generated from verified sources
 study/                         # Part 1 literature and reading notes
 results/registry.csv            # original collected run index
 results/part2/                  # retained Part 2 result package
@@ -25,7 +27,7 @@ docs/                          # Part status, verified facts, artifact map
 tests/                         # CPU protocol and orchestration checks
 ```
 
-Molab notebooks are outside this repo in `Homework/NganLe/molab/vla_scenegraph/part2_reproduce.py`. They clone/pull GitHub and invoke the CLI. The Python 3.13 kernel orchestrates separate Python 3.11 server and Python 3.8 client environments. All installed environments, model weights and live job outputs stay under `$SGVLA_WORK` (default `~/vla_scenegraph_work`), outside the source checkout.
+Molab notebooks are outside this repo: `Homework/NganLe/molab/vla_scenegraph/part2_reproduce.py` for setup and `part2_e0.py` for parity/batched evaluation. They clone/pull GitHub and invoke the CLI. The Python 3.13 kernel orchestrates separate Python 3.11 server and Python 3.8 client environments. All installed environments, model weights and live job outputs stay under `$SGVLA_WORK` (default `~/vla_scenegraph_work`), outside the source checkout.
 
 Reviewed results stay in `results/part2/`; repetitive raw runtime/JSON state is archived outside the codebase. See [ARTIFACTS.md](docs/ARTIFACTS.md) for provenance and historical path mappings. Historical result IDs and hashes are preserved.
 

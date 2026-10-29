@@ -25,6 +25,11 @@ ACTIONS = (
     "dummy",
     "render",
     "smoke",
+    "eval-plan",
+    "eval-parity",
+    "eval-batch",
+    "eval-review",
+    "eval-all",
 )
 
 
@@ -79,8 +84,13 @@ def start(runtime, name):
             raise RuntimeError(
                 "Finish the active job before changing its environments: " + str(active)
             )
-        if name in {"dummy", "smoke"} and "server" not in active:
+        if (
+            name in {"dummy", "smoke", "eval-parity", "eval-batch", "eval-all"}
+            and "server" not in active
+        ):
             raise RuntimeError("Start the policy server first and check its log")
+        if name.startswith("eval-") and any(action.startswith("eval-") for action in active):
+            raise RuntimeError("Finish the active evaluation job before launching another")
         run_id = name + "-" + uuid.uuid4().hex[:12]
         config_path = jobs / (run_id + ".config.json")
         write_json(config_path, runtime.config)
@@ -187,6 +197,19 @@ def execute(runtime, name, run_id):
         from sgvla.baselines.openpi.compat import repair_rendering
 
         return repair_rendering(runtime)
+    if name.startswith("eval-"):
+        return runtime.module(
+            "client",
+            "sgvla.eval.worker",
+            "--mode",
+            name[len("eval-") :],
+            "--manifest",
+            runtime.config.get(
+                "evaluation_manifest", str(runtime.work / "configs/e0_manifest.json")
+            ),
+            "--limit",
+            str(runtime.config.get("eval_batch_size", 5)),
+        )
     env_name = "client" if name in ("dummy", "render", "smoke") else "server"
     timeout = None if name in ("server", "download") else 1800
     return runtime.module(

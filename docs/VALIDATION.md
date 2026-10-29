@@ -1,5 +1,31 @@
 # Validation · Part 2 setup and smoke
 
+## E0 implementation-only CPU validation — 2026-10-29
+
+- Windows Python 3.12: **37 passed, 2 skipped**. The skips are existing Linux
+  process-lifecycle checks. GPU/model inference and physics were not run or mocked
+  as research results; Molab was exhausted and the user requested implementation only.
+- Tests include real FFmpeg MP4 encoding/decoding, partial/killed attempts, corrupt
+  videos/traces/config/pointers, completed task-failure resume, infrastructure-error
+  retry/denominator exclusion, duplicate registry protection and interrupted-run indexing.
+- Batch tests enforce the five-episode inspection boundary and resume at the next
+  manifest entry. Parity comparisons reject observation/action/outcome differences;
+  missing parity prevents E0. The actual official-client/GPU comparison remains pending.
+- The source verifier read all pinned Spatial BDDL/initial-state archives using NumPy
+  and a restricted archive reader (no torch/MuJoCo). The generated report reproduces
+  exactly; `configs/e0_manifest.json` matches the manifest builder and contains the
+  declared task/state selection. Source evidence is in `results/part2/scene_verification/`.
+- Ruff lint and format checks pass. Source parses under Python 3.8 grammar; importing
+  CLI/evaluator control modules does not import NumPy/JAX/torch/LIBERO.
+- Both external notebooks (`part2_reproduce.py`, `part2_e0.py`) pass strict marimo
+  structure checks. The sandbox prints the same nonfatal inaccessible user-config
+  diagnostics observed previously; the checker exits successfully.
+- Original retained smoke/dummy artifact hashes still match their manifests.
+  No upstream source edits, remote pushes or new GPU experiments were performed.
+
+Next runtime acceptance is documented in [repro/E0.md](../repro/E0.md). CPU results
+do not establish renderer/physics stability, GPU seeded-noise determinism or parity.
+
 ## Part-based organization and compatibility checks
 
 2026-10-28, Windows Python 3.12, after the rename/cleanup:

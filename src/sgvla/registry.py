@@ -23,7 +23,7 @@ FIELDS = [
 ]
 
 
-def register(runtime, run_id, run_type, metrics_path, elapsed):
+def register(runtime, run_id, run_type, metrics_path, elapsed, *, manifest_path=None):
     probe_path = runtime.work / "docs/molab_probe.json"
     hardware = (
         read_json(probe_path).get("nvidia_smi", {})
@@ -31,7 +31,7 @@ def register(runtime, run_id, run_type, metrics_path, elapsed):
         else {"system": platform.system(), "gpu": "unobserved"}
     )
     config = runtime.config
-    data_manifest = runtime.results / "runs" / run_id / "manifest.json"
+    data_manifest = manifest_path or runtime.results / "runs" / run_id / "manifest.json"
     row = dict(
         zip(
             FIELDS,
@@ -43,7 +43,7 @@ def register(runtime, run_id, run_type, metrics_path, elapsed):
                 digest(data_manifest),
                 config["seed"],
                 str(hardware),
-                round(elapsed, 6),
+                round(elapsed, 6) if elapsed is not None else "",
                 str(metrics_path),
                 run_type,
                 utc_now(),

@@ -91,7 +91,9 @@ control or `python -m sgvla stop server`; only the recorded, matching process
 group is signalled. Restarting molab also stops background jobs. On restart,
 dead jobs show interrupted; rerun the step. Completed checkpoint caches and
 venvs persist if molab retains the work directory. Part 2 smoke creates a fresh
-single-episode run; per-episode full-evaluation resumability is the next Part 2/E0 deliverable.
+single-episode run. Per-episode E0 resumability is implemented; use the new
+`part2_e0.py` notebook and [E0 procedure](repro/E0.md). GPU parity and the pilot
+remain not run. Restart the server to load the new seeded policy adapter.
 
 If both backends fail, preserve diagnostics and use the same pinned stack on an
 already available Colab/Kaggle GPU. Verify alternative model/checkpoint availability

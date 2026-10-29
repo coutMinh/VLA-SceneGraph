@@ -1,0 +1,5173 @@
+{
+  "kind": "source_verification_only",
+  "official_client_sha256": "171a68c2b7b3092a79822322de247516c107d83084e163a652e4723e59f4e8f8",
+  "schema": 1,
+  "suite": "libero_spatial",
+  "task_order_sha256": "dc644c34987f6e0e4dc5320e5168cd2ee170cb8520f6a9344d2cd6d50f2c55fc",
+  "tasks": [
+    {
+      "bddl_instruction": "Pick the akita black bowl between the plate and the ramekin and place it on the plate",
+      "bddl_sha256": "50e94eb43b9b1de3ba89dc92737e85e6fc4bac85cbca99ec9ae89d416231f239",
+      "e0_target": "akita_black_bowl_1",
+      "fixture_types": {
+        "flat_stove_1": "flat_stove",
+        "main_table": "table",
+        "wooden_cabinet_1": "wooden_cabinet"
+      },
+      "goal": [
+        [
+          "And",
+          [
+            "On",
+            "akita_black_bowl_1",
+            "plate_1"
+          ]
+        ]
+      ],
+      "init_file_sha256": "cbbc73792ce546c9bec181fd328a411d3183074840b282671dee481511381d0a",
+      "initial_relations": {
+        "akita_black_bowl_1": [
+          "On",
+          "akita_black_bowl_1",
+          "main_table_between_plate_ramekin_region"
+        ],
+        "akita_black_bowl_2": [
+          "On",
+          "akita_black_bowl_2",
+          "main_table_next_to_ramekin_region"
+        ],
+        "cookies_1": [
+          "On",
+          "cookies_1",
+          "main_table_box_region"
+        ],
+        "flat_stove_1": [
+          "On",
+          "flat_stove_1",
+          "main_table_stove_region"
+        ],
+        "glazed_rim_porcelain_ramekin_1": [
+          "On",
+          "glazed_rim_porcelain_ramekin_1",
+          "main_table_ramekin_region"
+        ],
+        "plate_1": [
+          "On",
+          "plate_1",
+          "main_table_plate_region"
+        ],
+        "wooden_cabinet_1": [
+          "On",
+          "wooden_cabinet_1",
+          "main_table_cabinet_region"
+        ]
+      },
+      "initial_state_count": 50,
+      "initial_state_width": 92,
+      "landmarks": {
+        "cookies_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "cookies_1",
+            "main_table_box_region"
+          ],
+          "region_definition": [
+            "box_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.06",
+                  "0.02",
+                  "0.08",
+                  "0.04"
+                ]
+              ]
+            ]
+          ]
+        },
+        "flat_stove_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "flat_stove_1",
+            "main_table_stove_region"
+          ],
+          "region_definition": [
+            "stove_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "-0.42",
+                  "-0.15",
+                  "-0.4",
+                  "-0.13"
+                ]
+              ]
+            ]
+          ]
+        },
+        "glazed_rim_porcelain_ramekin_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "glazed_rim_porcelain_ramekin_1",
+            "main_table_ramekin_region"
+          ],
+          "region_definition": [
+            "ramekin_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "-0.21",
+                  "0.19",
+                  "-0.19",
+                  "0.21"
+                ]
+              ]
+            ]
+          ]
+        },
+        "plate_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "plate_1",
+            "main_table_plate_region"
+          ],
+          "region_definition": [
+            "plate_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.05",
+                  "0.19",
+                  "0.07",
+                  "0.21"
+                ]
+              ]
+            ]
+          ]
+        },
+        "wooden_cabinet_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "wooden_cabinet_1",
+            "main_table_cabinet_region"
+          ],
+          "region_definition": [
+            "cabinet_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.02",
+                  "-0.28",
+                  "0.04",
+                  "-0.26"
+                ]
+              ]
+            ],
+            [
+              ":yaw_rotation",
+              [
+                [
+                  "2.6613777765410678",
+                  "2.7242096296128633"
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      "object_types": {
+        "akita_black_bowl_1": "akita_black_bowl",
+        "akita_black_bowl_2": "akita_black_bowl",
+        "cookies_1": "cookies",
+        "glazed_rim_porcelain_ramekin_1": "glazed_rim_porcelain_ramekin",
+        "plate_1": "plate"
+      },
+      "official_instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "regions": [
+        [
+          "plate_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.05",
+                "0.19",
+                "0.07",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_plate_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.0",
+                "0.3",
+                "0.02",
+                "0.32"
+              ]
+            ]
+          ]
+        ],
+        [
+          "box_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.06",
+                "0.02",
+                "0.08",
+                "0.04"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_box_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.12",
+                "-0.08",
+                "0.14",
+                "-0.06"
+              ]
+            ]
+          ]
+        ],
+        [
+          "between_plate_ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.06",
+                "0.19",
+                "-0.04",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.21",
+                "0.19",
+                "-0.19",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.19",
+                "0.31",
+                "-0.17",
+                "0.33"
+              ]
+            ]
+          ]
+        ],
+        [
+          "table_center",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.1",
+                "-0.01",
+                "-0.05",
+                "0.01"
+              ]
+            ]
+          ]
+        ],
+        [
+          "table_front",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.19",
+                "-0.01",
+                "0.21",
+                "0.01"
+              ]
+            ]
+          ]
+        ],
+        [
+          "cabinet_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.02",
+                "-0.28",
+                "0.04",
+                "-0.26"
+              ]
+            ]
+          ],
+          [
+            ":yaw_rotation",
+            [
+              [
+                "2.6613777765410678",
+                "2.7242096296128633"
+              ]
+            ]
+          ]
+        ],
+        [
+          "stove_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.42",
+                "-0.15",
+                "-0.4",
+                "-0.13"
+              ]
+            ]
+          ]
+        ],
+        [
+          "top_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "middle_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "bottom_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "top_side",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "cook_region",
+          [
+            ":target",
+            "flat_stove_1"
+          ]
+        ]
+      ],
+      "runtime_checks": {
+        "s1_relation_uniqueness": "pending_simulator",
+        "s2_landmark_poses": "pending_simulator",
+        "swap_stability": "pending_simulator"
+      },
+      "s1_instruction": "pick up the black bowl next to the ramekin and place it on the plate",
+      "s1_target": "akita_black_bowl_2",
+      "s2_source_status": "candidate_requires_physics_and_uniqueness_checks",
+      "state_sha256": [
+        "9a3c3c932fb0fde02a223f735fb93e47ccf8bb03fa4f40f34de2cdb85888f920",
+        "1833681d68f643169215269a3becc774240ac88253fa9dc6b92377448af4da50",
+        "6fbce4b23586a3d4f2dca12c126472951833faed613733542265a529d62b68bc",
+        "75a5c12fd7f5fcc7ca32ee3f2d4bd6addd871f78e559daf1c479d3f5f77d2de4",
+        "40429a4c7fc4ad47e109dec700da9af04dd493bb9a72e5cc618e14a851e3b29f",
+        "d0d9b431c8be802fa6caf96ee6c861c536cda962bfa4e1a1891083b65ba4dfe6",
+        "8d90a09d1c4362f37dbdb5fb002ae4ae3636fc0c4cc03e283ce836c7d0874e6b",
+        "d3e9b5b33b4020e28a9dac0bbccee2fc4e91bc2d9a64423ce629ab82bd8da688",
+        "ae2d0ac896fe70d14942044a07bd5927c14ee04bb9734e55512e8322a5ed43eb",
+        "e04eda2893918bdbf3a75246ce17f04675de450c51657cf05c43c244d245ae53",
+        "81ed6d5fef3f24c6fcc318d75196a0ee206578621319111ea22a1bc4adf2feb2",
+        "964b74cf0ef14abbf9fa52dc5093024ea62b8f72e0b5f3bc492bd2f576639a50",
+        "d9849e2242887614ff11face431f677eb828255faa183f127662100eb17ff0ac",
+        "44fc5a8913e48cdd51af2805a11aecf91d4f0e8003a358c84f714192a4746434",
+        "378f7078258ffcdaeb021ab46ef4584e82730a219443040b06ba96a2c032e580",
+        "2571c9d2fe9b5b23eabb54a9b14d4239d6ff77c79954ed30a1e04f327597a6de",
+        "8ca981535d5c056e2a1899323b8dc000a52c496bab75bb8e1207663b75f2335c",
+        "9844da218d812916f52ce221913e206fe8452660fd8717361ec3782c35554f9c",
+        "4a3db90cfdbec861889036eb3e48c83e0d2f621044174359160e8e6cf4f85b86",
+        "f8f8335bf44052f262a2ee742702768e3a26e9b1a441c31881cd08a5c8ecb980",
+        "7894ee87725336698a4a2de56628ea1299bd3b444061f46426f2d6f7dc81bd1f",
+        "a44cf7682a630c5a27ad147b3c61921a56f9df3e29a96b4fbf6ccb97949e4cce",
+        "920360ac84646149f37e59be614bede70f8cf1f1033ee52ec4e16f27ef6877a2",
+        "bab4b8a37ae370becaf7b3f7d9e41314a2926b9192311e999d255959d4ec1fc8",
+        "f1809eb319b9520f3351f901f8cf8800213fcbb3147927251cccf89770954619",
+        "28d568b4deb6db8a7553200635e44898b66761a8029d066e13dac048dc76ef69",
+        "3db44448da01513edbb20ed218b5cd7696d117836957457bbf5464f02fcfeafb",
+        "2bc3df0458b7ca0e8835469d5507793a144b349109d6f193e63f9875472bf5ef",
+        "1a8c1150fe414f234b46caec9f95cb3484d552c07d4b6938c41cff455bd94979",
+        "cbb9ae69aeb41102154bcf4644404b82eaf0f84d52672fa771d1a991d1fd3ad8",
+        "224588be0fc808e840aef4bc4608611d4a8dde9f02db24c604b98f98bdfa0b8f",
+        "1aded81f32032e7648480a06153b81bd7ca5f43e5a9ce6ca029ab46a0b08bf87",
+        "5bd0bf44b84dcae8e79c00cbb1289e50b1f9f370eec41e6cabbccf43346d7c9c",
+        "95b7adab7e5d89a7b3efeace5e11d8abd6edefaeaf034ab4b786eec40e290613",
+        "67cf4f675a6f1b721b58d5a988285943f4e8b7d78e9ef230d107cfca11455aa3",
+        "e1cc4cf4f7a5f0cf511360969b0f7f6b141a402235f9e89efbcbb639e6b13170",
+        "7bbe24de4f3a15b95b7c3ead130a5ec24f9d2882f9a7e1fdedaa3be105ded504",
+        "913a6d0fffdc6822b1e77f83b9cab217735423259eee2d9c750ee9761b8ee5ba",
+        "d11a2ac8d10f04ae59518bcfe22c16f22a33dd4bb8e2d1e987926d989f4c7df4",
+        "874db6059014cd040b5456cbdeeda8519b462c89f475a089b43f3b0a9ce12d98",
+        "a74be50c2591424ef8544d9f04f18944783da05f8dc3d6827a51617d2642e6ca",
+        "378742f0acd004201ce1cbb73e353b3251e3b6a1fe7e60f98895dde37a311904",
+        "96d9da8ac2dd509cada452675b7f52426325cc75d1177f595023baae26c1e55e",
+        "ad94c54c4e997172a97678f89e2566da53c3d432759395189d8407c7fd38cc13",
+        "140c9b49f221b48515c185260c8f2ada7ab2646332bfef4c2a3881c0a2a2ad8e",
+        "b673adf599e87700a7e08805713a372154d9c2023a5b3afd7d3950abff719353",
+        "17eb71ca6ed94540f2937e55ecb70bbcdbdffb173ac482f27de3b8cd22cb72fa",
+        "141ec3fe8da60313d82f3985838baf046c46244881114272e18e65a183581382",
+        "27e16e60a2ca4953b6199ab8cf06a2c71c5fd79ef41d5614eb92960f39be91e1",
+        "ca3771eb54dc47e8232442fc1cd90e2b9dfbd7fa18eb3a4e2903c12fcf70280e"
+      ],
+      "swap_source_status": "both_bowls_on_table_candidate",
+      "task_id": 0,
+      "task_name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "bddl_instruction": "Pick the akita black bowl next to the ramekin and place it on the plate",
+      "bddl_sha256": "a53686093e4bf4d2cedc4568d8ef9667a1488994fcf31ef4cbe6b714e0f6cb6a",
+      "e0_target": "akita_black_bowl_1",
+      "fixture_types": {
+        "flat_stove_1": "flat_stove",
+        "main_table": "table",
+        "wooden_cabinet_1": "wooden_cabinet"
+      },
+      "goal": [
+        [
+          "And",
+          [
+            "On",
+            "akita_black_bowl_1",
+            "plate_1"
+          ]
+        ]
+      ],
+      "init_file_sha256": "9b6927b6ef03460ab055141e1a1154ad85e5e290058d8ed3a8a314aff911f864",
+      "initial_relations": {
+        "akita_black_bowl_1": [
+          "On",
+          "akita_black_bowl_1",
+          "main_table_next_to_ramekin_region"
+        ],
+        "akita_black_bowl_2": [
+          "On",
+          "akita_black_bowl_2",
+          "main_table_next_to_box_region"
+        ],
+        "cookies_1": [
+          "On",
+          "cookies_1",
+          "main_table_box_region"
+        ],
+        "flat_stove_1": [
+          "On",
+          "flat_stove_1",
+          "main_table_stove_region"
+        ],
+        "glazed_rim_porcelain_ramekin_1": [
+          "On",
+          "glazed_rim_porcelain_ramekin_1",
+          "main_table_ramekin_region"
+        ],
+        "plate_1": [
+          "On",
+          "plate_1",
+          "main_table_plate_region"
+        ],
+        "wooden_cabinet_1": [
+          "On",
+          "wooden_cabinet_1",
+          "main_table_cabinet_region"
+        ]
+      },
+      "initial_state_count": 50,
+      "initial_state_width": 92,
+      "landmarks": {
+        "cookies_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "cookies_1",
+            "main_table_box_region"
+          ],
+          "region_definition": [
+            "box_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.06",
+                  "0.02",
+                  "0.08",
+                  "0.04"
+                ]
+              ]
+            ]
+          ]
+        },
+        "flat_stove_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "flat_stove_1",
+            "main_table_stove_region"
+          ],
+          "region_definition": [
+            "stove_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "-0.42",
+                  "-0.15",
+                  "-0.4",
+                  "-0.13"
+                ]
+              ]
+            ]
+          ]
+        },
+        "glazed_rim_porcelain_ramekin_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "glazed_rim_porcelain_ramekin_1",
+            "main_table_ramekin_region"
+          ],
+          "region_definition": [
+            "ramekin_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "-0.21",
+                  "0.19",
+                  "-0.19",
+                  "0.21"
+                ]
+              ]
+            ]
+          ]
+        },
+        "plate_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "plate_1",
+            "main_table_plate_region"
+          ],
+          "region_definition": [
+            "plate_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.05",
+                  "0.19",
+                  "0.07",
+                  "0.21"
+                ]
+              ]
+            ]
+          ]
+        },
+        "wooden_cabinet_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "wooden_cabinet_1",
+            "main_table_cabinet_region"
+          ],
+          "region_definition": [
+            "cabinet_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.02",
+                  "-0.28",
+                  "0.04",
+                  "-0.26"
+                ]
+              ]
+            ],
+            [
+              ":yaw_rotation",
+              [
+                [
+                  "2.6613777765410678",
+                  "2.7242096296128633"
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      "object_types": {
+        "akita_black_bowl_1": "akita_black_bowl",
+        "akita_black_bowl_2": "akita_black_bowl",
+        "cookies_1": "cookies",
+        "glazed_rim_porcelain_ramekin_1": "glazed_rim_porcelain_ramekin",
+        "plate_1": "plate"
+      },
+      "official_instruction": "pick up the black bowl next to the ramekin and place it on the plate",
+      "regions": [
+        [
+          "plate_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.05",
+                "0.19",
+                "0.07",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_plate_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.0",
+                "0.3",
+                "0.02",
+                "0.32"
+              ]
+            ]
+          ]
+        ],
+        [
+          "box_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.06",
+                "0.02",
+                "0.08",
+                "0.04"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_box_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.12",
+                "-0.08",
+                "0.14",
+                "-0.06"
+              ]
+            ]
+          ]
+        ],
+        [
+          "between_plate_ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.06",
+                "0.19",
+                "-0.04",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.21",
+                "0.19",
+                "-0.19",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.19",
+                "0.31",
+                "-0.17",
+                "0.33"
+              ]
+            ]
+          ]
+        ],
+        [
+          "table_center",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.1",
+                "-0.01",
+                "-0.05",
+                "0.01"
+              ]
+            ]
+          ]
+        ],
+        [
+          "table_front",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.19",
+                "-0.01",
+                "0.21",
+                "0.01"
+              ]
+            ]
+          ]
+        ],
+        [
+          "cabinet_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.02",
+                "-0.28",
+                "0.04",
+                "-0.26"
+              ]
+            ]
+          ],
+          [
+            ":yaw_rotation",
+            [
+              [
+                "2.6613777765410678",
+                "2.7242096296128633"
+              ]
+            ]
+          ]
+        ],
+        [
+          "stove_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.42",
+                "-0.15",
+                "-0.4",
+                "-0.13"
+              ]
+            ]
+          ]
+        ],
+        [
+          "top_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "middle_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "bottom_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "top_side",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "cook_region",
+          [
+            ":target",
+            "flat_stove_1"
+          ]
+        ]
+      ],
+      "runtime_checks": {
+        "s1_relation_uniqueness": "pending_simulator",
+        "s2_landmark_poses": "pending_simulator",
+        "swap_stability": "pending_simulator"
+      },
+      "s1_instruction": "pick up the black bowl next to the cookie box and place it on the plate",
+      "s1_target": "akita_black_bowl_2",
+      "s2_source_status": "candidate_requires_physics_and_uniqueness_checks",
+      "state_sha256": [
+        "80b3fdc4a8ca764640e15775a78c96fc1bab8fe2375af5d8a4f92ff201ad000e",
+        "642b7177737e1fe266d0765b14d3767574a9e45f8ebf93f6cec314dbfdf56414",
+        "7fceb1fea7a621fc39a2f4304b87a81dccb3b8f2cc4fefcdc65226aae9148254",
+        "8941f58dbe5a3b7bd26502e8c433cb04a4786be33d27714866269c993910258a",
+        "8aa93897abd793540662f637cc83998dd887bb9e1e8a0fdfee88c3c292251df9",
+        "863deadd69312e99f2fce12b4998cbb6f005aa7db99fac19bad69ac7e2bad056",
+        "58eff997e9a43565b5878c25348b4153d3d4a9f5ca6b1aa772c7f1398a5f1196",
+        "c64e0ef121135bab6725c658db41ec54272977b3fc270de9babecc0734992920",
+        "3bf37e93eda472d20e1da1b548e374eb45de88ee0d37245f4caaa4e1a4c72449",
+        "2a4b3fa47d27ce8dce30a99333cb9cc2beca6190ef23c357177cedac4d6c0a65",
+        "8d62e584fe8996df4c305f770821f0833ea245e620931708b12872116ad72c7d",
+        "ad077bdb998d3844128b3a986e0e57c1e0db5cf7b43a85be2d244b85550d2cb9",
+        "f9e10f0b9c79c2c6a330e079964fa4d19c4a28d9f05688989874e6cb02233b79",
+        "c7ec93fc15dcc6192f166c3a0fea9b209cdf2ffa2c38f2297257db3730370934",
+        "ddd8696c827c0f97ea24bbad220094b4d1b7e83e32fa13e2c12f44e9d3ce418e",
+        "f7e6581e787c659f70666f985e05bc9cf8ee8785ae4f9259f7c2bbb5cb2ee00e",
+        "17d24b5c98c914cbf19caf41c5d939024e475b6e400b2d3eaa7b0dcfac4d837c",
+        "d961d51ebdbf445fbccc492c54a861938c40f7b6c61a1c73c3879841d7c15441",
+        "aa33592bf96de1094681a2168b9a249074de8eae333f10060f24eb732ba87289",
+        "a03c573b1d510302973ceb42df22ed1ef48f0f1e6efbd1e73e0cf968562e7e59",
+        "82ffca9931c7bed4b3e30005c9cd22caab6d4aa154d988034607f77e66389f8a",
+        "50d819fc98e5c5222ac64cf2294dac739bd084613ef3c1896853f21381b6e467",
+        "5ea8d01fe65cff522d673be65489fceeee74c4b3d208f7e709f2d5c865066a34",
+        "fc73ffc002cc0c43bc48bffb2930c845a24f4d57cae4b8e28653f835e4b7c3c0",
+        "d93746e9d0ab5f1616c83c23ec0c6a7ca2b2913651298abb2df5ca159997bdff",
+        "d50b287cd696c981a7b43d16e296cfed9865db711c9c7991e320b156c822aaaf",
+        "8db49ffa21707d41dfcb6b05ac14ae968c5a0a8665a929be44e6cf84959e169e",
+        "4101c569f01eec222cd7cd295873dbc0cfc27e16251c42818c541d7040b6ec41",
+        "fcfbe061f148d12139c740db8ae4e051faaf6485cf8ccb9e26ce3e6a88a5e25a",
+        "9884dbee587023c697bdec1f2eae138e05f326ebe9360734713d0f9181f8e130",
+        "b849fabb4ce4906adb92064c1b40cf5ea0aab6599800d1deb345a129e1afdf07",
+        "7ba066decce6efd1c171292c782129b329fb7add6aa5477746cb5d018d23226d",
+        "019ba6f667823c0bc53f29719a0fb7f85b1e8b02665dc0fbeb563622e84b58db",
+        "fcb303e53a05dbdcaa19bc4e71a647f3fa1f513097928f907ac0ac6e65ca6d1e",
+        "89df715bfdf202cc16c06fd139a104dfe5e210c17d7fe6236d8ff0a753d2d424",
+        "5f243b6a1c7836b5ee4f417e73c72294f9f83a4d6a5921e00a33ad328793e116",
+        "5cfbe29c4d53dba116a0c5e94fac3d02d1e2317080f3f4f79f4329b32885e00a",
+        "50375481b1a69b241c417bc2341e8a8d18fa8c25e2461cf43264c3f87d97d974",
+        "a91de4347258550f742911c2513992b795be056d263d14f7858b9e42017b9d80",
+        "b7299026334c2ed142bef9c10da36b9a9e5daac99b8a6c2c10137aebed77a17f",
+        "1874609a1c360d7c732d80783751c6a509d3cad1c0657cdbc2b1d869ec992e2d",
+        "9d7c2938bc2b230c569ef35dff04fa3533fd71dcb786976399034bd840ade81c",
+        "0a418904392f40afe703d686f5fdd2c96ab87bd670887b0440dd2a6950aea981",
+        "78a5d92790df8c3a935ee89c6919d728354adc386cd9e05b29030ec4541caf9f",
+        "cae71aabdc4cddbe34d0620dc4f6c496ce8ec9a970d36df408f0d3a6b032f843",
+        "f7d7d866ff0bb707e74aa03ccc6bf5eb816d6ba3dad9edd7ef706d90ef4c7c00",
+        "ec54a9c8808e491429a9f99f843e1d6522c90ba97cc2bdf92af50fb2876592fb",
+        "4681c70a069a9f00145e470ffa5b04430aff8bea4ec36c8904e8a02923d9f6eb",
+        "d4ff009e26722bcd95c0aa2ad068929b8670bd66e9903f6a4e3abe9047ab6521",
+        "434a43c0a83e005dcaf8b3b2d7e8e655487298c2f72f0ce4b90b8a41848d7d99"
+      ],
+      "swap_source_status": "both_bowls_on_table_candidate",
+      "task_id": 1,
+      "task_name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "bddl_instruction": "Pick the akita black bowl from table center and place it on the plate",
+      "bddl_sha256": "abacd2f08be33c5c175885083e2dfa7e5acfcda5a2965861492123efb73944bf",
+      "e0_target": "akita_black_bowl_1",
+      "fixture_types": {
+        "flat_stove_1": "flat_stove",
+        "main_table": "table",
+        "wooden_cabinet_1": "wooden_cabinet"
+      },
+      "goal": [
+        [
+          "And",
+          [
+            "On",
+            "akita_black_bowl_1",
+            "plate_1"
+          ]
+        ]
+      ],
+      "init_file_sha256": "27d5b81d739f969e40c72b6c88699e57a91ea61209946b21c593aae5990689cb",
+      "initial_relations": {
+        "akita_black_bowl_1": [
+          "On",
+          "akita_black_bowl_1",
+          "main_table_table_center"
+        ],
+        "akita_black_bowl_2": [
+          "On",
+          "akita_black_bowl_2",
+          "main_table_next_to_plate_region"
+        ],
+        "cookies_1": [
+          "On",
+          "cookies_1",
+          "main_table_box_region"
+        ],
+        "flat_stove_1": [
+          "On",
+          "flat_stove_1",
+          "main_table_stove_region"
+        ],
+        "glazed_rim_porcelain_ramekin_1": [
+          "On",
+          "glazed_rim_porcelain_ramekin_1",
+          "main_table_ramekin_region"
+        ],
+        "plate_1": [
+          "On",
+          "plate_1",
+          "main_table_plate_region"
+        ],
+        "wooden_cabinet_1": [
+          "On",
+          "wooden_cabinet_1",
+          "main_table_cabinet_region"
+        ]
+      },
+      "initial_state_count": 50,
+      "initial_state_width": 92,
+      "landmarks": {
+        "cookies_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "cookies_1",
+            "main_table_box_region"
+          ],
+          "region_definition": [
+            "box_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.06",
+                  "0.02",
+                  "0.08",
+                  "0.04"
+                ]
+              ]
+            ]
+          ]
+        },
+        "flat_stove_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "flat_stove_1",
+            "main_table_stove_region"
+          ],
+          "region_definition": [
+            "stove_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "-0.42",
+                  "-0.15",
+                  "-0.4",
+                  "-0.13"
+                ]
+              ]
+            ]
+          ]
+        },
+        "glazed_rim_porcelain_ramekin_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "glazed_rim_porcelain_ramekin_1",
+            "main_table_ramekin_region"
+          ],
+          "region_definition": [
+            "ramekin_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "-0.21",
+                  "0.19",
+                  "-0.19",
+                  "0.21"
+                ]
+              ]
+            ]
+          ]
+        },
+        "plate_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "plate_1",
+            "main_table_plate_region"
+          ],
+          "region_definition": [
+            "plate_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.05",
+                  "0.19",
+                  "0.07",
+                  "0.21"
+                ]
+              ]
+            ]
+          ]
+        },
+        "wooden_cabinet_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "wooden_cabinet_1",
+            "main_table_cabinet_region"
+          ],
+          "region_definition": [
+            "cabinet_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.02",
+                  "-0.28",
+                  "0.04",
+                  "-0.26"
+                ]
+              ]
+            ],
+            [
+              ":yaw_rotation",
+              [
+                [
+                  "2.6613777765410678",
+                  "2.7242096296128633"
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      "object_types": {
+        "akita_black_bowl_1": "akita_black_bowl",
+        "akita_black_bowl_2": "akita_black_bowl",
+        "cookies_1": "cookies",
+        "glazed_rim_porcelain_ramekin_1": "glazed_rim_porcelain_ramekin",
+        "plate_1": "plate"
+      },
+      "official_instruction": "pick up the black bowl from table center and place it on the plate",
+      "regions": [
+        [
+          "plate_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.05",
+                "0.19",
+                "0.07",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_plate_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.0",
+                "0.3",
+                "0.02",
+                "0.32"
+              ]
+            ]
+          ]
+        ],
+        [
+          "box_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.06",
+                "0.02",
+                "0.08",
+                "0.04"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_box_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.12",
+                "-0.08",
+                "0.14",
+                "-0.06"
+              ]
+            ]
+          ]
+        ],
+        [
+          "between_plate_ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.06",
+                "0.19",
+                "-0.04",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.21",
+                "0.19",
+                "-0.19",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.19",
+                "0.31",
+                "-0.17",
+                "0.33"
+              ]
+            ]
+          ]
+        ],
+        [
+          "table_center",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.1",
+                "-0.01",
+                "-0.05",
+                "0.01"
+              ]
+            ]
+          ]
+        ],
+        [
+          "table_front",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.19",
+                "-0.01",
+                "0.21",
+                "0.01"
+              ]
+            ]
+          ]
+        ],
+        [
+          "cabinet_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.02",
+                "-0.28",
+                "0.04",
+                "-0.26"
+              ]
+            ]
+          ],
+          [
+            ":yaw_rotation",
+            [
+              [
+                "2.6613777765410678",
+                "2.7242096296128633"
+              ]
+            ]
+          ]
+        ],
+        [
+          "stove_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.42",
+                "-0.15",
+                "-0.4",
+                "-0.13"
+              ]
+            ]
+          ]
+        ],
+        [
+          "top_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "middle_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "bottom_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "top_side",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "cook_region",
+          [
+            ":target",
+            "flat_stove_1"
+          ]
+        ]
+      ],
+      "runtime_checks": {
+        "s1_relation_uniqueness": "pending_simulator",
+        "s2_landmark_poses": "pending_simulator",
+        "swap_stability": "pending_simulator"
+      },
+      "s1_instruction": "pick up the black bowl next to the plate and place it on the plate",
+      "s1_target": "akita_black_bowl_2",
+      "s2_source_status": "table_center_not_landmark_controlled",
+      "state_sha256": [
+        "02dd4280658d70c84e8db77e57510568670fbddd83bed1cb328da3b449bb2354",
+        "090e494a1037efda6c7696db30cddc08d49bb390708d804ec918bc55f63b52db",
+        "f492e1fbcf150d0580b2b9bd2df4e3ab9a3a804a16a52d85b12a711fe0c71314",
+        "6c4bb568ac79b8dbc9e40e1530d09f0a698cf3dcb2c767312995cfa7f2fffc24",
+        "04d1752a25e000c3cb2172dcf4f158123eb3f6cfccf87f6ea9ae6920c1cd9d31",
+        "6a4b0940ecbf1ace4d90ec823cabec4f4204ae75c78d1c58b90aacde24d06688",
+        "b9713423940d83a50a055fa459e111e5c02b3f8fdcc47101c36479c102c7fb44",
+        "af637586ded346a9a0e1d72e5d4bd2459b9222e223564d725ed0d38d60b76e8a",
+        "1d27de42afce774d685fe398507d1d3aa3aa3fcbf8e062782dcc4f68d5c0f2e4",
+        "79fd7739d5705548163ca0cb2725fcaffe47a81e15cdf5a8e926fe117d5ea0ae",
+        "e4f38fdeba02b39875358863cc37c98788cc3e1891294804eae6cfc67cc20a3d",
+        "4635463391d3ae7727b378a0bde346736b4dac8a0a6cf56c878d21adecd96913",
+        "f25fd1fb1fd6b331a997b4c64a953e73607eb8d90d92ca5109eb5225c8295cb9",
+        "7f902618d20740854a28834d8f0ea8a2d7ef5b209ae0a6d32a20559e28418df5",
+        "c7ff1b907ed6bf5e646d998e97e60b41a90e21fd35ec0f61553ad690af359400",
+        "707fa00af9bfaf2aac14206475d6bba7649626f57e02c9941bb45f7a906bb9b2",
+        "2511158bdec048b61dac5e7743c56a95765a52c9345c8783b25e83b2124d5f3b",
+        "a2d66ce5220a9e3feb39af9ed2f4da7c03035180b3a38ad9b93888c6c444abe3",
+        "3a95c992a030c2061d845144a29beb6b8f333ce9e8d43fd03ee63ae116dcb344",
+        "6dd2c8f0b99a3860b186ea34c8a4a21ab170f777f72ce3632aaa3669f4c7918d",
+        "73d690c18da5ad80cf879862b02d420c58b1ab68c33717fa0808427440ca2774",
+        "85f3153ef459d3af49de96d1ced0598f86c886585a798712c66b82f56cd7c33d",
+        "21c58af4dedcfb6909eeb032f95a9e0526da52065096376ffc1a32310589d3c9",
+        "beb02a8d6a9121897dad50b8fad97b9452a12c3db340fe1bf85ffb91ac2b7bf3",
+        "1dd4e60cfeb5327d5d9e9027ab955a1a8d24bfe3bbb996c908ffc339b9f3244a",
+        "1901bb2a671b8065721f351425dcebc3ec6128b1f0da3cc0c67955245dd71008",
+        "21997f664a8dbc1b33ee059582790cdd3533aeee48409e898671e60de9c37cd8",
+        "e8e43ceea71b44d7362bc48717e14972e2d89cac6531edb6402fcf9a4734f7ba",
+        "9a7353d469a0932a899f510373375b03cad68982f46593b5fec25171e426a463",
+        "cf511ba96b8232f68a7b6b5b1a680e221c1d12a74491bcabe3dd8119441416cc",
+        "11d05337be25a3187eda368b4522d80ec4d280a20fd276e6e42312d1e5a2ab62",
+        "55d1b499ca23457972b5a3f0748d068c10e1b1c3be6cfd3b8e5c86ed6db3e8c8",
+        "2c4d696279c9b09450ae516aed61d620760d4edb2d78ba48b64f99f31e6cc272",
+        "023ec29ca564e0c55d96eae35a2ffd23a0275d36f8a28ad69707d6634564e6ef",
+        "2e065a9c7132eb9f4a9f8c7e7817fd8f64952d8bf89442f1daec1c6402bb108d",
+        "19e7a3565df711a082332cacc02d464250e3c53b5c349267a3f1864e77bd3fa7",
+        "6ca255ea4c15f5183c4b3a45e00d5e47be6693f94678bd231bde565e09238197",
+        "6694c592fd6062f9a6e202db48aa1eca37673b65103745c515ed60831c04184b",
+        "9ff2b097f9368812b24ae54423336c1697922692bf4e63b93c9e12ba07df3355",
+        "b69ebee3b3c8a281be23fa760b6a10cb21977191f5451cc849d23fbbc2bf4791",
+        "e30e2ffe74dd2c842060a83aa18c8e12bd0450574295614aa410a790307c3a61",
+        "dfa064a448f682734a4ed021476b5e6a96651aa8bb72e503b5a1f15f83db015d",
+        "22ca599bc64400ca1fc55c1c7223d8700a243adf6995126a9d7fd6f0edecec49",
+        "4bac80b3f83314a7b112946588ab11601971cf84ef881613f774dfdceb3525cf",
+        "ad61f70f13d3bc11098ca99e431d000790b5e60e4682e8448d05103d3e7aa382",
+        "8a40cb40a58a1e6bc85b72f96453674d12a57b911bde0a1f9e29990af3d6d98a",
+        "15d80bed5bc22755656642df2194bad0b004ab59125fa29152507f354ccb6d5d",
+        "9183b99fea78824c184d39da9334b4b4092517467bdacc3b87cb81a72cfce4e8",
+        "a08fcd131133734ca5ac738a631ed9cc9923641cc723b02359402d68d88b608d",
+        "9eb3536b651a83cf22a3270a9a0d6195438ffd082fd3d860998f73a82f490066"
+      ],
+      "swap_source_status": "both_bowls_on_table_candidate",
+      "task_id": 2,
+      "task_name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "bddl_instruction": "Pick the akita black bowl on the cookies box and place it on the plate",
+      "bddl_sha256": "aed9b65fea9cecf7929e5985f9533bf3fcfc5506d266fb4318d6461037155ccf",
+      "e0_target": "akita_black_bowl_1",
+      "fixture_types": {
+        "flat_stove_1": "flat_stove",
+        "main_table": "table",
+        "wooden_cabinet_1": "wooden_cabinet"
+      },
+      "goal": [
+        [
+          "And",
+          [
+            "On",
+            "akita_black_bowl_1",
+            "plate_1"
+          ]
+        ]
+      ],
+      "init_file_sha256": "0627f5f5ce3ef23be546571012be8ef603d93bcb4032bc80feb34937ba580140",
+      "initial_relations": {
+        "akita_black_bowl_1": [
+          "On",
+          "akita_black_bowl_1",
+          "cookies_1"
+        ],
+        "akita_black_bowl_2": [
+          "On",
+          "akita_black_bowl_2",
+          "wooden_cabinet_1_top_side"
+        ],
+        "cookies_1": [
+          "On",
+          "cookies_1",
+          "main_table_box_region"
+        ],
+        "flat_stove_1": [
+          "On",
+          "flat_stove_1",
+          "main_table_stove_region"
+        ],
+        "glazed_rim_porcelain_ramekin_1": [
+          "On",
+          "glazed_rim_porcelain_ramekin_1",
+          "main_table_ramekin_region"
+        ],
+        "plate_1": [
+          "On",
+          "plate_1",
+          "main_table_plate_region"
+        ],
+        "wooden_cabinet_1": [
+          "On",
+          "wooden_cabinet_1",
+          "main_table_cabinet_region"
+        ]
+      },
+      "initial_state_count": 50,
+      "initial_state_width": 92,
+      "landmarks": {
+        "cookies_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "cookies_1",
+            "main_table_box_region"
+          ],
+          "region_definition": [
+            "box_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.06",
+                  "0.02",
+                  "0.08",
+                  "0.04"
+                ]
+              ]
+            ]
+          ]
+        },
+        "flat_stove_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "flat_stove_1",
+            "main_table_stove_region"
+          ],
+          "region_definition": [
+            "stove_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "-0.42",
+                  "-0.15",
+                  "-0.4",
+                  "-0.13"
+                ]
+              ]
+            ]
+          ]
+        },
+        "glazed_rim_porcelain_ramekin_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "glazed_rim_porcelain_ramekin_1",
+            "main_table_ramekin_region"
+          ],
+          "region_definition": [
+            "ramekin_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "-0.21",
+                  "0.19",
+                  "-0.19",
+                  "0.21"
+                ]
+              ]
+            ]
+          ]
+        },
+        "plate_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "plate_1",
+            "main_table_plate_region"
+          ],
+          "region_definition": [
+            "plate_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.05",
+                  "0.19",
+                  "0.07",
+                  "0.21"
+                ]
+              ]
+            ]
+          ]
+        },
+        "wooden_cabinet_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "wooden_cabinet_1",
+            "main_table_cabinet_region"
+          ],
+          "region_definition": [
+            "cabinet_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.02",
+                  "-0.28",
+                  "0.04",
+                  "-0.26"
+                ]
+              ]
+            ],
+            [
+              ":yaw_rotation",
+              [
+                [
+                  "2.6613777765410678",
+                  "2.7242096296128633"
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      "object_types": {
+        "akita_black_bowl_1": "akita_black_bowl",
+        "akita_black_bowl_2": "akita_black_bowl",
+        "cookies_1": "cookies",
+        "glazed_rim_porcelain_ramekin_1": "glazed_rim_porcelain_ramekin",
+        "plate_1": "plate"
+      },
+      "official_instruction": "pick up the black bowl on the cookie box and place it on the plate",
+      "regions": [
+        [
+          "plate_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.05",
+                "0.19",
+                "0.07",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_plate_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.0",
+                "0.3",
+                "0.02",
+                "0.32"
+              ]
+            ]
+          ]
+        ],
+        [
+          "box_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.06",
+                "0.02",
+                "0.08",
+                "0.04"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_box_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.12",
+                "-0.08",
+                "0.14",
+                "-0.06"
+              ]
+            ]
+          ]
+        ],
+        [
+          "between_plate_ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.06",
+                "0.19",
+                "-0.04",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.21",
+                "0.19",
+                "-0.19",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.19",
+                "0.31",
+                "-0.17",
+                "0.33"
+              ]
+            ]
+          ]
+        ],
+        [
+          "table_center",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.1",
+                "-0.01",
+                "-0.05",
+                "0.01"
+              ]
+            ]
+          ]
+        ],
+        [
+          "table_front",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.19",
+                "-0.01",
+                "0.21",
+                "0.01"
+              ]
+            ]
+          ]
+        ],
+        [
+          "cabinet_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.02",
+                "-0.28",
+                "0.04",
+                "-0.26"
+              ]
+            ]
+          ],
+          [
+            ":yaw_rotation",
+            [
+              [
+                "2.6613777765410678",
+                "2.7242096296128633"
+              ]
+            ]
+          ]
+        ],
+        [
+          "stove_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.42",
+                "-0.15",
+                "-0.4",
+                "-0.13"
+              ]
+            ]
+          ]
+        ],
+        [
+          "top_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "middle_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "bottom_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "top_side",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "cook_region",
+          [
+            ":target",
+            "flat_stove_1"
+          ]
+        ]
+      ],
+      "runtime_checks": {
+        "s1_relation_uniqueness": "pending_simulator",
+        "s2_landmark_poses": "pending_simulator",
+        "swap_stability": "pending_simulator"
+      },
+      "s1_instruction": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "s1_target": "akita_black_bowl_2",
+      "s2_source_status": "support_or_fixture_confound_requires_redesign",
+      "state_sha256": [
+        "7a22afc5aa20bc5ac19ca63c1673d54b9728dfb8cf118a68dff7973852a49713",
+        "df472d3ac1b86423e195032a38b402cb1af264509e89482ef0587dbf440c1c8a",
+        "96c0996d98c3d4c016b1b118be05faa2ec7989296ccdcdfd0186012d38b0515c",
+        "8246c5499ce131ebcfdecf57036f3a31af9b459d199bbaeebb6d7ec03177a5ed",
+        "7a20455ae6660fb343bfd3b677b9ac3a05dc07ee69d9ebdee11ef7d671a7207e",
+        "2f8d13ad3145b690ca5bfbe87c7eaace17beca8b5d4c07282a5a807ec5a6bb88",
+        "00f73ffaeb3a95e09b6b140d6e69edfe4177447df5b3b4b22380781c49f4b072",
+        "2d949d5f6ad027b7145530c5bf3ca4762ac30a4ca0ad44de1ebe16f2d3886417",
+        "a0e852f41f62ad1705c30c536dc8682f6f390743005e6b0105d7f6b41f885018",
+        "feb996fbb96ec2b7a462ec527d2478b4b533ec47346ded7d8f09a5a02a6bda9c",
+        "07e2aacb565c14f7c853ed2162156dd2ce4dddd44cfd5e33f4805a922c9645bc",
+        "bd51ffcca82f74c1a0e776e1fcc3b925f9e92640956648b3f01091909da1bcba",
+        "f2129f086eca189323d1bccdb7efd52d7f196687ba1dccc0104487dea89f8873",
+        "626c93ddbee7ce816ad311b7717f352506e602a1b986d4e02316aae6d71c7a94",
+        "3628c79ad3209e35303bd190950910da52ded83417050e6e495076b343a352f3",
+        "1dc75820f6fe9dddc64d88b696bcda0fdb2bb953d002473c13e520b238d7a851",
+        "f6102f9261e548bf41e1ae63d41db2e4757a66b98412000f1e2849215e429760",
+        "bf7c71260ca455d0d30ca2fd0ae1089ab8d69b0ed2d616b228e2ae8b53669efc",
+        "5eed940d001c0216af338a6a262d06938facd405a002f54fac8d36cbb562af57",
+        "83d3ecadd3c2f77129eabc0904411ae416df9673958f1f4f8928e3c35675902c",
+        "e0be34015f088b9d5205a8b92301e98ebdc12e5dd2406c638cfac5ed3d2330b7",
+        "4b4b8fbea6b959de9cf4eab4aed33eecf1c62fcfb1db9086642154d2e258bfcc",
+        "fea14ac4a3ba4b4510a42a54112771c7e443475791b3d4b2f66cbcd27c13577f",
+        "dabcc2a7c3891d26729f28ee51606e6d4c87070adf2e015cdde2dd68ba6b116b",
+        "a12ca68680645dbdf01cb011af10a22664eb4778f2af51a98d526ef0d805e342",
+        "e37f92f296017e7b03e005204a980623074aa3662a6fb3ece457a8cb89af1263",
+        "9a8240378ca0caa9fe928afaded8e30933624380dc7521c3fa9845a6bedc1b2c",
+        "dc8d26ee13132008a9c53189b3df96db8a171f880eeec576395afbf767920981",
+        "342a0ca4d0a90b0d9327b0bfd7de9837f4807200f80c671e4881fec9e04e40d1",
+        "65fdb0fc23de6eb7f0ac7fb6ae479ee3ec4fa2a86487c196f32e0a4a4a16a331",
+        "af10c7631725ea1a6a208350a44e4fb385ce8bc4eee55aa0a81f0266f18a427b",
+        "7d4c711239434b5b00163c5b10c7a1cf7471df81df638293923eadddae1993f1",
+        "4d5a31fbc4e0df5e5faf99d325289872296392cb0294d78a963032c1726d13fd",
+        "5e78a091dd94316d277b7151702e512d88e65b27ee294c338fac5f8735598f91",
+        "6411165287cb151b7de40a4232854238f47c9fafff0e8582912b1f3d2e7d76ed",
+        "89a118cb60681e57f67220c2d50efa254aa4fb692c46644f976bbbaad524fe78",
+        "cba9b341b0ac79f39b53c12a10fab6fcdf38647ce211ef198462db18bb56d332",
+        "bc82a1c9b527794503c320de127644d1bb16a9af0547a15563d69baebc0ce694",
+        "6e212ff15c4cb09ebe885279da7270de14fe01456f8a02190cc8e14e23856619",
+        "a649d7f940bbdadb1aedb3d385cbd98d84bcb5fb35090c054482aada55dcc27c",
+        "9efbd3c590338cf32dd0b9ff9aca87715702a96211e883845aff62e12dbad254",
+        "628f8e55dd48c98ad4b771605536bba6008eb8db19bb0f142859fee3c9f6eace",
+        "0f2cc7f0d058c1aeb8ff921617ab7d2924301f3c19d32a1899d05d2ce2a886a8",
+        "35640fdd13cdc9d08a79cb7fe36d447940e02f1e6cc36bd12682d385e8cb8c51",
+        "0b97764f5a538d743e9e780699de71d94fe47ccfcda48ddd0496b6d6042b7a6d",
+        "4918a1e1beb31480a0a8fedb219339c542baed4dfa963a76c91a117f88bfa854",
+        "54f6facb59a66fa282236dcb4627ddc9cae3aef0c2925d4eaf3e6f572c7d6dc0",
+        "8403f29d5f5013905ca076a05177b7721a5363fefbb384c9e0177792f1212c5d",
+        "3efd4b9fc778f0d510e0b210e89620e4ca477803c113e0e5b7fa8fe9e8c5ed22",
+        "cef29ade04ce8577badbadb7c53a851607d6fb9fed5acc82b8e70d6019650dbd"
+      ],
+      "swap_source_status": "different_supports_or_drawer_unverified",
+      "task_id": 3,
+      "task_name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "bddl_instruction": "Pick the akita black bowl in the top layer of the wooden cabinet and place it on the plate",
+      "bddl_sha256": "132add01abd735504ae7af330e713d002ff0fa9b14e59deb369b7253c76ddb4b",
+      "e0_target": "akita_black_bowl_1",
+      "fixture_types": {
+        "flat_stove_1": "flat_stove",
+        "main_table": "table",
+        "wooden_cabinet_1": "wooden_cabinet"
+      },
+      "goal": [
+        [
+          "And",
+          [
+            "On",
+            "akita_black_bowl_1",
+            "plate_1"
+          ]
+        ]
+      ],
+      "init_file_sha256": "deef3df529e0bb57658b973bbb3baf02b02922db065c025a73ebfcd11eb54d46",
+      "initial_relations": {
+        "akita_black_bowl_1": [
+          "In",
+          "akita_black_bowl_1",
+          "wooden_cabinet_1_top_region"
+        ],
+        "akita_black_bowl_2": [
+          "On",
+          "akita_black_bowl_2",
+          "wooden_cabinet_1_top_side"
+        ],
+        "cookies_1": [
+          "On",
+          "cookies_1",
+          "main_table_box_region"
+        ],
+        "flat_stove_1": [
+          "On",
+          "flat_stove_1",
+          "main_table_stove_region"
+        ],
+        "glazed_rim_porcelain_ramekin_1": [
+          "On",
+          "glazed_rim_porcelain_ramekin_1",
+          "main_table_ramekin_region"
+        ],
+        "plate_1": [
+          "On",
+          "plate_1",
+          "main_table_plate_region"
+        ],
+        "wooden_cabinet_1": [
+          "On",
+          "wooden_cabinet_1",
+          "main_table_cabinet_region"
+        ],
+        "wooden_cabinet_1_top_region": [
+          "Open",
+          "wooden_cabinet_1_top_region"
+        ]
+      },
+      "initial_state_count": 50,
+      "initial_state_width": 92,
+      "landmarks": {
+        "cookies_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "cookies_1",
+            "main_table_box_region"
+          ],
+          "region_definition": [
+            "box_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.06",
+                  "0.02",
+                  "0.08",
+                  "0.04"
+                ]
+              ]
+            ]
+          ]
+        },
+        "flat_stove_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "flat_stove_1",
+            "main_table_stove_region"
+          ],
+          "region_definition": [
+            "stove_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "-0.42",
+                  "-0.15",
+                  "-0.4",
+                  "-0.13"
+                ]
+              ]
+            ]
+          ]
+        },
+        "glazed_rim_porcelain_ramekin_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "glazed_rim_porcelain_ramekin_1",
+            "main_table_ramekin_region"
+          ],
+          "region_definition": [
+            "ramekin_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "-0.21",
+                  "0.19",
+                  "-0.19",
+                  "0.21"
+                ]
+              ]
+            ]
+          ]
+        },
+        "plate_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "plate_1",
+            "main_table_plate_region"
+          ],
+          "region_definition": [
+            "plate_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.05",
+                  "0.19",
+                  "0.07",
+                  "0.21"
+                ]
+              ]
+            ]
+          ]
+        },
+        "wooden_cabinet_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "wooden_cabinet_1",
+            "main_table_cabinet_region"
+          ],
+          "region_definition": [
+            "cabinet_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.02",
+                  "-0.28",
+                  "0.04",
+                  "-0.26"
+                ]
+              ]
+            ],
+            [
+              ":yaw_rotation",
+              [
+                [
+                  "2.6613777765410678",
+                  "2.7242096296128633"
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      "object_types": {
+        "akita_black_bowl_1": "akita_black_bowl",
+        "akita_black_bowl_2": "akita_black_bowl",
+        "cookies_1": "cookies",
+        "glazed_rim_porcelain_ramekin_1": "glazed_rim_porcelain_ramekin",
+        "plate_1": "plate"
+      },
+      "official_instruction": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "regions": [
+        [
+          "plate_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.05",
+                "0.19",
+                "0.07",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_plate_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.0",
+                "0.3",
+                "0.02",
+                "0.32"
+              ]
+            ]
+          ]
+        ],
+        [
+          "box_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.06",
+                "0.02",
+                "0.08",
+                "0.04"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_box_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.12",
+                "-0.08",
+                "0.14",
+                "-0.06"
+              ]
+            ]
+          ]
+        ],
+        [
+          "between_plate_ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.06",
+                "0.19",
+                "-0.04",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.21",
+                "0.19",
+                "-0.19",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.19",
+                "0.31",
+                "-0.17",
+                "0.33"
+              ]
+            ]
+          ]
+        ],
+        [
+          "table_center",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.1",
+                "-0.01",
+                "-0.05",
+                "0.01"
+              ]
+            ]
+          ]
+        ],
+        [
+          "table_front",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.19",
+                "-0.01",
+                "0.21",
+                "0.01"
+              ]
+            ]
+          ]
+        ],
+        [
+          "cabinet_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.02",
+                "-0.28",
+                "0.04",
+                "-0.26"
+              ]
+            ]
+          ],
+          [
+            ":yaw_rotation",
+            [
+              [
+                "2.6613777765410678",
+                "2.7242096296128633"
+              ]
+            ]
+          ]
+        ],
+        [
+          "stove_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.42",
+                "-0.15",
+                "-0.4",
+                "-0.13"
+              ]
+            ]
+          ]
+        ],
+        [
+          "top_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "middle_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "bottom_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "top_side",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "cook_region",
+          [
+            ":target",
+            "flat_stove_1"
+          ]
+        ]
+      ],
+      "runtime_checks": {
+        "s1_relation_uniqueness": "pending_simulator",
+        "s2_landmark_poses": "pending_simulator",
+        "swap_stability": "pending_simulator"
+      },
+      "s1_instruction": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "s1_target": "akita_black_bowl_2",
+      "s2_source_status": "support_or_fixture_confound_requires_redesign",
+      "state_sha256": [
+        "0fb5f2b0050ed523fad6a1d43d8ed3ce786f1e65f54b36d7beea8f711b75b465",
+        "461d411272b14382443023871b717d9df6279c2f29e8469ceb16576591129136",
+        "9b57a033384486725212af621d5bf012561d7cf0f59b87c37cfa2dd32be7c2d3",
+        "6c5ae26a7f7d8ed27d8714c855c5f84b5b5c3dd6836ceb3ed9a8ca628ca827a1",
+        "ba0d38ad2100980dcf02c7624f0166b8c375b2ecb49866f73a2680c3d90f4633",
+        "f55bff044f994a4a2618b407af27d2e6b2fce35345e3f7134327070710eaffe3",
+        "0831cece4203a7f2cc489fdf39ef7947db3fc437ab258d6d89ac138048b01f4d",
+        "c752c6b2526eba344e5e4e6f58d0dd19cb6de08d8a5cac833ae54588789a647a",
+        "d08465e16db09a51c8a7700a51c0b427ea409a756c46dd0ab187a0fcc3177751",
+        "42012dcad01546f6ddd186cdb028fbd049bbb108812118d5bdec9a80491be659",
+        "8519b8663db13d754f4ea08b19c3c67aea224c884c81077571bfb750fd81228c",
+        "0fbf8ac22efc1c05e1050c2e795df31be3f81b02dcb79d96f2cbfa5268ff5a36",
+        "0c86f5bffae221eae5e4e302ab1cef50f3e817d210f4f6f56edf5ba9c7d997b8",
+        "61459a607fae835f750a1a2470dd3292898bdba50b8e2eae40f6dd64d85d3e8d",
+        "793503e1c13bdec385e02089074c814156aee777a33b1d8c8286d88b6d8c80d8",
+        "463f282ada16c244de063f0e91b1840ae2c73a63c4f57efb4b2a1b89562d47b6",
+        "02d53cf78c2bb7c1b5a448f7759b6175c84e6af52010a677c45c0bdbc8cb2f5d",
+        "130b3c73742eda6c871cf6c0507eea24421186a65e6567dff0658cfe3d91a160",
+        "9848e39023e6bcd05b244c32c9fccb18d5bafe873eb5178561304c10a3c3800a",
+        "fa16a27c45f31f4a18176c15aeea4170b85cb880acd14e200dd4daf09ff4092b",
+        "db11d6f9c431904a0e7fe4296e4f165fc25a1cea19001b6fba53bdedefafb5a6",
+        "a122d07fd43f15c9c6fd97746cd6e48eac640743dcd323e6d3cc73cdd07ba237",
+        "f774c06ff453aaa0199121b64018f75f4113c88958bd9c52f05f512199af4db7",
+        "dff640be4cb169176babb5a7d1043ae777bb941ec172bdd6a0475ddc50b4f916",
+        "4af87f3866f4c3834a62f3fd1090afd3207b4943fec60dd7bdd34dd6ae496070",
+        "2328515b072ee58940e580126b3666f8170deff7055124fc7c82252e55d4aa23",
+        "6701d3f7c60a86a55ff5c56be42dad937dd344de0227486324bda53f5a65e333",
+        "c6c77da168787b1417131e34826b1e1fe545fd092d76b504b13eb98c909c07d1",
+        "bd066ab8acd20410f8b20711c87de21263c0bb522139648f9157b2445385873d",
+        "632ff660c2914c8d299c6c345cc067e16d4a55c6a619db998fd1c67976f2bc6b",
+        "91a003bd3f449610d20e3eda4f0c215aba7f3d5f0a02698005b78dd067f6e347",
+        "5ff47548ae2acdc74406490442b975b60b7baf6f8586b4edab1acdc99fd7ac1b",
+        "88bcf471b61140f9cb9e7e5b703ae975291b00e0817e5e84653dd21cff9a24bf",
+        "7e29a3cd44824fe2a9bbb751191dc3616772585a4175b20de4726b13142a9d63",
+        "c390f62a0083a9b3fe59b68cf5a0cb4ab5d12f79e73f778e82cdf4a6e33cdc79",
+        "bc00da329971bd41dffbf4f108d35853e23c1ba9ecc5d94c55571cc7a339852f",
+        "8b45752137099ee93c0356ccf8f129dd227fa6377a76e6710b983be47a84a310",
+        "7f11b6562e43dfa125b9b2a65e77bf5551d433ac1e1d36b3e9579ab6d87002a2",
+        "58ec0a2c019a056fdcb8af7811ac9510b1ff0be5d5a7bd619b09f2fed5972df7",
+        "1123488d21395309df2ba834c03672b6ae385091b29a8ed6c1ccf917c69c2353",
+        "5b254e449048b7f1273f2404ed691d3a4b4c1bba2afd5c68a32f11073a0df875",
+        "bd35df14e23df34f8dedf2c7890c44af99ee79ba7e9664b4697dd04beeeaa104",
+        "06c3d7e42920495dd02b90d2abd22582b068f943246905b89f52c714b7516523",
+        "ace9635cf70bf49dfe25db5d823be5fa61376fb448bc323b87931ccadd93284d",
+        "765523e6424ab8fe5a71cf91edceab8b576a80379669b5ca6666a054dff58e95",
+        "9a82e789e3ba27b74b3cd99ba9af4491f98e2b6dc2eb12c461946f81e2165898",
+        "6ee042a6c66ccabb06ae3ba5b9ff031c05d2ba011e77ab88d6a67db14bf7ee03",
+        "f7ea99b3903c5bdb9afb67d5edbcc3fb61f1d94139baf2e64dc01e942c47f4ef",
+        "7c9010e9e9b3218420cc4b5ed6803c5abe08c9436c791a23d3bc019558645e1b",
+        "9f1a3cf956586c7b1699e511be9e022d41d32be5d97df63708527c249c060524"
+      ],
+      "swap_source_status": "different_supports_or_drawer_unverified",
+      "task_id": 4,
+      "task_name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "bddl_instruction": "Pick the akita black bowl on the ramekin and place it on the plate",
+      "bddl_sha256": "1c97150dfcc8f60ec1262f507870e39fa7b638abc8f09e561ba92429d8cd31de",
+      "e0_target": "akita_black_bowl_1",
+      "fixture_types": {
+        "flat_stove_1": "flat_stove",
+        "main_table": "table",
+        "wooden_cabinet_1": "wooden_cabinet"
+      },
+      "goal": [
+        [
+          "And",
+          [
+            "On",
+            "akita_black_bowl_1",
+            "plate_1"
+          ]
+        ]
+      ],
+      "init_file_sha256": "2d2c50b7dcbf861fffa94d576f217ed34153e57487010d7a109a220d4d97189b",
+      "initial_relations": {
+        "akita_black_bowl_1": [
+          "On",
+          "akita_black_bowl_1",
+          "glazed_rim_porcelain_ramekin_1"
+        ],
+        "akita_black_bowl_2": [
+          "On",
+          "akita_black_bowl_2",
+          "cookies_1"
+        ],
+        "cookies_1": [
+          "On",
+          "cookies_1",
+          "main_table_box_region"
+        ],
+        "flat_stove_1": [
+          "On",
+          "flat_stove_1",
+          "main_table_stove_region"
+        ],
+        "glazed_rim_porcelain_ramekin_1": [
+          "On",
+          "glazed_rim_porcelain_ramekin_1",
+          "main_table_ramekin_region"
+        ],
+        "plate_1": [
+          "On",
+          "plate_1",
+          "main_table_plate_region"
+        ],
+        "wooden_cabinet_1": [
+          "On",
+          "wooden_cabinet_1",
+          "main_table_cabinet_region"
+        ]
+      },
+      "initial_state_count": 50,
+      "initial_state_width": 92,
+      "landmarks": {
+        "cookies_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "cookies_1",
+            "main_table_box_region"
+          ],
+          "region_definition": [
+            "box_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.06",
+                  "0.02",
+                  "0.08",
+                  "0.04"
+                ]
+              ]
+            ]
+          ]
+        },
+        "flat_stove_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "flat_stove_1",
+            "main_table_stove_region"
+          ],
+          "region_definition": [
+            "stove_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "-0.42",
+                  "-0.15",
+                  "-0.4",
+                  "-0.13"
+                ]
+              ]
+            ]
+          ]
+        },
+        "glazed_rim_porcelain_ramekin_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "glazed_rim_porcelain_ramekin_1",
+            "main_table_ramekin_region"
+          ],
+          "region_definition": [
+            "ramekin_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "-0.21",
+                  "0.19",
+                  "-0.19",
+                  "0.21"
+                ]
+              ]
+            ]
+          ]
+        },
+        "plate_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "plate_1",
+            "main_table_plate_region"
+          ],
+          "region_definition": [
+            "plate_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.05",
+                  "0.19",
+                  "0.07",
+                  "0.21"
+                ]
+              ]
+            ]
+          ]
+        },
+        "wooden_cabinet_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "wooden_cabinet_1",
+            "main_table_cabinet_region"
+          ],
+          "region_definition": [
+            "cabinet_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.02",
+                  "-0.28",
+                  "0.04",
+                  "-0.26"
+                ]
+              ]
+            ],
+            [
+              ":yaw_rotation",
+              [
+                [
+                  "2.6613777765410678",
+                  "2.7242096296128633"
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      "object_types": {
+        "akita_black_bowl_1": "akita_black_bowl",
+        "akita_black_bowl_2": "akita_black_bowl",
+        "cookies_1": "cookies",
+        "glazed_rim_porcelain_ramekin_1": "glazed_rim_porcelain_ramekin",
+        "plate_1": "plate"
+      },
+      "official_instruction": "pick up the black bowl on the ramekin and place it on the plate",
+      "regions": [
+        [
+          "plate_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.05",
+                "0.19",
+                "0.07",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_plate_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.0",
+                "0.3",
+                "0.02",
+                "0.32"
+              ]
+            ]
+          ]
+        ],
+        [
+          "box_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.06",
+                "0.02",
+                "0.08",
+                "0.04"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_box_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.12",
+                "-0.08",
+                "0.14",
+                "-0.06"
+              ]
+            ]
+          ]
+        ],
+        [
+          "between_plate_ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.06",
+                "0.19",
+                "-0.04",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.21",
+                "0.19",
+                "-0.19",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.19",
+                "0.31",
+                "-0.17",
+                "0.33"
+              ]
+            ]
+          ]
+        ],
+        [
+          "table_center",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.1",
+                "-0.01",
+                "-0.05",
+                "0.01"
+              ]
+            ]
+          ]
+        ],
+        [
+          "table_front",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.19",
+                "-0.01",
+                "0.21",
+                "0.01"
+              ]
+            ]
+          ]
+        ],
+        [
+          "cabinet_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.02",
+                "-0.28",
+                "0.04",
+                "-0.26"
+              ]
+            ]
+          ],
+          [
+            ":yaw_rotation",
+            [
+              [
+                "2.6613777765410678",
+                "2.7242096296128633"
+              ]
+            ]
+          ]
+        ],
+        [
+          "stove_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.42",
+                "-0.15",
+                "-0.4",
+                "-0.13"
+              ]
+            ]
+          ]
+        ],
+        [
+          "top_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "middle_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "bottom_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "top_side",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "cook_region",
+          [
+            ":target",
+            "flat_stove_1"
+          ]
+        ]
+      ],
+      "runtime_checks": {
+        "s1_relation_uniqueness": "pending_simulator",
+        "s2_landmark_poses": "pending_simulator",
+        "swap_stability": "pending_simulator"
+      },
+      "s1_instruction": "pick up the black bowl on the cookie box and place it on the plate",
+      "s1_target": "akita_black_bowl_2",
+      "s2_source_status": "support_or_fixture_confound_requires_redesign",
+      "state_sha256": [
+        "8138106e78d4d088e79a6aaf61a26939866be5a47717f8f523695f0eef6d20dc",
+        "c29493e408bbc6a57e20bb46b3db756a02ff863e8a43d61226191ffc16e44b1f",
+        "4e45ab82f002fa2fca101ea5433cbd4c453a4daca89c4daa280f7f2528b60746",
+        "4160266c3aec046fb2fb325fd86a29a27724be2973ea01c4b22111ec4c44a977",
+        "329d46246eac18ebb3fcd4682fad765568d7b291112e2352f63ba8a93db08151",
+        "5fe7268978aa1ef09142e7b970d72f0b8d1475f2333fd7264998d87d3e87b378",
+        "be68c17b37bf36e743bd3d1d0bc337f652a073f21d898abd0611548519bcfb8c",
+        "3a8347756a764bfd0bca714ccf6349ccd3c6320e188c24dcf3504965fad18b03",
+        "4f1f8d9204c5527f5132a53eb4f40bd9e6efd98434618d4b62a85d09a968098c",
+        "2f1ade66af1b78ff79a53e29b4b7a96dd2bff177e0027c81d33583554b6d4d29",
+        "52906f7c32c04e831ee3e82741a5f68081814ad5304ea08a47f19b8f650d52dc",
+        "48ea3b71d4d7b24a827f71bb3e148a5abd8678a25640fd8df5354dfe0f44cd97",
+        "a1de361e5105c640bbec32b3743175056361d0dc71fa4db0b6d4b19e864beb94",
+        "4132cfc6d3597923982707abdc75d959f55b5ac70b57eaf22c547419943fe150",
+        "fc9bff36dff92199c2267a0fcd50846eda360af10e0cb5334a1b9aac99bea1d6",
+        "b56bded2910c08bcdc965f96bf21caef8fa8a5cb0975d0959514fa4cac3322da",
+        "084d8980ce3f5aa7efc069225ffdeec344e7c99bff9340b48f9a1b6a1bcc43d8",
+        "4d85a17bfc8f06f025ee08b2e37f6c01ea8e7c7cb7c00595a997cb8b0f01506b",
+        "c5b32147a22dff627fe56d7d21a4854aebe89e0b5d3e1ea7c6f201f62dc72163",
+        "d02b7acf0a2530bfd3a356fe8fbbcec494166d192a575512f831b5c4608b7510",
+        "bb3c05e9e76b2b9f95ef51f12c1b70452e09a3231452cd7ba983d03994ad80cc",
+        "9abc64e3a7aa2a9a96f912da5d1cc4a88a3803cf0727c1efd16e8116f4c9c86b",
+        "d4baf9cfb40e84ee7add98e02c5f388b7d8bfdf98ef05dc66df1d543f53b0e37",
+        "785bb9d58fc83cc4bbc332187f9e14c0dbcc6edab4d6be51d2c8f50f19c2fdff",
+        "6dfd8d3fbdb7cbd0ed5df9fee78f0330d1694b10612efce7bbc607081b2017a2",
+        "6a56edd0a98b9ab61129393726872dc7a131bbffface048023ee55e09042e1dc",
+        "29f98768baec75b4dd01f985be15299c1be59a32b6076e2e3898d75b715b4223",
+        "07275b82c3d59c5d1ad705152f2a3ddb129a25c5158156eb0750063e5bccfb00",
+        "caeeaec682a283b95a17bac9f87cdd4a2e2b2f5cae61390ea66ba49e4bc115cb",
+        "76373684ddfd554b2914edc9b8dc30cbb9c8bf1ca75de407547985938160e619",
+        "d99d323ad27bfadec3a7dac0358481285545aaad6681614d5ee6de890107a47c",
+        "581b4bf97c293784a4473c2f845aa3bf923352fa219578f55bd84d3b489f722c",
+        "63d37cd65a344cadc801e8b36221b3ca7b74fe8035bee5501deee7a834247cea",
+        "afc81e5693b0db757c32d207613d635fd58725a540bf5c7b99e22ca819bcf85b",
+        "3f1bbdda6526ef5eafe464ea75adae0e28af516701b19b838d9d494dbb08aa9a",
+        "8bebb6a06e519e5440d6186586495c79333b604ee550b2e7d168a19285d78e7e",
+        "3c7433dfcf85a053ee02e8cc3759b5f464ad372aed7f1bc5f3e595255cf78802",
+        "876f3a2de418293d8714dbb3e89034bb2b32248045548e61dee68bdb339ecd45",
+        "e418ef6c4ace55bdc8c288e214d4c5a5e2cc2c30734b52b3bc4ab7ec897cb3c4",
+        "6bf342e3d80c043bc70a26b0c3379f6df4fbc13a4633c2d0862265b654dd9583",
+        "0cc41a58b3ab3ba8d5ebffb44c70910c62c04fa44ed81d0b484fa764e4a3d98b",
+        "5056e52793e795158e5879b49ebe4a9c15244d3e87e173104ed31698ab8d2169",
+        "9640f5999478d4c0c8cc526eba02a7010da4e46e05f91096ff888ae0f76fff05",
+        "2a9f6b17226ee0190fbad8b9375289abdc6c6769e9cfa922e6df4016c1ec58a0",
+        "e4c46a956a7ebd5c155568bc0249c11e3f9919eb2b6d9cea3ade00520cef4c10",
+        "bcb7c1b47c4c235efb0199dd21d8558af9246c16d775b602ebe07955baf418f1",
+        "0a6f0a9ba03a6f30a5b22c706b6738241da1d5267ad260ed654bf8779223b8f9",
+        "8e301829ba2e07663b76b58099f21134a952cf38e3a98dfcfdf32c5201cac260",
+        "dfd493f8e3870e87099f9c7542574b497d5ec6a41ab88e5b76c576df5652b819",
+        "64b1f9263b3d1bfb41ad39859ed3b33b5ebe11fb5c6fa38f22cc07fbc7cff706"
+      ],
+      "swap_source_status": "different_supports_or_drawer_unverified",
+      "task_id": 5,
+      "task_name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "bddl_instruction": "Pick the akita black bowl next to the cookies box and place it on the plate",
+      "bddl_sha256": "e6d5c5b609516106afba03642042ebb405c5c671dca86ba7b5ce6e27def32742",
+      "e0_target": "akita_black_bowl_1",
+      "fixture_types": {
+        "flat_stove_1": "flat_stove",
+        "main_table": "table",
+        "wooden_cabinet_1": "wooden_cabinet"
+      },
+      "goal": [
+        [
+          "And",
+          [
+            "On",
+            "akita_black_bowl_1",
+            "plate_1"
+          ]
+        ]
+      ],
+      "init_file_sha256": "ab86fb7b5942dc0fec762eae57e72bf636106b1c10ad8ce57227723d8eb9a81b",
+      "initial_relations": {
+        "akita_black_bowl_1": [
+          "On",
+          "akita_black_bowl_1",
+          "main_table_next_to_box_region"
+        ],
+        "akita_black_bowl_2": [
+          "On",
+          "akita_black_bowl_2",
+          "flat_stove_1_cook_region"
+        ],
+        "cookies_1": [
+          "On",
+          "cookies_1",
+          "main_table_box_region"
+        ],
+        "flat_stove_1": [
+          "On",
+          "flat_stove_1",
+          "main_table_stove_region"
+        ],
+        "glazed_rim_porcelain_ramekin_1": [
+          "On",
+          "glazed_rim_porcelain_ramekin_1",
+          "main_table_ramekin_region"
+        ],
+        "plate_1": [
+          "On",
+          "plate_1",
+          "main_table_plate_region"
+        ],
+        "wooden_cabinet_1": [
+          "On",
+          "wooden_cabinet_1",
+          "main_table_cabinet_region"
+        ]
+      },
+      "initial_state_count": 50,
+      "initial_state_width": 92,
+      "landmarks": {
+        "cookies_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "cookies_1",
+            "main_table_box_region"
+          ],
+          "region_definition": [
+            "box_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.06",
+                  "0.02",
+                  "0.08",
+                  "0.04"
+                ]
+              ]
+            ]
+          ]
+        },
+        "flat_stove_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "flat_stove_1",
+            "main_table_stove_region"
+          ],
+          "region_definition": [
+            "stove_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "-0.42",
+                  "-0.15",
+                  "-0.4",
+                  "-0.13"
+                ]
+              ]
+            ]
+          ]
+        },
+        "glazed_rim_porcelain_ramekin_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "glazed_rim_porcelain_ramekin_1",
+            "main_table_ramekin_region"
+          ],
+          "region_definition": [
+            "ramekin_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "-0.21",
+                  "0.19",
+                  "-0.19",
+                  "0.21"
+                ]
+              ]
+            ]
+          ]
+        },
+        "plate_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "plate_1",
+            "main_table_plate_region"
+          ],
+          "region_definition": [
+            "plate_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.05",
+                  "0.19",
+                  "0.07",
+                  "0.21"
+                ]
+              ]
+            ]
+          ]
+        },
+        "wooden_cabinet_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "wooden_cabinet_1",
+            "main_table_cabinet_region"
+          ],
+          "region_definition": [
+            "cabinet_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.02",
+                  "-0.28",
+                  "0.04",
+                  "-0.26"
+                ]
+              ]
+            ],
+            [
+              ":yaw_rotation",
+              [
+                [
+                  "2.6613777765410678",
+                  "2.7242096296128633"
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      "object_types": {
+        "akita_black_bowl_1": "akita_black_bowl",
+        "akita_black_bowl_2": "akita_black_bowl",
+        "cookies_1": "cookies",
+        "glazed_rim_porcelain_ramekin_1": "glazed_rim_porcelain_ramekin",
+        "plate_1": "plate"
+      },
+      "official_instruction": "pick up the black bowl next to the cookie box and place it on the plate",
+      "regions": [
+        [
+          "plate_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.05",
+                "0.19",
+                "0.07",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_plate_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.0",
+                "0.3",
+                "0.02",
+                "0.32"
+              ]
+            ]
+          ]
+        ],
+        [
+          "box_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.06",
+                "0.02",
+                "0.08",
+                "0.04"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_box_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.12",
+                "-0.08",
+                "0.14",
+                "-0.06"
+              ]
+            ]
+          ]
+        ],
+        [
+          "between_plate_ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.06",
+                "0.19",
+                "-0.04",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.21",
+                "0.19",
+                "-0.19",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.19",
+                "0.31",
+                "-0.17",
+                "0.33"
+              ]
+            ]
+          ]
+        ],
+        [
+          "table_center",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.1",
+                "-0.01",
+                "-0.05",
+                "0.01"
+              ]
+            ]
+          ]
+        ],
+        [
+          "table_front",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.19",
+                "-0.01",
+                "0.21",
+                "0.01"
+              ]
+            ]
+          ]
+        ],
+        [
+          "cabinet_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.02",
+                "-0.28",
+                "0.04",
+                "-0.26"
+              ]
+            ]
+          ],
+          [
+            ":yaw_rotation",
+            [
+              [
+                "2.6613777765410678",
+                "2.7242096296128633"
+              ]
+            ]
+          ]
+        ],
+        [
+          "stove_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.42",
+                "-0.15",
+                "-0.4",
+                "-0.13"
+              ]
+            ]
+          ]
+        ],
+        [
+          "top_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "middle_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "bottom_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "top_side",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "cook_region",
+          [
+            ":target",
+            "flat_stove_1"
+          ]
+        ]
+      ],
+      "runtime_checks": {
+        "s1_relation_uniqueness": "pending_simulator",
+        "s2_landmark_poses": "pending_simulator",
+        "swap_stability": "pending_simulator"
+      },
+      "s1_instruction": "pick up the black bowl on the stove and place it on the plate",
+      "s1_target": "akita_black_bowl_2",
+      "s2_source_status": "candidate_requires_physics_and_uniqueness_checks",
+      "state_sha256": [
+        "c22f3f32e18af8d86a45cf7880694db800c995a0af36042c4f5266221a2aa01e",
+        "3584a980f22b208272bb430cbfd4691d88c5c676bf3ab66ab68c6d3a927e3ec2",
+        "a62eb9d8f1299846a17b439f347ac984ccf11a1e7b8c11321af39c1183b46661",
+        "b9d9f11c7f4fce213e3037607cf1c431f02623685509477c53d2254e21148927",
+        "01124dbd32fdd5fdfbfed5ff64a183a103898b8117b334a69b280438e10680a7",
+        "abb80fd5b915a2ab2aac18eac38a16041ca7809f913dc4240e0977c7632496c3",
+        "de82bbc984fbcb10c5444d53387a9e7830f72ab269b2e7df7c34e4cf748abd3e",
+        "b391fe1e7d8de186d8dec6b02d766e3602e9754ef793d353c65fd95fc5690f7a",
+        "0a40e876704d83b8702eee5e9d9573ef4b9d35058aef1f61928ae40ff2a36715",
+        "a80e94df381f4607824d41a4471b8a37b152b7a4f4286db99da4899e38a8766b",
+        "9e85ecd35a4b7a304d8881eec8dff02f85ade287ce326177423a3bab5a061cfb",
+        "0210e28f1c7d65a691911a0f888746c88b55cd479c6f43dd16c35c6c90db4669",
+        "18d30133ed870b4e82efd6fe91a244939d91b497e86572386a2b9ac438b22db5",
+        "1dd7ac68076f7fe96686fd6f5d5704d488fcf57dd66527578225ff18daf32290",
+        "b4b164b5f71bd74f1d3e0728ce450cb57ad31affb59127ab6fdf4aa1513a2e9f",
+        "c3ab9f356e12a3f7a8211241e250a3d350cb1490e81f314fbdbe76637eb8cbe9",
+        "4595d5c937d54a6bf14102aa9a3ea2f588d4157f5eec37e0513fd3d7192399b7",
+        "09976cdf0441c27c67d7fbc70d1a338a710a8d758ac1d487fc6a105c66107a4f",
+        "22ac6812d9c62f5ef89003cbd9dc41e60f73f04eee09a0f842ede7a7e4626b0f",
+        "481d3b1db85d0390d81de28d12b206c6e0ae83a4f318d394b198fa0bdff6f916",
+        "bd6f0b06621aa768b23bbfdfa4f9047d0e9a39a745caf874934b8eea2102a28d",
+        "4bc813bfeb9dfddde2fed385eb4836f4af773ad1f03cf7db57609fe3364b5896",
+        "0191e021aa38d16fd2cf2ac64c5d3bab6550b6315a54653bd1df75a169043f7f",
+        "8fe3f188410e344286209340df0990b752c7b8115b27958bdb1b8c5033e59a22",
+        "1cee92594da2d71d7cf6382fdad6a9609c9f6c79a3fa1c612dc1437ef2dec3e2",
+        "7f56e4dbf92f71b08f9d355b560337d914a0db29f024842a87b860e0efb9bfa1",
+        "7824a69c1e67cb62144074ef6c0dffd7dfe2f794424c72bc07fe1f3d720a8d2d",
+        "deee7a573af42306a0852f78921de63ec18da17503a094ae61b8d4910f86b385",
+        "0a3db0c5509210c87afaacb074339c00bb04f14caa0e5773a9f728d0df152f5f",
+        "15046a97fa9ed82b30db21ee63d4b54a09aea9024154bedbae6a0050fa66afb6",
+        "da6579203fd9cc29b35260aab4e844b10fea04b380643b9dbb3c8f87194fd599",
+        "50b0dc65342753c6936492a31af813e0a27dbc62f8bfa9308d44d80a4f8d72f2",
+        "af37beee737bcefa5ecf9cba4e00a2c7f82e30e80c73bfdc2a32a211e75b81e9",
+        "c19d599c846830fed300fb8f31f573afa1e23a5260583b31fcb87395a19f244a",
+        "ded21d1886fd812b01007e3b2b41b1f7863d5f4d3a92e3e00fa202c2b48f5084",
+        "212e5a6a65f277b91264805ad729b85e99abf0154c10f99f4140a763acae02da",
+        "b8bfee2e182304f75ba8263cc4f3b190b2ba2acc4c2eb27604db3fb583e3fcd3",
+        "1ae58c3a05d00dd82eee653611406bdbe45e97c78e7e991f8e46a03241ab4e30",
+        "002540afe23c9ee23d1f2ad4aa5214ddea2039f90dcd7e2c0cd88bbdc4c3c6e3",
+        "84f54c32d1796121b0bdc69aab54b59e0d18d5461bb2a8b330044a0d8d18641c",
+        "d07731539320da8eeaf6dfba543136448fd9ebb290e62d527c1bad5f3189014e",
+        "e1c19df805370d4785220955676613cc3030827114e3b534ac1d04331278e090",
+        "670ac49952941f123dbc955b988f886c8db14b39f31e085a51549db464d2dd6e",
+        "72ffe0c238d8110a5a88ea1020595a91957a6d8a1ff61dd93562353e42f7d81e",
+        "eb90131bfad8a559ed68ceb8e15d3a6259dc8b298f15ad2a89a722afbe049916",
+        "3e4e30ec6cfed429e7c43027e102325c64a2701cf0caa19601f8de8f83772e27",
+        "d740cad088e2a1b837de8ed35c3b4e563d0f04beb6279913377f6d3de04b86ab",
+        "b7275a4edba9b0e88a897afcc4e3875eff54886c5591860f12d67e7edda31b26",
+        "25c9ef7a1dc9384daaa30802b907318aa025023dfbadedd1f9219c0d56c6c0b6",
+        "594e49709d365fe19baed5bb94c8b46cbf7710b03489e2be2d7772a5267237de"
+      ],
+      "swap_source_status": "different_supports_or_drawer_unverified",
+      "task_id": 6,
+      "task_name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "bddl_instruction": "Pick the akita black bowl on the stove and place it on the plate",
+      "bddl_sha256": "4da2bd3716bc38ffebb732ac64186dac1dd60129e115588e06dbe1e717573416",
+      "e0_target": "akita_black_bowl_1",
+      "fixture_types": {
+        "flat_stove_1": "flat_stove",
+        "main_table": "table",
+        "wooden_cabinet_1": "wooden_cabinet"
+      },
+      "goal": [
+        [
+          "And",
+          [
+            "On",
+            "akita_black_bowl_1",
+            "plate_1"
+          ]
+        ]
+      ],
+      "init_file_sha256": "ea9cba2814bc166f3682f3f5a97329467839bcf584069cd419191b6c17adae25",
+      "initial_relations": {
+        "akita_black_bowl_1": [
+          "On",
+          "akita_black_bowl_1",
+          "flat_stove_1_cook_region"
+        ],
+        "akita_black_bowl_2": [
+          "On",
+          "akita_black_bowl_2",
+          "wooden_cabinet_1_top_side"
+        ],
+        "cookies_1": [
+          "On",
+          "cookies_1",
+          "main_table_box_region"
+        ],
+        "flat_stove_1": [
+          "On",
+          "flat_stove_1",
+          "main_table_stove_region"
+        ],
+        "glazed_rim_porcelain_ramekin_1": [
+          "On",
+          "glazed_rim_porcelain_ramekin_1",
+          "main_table_ramekin_region"
+        ],
+        "plate_1": [
+          "On",
+          "plate_1",
+          "main_table_plate_region"
+        ],
+        "wooden_cabinet_1": [
+          "On",
+          "wooden_cabinet_1",
+          "main_table_cabinet_region"
+        ]
+      },
+      "initial_state_count": 50,
+      "initial_state_width": 92,
+      "landmarks": {
+        "cookies_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "cookies_1",
+            "main_table_box_region"
+          ],
+          "region_definition": [
+            "box_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.06",
+                  "0.02",
+                  "0.08",
+                  "0.04"
+                ]
+              ]
+            ]
+          ]
+        },
+        "flat_stove_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "flat_stove_1",
+            "main_table_stove_region"
+          ],
+          "region_definition": [
+            "stove_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "-0.42",
+                  "-0.15",
+                  "-0.4",
+                  "-0.13"
+                ]
+              ]
+            ]
+          ]
+        },
+        "glazed_rim_porcelain_ramekin_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "glazed_rim_porcelain_ramekin_1",
+            "main_table_ramekin_region"
+          ],
+          "region_definition": [
+            "ramekin_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "-0.21",
+                  "0.19",
+                  "-0.19",
+                  "0.21"
+                ]
+              ]
+            ]
+          ]
+        },
+        "plate_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "plate_1",
+            "main_table_plate_region"
+          ],
+          "region_definition": [
+            "plate_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.05",
+                  "0.19",
+                  "0.07",
+                  "0.21"
+                ]
+              ]
+            ]
+          ]
+        },
+        "wooden_cabinet_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "wooden_cabinet_1",
+            "main_table_cabinet_region"
+          ],
+          "region_definition": [
+            "cabinet_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.02",
+                  "-0.28",
+                  "0.04",
+                  "-0.26"
+                ]
+              ]
+            ],
+            [
+              ":yaw_rotation",
+              [
+                [
+                  "2.6613777765410678",
+                  "2.7242096296128633"
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      "object_types": {
+        "akita_black_bowl_1": "akita_black_bowl",
+        "akita_black_bowl_2": "akita_black_bowl",
+        "cookies_1": "cookies",
+        "glazed_rim_porcelain_ramekin_1": "glazed_rim_porcelain_ramekin",
+        "plate_1": "plate"
+      },
+      "official_instruction": "pick up the black bowl on the stove and place it on the plate",
+      "regions": [
+        [
+          "plate_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.05",
+                "0.19",
+                "0.07",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_plate_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.0",
+                "0.3",
+                "0.02",
+                "0.32"
+              ]
+            ]
+          ]
+        ],
+        [
+          "box_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.06",
+                "0.02",
+                "0.08",
+                "0.04"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_box_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.12",
+                "-0.08",
+                "0.14",
+                "-0.06"
+              ]
+            ]
+          ]
+        ],
+        [
+          "between_plate_ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.06",
+                "0.19",
+                "-0.04",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.21",
+                "0.19",
+                "-0.19",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.19",
+                "0.31",
+                "-0.17",
+                "0.33"
+              ]
+            ]
+          ]
+        ],
+        [
+          "table_center",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.1",
+                "-0.01",
+                "-0.05",
+                "0.01"
+              ]
+            ]
+          ]
+        ],
+        [
+          "table_front",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.19",
+                "-0.01",
+                "0.21",
+                "0.01"
+              ]
+            ]
+          ]
+        ],
+        [
+          "cabinet_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.02",
+                "-0.28",
+                "0.04",
+                "-0.26"
+              ]
+            ]
+          ],
+          [
+            ":yaw_rotation",
+            [
+              [
+                "2.6613777765410678",
+                "2.7242096296128633"
+              ]
+            ]
+          ]
+        ],
+        [
+          "stove_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.42",
+                "-0.15",
+                "-0.4",
+                "-0.13"
+              ]
+            ]
+          ]
+        ],
+        [
+          "top_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "middle_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "bottom_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "top_side",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "cook_region",
+          [
+            ":target",
+            "flat_stove_1"
+          ]
+        ]
+      ],
+      "runtime_checks": {
+        "s1_relation_uniqueness": "pending_simulator",
+        "s2_landmark_poses": "pending_simulator",
+        "swap_stability": "pending_simulator"
+      },
+      "s1_instruction": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "s1_target": "akita_black_bowl_2",
+      "s2_source_status": "support_or_fixture_confound_requires_redesign",
+      "state_sha256": [
+        "dfb649223e7aa35762f83a1c9354a7936f22964c75453d86b2fa7fcaec1e53e7",
+        "1683d093f7f71da65123137f4b35195ccf71c6b1ffa575c5d2f5b3659f3f8b66",
+        "b4bdfec884f2c96ed429056077604bb0fd37896d8a69c6ebf1e4fc4a70ff2afb",
+        "0ad49a9c34f238899bd42ba8e470b1ec99726da1636afcb50ff952527a21bca3",
+        "5ccd2f0472506d102ed44dda8ec4139e363be8f31a2df4e95b4162d18e032eb0",
+        "6c1508c6abc5909a7ce88e7b6ec596f7b3680d3b407d285367f555f3356d781d",
+        "72cdcbf7b8b9303428c2920c04bf37b141f925b9e84b050d158a7090bad75289",
+        "353f9b711a211ec9af2d1fc0d440309c9262bf85b61a6066b9f2d4dca894a8ef",
+        "38a4bdf37a0e11df207ded99617072abd1a233b6d29f5b7772f29ae6dc74597f",
+        "cb8cd1317cc240800094c4e1cd9309ec0c0ad0022cbc909bbf7291d7a95ce181",
+        "a3c6162e1ee3151d5f893740013612b4c472315c6987228631dccc0052d63454",
+        "8e1a6e8f3797fd6ef56e8253d02dea03cf7478890c181c3c8c3fb7d1969a57f0",
+        "72cb7ac80c0fa1aa0dc456d3714215d0bf645476e1f248b8ae9582a4e10742cb",
+        "0db530bfa97ca6466ed26b6b0f66a5a759234315694dc5c82ce9a4701af26c1f",
+        "75831bd3ec6b30140adce630785b49080472798747d37c9782c9a2b763f16bdc",
+        "30c8deabb9783f60d5072b9e18c0a2f3ab80255c617f8fdebcde8027fcacc228",
+        "fcd0b83ddd6b9315bfa65f4fdb19763cbb627bad1c8c7b8a6aeed11a31c44d4a",
+        "8471b9f7fbe8f93af179428a53e3dc0b839149854cf80dc7eb608247c4a20a8d",
+        "87a712ebfed26e0bd13e9b01ceb78a8a28e7bfce4b25569fdd9a006cf34df9ca",
+        "ffa7660cbcc6f9398421b5a978c2f3d4b24ac5eee1087308acc470eb71984094",
+        "1ab40fd24abce1aac868210710693831a9a97d2e73ac65c8a0c3821d9c3cfc04",
+        "22f820170e68bb2d134e69552e4c669be4b6b2720b5369906a50e05fd37ac786",
+        "80ddabb3fdb095abac77605a3881ffd67014739df22cc1964152ffadb5c29d08",
+        "0458c84ef3a280411d053d3d9b5b36803c616e95ece441825e9bc50de1189860",
+        "e0b86d12d4ed0f824f86a8eb9a5396d75fb957674df3e4a0e21593530d6f33c9",
+        "b7a45bbe979ddb8415ffa832d03e229819e44c0afdc1099439df03f3c8e9cc48",
+        "7e0160d484768f2e535fe8c1616a036e3781f3e425ffb769109f2a69f55f8fdc",
+        "04372c4bde1ba830c71a219999006f1819e33a6917fe823ffa262c3b2af17a08",
+        "9c92290aa239af6dce7d3ab1d0f30aa18dd06ec3201ce650af5b8dc440f26290",
+        "b3f6db8be73d5f43412f472b82c526ba5817b10ddc22b7d044902f8589e714d0",
+        "ca969e11a020fe45ee155d42bc315079a789d50a0b9724a2ae2bbe12e7be0cae",
+        "61a3ed190f21d0dc0291c63c25f7c7630cf01561d3e407a5a14a642173da8a8a",
+        "e89528b5da13f9207dfd201a5d4d284f32ce7a1adc11ba261ab238071ded482f",
+        "a7c916503db24ed1c51bcf06ac143ad96e374c3876bb8ccacdcbee44e445de0a",
+        "3d355122917b2b4781add1c202a6fbfa1c8aea3e8e7d686a10e5b43b2412aa25",
+        "8e60c411fda485b97dd62ca10e36fabfc00be35348599b59a6b20c33af1b70cc",
+        "d65b351e572a862f48afbe5025d25b0f65a8060b6d7055be92727fa93e36fe36",
+        "ffadd4730342c531a609caf19c4e2ccb4d98914bc497d7d39a8a6a75fabfd6cb",
+        "c4c85a4ea9915e5f74ebdfe8145f6d7564ac4b2fbab0765fca16db29a538d056",
+        "4e0cc1bffa678afba3cc698e44e22193a34738bad29265b278812abed82e99a2",
+        "940d2ba949752a8a1782c455ab70d692659adf11b8e05c51060f5e73dfe8f597",
+        "f8afa9711cc15224aa28b0f4da5a1752f74da80f2d893b1d3aed8e2f5f3f9a50",
+        "c8135084d117897d2edd9e0ef27ee07854276d305507ce01ccda7c937ee8bae3",
+        "131d9586460eadd53b357c93eca2ce88afcf344fdc026871330afbfe13e4855f",
+        "eaf68844847988c3a664dd07c264495c0af6ed522173af0df451733beea7d6c7",
+        "1f10ebd78fe6c70051c19107157e4829aa7eef1bbffdb108eff6369bbc96dccc",
+        "bd828195511be55c7ffea0379793b00b2a52eb802e54361ac22a7fd613d16e70",
+        "5762e4bfcc8099fbbfa17f2961a13f66070de6da784067e16439b1c58501dd80",
+        "3cd509202310704de3fda99fd72d4f2b7783d1f552d44fdc99f2ea3d418ccfe9",
+        "129c9dd4f311f7cb00de11d96954c5ede60360d99b9a32f89d6e835780d5833e"
+      ],
+      "swap_source_status": "different_supports_or_drawer_unverified",
+      "task_id": 7,
+      "task_name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "bddl_instruction": "Pick the akita black bowl next to the plate and place it on the plate",
+      "bddl_sha256": "75cad79d580c93dc14d7b20ad98f5066a9ad171a21bd725fba6893160d939d0b",
+      "e0_target": "akita_black_bowl_1",
+      "fixture_types": {
+        "flat_stove_1": "flat_stove",
+        "main_table": "table",
+        "wooden_cabinet_1": "wooden_cabinet"
+      },
+      "goal": [
+        [
+          "And",
+          [
+            "On",
+            "akita_black_bowl_1",
+            "plate_1"
+          ]
+        ]
+      ],
+      "init_file_sha256": "f43df2d80042130ac8770590d83f1a1e6fd4df7479aebc392aa2ed6e3bd0b83e",
+      "initial_relations": {
+        "akita_black_bowl_1": [
+          "On",
+          "akita_black_bowl_1",
+          "main_table_next_to_plate_region"
+        ],
+        "akita_black_bowl_2": [
+          "On",
+          "akita_black_bowl_2",
+          "main_table_next_to_ramekin_region"
+        ],
+        "cookies_1": [
+          "On",
+          "cookies_1",
+          "main_table_box_region"
+        ],
+        "flat_stove_1": [
+          "On",
+          "flat_stove_1",
+          "main_table_stove_region"
+        ],
+        "glazed_rim_porcelain_ramekin_1": [
+          "On",
+          "glazed_rim_porcelain_ramekin_1",
+          "main_table_ramekin_region"
+        ],
+        "plate_1": [
+          "On",
+          "plate_1",
+          "main_table_plate_region"
+        ],
+        "wooden_cabinet_1": [
+          "On",
+          "wooden_cabinet_1",
+          "main_table_cabinet_region"
+        ]
+      },
+      "initial_state_count": 50,
+      "initial_state_width": 92,
+      "landmarks": {
+        "cookies_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "cookies_1",
+            "main_table_box_region"
+          ],
+          "region_definition": [
+            "box_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.06",
+                  "0.02",
+                  "0.08",
+                  "0.04"
+                ]
+              ]
+            ]
+          ]
+        },
+        "flat_stove_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "flat_stove_1",
+            "main_table_stove_region"
+          ],
+          "region_definition": [
+            "stove_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "-0.42",
+                  "-0.15",
+                  "-0.4",
+                  "-0.13"
+                ]
+              ]
+            ]
+          ]
+        },
+        "glazed_rim_porcelain_ramekin_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "glazed_rim_porcelain_ramekin_1",
+            "main_table_ramekin_region"
+          ],
+          "region_definition": [
+            "ramekin_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "-0.21",
+                  "0.19",
+                  "-0.19",
+                  "0.21"
+                ]
+              ]
+            ]
+          ]
+        },
+        "plate_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "plate_1",
+            "main_table_plate_region"
+          ],
+          "region_definition": [
+            "plate_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.05",
+                  "0.19",
+                  "0.07",
+                  "0.21"
+                ]
+              ]
+            ]
+          ]
+        },
+        "wooden_cabinet_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "wooden_cabinet_1",
+            "main_table_cabinet_region"
+          ],
+          "region_definition": [
+            "cabinet_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.02",
+                  "-0.28",
+                  "0.04",
+                  "-0.26"
+                ]
+              ]
+            ],
+            [
+              ":yaw_rotation",
+              [
+                [
+                  "2.6613777765410678",
+                  "2.7242096296128633"
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      "object_types": {
+        "akita_black_bowl_1": "akita_black_bowl",
+        "akita_black_bowl_2": "akita_black_bowl",
+        "cookies_1": "cookies",
+        "glazed_rim_porcelain_ramekin_1": "glazed_rim_porcelain_ramekin",
+        "plate_1": "plate"
+      },
+      "official_instruction": "pick up the black bowl next to the plate and place it on the plate",
+      "regions": [
+        [
+          "plate_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.05",
+                "0.19",
+                "0.07",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_plate_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.0",
+                "0.3",
+                "0.02",
+                "0.32"
+              ]
+            ]
+          ]
+        ],
+        [
+          "box_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.06",
+                "0.02",
+                "0.08",
+                "0.04"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_box_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.12",
+                "-0.08",
+                "0.14",
+                "-0.06"
+              ]
+            ]
+          ]
+        ],
+        [
+          "between_plate_ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.06",
+                "0.19",
+                "-0.04",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.21",
+                "0.19",
+                "-0.19",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.19",
+                "0.31",
+                "-0.17",
+                "0.33"
+              ]
+            ]
+          ]
+        ],
+        [
+          "table_center",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.1",
+                "-0.01",
+                "-0.05",
+                "0.01"
+              ]
+            ]
+          ]
+        ],
+        [
+          "table_front",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.19",
+                "-0.01",
+                "0.21",
+                "0.01"
+              ]
+            ]
+          ]
+        ],
+        [
+          "cabinet_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.02",
+                "-0.28",
+                "0.04",
+                "-0.26"
+              ]
+            ]
+          ],
+          [
+            ":yaw_rotation",
+            [
+              [
+                "2.6613777765410678",
+                "2.7242096296128633"
+              ]
+            ]
+          ]
+        ],
+        [
+          "stove_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.42",
+                "-0.15",
+                "-0.4",
+                "-0.13"
+              ]
+            ]
+          ]
+        ],
+        [
+          "top_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "middle_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "bottom_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "top_side",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "cook_region",
+          [
+            ":target",
+            "flat_stove_1"
+          ]
+        ]
+      ],
+      "runtime_checks": {
+        "s1_relation_uniqueness": "pending_simulator",
+        "s2_landmark_poses": "pending_simulator",
+        "swap_stability": "pending_simulator"
+      },
+      "s1_instruction": "pick up the black bowl next to the ramekin and place it on the plate",
+      "s1_target": "akita_black_bowl_2",
+      "s2_source_status": "candidate_requires_physics_and_uniqueness_checks",
+      "state_sha256": [
+        "6df7405bac43fb3d0127fb80e078eebe006c104f8be6f05ce8614bfab12c24a6",
+        "e5e887b7bfa1f48de3ed5a07ded76b58a974d99beb1858add73f9cfee27357a8",
+        "74af8e4456efc0187bd969810eee8fc5d927a4c1cdbee28cec9c14a0c4ae4550",
+        "0a3fbdca5cedc8a6200545fa040040f2fa37ee7f60e44cf58948c629026c0b01",
+        "af668491f165a928602165cc0622fee0bb533436349c6a218832a7fa9bf7daf8",
+        "2e4d9aba58cc1bf310e3174c9674d0c7954aa292d81adcfd539f2912eadea8e4",
+        "ac0573acb020abc072f4a9a6cf11d7292cacd72a17cff8401bb4689a1a83e266",
+        "d3e130321a55e801e1614dc0f8e8dd1168161ea2199b8e2ba2556f1e0971415b",
+        "3fd7925b4ffe1580a4a938c371b799ceecd412b1a297c6835d47b2d5d0f3656e",
+        "01fb50e5fb75496ee744430b7b66870686e3ddd5e2f986245af694b9fa8f4aba",
+        "59fb3be95e2dd8a3850c48051143959b7d98ea507f2404ae3f8c2bc829b44e42",
+        "00e8b0614597a67550a649e55df44a670347aadba8427ad0d04aea3d474e190b",
+        "d7728024b4cc15a678fa64b5a738537e914e0432aeefc335dcf0065ea9eed796",
+        "23fe212e0af4b054c536263502b1de2de6b58e85ebec72d89f11e010bf3d2b81",
+        "3a19203781b9a71db3edf67067c9d3352d076a003c3d78f75e3f181985a66590",
+        "62b06ba8494d789a177866429920d7420900b5105fffc77574695c9d3a5fda8b",
+        "d5ad8c5565c9ef05b69c090ceb260106f777e6cb76168a2aa8144e8e4e15f294",
+        "bb0ed64976a87530212f8c027bc9e3b6757f65fc9a4ee4c0cc76c035cb3983d9",
+        "c34e27cae896ff6a0c14728935b44889d1a874affa93c7001457b2c745f674d3",
+        "f94493ac40aeb650ed5af6858950deac037f40e303f19f3eff24aee5d78869f0",
+        "3652e48201c8830682cbeb7f0d5666a729ef113cf1c5eca4ccabdbd66b9556cf",
+        "d16f8e01d7b1d0a3af5d2fce26ddc934570cfce838be5d8a3306ff7384c5aed4",
+        "66c2c0a08a42079aa70810dd485822744d485707a72a74f32cbf3ba1e04616b3",
+        "2c80c007fb236ae453ac62814450ac1bfd2d15eaa5648f821cff2c21258126d1",
+        "695b220d3236743472175f0fd8e3a20a91bd48c7a74d296486d570a92df2a092",
+        "b1345a2f587097483282f0e30ea748dab817936d6be99779879f0d1c7417257b",
+        "cc5563e5257449783ab3f9e425f2407fa8667c5eaa1a6262b2c66af88463f725",
+        "bec4a4b179da41f540cc5bf56c554853b039a538da74590fc530914da70caf46",
+        "93596c6f838059c584b975aac6d91905677e62874a6b186d88c2b748a4d8250b",
+        "16e8b2c976d72e322c5339879e349d0c358c880c6113a4a1b9067071d152896c",
+        "43cc6fc60414471f22f5336d25a4e76f23967b6959362fa2dfeda954a1d040e1",
+        "05b4341cab353b8ba19fc7e3b2415abe9c8c2f702d5cd2a8c9bc7e23e6551493",
+        "9872dc9e6cdefe5974c985747c3185b908cf592b4d0983123bc5e2315fe0b15e",
+        "9da17cb47cc30d403b51aab35693445e3cd0083442245b42b59b4aafa936bb20",
+        "ad961df9e8ce65fb57e131240ecdc6a05d646f714de05c23d415255c97207a07",
+        "71460694e758a463ad98f4382248e98ad574ede1b4c36c9e145d5adcfe93b287",
+        "822d6416edac9e8c0d9edcccaa42d4ecfbe08d020decc8ecff1c4bc8cfaba196",
+        "cf74f087df19c7ee788154ff7fed121bd5bb1e8cf092c39b8166f3020c10b348",
+        "106e3070b9df86ba5953ba0fa35f6063b387420b9e770ce25bbf0d02c5ed5d02",
+        "3a5bf2d03381cf8bb309d6b4ea4e951f27dbab357a607c861ae88bb6690dd2ba",
+        "34239ca76fe180922a0d3424bc3e718b50445a0c8e7b01d982e19dcd40ab2e9a",
+        "bb7dd5dc5ec5e22404c5b0be6b17ea05889e506847084501e1413ed31387c4e5",
+        "96f346ae2e6484b62e69133b2d15336b38cd56a29a1731a2441d33d594367292",
+        "372d57a9698b5bf90c3811151eafa9fe3efe04a0daf564f45d884e903b4ed750",
+        "4f5e303846cac4bc3768dbfa15f2041927ca271359884d6348980332546a0b0e",
+        "b6c6cddf0c8f9918d793a521a9849c43e8bfbc937ad7bce5b57a7002ebf3a42d",
+        "9c47bb2fdec4d165197678687d22a6e6f16e4a7ab26343ef3fa4de75446f0135",
+        "825a7c7dcfc8b0aed0e7e62dd16beb1aa0e639533cc60bfba920348e8f7d3f28",
+        "2d1dbc88c14cd1911be494919a99d8591da04bfbb71f09182ad38c588d8c1904",
+        "529ae6ac59397cf98479a6985d4d271db9ef740360f041fb572ab0232062a7c8"
+      ],
+      "swap_source_status": "both_bowls_on_table_candidate",
+      "task_id": 8,
+      "task_name": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "bddl_instruction": "Pick the akita black bowl on the wooden cabinet and place it on the plate",
+      "bddl_sha256": "e8c6b97dc2bc539141d00882d54d793ec743f21ea5bc3924078d6330bf7f1a69",
+      "e0_target": "akita_black_bowl_1",
+      "fixture_types": {
+        "flat_stove_1": "flat_stove",
+        "main_table": "table",
+        "wooden_cabinet_1": "wooden_cabinet"
+      },
+      "goal": [
+        [
+          "And",
+          [
+            "On",
+            "akita_black_bowl_1",
+            "plate_1"
+          ]
+        ]
+      ],
+      "init_file_sha256": "08b0ac928dcc524a66d963851a6a4eece9aeb782b38466006e403a70e3287867",
+      "initial_relations": {
+        "akita_black_bowl_1": [
+          "On",
+          "akita_black_bowl_1",
+          "wooden_cabinet_1_top_side"
+        ],
+        "akita_black_bowl_2": [
+          "On",
+          "akita_black_bowl_2",
+          "flat_stove_1_cook_region"
+        ],
+        "cookies_1": [
+          "On",
+          "cookies_1",
+          "main_table_box_region"
+        ],
+        "flat_stove_1": [
+          "On",
+          "flat_stove_1",
+          "main_table_stove_region"
+        ],
+        "glazed_rim_porcelain_ramekin_1": [
+          "On",
+          "glazed_rim_porcelain_ramekin_1",
+          "main_table_ramekin_region"
+        ],
+        "plate_1": [
+          "On",
+          "plate_1",
+          "main_table_plate_region"
+        ],
+        "wooden_cabinet_1": [
+          "On",
+          "wooden_cabinet_1",
+          "main_table_cabinet_region"
+        ]
+      },
+      "initial_state_count": 50,
+      "initial_state_width": 92,
+      "landmarks": {
+        "cookies_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "cookies_1",
+            "main_table_box_region"
+          ],
+          "region_definition": [
+            "box_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.06",
+                  "0.02",
+                  "0.08",
+                  "0.04"
+                ]
+              ]
+            ]
+          ]
+        },
+        "flat_stove_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "flat_stove_1",
+            "main_table_stove_region"
+          ],
+          "region_definition": [
+            "stove_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "-0.42",
+                  "-0.15",
+                  "-0.4",
+                  "-0.13"
+                ]
+              ]
+            ]
+          ]
+        },
+        "glazed_rim_porcelain_ramekin_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "glazed_rim_porcelain_ramekin_1",
+            "main_table_ramekin_region"
+          ],
+          "region_definition": [
+            "ramekin_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "-0.21",
+                  "0.19",
+                  "-0.19",
+                  "0.21"
+                ]
+              ]
+            ]
+          ]
+        },
+        "plate_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "plate_1",
+            "main_table_plate_region"
+          ],
+          "region_definition": [
+            "plate_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.05",
+                  "0.19",
+                  "0.07",
+                  "0.21"
+                ]
+              ]
+            ]
+          ]
+        },
+        "wooden_cabinet_1": {
+          "actual_world_pose": "pending_simulator",
+          "initial_predicate": [
+            "On",
+            "wooden_cabinet_1",
+            "main_table_cabinet_region"
+          ],
+          "region_definition": [
+            "cabinet_region",
+            [
+              ":target",
+              "main_table"
+            ],
+            [
+              ":ranges",
+              [
+                [
+                  "0.02",
+                  "-0.28",
+                  "0.04",
+                  "-0.26"
+                ]
+              ]
+            ],
+            [
+              ":yaw_rotation",
+              [
+                [
+                  "2.6613777765410678",
+                  "2.7242096296128633"
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      "object_types": {
+        "akita_black_bowl_1": "akita_black_bowl",
+        "akita_black_bowl_2": "akita_black_bowl",
+        "cookies_1": "cookies",
+        "glazed_rim_porcelain_ramekin_1": "glazed_rim_porcelain_ramekin",
+        "plate_1": "plate"
+      },
+      "official_instruction": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "regions": [
+        [
+          "plate_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.05",
+                "0.19",
+                "0.07",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_plate_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.0",
+                "0.3",
+                "0.02",
+                "0.32"
+              ]
+            ]
+          ]
+        ],
+        [
+          "box_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.06",
+                "0.02",
+                "0.08",
+                "0.04"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_box_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.12",
+                "-0.08",
+                "0.14",
+                "-0.06"
+              ]
+            ]
+          ]
+        ],
+        [
+          "between_plate_ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.06",
+                "0.19",
+                "-0.04",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.21",
+                "0.19",
+                "-0.19",
+                "0.21"
+              ]
+            ]
+          ]
+        ],
+        [
+          "next_to_ramekin_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.19",
+                "0.31",
+                "-0.17",
+                "0.33"
+              ]
+            ]
+          ]
+        ],
+        [
+          "table_center",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.1",
+                "-0.01",
+                "-0.05",
+                "0.01"
+              ]
+            ]
+          ]
+        ],
+        [
+          "table_front",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.19",
+                "-0.01",
+                "0.21",
+                "0.01"
+              ]
+            ]
+          ]
+        ],
+        [
+          "cabinet_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "0.02",
+                "-0.28",
+                "0.04",
+                "-0.26"
+              ]
+            ]
+          ],
+          [
+            ":yaw_rotation",
+            [
+              [
+                "2.6613777765410678",
+                "2.7242096296128633"
+              ]
+            ]
+          ]
+        ],
+        [
+          "stove_region",
+          [
+            ":target",
+            "main_table"
+          ],
+          [
+            ":ranges",
+            [
+              [
+                "-0.42",
+                "-0.15",
+                "-0.4",
+                "-0.13"
+              ]
+            ]
+          ]
+        ],
+        [
+          "top_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "middle_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "bottom_region",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "top_side",
+          [
+            ":target",
+            "wooden_cabinet_1"
+          ]
+        ],
+        [
+          "cook_region",
+          [
+            ":target",
+            "flat_stove_1"
+          ]
+        ]
+      ],
+      "runtime_checks": {
+        "s1_relation_uniqueness": "pending_simulator",
+        "s2_landmark_poses": "pending_simulator",
+        "swap_stability": "pending_simulator"
+      },
+      "s1_instruction": "pick up the black bowl on the stove and place it on the plate",
+      "s1_target": "akita_black_bowl_2",
+      "s2_source_status": "support_or_fixture_confound_requires_redesign",
+      "state_sha256": [
+        "aeafafe72f0a90e68574c34eeb01e2d3b3692d2ea9e8c38aeeb4aa17ba116280",
+        "32cb0bdb2debcdc84dc6e256399041117fe15e6b80dbc8022af25607ab5b6bd1",
+        "2f9b32addcd3ac00cd96a03f022ea9558499ef7805115847e1bcd1a4293f5317",
+        "0fed28b6c1a59c5253ee08f344aab7885f11d0bc340ef69824d716fecf29330e",
+        "22bec7a772b63a6d77ca3079d93a5400742aa95caaa96f8af4edd57481ed3e6c",
+        "54f520957c3c0f447d2f900b4e5157de455c5d07ba7345095ccf42132a2411d2",
+        "2b7bbbcf6639c4c337acf3e99645797fc7e436a092445b2ebd9995f8335cdbea",
+        "d3dd88213b741e84bf041061713bf28065b3b4da7b270a8c6a0465df67ab9730",
+        "5729fba122b50d6c540f597f23157695758e9ae8a70bbbc0bf3a133421a27622",
+        "b66c16096a3e5fff29365a1ba2ab278a06748ef8679f79f9e227939a84df09dd",
+        "570794da3c9a74a957b30cd33b54c97a62c5e06e1cd9131f4c496dcc4edc6f6f",
+        "2782bd7ff260a649e352f6a6f84d372342ce75a1846f62e7b02e8c1a22b2840f",
+        "477dfb50301298fb83937e71bd5ddb1df27f80ce294166bd98c2ee4dae3ce8f8",
+        "551ef85c4f8daabb17af0232209f88d4bb03ef05a4d127d363792eb3bafd55aa",
+        "f72c61a63fce7d9d5c93a707f88ee7cfd8b0c2e7014690b702bd74e934c9f86a",
+        "d582dfc2e605cd7eb0c11d7f8849c9db1a6055bd7d0ffec23a631b83041a35ed",
+        "d4240270926d06c1cffad39cdefe43e543e83c5ff85c07546f95424e0c87392f",
+        "f568c165cfb746fe4b95a4eb4208543cde32cfd3986972adf22f7361923a4b26",
+        "63ae0972245b0394ac83e8a8594c12df65af40df6db54430db60d51034d26e87",
+        "ac2c7e79e44adbc345637258ab2c59730a45074b19646e6565f4d1513d29ba28",
+        "06884ec6df9934eedd254e50e180e18438cda4b0556380b561307ea2120f0660",
+        "fdbbcae6cdfaf0fc4da9571627846e4598758f03eafc2b28bdbde2c29ac6483f",
+        "983ea361df462141415e9848ed10ca5abea10e57ad118db9c32ee881d853fb51",
+        "97a8de02757e9f67df5e5d1bae2ee8d41b5e79d93093eb8f90fc83e2362e4905",
+        "55c553e2b28498e81498a72913517c59d61a96d0445eae63402b53198f606ca6",
+        "3b36f1a29d59cd94582306eb876eba8af213c70e7c59e910ca3bea0c9c3d463c",
+        "7816c7fed29d2edc97498ab23ff8fd71eb0842fc90a94dad04af5336718a6031",
+        "63359db3d524bcff9ead3c673a1b5c843e679fc8e1d8c474d10650864613174c",
+        "e6d1f9eecc46898a360a4270951367324296746acbee1fa6eb1acdff18bd3c93",
+        "bd4d47baadb6fe13d3bf01e6c8b57277ce0282b96ebcadc28a9f38f7aa8958e9",
+        "a5476ca686f360680dbcf30c38cd98b139970f3b95bc3b923afa719d775bc0c0",
+        "a3137703b3c38a722b5296d9b1912856f9af8662e6107d11edce27422ff38460",
+        "fb01d00509cb0003e1e244dc3838cb9c659d78733c9686f96a5672f12efce8c8",
+        "2912a7998014e30ba52069cffbc8fbc56e68809a74877c61ded249413de43683",
+        "ba18412f387652c238bf122dce2ab7a6a0aa223bb542f13fd4741b9856c215e4",
+        "d8792e4cec2d06532fc2727f88566a558d7d63ed69c8e16a23eda615c49a3567",
+        "8dde7219c2e5eb3d80ec4c71266cfce268305d51b36bce26fedc1008853afed4",
+        "5cc6690fc99aa81ddae1da7dc815b4c8366e26d9bec4444406d16141bd5a3668",
+        "5c89aaf9bcba52661c1aad4b46d4736ae6f1803db09497ee6a1674265901638a",
+        "2757ccfa9a7ad358caa2ce94274fbe48dedd89108dbbaf95aae55ec9dce9d419",
+        "4d944e1719e3528050cd64df6b8af975ce0e5cc8e06fa06df1ac7f189c7304ea",
+        "87bb1d49fde2d380c727d20325805b0c77ea107fe0279777c7daf6de5d244d22",
+        "f29623bcee28a78979b969bb8ad869a23f2d2b7f71d2fa25d69f45c465e1e0be",
+        "8fee1b500b4777c1e2984139675675d0e07fcf04f3a0ab9143917d38fee379cc",
+        "3f7b16dacd14a2ec4d7362496f9cbb82153f90dadab38432144332eea0205d1b",
+        "aadb83a43fa1a52ecf4101fdd46fdaf71d09f670b5fa16b22b138073acbb8beb",
+        "648010f5a895c988796177385b7d20e1ed72ed2424dc45801ff6bc04a72ca921",
+        "0a37ea0a68f2a23751713caeca2bffc5c5fe646df22521fa40fae252279af078",
+        "9b5e92372223f8731cf3aa53ea46046d70471f7639af52091e6fbebc45bce20b",
+        "bbcf64bdfb09433c13f9eb4bb93dfd6735de9bb2333e64bc3ab35afbf5a2f756"
+      ],
+      "swap_source_status": "different_supports_or_drawer_unverified",
+      "task_id": 9,
+      "task_name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    }
+  ]
+}

@@ -43,6 +43,7 @@ def backend_check(runtime):
     except Exception as exc:
         report["pytorch"] = {"ok": False, "error": str(exc)}
     report["config_sha256"] = runtime.config_hash
+    report["policy_sha256"] = runtime.policy_hash
     write_json(runtime.work / "docs/backend_check.json", report)
     if not report[runtime.config["backend"]]["ok"]:
         raise RuntimeError("Selected backend failed GPU kernels; see docs/backend_check.json")
@@ -54,9 +55,20 @@ def serve(runtime):
     from openpi.serving import websocket_policy_server
     from openpi.training import config as training_config
 
+    from sgvla.baselines.openpi.seeded import SeededPolicy
+    from sgvla.eval.manifest import PROTOCOL
+
     config = runtime.config
+    if config["backend"] == "jax":
+        import jax
+
+        if not any(device.platform == "gpu" for device in jax.devices()):
+            raise RuntimeError("Selected JAX backend has no live GPU; rerun backend-check")
     evidence = read_json(runtime.work / "docs/backend_check.json")
-    if evidence["config_sha256"] != runtime.config_hash:
+    if (
+        evidence.get("policy_sha256") != runtime.policy_hash
+        and evidence["config_sha256"] != runtime.config_hash
+    ):
         raise RuntimeError("Config changed since backend-check; rerun it")
     if not evidence[config["backend"]]["ok"]:
         raise RuntimeError("Selected backend has no passing GPU check")
@@ -76,6 +88,8 @@ def serve(runtime):
         **policy.metadata,
         "sgvla": {
             "config_sha256": runtime.config_hash,
+            "policy_sha256": runtime.policy_hash,
+            "rng_protocol": PROTOCOL,
             "openpi_commit": git_commit(runtime.upstream),
             "backend": config["backend"],
             "model_config": config["model_config"],
@@ -84,7 +98,7 @@ def serve(runtime):
         },
     }
     websocket_policy_server.WebsocketPolicyServer(
-        policy,
+        SeededPolicy(policy),
         host=config["host"],
         port=config["port"],
         metadata=metadata,
@@ -96,7 +110,10 @@ def connect(runtime):
 
     client = WebsocketClientPolicy(runtime.config["host"], runtime.config["port"])
     metadata = client.get_server_metadata().get("sgvla", {})
-    if metadata.get("config_sha256") != runtime.config_hash:
+    if (
+        metadata.get("policy_sha256") != runtime.policy_hash
+        and metadata.get("config_sha256") != runtime.config_hash
+    ):
         raise RuntimeError("Server config differs from client (or this is an unmanaged server)")
     if metadata.get("openpi_commit") != runtime.config["openpi_commit"]:
         raise RuntimeError("Server upstream commit differs")

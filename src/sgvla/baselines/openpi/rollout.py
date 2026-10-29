@@ -1,4 +1,4 @@
-"""Part 2 single-episode smoke loop; full-suite evaluation is a separate deliverable."""
+"""Part 2 single-episode smoke loop; manifest-driven evaluation is separate."""
 
 from __future__ import annotations
 
