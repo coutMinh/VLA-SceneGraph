@@ -1,0 +1,121 @@
+{
+  "condition": "pre",
+  "episode_id": "LONG-pre-t07-s00",
+  "first_lifted": "cream_cheese_1",
+  "first_lifted_policy_step": 59,
+  "frames": 142,
+  "intervention_kind": "place_in_basket",
+  "max_rise_m": {
+    "alphabet_soup_1": 0.0,
+    "basket_1": 0.0,
+    "cream_cheese_1": 0.24362491002515962,
+    "ketchup_1": 0.0,
+    "tomato_sauce_1": 0.0
+  },
+  "max_steps": 520,
+  "object_names": [
+    "alphabet_soup_1",
+    "basket_1",
+    "cream_cheese_1",
+    "ketchup_1",
+    "tomato_sauce_1"
+  ],
+  "phase_labels": {
+    "0": "settling",
+    "1": "policy",
+    "2": "terminal",
+    "5": "intervention_settling"
+  },
+  "policy_call_seconds": [
+    0.0900770069997634,
+    0.3066006040003231,
+    0.2976678019999781,
+    0.10897604899992075,
+    0.13763360599978114,
+    0.2938404960000298,
+    0.20309132600004887,
+    0.23768423199999233,
+    0.1648926749999191,
+    0.11538976700012427,
+    0.11415337999960684,
+    0.12575741399996332,
+    0.12690033399985623,
+    0.15827943699969182,
+    0.1246657859996958,
+    0.10916471700011243,
+    0.11041916399972251,
+    0.0915438259999064,
+    0.09098679499993523,
+    0.09297702200001368,
+    0.09604291000005105,
+    0.09862573600003088,
+    0.1118134370003645
+  ],
+  "policy_observation_hashes": [
+    "883cd45cded41ffd68ba1dc90f65bc3127dfb00c2c2061649bd1c5f2dd321e77",
+    "9591dca0ca61d65fce6a8ccc219edd6b0debe5483b8937cd7a01b57ff50b20d9",
+    "4938a2b489768ecbd8185c7b0b16f8896c6bd9cda3de01c98a1a3849bf20ade4",
+    "5af35c1359f8534c0a8711e60ff3f7bee4144ecb0942e11db4ada933c53b8ffa",
+    "97896b3507ba4e4538658abcbca8d8e236332a07cf18ac39837416b04d3add9f",
+    "082163f41eec043c701410321c4f7df187ebb924787257d0ac9501074b6323bc",
+    "d2266e4c296bf4c75bc49fae36dc6aaf06ba1d3d0c17ea5b3480e8ee58d5f8cd",
+    "9ca60b392ea35bd5c5ab163479996487786ba544a6e53610c407ac7cd659ffd8",
+    "65988bcc9e2c39f9be7cd1c961f4267ef5e26701394f2006bb3304faa9226989",
+    "6b5796e0617a77f704d025554eb09cffbb6589967671d320fe6120d241b48405",
+    "682c4abff81c91a3df49012397a2d48fe35c14b33f5e6ceea3e7a6f4fb382163",
+    "1dad6bc94d2a0f242979276ad395a4ffc06a41ea4c0a3b5134667ff4c718d808",
+    "85f343e10c694185f07d9c1f5e7f0ad256abd607ab2d05551c537ada6da3cfcc",
+    "5b35016386ebcfbd297350dd48422cba6c98dc401a9b6b9e362854fc0db7ea24",
+    "689c57ac9ab64f4c6ecbea60cbd6b95e771af6c6981de647ff556e5c2e52010d",
+    "bebd072be642a036327472d10ee9128d541ccd94850ba48a4b577dab056b723a",
+    "c0f075fb2b97169637393ff3fab00654c0e2f8881c78cbae337b47c1d00200a1",
+    "373dd805c5d5b751a864a92c8fcd4d24ce3ffb74c737d713a04fada5cbce6772",
+    "39002ad13758b86137342aff840f0548d690df9fdb05e07ab570514e5590cdc8",
+    "ad209f579583cbcdbdc5764c7830a5762f524a68ecb0f4f6c6ea73819c228044",
+    "d9aa7e62062b18cc4560356e0d2e69eea6ae3ba4f1a91a441ab5cb85f1996b1b",
+    "6ae791ad94d0a5ed7ebec6e15f28cdb5afbf1d38c343ec7bfe4787bee8002e16",
+    "889f728f027b92bea21d54a9dc17c7cfe1840997bd63e11a2cb664c0350579c9"
+  ],
+  "policy_seed": 1570770976,
+  "policy_start_frame": 30,
+  "prompt": "put both the alphabet soup and the cream cheese box in the basket",
+  "server_metadata": {
+    "sgvla": {
+      "backend": "jax",
+      "config_sha256": "3974be2ae6ea751c4f679ac154b8844b6e0e353697851e9fd7a1f6bd0613d658",
+      "model_config": "pi0_libero",
+      "num_steps": 10,
+      "openpi_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+      "policy_seed": 0,
+      "policy_sha256": "536822bf671fb5ba1392ca44eb0a2264c02a54bed981564bee143a7c0ff818e2",
+      "rng_protocol": "sgvla-seeded-noise-v1"
+    }
+  },
+  "source": {
+    "bddl_sha256": "e27ab37f512fe42e35771d6130f531e6a9656929e7b4c60b348b81360cf5675d",
+    "initial_state_sha256": "540e6d56dee311692396371498b342e27703b9e86e0a869a71aa268361f0bf3f",
+    "official_prompt": "put both the alphabet soup and the cream cheese box in the basket",
+    "task_name": "LIVING_ROOM_SCENE1_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket"
+  },
+  "status": "completed",
+  "steps": 111,
+  "success": true,
+  "suite": "libero_10",
+  "target_object": "alphabet_soup_1",
+  "undo": {
+    "applied": false
+  },
+  "wall_clock_seconds": 23.191395995999756,
+  "watch": [
+    "in alphabet_soup_1 basket_1_contain_region",
+    "in cream_cheese_1 basket_1_contain_region"
+  ],
+  "watch_final": [
+    true,
+    true
+  ],
+  "watch_first_true_step": [
+    0,
+    111
+  ]
+}

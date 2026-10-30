@@ -1,0 +1,131 @@
+{
+  "condition": "swap-ctrl",
+  "episode_id": "OBJ-swap-ctrl-t01-s01",
+  "first_lifted": "cream_cheese_1",
+  "first_lifted_policy_step": 66,
+  "frames": 161,
+  "intervention_kind": "swap_xy",
+  "max_rise_m": {
+    "alphabet_soup_1": 0.0,
+    "basket_1": 0.0,
+    "butter_1": 0.0,
+    "cream_cheese_1": 0.2530993255443475,
+    "milk_1": 0.0,
+    "orange_juice_1": 0.0,
+    "tomato_sauce_1": 0.0
+  },
+  "max_steps": 280,
+  "object_names": [
+    "alphabet_soup_1",
+    "basket_1",
+    "butter_1",
+    "cream_cheese_1",
+    "milk_1",
+    "orange_juice_1",
+    "tomato_sauce_1"
+  ],
+  "phase_labels": {
+    "0": "settling",
+    "1": "policy",
+    "2": "terminal",
+    "5": "intervention_settling"
+  },
+  "policy_call_seconds": [
+    0.09342071900027804,
+    0.21000760299966714,
+    0.19355432500015013,
+    0.2169176279999192,
+    0.21550904100013213,
+    0.20179352700006348,
+    0.2032679190001545,
+    0.22682313599989357,
+    0.221120707999944,
+    0.2299757129999307,
+    0.3097223380000287,
+    0.3013622030002807,
+    0.37415656700022737,
+    0.30535111900007905,
+    0.3959174830001757,
+    0.3479057479999028,
+    0.19234906000019691,
+    0.20003517699979056,
+    0.2377013660002376,
+    0.20697089000032065,
+    0.20106831300017802,
+    0.16841220300011628,
+    0.12405559399985577,
+    0.10305116100016676,
+    0.15483882099988477,
+    0.24495394299992768
+  ],
+  "policy_observation_hashes": [
+    "cb765cb2b9af118b791ee5ec978da0fc1a39013675fe29981d145993d4858b5c",
+    "f66a121066dd0a9f0a076a27b054c7342fdd43fc33ac79e9e5a6c22b91acad30",
+    "73531b60609fb56509c3a718d85ccd2fe8336a4351a634fb970ae4fe1b11fee1",
+    "e5177cfc1a514b809b174a92624125319b723f3f62f0889f1f9f439cc5ec4115",
+    "e0b7d4c3f91f9965783dcf7240b218fdb20de31b328190f4e2434bcfdb960275",
+    "ed54f45a85bc1a95064e5cff478b7f557ff229d23523a67cad59a2e5500efeed",
+    "14de30a73149f1d3e94373a39d828652ba252d590a7a081bfcb7d3d5193909ed",
+    "b87a49cff67d8c1061094ad5f200436af06081f0c6583ed3d05bd51729b7973a",
+    "6cc26ebdfb0813b683a267d5eee077581680eaf48eaa7987e4f7063ea52041ad",
+    "8c4b1057784e903e52c00eeb1cacac58ff8e91e9d637a897a901c3dc337e1a64",
+    "9444448cc4e42ab201ebee03680a1f2d2086f34380ca6c1bc42000faad0a482d",
+    "e3af7abf79e347ba3c316d676082938d726826321e34389fdc81489a538e0cf6",
+    "1349f1132fbe4d50b2a490c1daa795e1d3ab96b73740d86377becfb98fe08f35",
+    "65f9a923bf6c3a95ef39ac29331a696de23e467f3691fd0dec83e1aaada35119",
+    "fc2451ff1f1c7f09805476c18dd2a9f7af76c7c261608df37ae28464dabcb160",
+    "c4056c77081fa56ab548e9158b217608c84da6e9e7db59fdb23498941fe08d1f",
+    "14ac586a9a819d58f87fe13f76348a36ace15001dc6095c9e2d5601dc2a974e9",
+    "fd68a9bf24e0e8845dafa72ec55cd0a902c7e619dc31a5edd83312156bda38b8",
+    "24a2f2c97f60836c0709945b8812d91792830a2fe79471a84ee9acdfc89e7ba9",
+    "bceb7469bf8ab5f3b316c19cad043d4ef81193605860afc6fac6122e4ce5d8a8",
+    "243f1b73e555beca08cbbabc7774209eade65d379129a363046fc9dadc1f5b91",
+    "43c1ec476633fa4cb52a5a0eb98baba967137f5f458af2219e33633942840bcb",
+    "7ea3124ce4101b2852492414ea484d91a2ec798844b99c3f40c0a9b891aa5cf1",
+    "50fe6585f4906009f4adcc48131a0dc36675cbfc6e47572edeeee89e1c70f80f",
+    "6390238da846d6759ae9e86249dd163fc2ebae60c1f1dbe1d0fe5977b7545c7c",
+    "f87fedabeae8fd6ae8d6eb2a594a13f6730f65302d0632ed6090063ad85c8877"
+  ],
+  "policy_seed": 2020025143,
+  "policy_start_frame": 30,
+  "prompt": "pick up the cream cheese and place it in the basket",
+  "server_metadata": {
+    "sgvla": {
+      "backend": "jax",
+      "config_sha256": "3974be2ae6ea751c4f679ac154b8844b6e0e353697851e9fd7a1f6bd0613d658",
+      "model_config": "pi0_libero",
+      "num_steps": 10,
+      "openpi_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+      "policy_seed": 0,
+      "policy_sha256": "536822bf671fb5ba1392ca44eb0a2264c02a54bed981564bee143a7c0ff818e2",
+      "rng_protocol": "sgvla-seeded-noise-v1"
+    }
+  },
+  "source": {
+    "bddl_sha256": "7019f37ee158d67a21338a6df0c441dd8f84979b946b5e20bb49463ef0508ea2",
+    "initial_state_sha256": "25d6e18d6b19914221a9b6503802c7aa42ac201a7a6fb5c5063e07c989087131",
+    "official_prompt": "pick up the cream cheese and place it in the basket",
+    "task_name": "pick_up_the_cream_cheese_and_place_it_in_the_basket"
+  },
+  "status": "completed",
+  "steps": 130,
+  "success": true,
+  "suite": "libero_object",
+  "target_object": "cream_cheese_1",
+  "undo": {
+    "applied": false
+  },
+  "wall_clock_seconds": 23.71502100099997,
+  "watch": [
+    "in cream_cheese_1 basket_1_contain_region",
+    "in alphabet_soup_1 basket_1_contain_region"
+  ],
+  "watch_final": [
+    true,
+    false
+  ],
+  "watch_first_true_step": [
+    130,
+    null
+  ]
+}

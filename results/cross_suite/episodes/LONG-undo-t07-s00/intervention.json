@@ -1,0 +1,48 @@
+{
+  "kind": "none",
+  "stability": {
+    "max_drift_m": 4.235065196789465e-08,
+    "max_tilt_rad": 0.0,
+    "per_object": {
+      "alphabet_soup_1": {
+        "drift_m": 1.761526193158885e-13,
+        "tilt_rad": 0.0
+      },
+      "basket_1": {
+        "drift_m": 3.1086253840483985e-15,
+        "tilt_rad": 0.0
+      },
+      "cream_cheese_1": {
+        "drift_m": 0.0,
+        "tilt_rad": 0.0
+      },
+      "ketchup_1": {
+        "drift_m": 4.235065196789465e-08,
+        "tilt_rad": 0.0
+      },
+      "tomato_sauce_1": {
+        "drift_m": 0.0,
+        "tilt_rad": 0.0
+      }
+    },
+    "stable": true
+  },
+  "undo": {
+    "applied": true,
+    "gripper_qpos": [
+      0.039265027558183604,
+      -0.039501022368389614
+    ],
+    "object": "alphabet_soup_1",
+    "policy_step": 135,
+    "restored_qpos": [
+      0.04156917263511992,
+      -0.10012162097475458,
+      0.47517012396052544,
+      -0.0023500405564104085,
+      0.0023464137295511004,
+      0.7074554706425367,
+      0.7067501175874962
+    ]
+  }
+}

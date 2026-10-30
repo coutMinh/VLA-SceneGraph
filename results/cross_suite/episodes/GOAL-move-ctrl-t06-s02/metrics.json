@@ -1,0 +1,115 @@
+{
+  "condition": "move-ctrl",
+  "episode_id": "GOAL-move-ctrl-t06-s02",
+  "first_lifted": "cream_cheese_1",
+  "first_lifted_policy_step": 67,
+  "frames": 135,
+  "intervention_kind": "relocate",
+  "max_rise_m": {
+    "akita_black_bowl_1": 0.00035762479186618457,
+    "cream_cheese_1": 0.16011761716322948,
+    "plate_1": 0.0,
+    "wine_bottle_1": 0.0
+  },
+  "max_steps": 300,
+  "object_names": [
+    "akita_black_bowl_1",
+    "cream_cheese_1",
+    "flat_stove_1",
+    "plate_1",
+    "wine_bottle_1",
+    "wine_rack_1",
+    "wooden_cabinet_1"
+  ],
+  "phase_labels": {
+    "0": "settling",
+    "1": "policy",
+    "2": "terminal",
+    "5": "intervention_settling"
+  },
+  "policy_call_seconds": [
+    0.26216229900001053,
+    0.3175997710000047,
+    0.28724704899968856,
+    0.274895984000068,
+    0.20555189500009874,
+    0.18519840099997964,
+    0.1609537219997037,
+    0.09758412500013947,
+    0.17388814900004945,
+    0.0921517529995981,
+    0.12130664999995133,
+    0.10353054100005465,
+    0.21420984199994564,
+    0.1193825730001663,
+    0.19919799899980717,
+    0.17081722400007493,
+    0.3097552029998951,
+    0.1693300699998872,
+    0.09407395800008089,
+    0.09436975700009498,
+    0.14365345999976853
+  ],
+  "policy_observation_hashes": [
+    "45a505a19819ecf9960a10dacbc81c7596dda77fbc62e2c0796f7bee7d4c71bc",
+    "a587a1f2ed43afc11b0b61ea3dfbdbfd09b0a4e41cf1c92e46eedd86d5b4a3a7",
+    "367db5b478c4d73f09a1022afb223ce9080eb9c9a79478e871ba502cd7dd356a",
+    "d940030af22f564b883092b5708fa195c063cf13b6b100c30b3bd203c45fc7a3",
+    "734e732445165da79b96f08c26c477a2cce78c5e486dda7c830b64aeff10040f",
+    "f2d18a11fbc0a931c8fade0fb2145b7727ff4b133f8357248a13374638d2e9dd",
+    "5de25ae440165fcad6f9b4157ef1ca06deb07e391f878a5ce86b43b90bd38e8b",
+    "f8bd89279df8fe6a5488bc2013a35508fd160ff1bb0ae6ad6777a838c72819f8",
+    "d8adee79cf16ca602f36533fe6f1c16fedfc033e5b2ff3bec6472116e740c2cd",
+    "9312a8ae98b3e966b2d1305ac64d24e4a2bb44f6cd6e78e0a893597887a9eae8",
+    "868f2f044f0186981f04d297599c4e183f98f51a66e916982a5cf06c3e699129",
+    "160935594d1a6ff3de2f0c02054091ee532d9f703c2d05a91081fbc36564f823",
+    "afee736bfb34752cebd10b3a0db011a7ccf1dae346881b9b33c94260812bd413",
+    "dd7ab9635d2e5bb16721f2ba560f999a21ab286d8a98ad51164a46ef46aa573e",
+    "ab3987555a726f7eb8fc6e4137b1f42e65bd86294b4c9e7ec47188fe3b11ceaa",
+    "668f3f4ae017eecf34839da57fa16eb166299c598d8db008f7dbbde3787ed6bc",
+    "4c3abdc5e38171ca3b54b5fc36534a93dc112b15708b425e5b1d68ca3a5c57b9",
+    "d382324c9dbe7bc7af12c9802bb82ff77ca9f6b33eb2756dd99871afa711fb1c",
+    "ca4166b45d2bb5abe916792ba0106fad1337ee0fba61d6f2253bbde193c4dfbf",
+    "44b4c2e451bf06002357a1cd66baf7a2a75a9a76851aedfc0586c78fdcc4d7f2",
+    "dbdc7e4c03be024e408f7d1b774b98440939ee40cfb83318a8f1fd7dbcde4362"
+  ],
+  "policy_seed": 143726594,
+  "policy_start_frame": 30,
+  "prompt": "put the cream cheese in the bowl",
+  "server_metadata": {
+    "sgvla": {
+      "backend": "jax",
+      "config_sha256": "3974be2ae6ea751c4f679ac154b8844b6e0e353697851e9fd7a1f6bd0613d658",
+      "model_config": "pi0_libero",
+      "num_steps": 10,
+      "openpi_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+      "policy_seed": 0,
+      "policy_sha256": "536822bf671fb5ba1392ca44eb0a2264c02a54bed981564bee143a7c0ff818e2",
+      "rng_protocol": "sgvla-seeded-noise-v1"
+    }
+  },
+  "source": {
+    "bddl_sha256": "81c54eace32b92466598103b3b6e8435ce90f10996ef18cec4a35fe6c4d31a98",
+    "initial_state_sha256": "338a41dc7b449bba49585f1ac9f37c6d92d2a53b91782fe87253804a4c41ef23",
+    "official_prompt": "put the cream cheese in the bowl",
+    "task_name": "put_the_cream_cheese_in_the_bowl"
+  },
+  "status": "completed",
+  "steps": 104,
+  "success": true,
+  "suite": "libero_goal",
+  "target_object": "cream_cheese_1",
+  "undo": {
+    "applied": false
+  },
+  "wall_clock_seconds": 24.844115544000033,
+  "watch": [
+    "on cream_cheese_1 akita_black_bowl_1"
+  ],
+  "watch_final": [
+    true
+  ],
+  "watch_first_true_step": [
+    104
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "condition": "E0",
+  "episode_id": "OBJ-E0-t00-s01",
+  "first_lifted": "alphabet_soup_1",
+  "first_lifted_policy_step": 63,
+  "frames": 168,
+  "intervention_kind": "none",
+  "max_rise_m": {
+    "alphabet_soup_1": 0.25778548915619454,
+    "basket_1": 0.0,
+    "butter_1": 0.0,
+    "cream_cheese_1": 0.0,
+    "milk_1": 0.0,
+    "salad_dressing_1": 0.0,
+    "tomato_sauce_1": 0.0
+  },
+  "max_steps": 280,
+  "object_names": [
+    "alphabet_soup_1",
+    "basket_1",
+    "butter_1",
+    "cream_cheese_1",
+    "milk_1",
+    "salad_dressing_1",
+    "tomato_sauce_1"
+  ],
+  "phase_labels": {
+    "0": "settling",
+    "1": "policy",
+    "2": "terminal",
+    "5": "intervention_settling"
+  },
+  "policy_call_seconds": [
+    0.0931717150001532,
+    0.11298492800005988,
+    0.13914831500005675,
+    0.08841450899990377,
+    0.08838006999985737,
+    0.15360086800001227,
+    0.090342538999721,
+    0.09103779399993073,
+    0.08897973299963269,
+    0.08986557499974879,
+    0.08859824199998911,
+    0.0883212599997023,
+    0.08713894199991046,
+    0.08911401199975444,
+    0.08717086600017865,
+    0.13679066700024123,
+    0.13722311300034562,
+    0.16225469300024997,
+    0.1442112940003426,
+    0.11587001399993824,
+    0.1134241929999007,
+    0.08827185900008772,
+    0.08827854699984528,
+    0.08973017999960575,
+    0.09080572399989251,
+    0.16448652400003994,
+    0.0880589640000835,
+    0.08868795399985174
+  ],
+  "policy_observation_hashes": [
+    "33ed5444489cff30bf325a6eb9b5f42ea7796b7a826f1932620201d6ca6d1f3c",
+    "941e4db6bf3de9c3b54c252eef077120ddca3ac67baa836571b2d48782d90535",
+    "670c585828124db8e9429eaa5d35cae1441012a1355ef4d8b213ed825ae50247",
+    "f85ef3ce3533200511f5549cfa2ffe06696d5cc28832c203b9f04c0680d39fe9",
+    "172d304abf976f53671ca9b62731e271156697e2e67eb3a96180f98bd074f2e9",
+    "f8e94e5fee422fc333972d95b6fd43459b46e902f63103b4dbe1b742a3fea952",
+    "170604e3a13c6bfdadebe5ac1383c84b0a6c4118f61446790e3c3625b55b7d12",
+    "f4e6cc08c2fafa3a1cf5cfcaf9f0459bc1b8092598b1fbe274197ec8ab83ad8e",
+    "16441084b0a44640834dffbd038ce0dd267fd077f528162af2d79e61c29e1d96",
+    "50d42e897f4f16e9648096d355dc3f255619848cd52ddd9b9ae3b8b0fef7e381",
+    "c71cbc3137bbfd4ee11b43ebd1030e981282681bbcd5b4bc50c7070b0f43afbc",
+    "dd8e8e77482e6c10f918a5b46267b17967af7ce5781d443809bc84ee1cfbdd18",
+    "aab5e657a77f11d43b5fec02448ab0cb40edbd926a8ba2c4771d38f0c6045f86",
+    "65ba5d6bd046b18db49e48fd08e73d071ad3e07395d6a051f4a14b52c62f18cb",
+    "967833312190e439a70e94929f128028c289e4a488f74d99b44c0886d6cd70c1",
+    "ae4576d4ba7db746119aad8d6177a161d665e4cdf003bd866839be0782fe97d8",
+    "f4272b9880dc36d478205fab51a123cd1599f2daf35d1bbb1189af063e44e92d",
+    "32dba1d2b3d08ea564a72f0dbbc9a80785b8b8bed06ffd550a5158163d172967",
+    "cf2b72b5b08922b5e5dcbdfd28d6cc408a33a67472ce28e42b21bd05e5d21d36",
+    "b4efaf4a365f5589cc534d1d58a1c8604648f931e1f6894c0b1ee69d810e99f5",
+    "ccccafb1ca9d7e6ed167bda95ee3e74044d38d35c030578cf929f3e7a0816d99",
+    "9aae3f5507b604af6da47432631f1f0d5354fd3cf24e6a1e8c20fece929dd657",
+    "89e9e5da36a1695ece72e7965a50e685be40400f8f749fffe5a639c6b6aea2df",
+    "d3a48f61a6a6392df72af111cdd18d51a15f7c3b16350ad9bb91571ba55d7859",
+    "b5b34509bb57386bc08286cbe91b1a60060397663c9587902bd2e49240840536",
+    "ce7b1027437d330891875ef1270ade941e75293607b2aae970dac4741111efd8",
+    "4af4728252eb8bd28992c94809e4921b38b1495c10d63fb9065fd1048095aac7",
+    "849a8270c7161f0236c231d9d09ec292e45c43877d450eaec4e3dc02c837d665"
+  ],
+  "policy_seed": 266150553,
+  "policy_start_frame": 30,
+  "prompt": "pick up the alphabet soup and place it in the basket",
+  "server_metadata": {
+    "sgvla": {
+      "backend": "jax",
+      "config_sha256": "3974be2ae6ea751c4f679ac154b8844b6e0e353697851e9fd7a1f6bd0613d658",
+      "model_config": "pi0_libero",
+      "num_steps": 10,
+      "openpi_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+      "policy_seed": 0,
+      "policy_sha256": "536822bf671fb5ba1392ca44eb0a2264c02a54bed981564bee143a7c0ff818e2",
+      "rng_protocol": "sgvla-seeded-noise-v1"
+    }
+  },
+  "source": {
+    "bddl_sha256": "df088984da13131f8332ee0f13a7896c6a97afd02ee5007a42e8fc5e0893571e",
+    "initial_state_sha256": "4dd321a7a33aa7042e867d1995e7475b8c7b4e444f9f9610af236d112850d89f",
+    "official_prompt": "pick up the alphabet soup and place it in the basket",
+    "task_name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket"
+  },
+  "status": "completed",
+  "steps": 137,
+  "success": true,
+  "suite": "libero_object",
+  "target_object": "alphabet_soup_1",
+  "undo": {
+    "applied": false
+  },
+  "wall_clock_seconds": 20.954823686000054,
+  "watch": [
+    "in alphabet_soup_1 basket_1_contain_region",
+    "in salad_dressing_1 basket_1_contain_region"
+  ],
+  "watch_final": [
+    true,
+    false
+  ],
+  "watch_first_true_step": [
+    137,
+    null
+  ]
+}

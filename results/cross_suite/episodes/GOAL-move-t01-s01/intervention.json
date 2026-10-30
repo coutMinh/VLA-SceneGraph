@@ -1,0 +1,81 @@
+{
+  "angle_rad": 2.6179938779914944,
+  "candidates": [
+    {
+      "angle_rad": 0.0,
+      "clearance_m": 0.005576841545579515,
+      "inside": true,
+      "radius_m": 0.12
+    },
+    {
+      "angle_rad": 0.5235987755982988,
+      "clearance_m": 0.06146429169663484,
+      "inside": true,
+      "radius_m": 0.12
+    },
+    {
+      "angle_rad": 1.0471975511965976,
+      "clearance_m": 0.04686320913729113,
+      "inside": true,
+      "radius_m": 0.12
+    },
+    {
+      "angle_rad": 1.5707963267948966,
+      "clearance_m": 0.017412356513729386,
+      "inside": true,
+      "radius_m": 0.12
+    },
+    {
+      "angle_rad": 2.0943951023931953,
+      "clearance_m": 0.07947045431249752,
+      "inside": true,
+      "penetration_m": 0.007776152031010717,
+      "radius_m": 0.12
+    },
+    {
+      "angle_rad": 2.6179938779914944,
+      "clearance_m": 0.10984775940974646,
+      "inside": true,
+      "penetration_m": 3.836068508900102e-06,
+      "radius_m": 0.12
+    }
+  ],
+  "displacement_m": 0.12,
+  "kind": "relocate",
+  "object": "akita_black_bowl_1",
+  "qpos": [
+    -0.17954022181665308,
+    0.05071155918220055,
+    0.8984038856841015,
+    0.7071067829262199,
+    -2.7750053722029473e-05,
+    3.3359279566552942e-06,
+    0.7071067788944877
+  ],
+  "stability": {
+    "max_drift_m": 2.6450475209621045e-07,
+    "max_tilt_rad": 0.0,
+    "per_object": {
+      "akita_black_bowl_1": {
+        "drift_m": 2.6450475209621045e-07,
+        "tilt_rad": 0.0
+      },
+      "cream_cheese_1": {
+        "drift_m": 6.623427961649497e-08,
+        "tilt_rad": 0.0
+      },
+      "plate_1": {
+        "drift_m": 2.538189875621061e-07,
+        "tilt_rad": 0.0
+      },
+      "wine_bottle_1": {
+        "drift_m": 2.6288158013135993e-07,
+        "tilt_rad": 0.0
+      }
+    },
+    "stable": true
+  },
+  "undo": {
+    "applied": false
+  }
+}

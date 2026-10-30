@@ -1,0 +1,41 @@
+{
+  "kind": "none",
+  "stability": {
+    "max_drift_m": 4.419355108194022e-09,
+    "max_tilt_rad": 0.0,
+    "per_object": {
+      "alphabet_soup_1": {
+        "drift_m": 2.4749936556746693e-12,
+        "tilt_rad": 0.0
+      },
+      "basket_1": {
+        "drift_m": 4.81906181626357e-14,
+        "tilt_rad": 0.0
+      },
+      "butter_1": {
+        "drift_m": 8.593820099989102e-15,
+        "tilt_rad": 0.0
+      },
+      "cream_cheese_1": {
+        "drift_m": 2.3245294578089215e-16,
+        "tilt_rad": 0.0
+      },
+      "milk_1": {
+        "drift_m": 1.0401112240918688e-09,
+        "tilt_rad": 0.0
+      },
+      "salad_dressing_1": {
+        "drift_m": 4.419355108194022e-09,
+        "tilt_rad": 0.0
+      },
+      "tomato_sauce_1": {
+        "drift_m": 1.7863306044397244e-15,
+        "tilt_rad": 0.0
+      }
+    },
+    "stable": true
+  },
+  "undo": {
+    "applied": false
+  }
+}

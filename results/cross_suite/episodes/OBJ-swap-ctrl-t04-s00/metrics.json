@@ -1,0 +1,141 @@
+{
+  "condition": "swap-ctrl",
+  "episode_id": "OBJ-swap-ctrl-t04-s00",
+  "first_lifted": "ketchup_1",
+  "first_lifted_policy_step": 70,
+  "frames": 184,
+  "intervention_kind": "swap_xy",
+  "max_rise_m": {
+    "alphabet_soup_1": 0.0,
+    "basket_1": 0.0,
+    "bbq_sauce_1": 0.0,
+    "cream_cheese_1": 0.0,
+    "ketchup_1": 0.22850643709428725,
+    "milk_1": 0.0,
+    "salad_dressing_1": 0.0
+  },
+  "max_steps": 280,
+  "object_names": [
+    "alphabet_soup_1",
+    "basket_1",
+    "bbq_sauce_1",
+    "cream_cheese_1",
+    "ketchup_1",
+    "milk_1",
+    "salad_dressing_1"
+  ],
+  "phase_labels": {
+    "0": "settling",
+    "1": "policy",
+    "2": "terminal",
+    "5": "intervention_settling"
+  },
+  "policy_call_seconds": [
+    0.18810707600005117,
+    0.23705491800001255,
+    0.32019346000015503,
+    0.2432682849998855,
+    0.1903125989997534,
+    0.2561041519998071,
+    0.15411025499997777,
+    0.1366634190003424,
+    0.18914074800022718,
+    0.13421879699990313,
+    0.13890682100009144,
+    0.13189671000009184,
+    0.13506642500033195,
+    0.20244240100009847,
+    0.22824338800000987,
+    0.13731021000012333,
+    0.17778481599998486,
+    0.1654356359999838,
+    0.14214353900024435,
+    0.1551094789997478,
+    0.13673486500010767,
+    0.11801637199960169,
+    0.21560917100032384,
+    0.16568826399998215,
+    0.22066203700023834,
+    0.11952023899993947,
+    0.249277629000062,
+    0.2282391120002103,
+    0.2439574340000945,
+    0.21720962600011262,
+    0.3074120800001765
+  ],
+  "policy_observation_hashes": [
+    "6ec6406c7c7ea8ac0add2df843916cad57c7bedceb7216c9b5ac0f44a073d9d1",
+    "b33fdfc3e8e18c234243b2fbabb01e19d4ae9472db47dbf179e92e2db8f2ec33",
+    "9480303c1fa2aa958944c32062c6009a52fcea7794b95fdb6fcf4ded19ad7dcf",
+    "fd09c7757b48097391770579bd6052ca20cbc21b4c67188bb2693adce22f5e55",
+    "3a396bfd9f9c98b68f5e079e30d3a7c9f0f845f9eb0cc01f443bd7a263c32a82",
+    "09e805cce685bd4fc0ee5daa9467dd735b4f615fa70f7f28b64df7bda0532610",
+    "24b95bf9957a9f988d98eb5ad0828fe59633f0c2ba06efcc15d8ba06637f5055",
+    "9fe86ec2b24a4ac21d3fe12c9aad7c53a63bed41843727c48345e1de764d400d",
+    "013a600d6f72d9e206c51c795c7a7441cf66448b3e7be2371582658de012b181",
+    "62fdcdc0854112d996e081fd75316669763e20480c483b26289a4164b07ab118",
+    "3236c9c6211ffa107634a8145a0f75f3a32cffe5d265a03efbc7b052bfd5dfe1",
+    "6c7f147316e83f62b6288d9ecb95264d1b0450aca564b9286979776f5214d9db",
+    "7083f58b5748573a2076f1de21d7dbb9c739bca595524ba15a54ca0310cafb87",
+    "d0ea6a0b785503f552d7413e29c5fda4bc3f1e22e0aa6d9e1f478adb337b3ac1",
+    "c0244f3f94a2093f81b17ca6356148f7f9e12ddaff9b883aeafc8a4279c92ab4",
+    "49586e0be5505c995a0cefd85e182d8c468b74e7441291be39ceba521a8f6a05",
+    "863ab04d9949c4cfbf81495c0ab95a114e9605cafcd6085a863f584a20ce6bb2",
+    "b8b41334b1303e54d79aa647574f5167c323b40c769f4e530f9076d3cae2daf9",
+    "cb20a636f73ec3278c0ee654630cd4f7bedeb8eefda900660780ed3d57317778",
+    "f3ec55ac035ac98e7ca850436ae745d045a164aa94386e991e3844010403a1dc",
+    "3ef79a57d18132db9a85bf6bb3b43b122b3f12db7e46edd2f16b45c320208438",
+    "37f7b508d13b8cc9f60bebae1b41fc2a1511b0dd35e2c1708d1fa4f5993a5ceb",
+    "d77e7ba4070fee93bcf5723e6318864006ffb5bfd152a708ba0b5b3659d73ad6",
+    "9cff589dc88940a8aafbdb3267057ff298dd0cda1ab07b5c21f94596e73211c2",
+    "2dd8f049169edb90380569d85ec6a9864479988ab49cae7d5cf4d83d0630c5ba",
+    "ad11fcb3aad8ef98cee505331f817628011803d10cb44e1925539b3feffc2627",
+    "923e012ae2ae5425b36a19f9670fa394b2fadc9da6cc5aad5252b1d7b44c10bd",
+    "a508a43cb03d9249604afdcc721cc84e73ca8c5e1577f2787ed0aaf00dc62102",
+    "bbfda0ed05dd49717b742cd98974597b5404e0d73b33e9e58f917aabf3139857",
+    "df9b2544f17830336cc493ea198287db1479e181c66b0c1ad7423cb674c5db2d",
+    "4ba6b79ed8c1453903ae67d2abcb1cc947060a9b8cb0b7fb65431e83a4dd0709"
+  ],
+  "policy_seed": 1705903594,
+  "policy_start_frame": 30,
+  "prompt": "pick up the ketchup and place it in the basket",
+  "server_metadata": {
+    "sgvla": {
+      "backend": "jax",
+      "config_sha256": "3974be2ae6ea751c4f679ac154b8844b6e0e353697851e9fd7a1f6bd0613d658",
+      "model_config": "pi0_libero",
+      "num_steps": 10,
+      "openpi_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+      "policy_seed": 0,
+      "policy_sha256": "536822bf671fb5ba1392ca44eb0a2264c02a54bed981564bee143a7c0ff818e2",
+      "rng_protocol": "sgvla-seeded-noise-v1"
+    }
+  },
+  "source": {
+    "bddl_sha256": "4a4e545483a3fe30cf0ef3dc05bfe5e6ad5e37c94b4376dfa73fe1b60e75b319",
+    "initial_state_sha256": "9359944dfbca3fa06c085d345386047f2c88ad51506492c7b3707321c9f03ee1",
+    "official_prompt": "pick up the ketchup and place it in the basket",
+    "task_name": "pick_up_the_ketchup_and_place_it_in_the_basket"
+  },
+  "status": "completed",
+  "steps": 153,
+  "success": true,
+  "suite": "libero_object",
+  "target_object": "ketchup_1",
+  "undo": {
+    "applied": false
+  },
+  "wall_clock_seconds": 24.706380453000293,
+  "watch": [
+    "in ketchup_1 basket_1_contain_region",
+    "in bbq_sauce_1 basket_1_contain_region"
+  ],
+  "watch_final": [
+    true,
+    false
+  ],
+  "watch_first_true_step": [
+    153,
+    null
+  ]
+}

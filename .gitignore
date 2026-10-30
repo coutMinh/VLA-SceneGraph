@@ -13,7 +13,7 @@ build/
 !.env.example
 results/runs/
 results/logs/
-# Live runtime state is external; reviewed result packages live in results/part2/.
+# Live runtime state is external; see docs/ARTIFACTS.md.
 /docs/*.json
 /docs/*_freeze.txt
 /jobs/

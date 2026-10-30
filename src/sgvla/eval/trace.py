@@ -12,6 +12,104 @@ def observation_hash(element):
     )
 
 
+ENDPOINT_TOLERANCES = {
+    "state_max_abs": 1e-5,
+    "image_mean_abs": 0.02,
+    "image_fraction_changed": 0.01,
+    "image_max_abs": 64.0,
+}
+
+
+def compare_observations(reference, actual):
+    """Compare policy inputs across MuJoCo/renderer processes with explicit tolerances."""
+    import numpy as np
+
+    if set(reference) != set(actual):
+        return {
+            "matches": False,
+            "reason": "observation keys differ",
+            "reference_keys": sorted(reference),
+            "actual_keys": sorted(actual),
+        }
+
+    components = {}
+    matches = True
+    for key in sorted(reference):
+        if key == "prompt":
+            left_array = np.asarray(reference[key])
+            right_array = np.asarray(actual[key])
+            component = {
+                "equal": left_array.item() == right_array.item(),
+                "shape_equal": left_array.shape == right_array.shape,
+            }
+            matches = matches and component["equal"] and component["shape_equal"]
+        else:
+            left = np.asarray(reference[key])
+            right = np.asarray(actual[key])
+            if left.shape != right.shape:
+                components[key] = {
+                    "matches": False,
+                    "reference_shape": list(left.shape),
+                    "actual_shape": list(right.shape),
+                }
+                matches = False
+                continue
+            dtype_equal = left.dtype == right.dtype
+            difference = np.abs(left.astype(np.float64) - right.astype(np.float64))
+            if key == "observation/state":
+                maximum = float(difference.max(initial=0.0))
+                component = {
+                    "dtype_equal": bool(dtype_equal),
+                    "max_abs": maximum,
+                    "tolerance": ENDPOINT_TOLERANCES["state_max_abs"],
+                    "matches": bool(dtype_equal)
+                    and bool(np.isfinite(difference).all())
+                    and maximum <= ENDPOINT_TOLERANCES["state_max_abs"],
+                }
+            elif key in ("observation/image", "observation/wrist_image"):
+                maximum = float(difference.max(initial=0.0))
+                mean = float(difference.mean())
+                fraction = float(np.count_nonzero(difference) / difference.size)
+                component = {
+                    "dtype_equal": bool(dtype_equal),
+                    "max_abs": maximum,
+                    "mean_abs": mean,
+                    "fraction_changed": fraction,
+                    "tolerances": {
+                        "max_abs": ENDPOINT_TOLERANCES["image_max_abs"],
+                        "mean_abs": ENDPOINT_TOLERANCES["image_mean_abs"],
+                        "fraction_changed": ENDPOINT_TOLERANCES[
+                            "image_fraction_changed"
+                        ],
+                    },
+                    "matches": bool(dtype_equal)
+                    and bool(np.isfinite(difference).all())
+                    and maximum <= ENDPOINT_TOLERANCES["image_max_abs"]
+                    and mean <= ENDPOINT_TOLERANCES["image_mean_abs"]
+                    and fraction <= ENDPOINT_TOLERANCES["image_fraction_changed"],
+                }
+            else:
+                component = {
+                    "dtype_equal": bool(dtype_equal),
+                    "equal": bool(np.array_equal(left, right)),
+                }
+                matches = matches and component["equal"] and component["dtype_equal"]
+            if "matches" in component:
+                matches = matches and component["matches"]
+        components[key] = component
+
+    hash_reference = dict(reference)
+    if "prompt" in hash_reference:
+        hash_reference["prompt"] = np.asarray(hash_reference["prompt"]).item()
+    return {
+        "matches": bool(matches),
+        "reference_sha256": observation_hash(hash_reference),
+        "actual_sha256": observation_hash(actual),
+        "tolerances": ENDPOINT_TOLERANCES,
+        "components": components,
+    }
+
+
 class Trace:
     """Stream videos; retain compact numeric data, including settling and terminal frames."""
 

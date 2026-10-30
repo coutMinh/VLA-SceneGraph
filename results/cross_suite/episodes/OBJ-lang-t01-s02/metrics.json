@@ -1,0 +1,141 @@
+{
+  "condition": "lang",
+  "episode_id": "OBJ-lang-t01-s02",
+  "first_lifted": "alphabet_soup_1",
+  "first_lifted_policy_step": 62,
+  "frames": 182,
+  "intervention_kind": "none",
+  "max_rise_m": {
+    "alphabet_soup_1": 0.24613252822699394,
+    "basket_1": 0.002077235852773859,
+    "butter_1": 0.0,
+    "cream_cheese_1": 0.0,
+    "milk_1": 0.0,
+    "orange_juice_1": 0.0,
+    "tomato_sauce_1": 0.0
+  },
+  "max_steps": 280,
+  "object_names": [
+    "alphabet_soup_1",
+    "basket_1",
+    "butter_1",
+    "cream_cheese_1",
+    "milk_1",
+    "orange_juice_1",
+    "tomato_sauce_1"
+  ],
+  "phase_labels": {
+    "0": "settling",
+    "1": "policy",
+    "2": "terminal",
+    "5": "intervention_settling"
+  },
+  "policy_call_seconds": [
+    0.13673461600001247,
+    0.15832320400022581,
+    0.0907568990000982,
+    0.1005985070000861,
+    0.13621107200015103,
+    0.1000894009998774,
+    0.0891728139999941,
+    0.12200881899980232,
+    0.1852286470002582,
+    0.16563436999967962,
+    0.1223270160003267,
+    0.13705420099995536,
+    0.1660848219999025,
+    0.1504451880000488,
+    0.1384669720000602,
+    0.12291504499989969,
+    0.09696093499997005,
+    0.13358509299996513,
+    0.09666279099974417,
+    0.08933006799998111,
+    0.14736916199990446,
+    0.1359472630001619,
+    0.15635508600007597,
+    0.15795446000038282,
+    0.1428669520000767,
+    0.14859575299988137,
+    0.16545581699983813,
+    0.19839974099977553,
+    0.1904980119998072,
+    0.20497238100006143,
+    0.18650787700016735
+  ],
+  "policy_observation_hashes": [
+    "f4d7e3f72cb1075e9264ae1c180e05fee3820a2dafff2743f04b61be21ff2421",
+    "4cfeb392a7bd35745538aa8789f14231d6ac22ab936b14e194b2768ddd7ac885",
+    "970f788c945122e593c59a825d9846665bddbf77cbf6105a3c2842959e6188b4",
+    "f0e06358fe44008a4bafbe221c67c9cf05e0f0c5601ada59dfd107b31902c1bd",
+    "32f8cd5fc807916d5e5490266f6b9398efac9176192fef644bf1ec72a83a7949",
+    "e9ff79a06012393d9e5735630ae4a03343ff98b374a95cc9129e96e960d1c3d3",
+    "f6cfb33aafe3e0f93101deeafebc9d06dda3d6e3ac1326e9648119e42266af92",
+    "fdd4f9614ff147cb437611c46e12e503f4d3c5ca3d8c918a528fe53c293b7826",
+    "570acfeafa90c892f822a56800b666496523265900c2855587188cefe2fbefc4",
+    "883c883a58a11e3c9fe91e3f6b719c9e862ec089f902fee2aa4e4c9776a97634",
+    "899e7ce3c9c9ae256bd8d4fc7a16e03f5990a962c91053f3d74d2dc661566d06",
+    "90da23f9ba9be2f77308ad9e338fc967b3827353f4e74538b81b26129a0d9e4f",
+    "b7d861a52c0df425b7806aae4d31e62cbf7d29fa8c2a69f9d52c42c02b195857",
+    "1f968e035ad80ac184e1d783fe34d09c404a10daddb6c98a8567c04e7dfdf840",
+    "7a4dcf70aee6e367d50006710fc8303d98552be54689cfa422315a06369f8f1e",
+    "9faa15028362370f009571e6312ae067366bf85e07895cab450957e01e19a98c",
+    "841813308bb9a2904ff3bd5f8b6879a53701b082f8c271c41063d81a531aa084",
+    "c90e6fb35672d8253c28b6de34537847b97b826a548956c0addc693dca9d59b5",
+    "914b8a2ae3f688401eb2fc2b59e7fea4763c2156acb9b7621e54e9bafe483548",
+    "b4eb46a51f8d6ccf28b86f2fd53b1e4c433b4ed4e86d2a9a2069bbfb38160075",
+    "bf0769f58fa53e460a731828cf3f336c152818c11f524f87ebd7918a9aef6c14",
+    "9472790d849055372ed01f4fe99f084d04e208bcec55e2b82d4752fdf8b64ca7",
+    "b2635d27b8ed7dddc13597e2d0abf1afbc01cbbff588a9fe2e390c6ce73deda1",
+    "117803e1277653067ca8fc1ac85ad27ea6d01cb440a7793b10a361ddbe22ba08",
+    "bf9f654a6d295d09cc73cd7096c5796af23c65d44e1085a25f78494fc5d427fb",
+    "4fe0678958a14ba3d35567be2f1df2bdcf5172e449f3cdb7d50499bbe3c79263",
+    "ec7037bd7822ee38d038727eacab50ea225a0256be62a1587e1f74f230ff549b",
+    "1b50c1edfae543babc8b96400dbbd37d0144178f83416297fa3fca024f4c5329",
+    "4098b8b0888396fd692b705dbe9551af1e45500bfeb8ee34bc046a48371e8f68",
+    "ac551ddff34f5cfd32a07b409d777a19f0da6bd0cfb18067de52f4de0e1c810a",
+    "2b0a5518a1a98fb356b2ff2435024ab0847be0b9434a7ab6adb6d5c682fd47c0"
+  ],
+  "policy_seed": 114639272,
+  "policy_start_frame": 30,
+  "prompt": "pick up the alphabet soup and place it in the basket",
+  "server_metadata": {
+    "sgvla": {
+      "backend": "jax",
+      "config_sha256": "3974be2ae6ea751c4f679ac154b8844b6e0e353697851e9fd7a1f6bd0613d658",
+      "model_config": "pi0_libero",
+      "num_steps": 10,
+      "openpi_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+      "policy_seed": 0,
+      "policy_sha256": "536822bf671fb5ba1392ca44eb0a2264c02a54bed981564bee143a7c0ff818e2",
+      "rng_protocol": "sgvla-seeded-noise-v1"
+    }
+  },
+  "source": {
+    "bddl_sha256": "7019f37ee158d67a21338a6df0c441dd8f84979b946b5e20bb49463ef0508ea2",
+    "initial_state_sha256": "52fb020a122cad05649d5623a525b91e78590c61856b8e22293f2086e2bfd348",
+    "official_prompt": "pick up the cream cheese and place it in the basket",
+    "task_name": "pick_up_the_cream_cheese_and_place_it_in_the_basket"
+  },
+  "status": "completed",
+  "steps": 151,
+  "success": true,
+  "suite": "libero_object",
+  "target_object": "alphabet_soup_1",
+  "undo": {
+    "applied": false
+  },
+  "wall_clock_seconds": 24.68588231500007,
+  "watch": [
+    "in cream_cheese_1 basket_1_contain_region",
+    "in alphabet_soup_1 basket_1_contain_region"
+  ],
+  "watch_final": [
+    false,
+    true
+  ],
+  "watch_first_true_step": [
+    null,
+    151
+  ]
+}

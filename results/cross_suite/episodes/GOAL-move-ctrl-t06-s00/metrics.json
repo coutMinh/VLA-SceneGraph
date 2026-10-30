@@ -1,0 +1,6 @@
+{
+  "condition": "move-ctrl",
+  "reason": "No valid relocation for plate_1",
+  "status": "excluded",
+  "wall_clock_seconds": 4.644370329999674
+}

@@ -1,0 +1,2377 @@
+{
+  "conditions": [
+    {
+      "condition": "OBJ-E0",
+      "n": 9,
+      "outcomes": {
+        "success": 9
+      },
+      "question": "official baseline",
+      "rate": 1.0,
+      "successes": 9,
+      "suite": "libero_object",
+      "wilson95": [
+        0.7009,
+        1.0
+      ],
+      "wrong_object_lifted_first": 0
+    },
+    {
+      "condition": "OBJ-swap",
+      "n": 9,
+      "outcomes": {
+        "no_lift": 2,
+        "wrong_object_first": 7
+      },
+      "paired_vs_E0": {
+        "condition_only": 0,
+        "e0_only": 9,
+        "exact_mcnemar_p": 0.00391,
+        "pairs": 9
+      },
+      "question": "Target exchanges place with the object in the other canonical target slot. Does pi0 fetch the named object, or whatever sits at the trained target position?",
+      "rate": 0.0,
+      "successes": 0,
+      "suite": "libero_object",
+      "wilson95": [
+        0.0,
+        0.2991
+      ],
+      "wrong_object_lifted_first": 7
+    },
+    {
+      "condition": "OBJ-swap-ctrl",
+      "n": 9,
+      "outcomes": {
+        "no_lift": 1,
+        "success": 7,
+        "target_lifted_not_placed": 1
+      },
+      "paired_vs_E0": {
+        "condition_only": 0,
+        "e0_only": 2,
+        "exact_mcnemar_p": 0.5,
+        "pairs": 9
+      },
+      "question": "Two distractors exchange places; target untouched (layout-novelty control).",
+      "rate": 0.7778,
+      "successes": 7,
+      "suite": "libero_object",
+      "wilson95": [
+        0.4526,
+        0.9368
+      ],
+      "wrong_object_lifted_first": 0
+    },
+    {
+      "condition": "OBJ-lang",
+      "n": 9,
+      "outcomes": {
+        "success": 8,
+        "target_lifted_not_placed": 1
+      },
+      "paired_vs_E0": {
+        "condition_only": 0,
+        "e0_only": 1,
+        "exact_mcnemar_p": 1.0,
+        "pairs": 9
+      },
+      "question": "Same scene; instruction names the object in the other canonical target slot. Does language select the object (S1 analogue)?",
+      "rate": 0.8889,
+      "successes": 8,
+      "suite": "libero_object",
+      "wilson95": [
+        0.565,
+        0.9801
+      ],
+      "wrong_object_lifted_first": 0
+    },
+    {
+      "condition": "GOAL-E0",
+      "n": 9,
+      "outcomes": {
+        "success": 9
+      },
+      "question": "official baseline",
+      "rate": 1.0,
+      "successes": 9,
+      "suite": "libero_goal",
+      "wilson95": [
+        0.7009,
+        1.0
+      ],
+      "wrong_object_lifted_first": 0
+    },
+    {
+      "condition": "GOAL-move",
+      "n": 9,
+      "outcomes": {
+        "success": 4,
+        "target_lifted_not_placed": 5
+      },
+      "paired_vs_E0": {
+        "condition_only": 0,
+        "e0_only": 5,
+        "exact_mcnemar_p": 0.0625,
+        "pairs": 9
+      },
+      "question": "The task-relevant object is relocated before the policy starts. Does pi0 act on the current position or the trained one (S2 analogue)?",
+      "rate": 0.4444,
+      "successes": 4,
+      "suite": "libero_goal",
+      "wilson95": [
+        0.1888,
+        0.7333
+      ],
+      "wrong_object_lifted_first": 0
+    },
+    {
+      "condition": "GOAL-move-ctrl",
+      "n": 8,
+      "outcomes": {
+        "success": 8
+      },
+      "paired_vs_E0": {
+        "condition_only": 0,
+        "e0_only": 0,
+        "exact_mcnemar_p": 1.0,
+        "pairs": 8
+      },
+      "question": "An irrelevant object is relocated (novelty control).",
+      "rate": 1.0,
+      "successes": 8,
+      "suite": "libero_goal",
+      "wilson95": [
+        0.6756,
+        1.0
+      ],
+      "wrong_object_lifted_first": 0
+    },
+    {
+      "condition": "LONG-E0",
+      "n": 9,
+      "outcomes": {
+        "success": 9
+      },
+      "question": "official baseline",
+      "rate": 1.0,
+      "successes": 9,
+      "suite": "libero_10",
+      "wilson95": [
+        0.7009,
+        1.0
+      ],
+      "wrong_object_lifted_first": 0
+    },
+    {
+      "condition": "LONG-pre",
+      "n": 9,
+      "outcomes": {
+        "remaining_subgoal_not_done": 6,
+        "success": 3
+      },
+      "paired_vs_E0": {
+        "condition_only": 0,
+        "e0_only": 6,
+        "exact_mcnemar_p": 0.03125,
+        "pairs": 9
+      },
+      "question": "The first named sub-goal is already satisfied at policy start. Is progress read from the scene?",
+      "rate": 0.3333,
+      "successes": 3,
+      "suite": "libero_10",
+      "wilson95": [
+        0.1206,
+        0.6458
+      ],
+      "wrong_object_lifted_first": 4
+    },
+    {
+      "condition": "LONG-undo",
+      "n": 9,
+      "outcomes": {
+        "returned_subgoal_not_redone": 9
+      },
+      "paired_vs_E0": {
+        "condition_only": 0,
+        "e0_only": 9,
+        "exact_mcnemar_p": 0.00391,
+        "pairs": 9
+      },
+      "question": "The first object placed in the basket is returned to its start pose after it has rested there; a policy without history sees an unfinished scene again.",
+      "rate": 0.0,
+      "successes": 0,
+      "suite": "libero_10",
+      "wilson95": [
+        0.0,
+        0.2991
+      ],
+      "wrong_object_lifted_first": 0
+    }
+  ],
+  "episodes": [
+    {
+      "condition": "E0",
+      "episode_id": "GOAL-E0-t01-s00",
+      "first_lifted": "akita_black_bowl_1",
+      "init_state_id": 0,
+      "outcome": "success",
+      "prompt": "put the bowl on the stove",
+      "status": "completed",
+      "steps": 78,
+      "success": true,
+      "suite": "libero_goal",
+      "target_object": "akita_black_bowl_1",
+      "task_id": 1,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 18.444888570999865,
+      "watch_final": {
+        "on akita_black_bowl_1 flat_stove_1_cook_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "E0",
+      "episode_id": "GOAL-E0-t01-s01",
+      "first_lifted": "akita_black_bowl_1",
+      "init_state_id": 1,
+      "outcome": "success",
+      "prompt": "put the bowl on the stove",
+      "status": "completed",
+      "steps": 83,
+      "success": true,
+      "suite": "libero_goal",
+      "target_object": "akita_black_bowl_1",
+      "task_id": 1,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 18.716334653000104,
+      "watch_final": {
+        "on akita_black_bowl_1 flat_stove_1_cook_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "E0",
+      "episode_id": "GOAL-E0-t01-s02",
+      "first_lifted": "akita_black_bowl_1",
+      "init_state_id": 2,
+      "outcome": "success",
+      "prompt": "put the bowl on the stove",
+      "status": "completed",
+      "steps": 79,
+      "success": true,
+      "suite": "libero_goal",
+      "target_object": "akita_black_bowl_1",
+      "task_id": 1,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 18.580213830000048,
+      "watch_final": {
+        "on akita_black_bowl_1 flat_stove_1_cook_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "E0",
+      "episode_id": "GOAL-E0-t06-s00",
+      "first_lifted": "cream_cheese_1",
+      "init_state_id": 0,
+      "outcome": "success",
+      "prompt": "put the cream cheese in the bowl",
+      "status": "completed",
+      "steps": 119,
+      "success": true,
+      "suite": "libero_goal",
+      "target_object": "cream_cheese_1",
+      "task_id": 6,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 24.967357537000225,
+      "watch_final": {
+        "on cream_cheese_1 akita_black_bowl_1": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "E0",
+      "episode_id": "GOAL-E0-t06-s01",
+      "first_lifted": "cream_cheese_1",
+      "init_state_id": 1,
+      "outcome": "success",
+      "prompt": "put the cream cheese in the bowl",
+      "status": "completed",
+      "steps": 89,
+      "success": true,
+      "suite": "libero_goal",
+      "target_object": "cream_cheese_1",
+      "task_id": 6,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 20.08758090900028,
+      "watch_final": {
+        "on cream_cheese_1 akita_black_bowl_1": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "E0",
+      "episode_id": "GOAL-E0-t06-s02",
+      "first_lifted": "cream_cheese_1",
+      "init_state_id": 2,
+      "outcome": "success",
+      "prompt": "put the cream cheese in the bowl",
+      "status": "completed",
+      "steps": 92,
+      "success": true,
+      "suite": "libero_goal",
+      "target_object": "cream_cheese_1",
+      "task_id": 6,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 20.546698139,
+      "watch_final": {
+        "on cream_cheese_1 akita_black_bowl_1": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "E0",
+      "episode_id": "GOAL-E0-t08-s00",
+      "first_lifted": "akita_black_bowl_1",
+      "init_state_id": 0,
+      "outcome": "success",
+      "prompt": "put the bowl on the plate",
+      "status": "completed",
+      "steps": 80,
+      "success": true,
+      "suite": "libero_goal",
+      "target_object": "akita_black_bowl_1",
+      "task_id": 8,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 23.715440569999828,
+      "watch_final": {
+        "on akita_black_bowl_1 plate_1": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "E0",
+      "episode_id": "GOAL-E0-t08-s01",
+      "first_lifted": "akita_black_bowl_1",
+      "init_state_id": 1,
+      "outcome": "success",
+      "prompt": "put the bowl on the plate",
+      "status": "completed",
+      "steps": 76,
+      "success": true,
+      "suite": "libero_goal",
+      "target_object": "akita_black_bowl_1",
+      "task_id": 8,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 24.003957246000027,
+      "watch_final": {
+        "on akita_black_bowl_1 plate_1": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "E0",
+      "episode_id": "GOAL-E0-t08-s02",
+      "first_lifted": "akita_black_bowl_1",
+      "init_state_id": 2,
+      "outcome": "success",
+      "prompt": "put the bowl on the plate",
+      "status": "completed",
+      "steps": 80,
+      "success": true,
+      "suite": "libero_goal",
+      "target_object": "akita_black_bowl_1",
+      "task_id": 8,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 24.90382470099985,
+      "watch_final": {
+        "on akita_black_bowl_1 plate_1": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "move-ctrl",
+      "episode_id": "GOAL-move-ctrl-t01-s00",
+      "first_lifted": "akita_black_bowl_1",
+      "init_state_id": 0,
+      "outcome": "success",
+      "prompt": "put the bowl on the stove",
+      "status": "completed",
+      "steps": 79,
+      "success": true,
+      "suite": "libero_goal",
+      "target_object": "akita_black_bowl_1",
+      "task_id": 1,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 22.467077279000023,
+      "watch_final": {
+        "on akita_black_bowl_1 flat_stove_1_cook_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "move-ctrl",
+      "episode_id": "GOAL-move-ctrl-t01-s01",
+      "first_lifted": "akita_black_bowl_1",
+      "init_state_id": 1,
+      "outcome": "success",
+      "prompt": "put the bowl on the stove",
+      "status": "completed",
+      "steps": 91,
+      "success": true,
+      "suite": "libero_goal",
+      "target_object": "akita_black_bowl_1",
+      "task_id": 1,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 24.249067625999942,
+      "watch_final": {
+        "on akita_black_bowl_1 flat_stove_1_cook_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "move-ctrl",
+      "episode_id": "GOAL-move-ctrl-t01-s02",
+      "first_lifted": "akita_black_bowl_1",
+      "init_state_id": 2,
+      "outcome": "success",
+      "prompt": "put the bowl on the stove",
+      "status": "completed",
+      "steps": 80,
+      "success": true,
+      "suite": "libero_goal",
+      "target_object": "akita_black_bowl_1",
+      "task_id": 1,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 19.790715664000345,
+      "watch_final": {
+        "on akita_black_bowl_1 flat_stove_1_cook_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "move-ctrl",
+      "episode_id": "GOAL-move-ctrl-t06-s01",
+      "first_lifted": "cream_cheese_1",
+      "init_state_id": 1,
+      "outcome": "success",
+      "prompt": "put the cream cheese in the bowl",
+      "status": "completed",
+      "steps": 107,
+      "success": true,
+      "suite": "libero_goal",
+      "target_object": "cream_cheese_1",
+      "task_id": 6,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 25.454221951999898,
+      "watch_final": {
+        "on cream_cheese_1 akita_black_bowl_1": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "move-ctrl",
+      "episode_id": "GOAL-move-ctrl-t06-s02",
+      "first_lifted": "cream_cheese_1",
+      "init_state_id": 2,
+      "outcome": "success",
+      "prompt": "put the cream cheese in the bowl",
+      "status": "completed",
+      "steps": 104,
+      "success": true,
+      "suite": "libero_goal",
+      "target_object": "cream_cheese_1",
+      "task_id": 6,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 24.844115544000033,
+      "watch_final": {
+        "on cream_cheese_1 akita_black_bowl_1": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "move-ctrl",
+      "episode_id": "GOAL-move-ctrl-t08-s00",
+      "first_lifted": "akita_black_bowl_1",
+      "init_state_id": 0,
+      "outcome": "success",
+      "prompt": "put the bowl on the plate",
+      "status": "completed",
+      "steps": 84,
+      "success": true,
+      "suite": "libero_goal",
+      "target_object": "akita_black_bowl_1",
+      "task_id": 8,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 22.066112299999986,
+      "watch_final": {
+        "on akita_black_bowl_1 plate_1": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "move-ctrl",
+      "episode_id": "GOAL-move-ctrl-t08-s01",
+      "first_lifted": "akita_black_bowl_1",
+      "init_state_id": 1,
+      "outcome": "success",
+      "prompt": "put the bowl on the plate",
+      "status": "completed",
+      "steps": 79,
+      "success": true,
+      "suite": "libero_goal",
+      "target_object": "akita_black_bowl_1",
+      "task_id": 8,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 20.945983580000302,
+      "watch_final": {
+        "on akita_black_bowl_1 plate_1": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "move-ctrl",
+      "episode_id": "GOAL-move-ctrl-t08-s02",
+      "first_lifted": "akita_black_bowl_1",
+      "init_state_id": 2,
+      "outcome": "success",
+      "prompt": "put the bowl on the plate",
+      "status": "completed",
+      "steps": 83,
+      "success": true,
+      "suite": "libero_goal",
+      "target_object": "akita_black_bowl_1",
+      "task_id": 8,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 21.55105912800036,
+      "watch_final": {
+        "on akita_black_bowl_1 plate_1": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "move",
+      "episode_id": "GOAL-move-t01-s00",
+      "first_lifted": "akita_black_bowl_1",
+      "init_state_id": 0,
+      "outcome": "success",
+      "prompt": "put the bowl on the stove",
+      "status": "completed",
+      "steps": 78,
+      "success": true,
+      "suite": "libero_goal",
+      "target_object": "akita_black_bowl_1",
+      "task_id": 1,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 23.488066538000112,
+      "watch_final": {
+        "on akita_black_bowl_1 flat_stove_1_cook_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "move",
+      "episode_id": "GOAL-move-t01-s01",
+      "first_lifted": "akita_black_bowl_1",
+      "init_state_id": 1,
+      "outcome": "success",
+      "prompt": "put the bowl on the stove",
+      "status": "completed",
+      "steps": 68,
+      "success": true,
+      "suite": "libero_goal",
+      "target_object": "akita_black_bowl_1",
+      "task_id": 1,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 22.006608442000015,
+      "watch_final": {
+        "on akita_black_bowl_1 flat_stove_1_cook_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "move",
+      "episode_id": "GOAL-move-t01-s02",
+      "first_lifted": "akita_black_bowl_1",
+      "init_state_id": 2,
+      "outcome": "success",
+      "prompt": "put the bowl on the stove",
+      "status": "completed",
+      "steps": 104,
+      "success": true,
+      "suite": "libero_goal",
+      "target_object": "akita_black_bowl_1",
+      "task_id": 1,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 25.411918533000062,
+      "watch_final": {
+        "on akita_black_bowl_1 flat_stove_1_cook_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "move",
+      "episode_id": "GOAL-move-t06-s00",
+      "first_lifted": "cream_cheese_1",
+      "init_state_id": 0,
+      "outcome": "target_lifted_not_placed",
+      "prompt": "put the cream cheese in the bowl",
+      "status": "completed",
+      "steps": 300,
+      "success": false,
+      "suite": "libero_goal",
+      "target_object": "cream_cheese_1",
+      "task_id": 6,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 51.114913866999814,
+      "watch_final": {
+        "on cream_cheese_1 akita_black_bowl_1": false
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "move",
+      "episode_id": "GOAL-move-t06-s01",
+      "first_lifted": "cream_cheese_1",
+      "init_state_id": 1,
+      "outcome": "target_lifted_not_placed",
+      "prompt": "put the cream cheese in the bowl",
+      "status": "completed",
+      "steps": 300,
+      "success": false,
+      "suite": "libero_goal",
+      "target_object": "cream_cheese_1",
+      "task_id": 6,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 52.01109548799968,
+      "watch_final": {
+        "on cream_cheese_1 akita_black_bowl_1": false
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "move",
+      "episode_id": "GOAL-move-t06-s02",
+      "first_lifted": "cream_cheese_1",
+      "init_state_id": 2,
+      "outcome": "target_lifted_not_placed",
+      "prompt": "put the cream cheese in the bowl",
+      "status": "completed",
+      "steps": 300,
+      "success": false,
+      "suite": "libero_goal",
+      "target_object": "cream_cheese_1",
+      "task_id": 6,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 51.14994554399982,
+      "watch_final": {
+        "on cream_cheese_1 akita_black_bowl_1": false
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "move",
+      "episode_id": "GOAL-move-t08-s00",
+      "first_lifted": "akita_black_bowl_1",
+      "init_state_id": 0,
+      "outcome": "target_lifted_not_placed",
+      "prompt": "put the bowl on the plate",
+      "status": "completed",
+      "steps": 300,
+      "success": false,
+      "suite": "libero_goal",
+      "target_object": "akita_black_bowl_1",
+      "task_id": 8,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 51.77545755899973,
+      "watch_final": {
+        "on akita_black_bowl_1 plate_1": false
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "move",
+      "episode_id": "GOAL-move-t08-s01",
+      "first_lifted": "akita_black_bowl_1",
+      "init_state_id": 1,
+      "outcome": "success",
+      "prompt": "put the bowl on the plate",
+      "status": "completed",
+      "steps": 81,
+      "success": true,
+      "suite": "libero_goal",
+      "target_object": "akita_black_bowl_1",
+      "task_id": 8,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 18.95377689299994,
+      "watch_final": {
+        "on akita_black_bowl_1 plate_1": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "move",
+      "episode_id": "GOAL-move-t08-s02",
+      "first_lifted": "akita_black_bowl_1",
+      "init_state_id": 2,
+      "outcome": "target_lifted_not_placed",
+      "prompt": "put the bowl on the plate",
+      "status": "completed",
+      "steps": 300,
+      "success": false,
+      "suite": "libero_goal",
+      "target_object": "akita_black_bowl_1",
+      "task_id": 8,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 51.14325152600031,
+      "watch_final": {
+        "on akita_black_bowl_1 plate_1": false
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "E0",
+      "episode_id": "LONG-E0-t00-s00",
+      "first_lifted": "alphabet_soup_1",
+      "init_state_id": 0,
+      "outcome": "success",
+      "prompt": "put both the alphabet soup and the tomato sauce in the basket",
+      "status": "completed",
+      "steps": 260,
+      "success": true,
+      "suite": "libero_10",
+      "target_object": "alphabet_soup_1",
+      "task_id": 0,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 45.6733323389999,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": true,
+        "in tomato_sauce_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "E0",
+      "episode_id": "LONG-E0-t00-s01",
+      "first_lifted": "alphabet_soup_1",
+      "init_state_id": 1,
+      "outcome": "success",
+      "prompt": "put both the alphabet soup and the tomato sauce in the basket",
+      "status": "completed",
+      "steps": 254,
+      "success": true,
+      "suite": "libero_10",
+      "target_object": "alphabet_soup_1",
+      "task_id": 0,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 45.17638435799972,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": true,
+        "in tomato_sauce_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "E0",
+      "episode_id": "LONG-E0-t00-s02",
+      "first_lifted": "alphabet_soup_1",
+      "init_state_id": 2,
+      "outcome": "success",
+      "prompt": "put both the alphabet soup and the tomato sauce in the basket",
+      "status": "completed",
+      "steps": 249,
+      "success": true,
+      "suite": "libero_10",
+      "target_object": "alphabet_soup_1",
+      "task_id": 0,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 44.617774241000006,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": true,
+        "in tomato_sauce_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "E0",
+      "episode_id": "LONG-E0-t01-s00",
+      "first_lifted": "cream_cheese_1",
+      "init_state_id": 0,
+      "outcome": "success",
+      "prompt": "put both the cream cheese box and the butter in the basket",
+      "status": "completed",
+      "steps": 259,
+      "success": true,
+      "suite": "libero_10",
+      "target_object": "cream_cheese_1",
+      "task_id": 1,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 37.61113649199979,
+      "watch_final": {
+        "in butter_1 basket_1_contain_region": true,
+        "in cream_cheese_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "E0",
+      "episode_id": "LONG-E0-t01-s01",
+      "first_lifted": "cream_cheese_1",
+      "init_state_id": 1,
+      "outcome": "success",
+      "prompt": "put both the cream cheese box and the butter in the basket",
+      "status": "completed",
+      "steps": 262,
+      "success": true,
+      "suite": "libero_10",
+      "target_object": "cream_cheese_1",
+      "task_id": 1,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 37.2861710330003,
+      "watch_final": {
+        "in butter_1 basket_1_contain_region": true,
+        "in cream_cheese_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "E0",
+      "episode_id": "LONG-E0-t01-s02",
+      "first_lifted": "cream_cheese_1",
+      "init_state_id": 2,
+      "outcome": "success",
+      "prompt": "put both the cream cheese box and the butter in the basket",
+      "status": "completed",
+      "steps": 242,
+      "success": true,
+      "suite": "libero_10",
+      "target_object": "cream_cheese_1",
+      "task_id": 1,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 35.6867211079998,
+      "watch_final": {
+        "in butter_1 basket_1_contain_region": true,
+        "in cream_cheese_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "E0",
+      "episode_id": "LONG-E0-t07-s00",
+      "first_lifted": "alphabet_soup_1",
+      "init_state_id": 0,
+      "outcome": "success",
+      "prompt": "put both the alphabet soup and the cream cheese box in the basket",
+      "status": "completed",
+      "steps": 230,
+      "success": true,
+      "suite": "libero_10",
+      "target_object": "alphabet_soup_1",
+      "task_id": 7,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 29.17187034799963,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": true,
+        "in cream_cheese_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "E0",
+      "episode_id": "LONG-E0-t07-s01",
+      "first_lifted": "alphabet_soup_1",
+      "init_state_id": 1,
+      "outcome": "success",
+      "prompt": "put both the alphabet soup and the cream cheese box in the basket",
+      "status": "completed",
+      "steps": 279,
+      "success": true,
+      "suite": "libero_10",
+      "target_object": "alphabet_soup_1",
+      "task_id": 7,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 34.91653773899998,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": true,
+        "in cream_cheese_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "E0",
+      "episode_id": "LONG-E0-t07-s02",
+      "first_lifted": "alphabet_soup_1",
+      "init_state_id": 2,
+      "outcome": "success",
+      "prompt": "put both the alphabet soup and the cream cheese box in the basket",
+      "status": "completed",
+      "steps": 253,
+      "success": true,
+      "suite": "libero_10",
+      "target_object": "alphabet_soup_1",
+      "task_id": 7,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 31.92895356600002,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": true,
+        "in cream_cheese_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "pre",
+      "episode_id": "LONG-pre-t00-s00",
+      "first_lifted": null,
+      "init_state_id": 0,
+      "outcome": "remaining_subgoal_not_done",
+      "prompt": "put both the alphabet soup and the tomato sauce in the basket",
+      "status": "completed",
+      "steps": 520,
+      "success": false,
+      "suite": "libero_10",
+      "target_object": "alphabet_soup_1",
+      "task_id": 0,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 69.98893690499972,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": true,
+        "in tomato_sauce_1 basket_1_contain_region": false
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "pre",
+      "episode_id": "LONG-pre-t00-s01",
+      "first_lifted": "ketchup_1",
+      "init_state_id": 1,
+      "outcome": "success",
+      "prompt": "put both the alphabet soup and the tomato sauce in the basket",
+      "status": "completed",
+      "steps": 443,
+      "success": true,
+      "suite": "libero_10",
+      "target_object": "alphabet_soup_1",
+      "task_id": 0,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 64.20115756999985,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": true,
+        "in tomato_sauce_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": true
+    },
+    {
+      "condition": "pre",
+      "episode_id": "LONG-pre-t00-s02",
+      "first_lifted": "orange_juice_1",
+      "init_state_id": 2,
+      "outcome": "success",
+      "prompt": "put both the alphabet soup and the tomato sauce in the basket",
+      "status": "completed",
+      "steps": 446,
+      "success": true,
+      "suite": "libero_10",
+      "target_object": "alphabet_soup_1",
+      "task_id": 0,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 77.76060315799987,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": true,
+        "in tomato_sauce_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": true
+    },
+    {
+      "condition": "pre",
+      "episode_id": "LONG-pre-t01-s00",
+      "first_lifted": "milk_1",
+      "init_state_id": 0,
+      "outcome": "remaining_subgoal_not_done",
+      "prompt": "put both the cream cheese box and the butter in the basket",
+      "status": "completed",
+      "steps": 520,
+      "success": false,
+      "suite": "libero_10",
+      "target_object": "cream_cheese_1",
+      "task_id": 1,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 87.19830968799988,
+      "watch_final": {
+        "in butter_1 basket_1_contain_region": false,
+        "in cream_cheese_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": true
+    },
+    {
+      "condition": "pre",
+      "episode_id": "LONG-pre-t01-s01",
+      "first_lifted": null,
+      "init_state_id": 1,
+      "outcome": "remaining_subgoal_not_done",
+      "prompt": "put both the cream cheese box and the butter in the basket",
+      "status": "completed",
+      "steps": 520,
+      "success": false,
+      "suite": "libero_10",
+      "target_object": "cream_cheese_1",
+      "task_id": 1,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 87.50548457299965,
+      "watch_final": {
+        "in butter_1 basket_1_contain_region": false,
+        "in cream_cheese_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "pre",
+      "episode_id": "LONG-pre-t01-s02",
+      "first_lifted": null,
+      "init_state_id": 2,
+      "outcome": "remaining_subgoal_not_done",
+      "prompt": "put both the cream cheese box and the butter in the basket",
+      "status": "completed",
+      "steps": 520,
+      "success": false,
+      "suite": "libero_10",
+      "target_object": "cream_cheese_1",
+      "task_id": 1,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 87.13929271300003,
+      "watch_final": {
+        "in butter_1 basket_1_contain_region": false,
+        "in cream_cheese_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "pre",
+      "episode_id": "LONG-pre-t07-s00",
+      "first_lifted": "cream_cheese_1",
+      "init_state_id": 0,
+      "outcome": "success",
+      "prompt": "put both the alphabet soup and the cream cheese box in the basket",
+      "status": "completed",
+      "steps": 111,
+      "success": true,
+      "suite": "libero_10",
+      "target_object": "alphabet_soup_1",
+      "task_id": 7,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 23.191395995999756,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": true,
+        "in cream_cheese_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "pre",
+      "episode_id": "LONG-pre-t07-s01",
+      "first_lifted": null,
+      "init_state_id": 1,
+      "outcome": "remaining_subgoal_not_done",
+      "prompt": "put both the alphabet soup and the cream cheese box in the basket",
+      "status": "completed",
+      "steps": 520,
+      "success": false,
+      "suite": "libero_10",
+      "target_object": "alphabet_soup_1",
+      "task_id": 7,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 70.3458424409996,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": true,
+        "in cream_cheese_1 basket_1_contain_region": false
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "pre",
+      "episode_id": "LONG-pre-t07-s02",
+      "first_lifted": "ketchup_1",
+      "init_state_id": 2,
+      "outcome": "remaining_subgoal_not_done",
+      "prompt": "put both the alphabet soup and the cream cheese box in the basket",
+      "status": "completed",
+      "steps": 520,
+      "success": false,
+      "suite": "libero_10",
+      "target_object": "alphabet_soup_1",
+      "task_id": 7,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 70.70904607800003,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": true,
+        "in cream_cheese_1 basket_1_contain_region": false
+      },
+      "wrong_first_lift": true
+    },
+    {
+      "condition": "undo",
+      "episode_id": "LONG-undo-t00-s00",
+      "first_lifted": "alphabet_soup_1",
+      "init_state_id": 0,
+      "outcome": "returned_subgoal_not_redone",
+      "prompt": "put both the alphabet soup and the tomato sauce in the basket",
+      "status": "completed",
+      "steps": 520,
+      "success": false,
+      "suite": "libero_10",
+      "target_object": "alphabet_soup_1",
+      "task_id": 0,
+      "undo": {
+        "applied": true,
+        "gripper_qpos": [
+          0.03927338200878964,
+          -0.03942686028701946
+        ],
+        "object": "alphabet_soup_1",
+        "policy_step": 152,
+        "restored_qpos": [
+          -0.10016028776420875,
+          -0.15201577009390707,
+          0.47517012396052544,
+          -0.0023500405564102177,
+          0.002346413729551324,
+          0.7074554706425367,
+          0.7067501175874963
+        ]
+      },
+      "wall_clock_seconds": 75.26217532400005,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": false,
+        "in tomato_sauce_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "undo",
+      "episode_id": "LONG-undo-t00-s01",
+      "first_lifted": "alphabet_soup_1",
+      "init_state_id": 1,
+      "outcome": "returned_subgoal_not_redone",
+      "prompt": "put both the alphabet soup and the tomato sauce in the basket",
+      "status": "completed",
+      "steps": 520,
+      "success": false,
+      "suite": "libero_10",
+      "target_object": "alphabet_soup_1",
+      "task_id": 0,
+      "undo": {
+        "applied": true,
+        "gripper_qpos": [
+          0.03925690771420023,
+          -0.039508239667629536
+        ],
+        "object": "alphabet_soup_1",
+        "policy_step": 143,
+        "restored_qpos": [
+          -0.10878940739736899,
+          -0.1290691783950495,
+          0.47517012396052544,
+          -0.0023500405564102363,
+          0.00234641372955131,
+          0.7074554706425367,
+          0.7067501175874963
+        ]
+      },
+      "wall_clock_seconds": 73.4129542339997,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": false,
+        "in tomato_sauce_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "undo",
+      "episode_id": "LONG-undo-t00-s02",
+      "first_lifted": "alphabet_soup_1",
+      "init_state_id": 2,
+      "outcome": "returned_subgoal_not_redone",
+      "prompt": "put both the alphabet soup and the tomato sauce in the basket",
+      "status": "completed",
+      "steps": 520,
+      "success": false,
+      "suite": "libero_10",
+      "target_object": "alphabet_soup_1",
+      "task_id": 0,
+      "undo": {
+        "applied": true,
+        "gripper_qpos": [
+          0.039303997593432005,
+          -0.03945566272299403
+        ],
+        "object": "alphabet_soup_1",
+        "policy_step": 145,
+        "restored_qpos": [
+          -0.0941407451020267,
+          -0.13768968669872747,
+          0.47517012396052544,
+          -0.0023500405564102216,
+          0.0023464137295512986,
+          0.7074554706425367,
+          0.7067501175874963
+        ]
+      },
+      "wall_clock_seconds": 79.24674191199983,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": false,
+        "in tomato_sauce_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "undo",
+      "episode_id": "LONG-undo-t01-s00",
+      "first_lifted": "cream_cheese_1",
+      "init_state_id": 0,
+      "outcome": "returned_subgoal_not_redone",
+      "prompt": "put both the cream cheese box and the butter in the basket",
+      "status": "completed",
+      "steps": 520,
+      "success": false,
+      "suite": "libero_10",
+      "target_object": "cream_cheese_1",
+      "task_id": 1,
+      "undo": {
+        "applied": true,
+        "gripper_qpos": [
+          0.03919008856063041,
+          -0.03943373579636395
+        ],
+        "object": "cream_cheese_1",
+        "policy_step": 171,
+        "restored_qpos": [
+          0.09910931425692633,
+          -0.18146601062546336,
+          0.44569592152000004,
+          1.3149109146879591e-33,
+          -3.5434844367928846e-19,
+          1.484708489736498e-17,
+          1.0
+        ]
+      },
+      "wall_clock_seconds": 79.20180946499977,
+      "watch_final": {
+        "in butter_1 basket_1_contain_region": true,
+        "in cream_cheese_1 basket_1_contain_region": false
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "undo",
+      "episode_id": "LONG-undo-t01-s01",
+      "first_lifted": "cream_cheese_1",
+      "init_state_id": 1,
+      "outcome": "returned_subgoal_not_redone",
+      "prompt": "put both the cream cheese box and the butter in the basket",
+      "status": "completed",
+      "steps": 520,
+      "success": false,
+      "suite": "libero_10",
+      "target_object": "cream_cheese_1",
+      "task_id": 1,
+      "undo": {
+        "applied": true,
+        "gripper_qpos": [
+          0.039256116455816795,
+          -0.039411758822488215
+        ],
+        "object": "cream_cheese_1",
+        "policy_step": 174,
+        "restored_qpos": [
+          0.07898367577954739,
+          -0.2178018278696865,
+          0.44569592152000004,
+          1.3173485716885916e-33,
+          3.8673512120615333e-19,
+          1.3111092812016736e-17,
+          1.0
+        ]
+      },
+      "wall_clock_seconds": 80.32848696400015,
+      "watch_final": {
+        "in butter_1 basket_1_contain_region": true,
+        "in cream_cheese_1 basket_1_contain_region": false
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "undo",
+      "episode_id": "LONG-undo-t01-s02",
+      "first_lifted": "cream_cheese_1",
+      "init_state_id": 2,
+      "outcome": "returned_subgoal_not_redone",
+      "prompt": "put both the cream cheese box and the butter in the basket",
+      "status": "completed",
+      "steps": 520,
+      "success": false,
+      "suite": "libero_10",
+      "target_object": "cream_cheese_1",
+      "task_id": 1,
+      "undo": {
+        "applied": true,
+        "gripper_qpos": [
+          0.039192981621573086,
+          -0.039484662827261714
+        ],
+        "object": "cream_cheese_1",
+        "policy_step": 157,
+        "restored_qpos": [
+          0.11155352647615699,
+          -0.19898889475978224,
+          0.44569592152000004,
+          5.303591521538894e-34,
+          2.8988900110495786e-20,
+          1.503293672714023e-17,
+          1.0
+        ]
+      },
+      "wall_clock_seconds": 80.69199903699973,
+      "watch_final": {
+        "in butter_1 basket_1_contain_region": true,
+        "in cream_cheese_1 basket_1_contain_region": false
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "undo",
+      "episode_id": "LONG-undo-t07-s00",
+      "first_lifted": "alphabet_soup_1",
+      "init_state_id": 0,
+      "outcome": "returned_subgoal_not_redone",
+      "prompt": "put both the alphabet soup and the cream cheese box in the basket",
+      "status": "completed",
+      "steps": 520,
+      "success": false,
+      "suite": "libero_10",
+      "target_object": "alphabet_soup_1",
+      "task_id": 7,
+      "undo": {
+        "applied": true,
+        "gripper_qpos": [
+          0.039265027558183604,
+          -0.039501022368389614
+        ],
+        "object": "alphabet_soup_1",
+        "policy_step": 135,
+        "restored_qpos": [
+          0.04156917263511992,
+          -0.10012162097475458,
+          0.47517012396052544,
+          -0.0023500405564104085,
+          0.0023464137295511004,
+          0.7074554706425367,
+          0.7067501175874962
+        ]
+      },
+      "wall_clock_seconds": 67.75482399600014,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": false,
+        "in cream_cheese_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "undo",
+      "episode_id": "LONG-undo-t07-s01",
+      "first_lifted": "alphabet_soup_1",
+      "init_state_id": 1,
+      "outcome": "returned_subgoal_not_redone",
+      "prompt": "put both the alphabet soup and the cream cheese box in the basket",
+      "status": "completed",
+      "steps": 520,
+      "success": false,
+      "suite": "libero_10",
+      "target_object": "alphabet_soup_1",
+      "task_id": 7,
+      "undo": {
+        "applied": true,
+        "gripper_qpos": [
+          0.039270928546990276,
+          -0.03949476038567096
+        ],
+        "object": "alphabet_soup_1",
+        "policy_step": 178,
+        "restored_qpos": [
+          0.0713338879577999,
+          -0.08978984256825602,
+          0.47517012396052544,
+          -0.002350040556410212,
+          0.0023464137295513285,
+          0.7074554706425367,
+          0.7067501175874963
+        ]
+      },
+      "wall_clock_seconds": 67.95194851799988,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": false,
+        "in cream_cheese_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "undo",
+      "episode_id": "LONG-undo-t07-s02",
+      "first_lifted": "alphabet_soup_1",
+      "init_state_id": 2,
+      "outcome": "returned_subgoal_not_redone",
+      "prompt": "put both the alphabet soup and the cream cheese box in the basket",
+      "status": "completed",
+      "steps": 520,
+      "success": false,
+      "suite": "libero_10",
+      "target_object": "alphabet_soup_1",
+      "task_id": 7,
+      "undo": {
+        "applied": true,
+        "gripper_qpos": [
+          0.0392611701225289,
+          -0.039502147994208564
+        ],
+        "object": "alphabet_soup_1",
+        "policy_step": 145,
+        "restored_qpos": [
+          0.06718221161542941,
+          -0.07820499407823533,
+          0.47517012396052544,
+          -0.002350040556410249,
+          0.002346413729551303,
+          0.7074554706425367,
+          0.7067501175874963
+        ]
+      },
+      "wall_clock_seconds": 67.51919942599989,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": false,
+        "in cream_cheese_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "E0",
+      "episode_id": "OBJ-E0-t00-s00",
+      "first_lifted": "alphabet_soup_1",
+      "init_state_id": 0,
+      "outcome": "success",
+      "prompt": "pick up the alphabet soup and place it in the basket",
+      "status": "completed",
+      "steps": 212,
+      "success": true,
+      "suite": "libero_object",
+      "target_object": "alphabet_soup_1",
+      "task_id": 0,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 74.20254517700005,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": true,
+        "in salad_dressing_1 basket_1_contain_region": false
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "E0",
+      "episode_id": "OBJ-E0-t00-s01",
+      "first_lifted": "alphabet_soup_1",
+      "init_state_id": 1,
+      "outcome": "success",
+      "prompt": "pick up the alphabet soup and place it in the basket",
+      "status": "completed",
+      "steps": 137,
+      "success": true,
+      "suite": "libero_object",
+      "target_object": "alphabet_soup_1",
+      "task_id": 0,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 20.954823686000054,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": true,
+        "in salad_dressing_1 basket_1_contain_region": false
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "E0",
+      "episode_id": "OBJ-E0-t00-s02",
+      "first_lifted": "alphabet_soup_1",
+      "init_state_id": 2,
+      "outcome": "success",
+      "prompt": "pick up the alphabet soup and place it in the basket",
+      "status": "completed",
+      "steps": 144,
+      "success": true,
+      "suite": "libero_object",
+      "target_object": "alphabet_soup_1",
+      "task_id": 0,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 22.271760148999874,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": true,
+        "in salad_dressing_1 basket_1_contain_region": false
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "E0",
+      "episode_id": "OBJ-E0-t01-s00",
+      "first_lifted": "cream_cheese_1",
+      "init_state_id": 0,
+      "outcome": "success",
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "status": "completed",
+      "steps": 133,
+      "success": true,
+      "suite": "libero_object",
+      "target_object": "cream_cheese_1",
+      "task_id": 1,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 20.581778584999938,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": false,
+        "in cream_cheese_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "E0",
+      "episode_id": "OBJ-E0-t01-s01",
+      "first_lifted": "cream_cheese_1",
+      "init_state_id": 1,
+      "outcome": "success",
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "status": "completed",
+      "steps": 126,
+      "success": true,
+      "suite": "libero_object",
+      "target_object": "cream_cheese_1",
+      "task_id": 1,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 19.631817468999998,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": false,
+        "in cream_cheese_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "E0",
+      "episode_id": "OBJ-E0-t01-s02",
+      "first_lifted": "cream_cheese_1",
+      "init_state_id": 2,
+      "outcome": "success",
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "status": "completed",
+      "steps": 113,
+      "success": true,
+      "suite": "libero_object",
+      "target_object": "cream_cheese_1",
+      "task_id": 1,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 18.08418639899992,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": false,
+        "in cream_cheese_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "E0",
+      "episode_id": "OBJ-E0-t04-s00",
+      "first_lifted": "ketchup_1",
+      "init_state_id": 0,
+      "outcome": "success",
+      "prompt": "pick up the ketchup and place it in the basket",
+      "status": "completed",
+      "steps": 146,
+      "success": true,
+      "suite": "libero_object",
+      "target_object": "ketchup_1",
+      "task_id": 4,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 20.305241235000267,
+      "watch_final": {
+        "in bbq_sauce_1 basket_1_contain_region": false,
+        "in ketchup_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "E0",
+      "episode_id": "OBJ-E0-t04-s01",
+      "first_lifted": "ketchup_1",
+      "init_state_id": 1,
+      "outcome": "success",
+      "prompt": "pick up the ketchup and place it in the basket",
+      "status": "completed",
+      "steps": 135,
+      "success": true,
+      "suite": "libero_object",
+      "target_object": "ketchup_1",
+      "task_id": 4,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 18.880023920999975,
+      "watch_final": {
+        "in bbq_sauce_1 basket_1_contain_region": false,
+        "in ketchup_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "E0",
+      "episode_id": "OBJ-E0-t04-s02",
+      "first_lifted": "ketchup_1",
+      "init_state_id": 2,
+      "outcome": "success",
+      "prompt": "pick up the ketchup and place it in the basket",
+      "status": "completed",
+      "steps": 149,
+      "success": true,
+      "suite": "libero_object",
+      "target_object": "ketchup_1",
+      "task_id": 4,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 20.14859046799984,
+      "watch_final": {
+        "in bbq_sauce_1 basket_1_contain_region": false,
+        "in ketchup_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "lang",
+      "episode_id": "OBJ-lang-t00-s00",
+      "first_lifted": "salad_dressing_1",
+      "init_state_id": 0,
+      "outcome": "success",
+      "prompt": "pick up the salad dressing and place it in the basket",
+      "status": "completed",
+      "steps": 106,
+      "success": true,
+      "suite": "libero_object",
+      "target_object": "salad_dressing_1",
+      "task_id": 0,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 19.69397324700003,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": false,
+        "in salad_dressing_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "lang",
+      "episode_id": "OBJ-lang-t00-s01",
+      "first_lifted": "salad_dressing_1",
+      "init_state_id": 1,
+      "outcome": "success",
+      "prompt": "pick up the salad dressing and place it in the basket",
+      "status": "completed",
+      "steps": 108,
+      "success": true,
+      "suite": "libero_object",
+      "target_object": "salad_dressing_1",
+      "task_id": 0,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 19.705821072000163,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": false,
+        "in salad_dressing_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "lang",
+      "episode_id": "OBJ-lang-t00-s02",
+      "first_lifted": "salad_dressing_1",
+      "init_state_id": 2,
+      "outcome": "success",
+      "prompt": "pick up the salad dressing and place it in the basket",
+      "status": "completed",
+      "steps": 119,
+      "success": true,
+      "suite": "libero_object",
+      "target_object": "salad_dressing_1",
+      "task_id": 0,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 20.786412456000107,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": false,
+        "in salad_dressing_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "lang",
+      "episode_id": "OBJ-lang-t01-s00",
+      "first_lifted": "alphabet_soup_1",
+      "init_state_id": 0,
+      "outcome": "success",
+      "prompt": "pick up the alphabet soup and place it in the basket",
+      "status": "completed",
+      "steps": 135,
+      "success": true,
+      "suite": "libero_object",
+      "target_object": "alphabet_soup_1",
+      "task_id": 1,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 22.28219389500009,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": true,
+        "in cream_cheese_1 basket_1_contain_region": false
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "lang",
+      "episode_id": "OBJ-lang-t01-s01",
+      "first_lifted": "alphabet_soup_1",
+      "init_state_id": 1,
+      "outcome": "target_lifted_not_placed",
+      "prompt": "pick up the alphabet soup and place it in the basket",
+      "status": "completed",
+      "steps": 280,
+      "success": false,
+      "suite": "libero_object",
+      "target_object": "alphabet_soup_1",
+      "task_id": 1,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 39.85704473399983,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": false,
+        "in cream_cheese_1 basket_1_contain_region": false
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "lang",
+      "episode_id": "OBJ-lang-t01-s02",
+      "first_lifted": "alphabet_soup_1",
+      "init_state_id": 2,
+      "outcome": "success",
+      "prompt": "pick up the alphabet soup and place it in the basket",
+      "status": "completed",
+      "steps": 151,
+      "success": true,
+      "suite": "libero_object",
+      "target_object": "alphabet_soup_1",
+      "task_id": 1,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 24.68588231500007,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": true,
+        "in cream_cheese_1 basket_1_contain_region": false
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "lang",
+      "episode_id": "OBJ-lang-t04-s00",
+      "first_lifted": "bbq_sauce_1",
+      "init_state_id": 0,
+      "outcome": "success",
+      "prompt": "pick up the bbq sauce and place it in the basket",
+      "status": "completed",
+      "steps": 117,
+      "success": true,
+      "suite": "libero_object",
+      "target_object": "bbq_sauce_1",
+      "task_id": 4,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 19.582380105000084,
+      "watch_final": {
+        "in bbq_sauce_1 basket_1_contain_region": true,
+        "in ketchup_1 basket_1_contain_region": false
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "lang",
+      "episode_id": "OBJ-lang-t04-s01",
+      "first_lifted": "bbq_sauce_1",
+      "init_state_id": 1,
+      "outcome": "success",
+      "prompt": "pick up the bbq sauce and place it in the basket",
+      "status": "completed",
+      "steps": 141,
+      "success": true,
+      "suite": "libero_object",
+      "target_object": "bbq_sauce_1",
+      "task_id": 4,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 22.59212541199986,
+      "watch_final": {
+        "in bbq_sauce_1 basket_1_contain_region": true,
+        "in ketchup_1 basket_1_contain_region": false
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "lang",
+      "episode_id": "OBJ-lang-t04-s02",
+      "first_lifted": "bbq_sauce_1",
+      "init_state_id": 2,
+      "outcome": "success",
+      "prompt": "pick up the bbq sauce and place it in the basket",
+      "status": "completed",
+      "steps": 126,
+      "success": true,
+      "suite": "libero_object",
+      "target_object": "bbq_sauce_1",
+      "task_id": 4,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 20.462091104000137,
+      "watch_final": {
+        "in bbq_sauce_1 basket_1_contain_region": true,
+        "in ketchup_1 basket_1_contain_region": false
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "swap-ctrl",
+      "episode_id": "OBJ-swap-ctrl-t00-s00",
+      "first_lifted": "alphabet_soup_1",
+      "init_state_id": 0,
+      "outcome": "success",
+      "prompt": "pick up the alphabet soup and place it in the basket",
+      "status": "completed",
+      "steps": 152,
+      "success": true,
+      "suite": "libero_object",
+      "target_object": "alphabet_soup_1",
+      "task_id": 0,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 27.9278227599998,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": true,
+        "in salad_dressing_1 basket_1_contain_region": false
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "swap-ctrl",
+      "episode_id": "OBJ-swap-ctrl-t00-s01",
+      "first_lifted": "alphabet_soup_1",
+      "init_state_id": 1,
+      "outcome": "target_lifted_not_placed",
+      "prompt": "pick up the alphabet soup and place it in the basket",
+      "status": "completed",
+      "steps": 280,
+      "success": false,
+      "suite": "libero_object",
+      "target_object": "alphabet_soup_1",
+      "task_id": 0,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 46.128625420999924,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": false,
+        "in salad_dressing_1 basket_1_contain_region": false
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "swap-ctrl",
+      "episode_id": "OBJ-swap-ctrl-t00-s02",
+      "first_lifted": "alphabet_soup_1",
+      "init_state_id": 2,
+      "outcome": "success",
+      "prompt": "pick up the alphabet soup and place it in the basket",
+      "status": "completed",
+      "steps": 132,
+      "success": true,
+      "suite": "libero_object",
+      "target_object": "alphabet_soup_1",
+      "task_id": 0,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 25.350532148000184,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": true,
+        "in salad_dressing_1 basket_1_contain_region": false
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "swap-ctrl",
+      "episode_id": "OBJ-swap-ctrl-t01-s00",
+      "first_lifted": "cream_cheese_1",
+      "init_state_id": 0,
+      "outcome": "success",
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "status": "completed",
+      "steps": 130,
+      "success": true,
+      "suite": "libero_object",
+      "target_object": "cream_cheese_1",
+      "task_id": 1,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 24.158636556000147,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": false,
+        "in cream_cheese_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "swap-ctrl",
+      "episode_id": "OBJ-swap-ctrl-t01-s01",
+      "first_lifted": "cream_cheese_1",
+      "init_state_id": 1,
+      "outcome": "success",
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "status": "completed",
+      "steps": 130,
+      "success": true,
+      "suite": "libero_object",
+      "target_object": "cream_cheese_1",
+      "task_id": 1,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 23.71502100099997,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": false,
+        "in cream_cheese_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "swap-ctrl",
+      "episode_id": "OBJ-swap-ctrl-t01-s02",
+      "first_lifted": "cream_cheese_1",
+      "init_state_id": 2,
+      "outcome": "success",
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "status": "completed",
+      "steps": 108,
+      "success": true,
+      "suite": "libero_object",
+      "target_object": "cream_cheese_1",
+      "task_id": 1,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 19.702151095999852,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": false,
+        "in cream_cheese_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "swap-ctrl",
+      "episode_id": "OBJ-swap-ctrl-t04-s00",
+      "first_lifted": "ketchup_1",
+      "init_state_id": 0,
+      "outcome": "success",
+      "prompt": "pick up the ketchup and place it in the basket",
+      "status": "completed",
+      "steps": 153,
+      "success": true,
+      "suite": "libero_object",
+      "target_object": "ketchup_1",
+      "task_id": 4,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 24.706380453000293,
+      "watch_final": {
+        "in bbq_sauce_1 basket_1_contain_region": false,
+        "in ketchup_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "swap-ctrl",
+      "episode_id": "OBJ-swap-ctrl-t04-s01",
+      "first_lifted": null,
+      "init_state_id": 1,
+      "outcome": "no_lift",
+      "prompt": "pick up the ketchup and place it in the basket",
+      "status": "completed",
+      "steps": 280,
+      "success": false,
+      "suite": "libero_object",
+      "target_object": "ketchup_1",
+      "task_id": 4,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 40.02500703600026,
+      "watch_final": {
+        "in bbq_sauce_1 basket_1_contain_region": false,
+        "in ketchup_1 basket_1_contain_region": false
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "swap-ctrl",
+      "episode_id": "OBJ-swap-ctrl-t04-s02",
+      "first_lifted": "ketchup_1",
+      "init_state_id": 2,
+      "outcome": "success",
+      "prompt": "pick up the ketchup and place it in the basket",
+      "status": "completed",
+      "steps": 136,
+      "success": true,
+      "suite": "libero_object",
+      "target_object": "ketchup_1",
+      "task_id": 4,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 23.448369442000057,
+      "watch_final": {
+        "in bbq_sauce_1 basket_1_contain_region": false,
+        "in ketchup_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "swap",
+      "episode_id": "OBJ-swap-t00-s00",
+      "first_lifted": "salad_dressing_1",
+      "init_state_id": 0,
+      "outcome": "wrong_object_first",
+      "prompt": "pick up the alphabet soup and place it in the basket",
+      "status": "completed",
+      "steps": 280,
+      "success": false,
+      "suite": "libero_object",
+      "target_object": "alphabet_soup_1",
+      "task_id": 0,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 34.94658123799991,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": false,
+        "in salad_dressing_1 basket_1_contain_region": false
+      },
+      "wrong_first_lift": true
+    },
+    {
+      "condition": "swap",
+      "episode_id": "OBJ-swap-t00-s01",
+      "first_lifted": "salad_dressing_1",
+      "init_state_id": 1,
+      "outcome": "wrong_object_first",
+      "prompt": "pick up the alphabet soup and place it in the basket",
+      "status": "completed",
+      "steps": 280,
+      "success": false,
+      "suite": "libero_object",
+      "target_object": "alphabet_soup_1",
+      "task_id": 0,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 36.070885547000216,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": false,
+        "in salad_dressing_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": true
+    },
+    {
+      "condition": "swap",
+      "episode_id": "OBJ-swap-t00-s02",
+      "first_lifted": "salad_dressing_1",
+      "init_state_id": 2,
+      "outcome": "wrong_object_first",
+      "prompt": "pick up the alphabet soup and place it in the basket",
+      "status": "completed",
+      "steps": 280,
+      "success": false,
+      "suite": "libero_object",
+      "target_object": "alphabet_soup_1",
+      "task_id": 0,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 37.14927862400009,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": false,
+        "in salad_dressing_1 basket_1_contain_region": true
+      },
+      "wrong_first_lift": true
+    },
+    {
+      "condition": "swap",
+      "episode_id": "OBJ-swap-t01-s00",
+      "first_lifted": "alphabet_soup_1",
+      "init_state_id": 0,
+      "outcome": "wrong_object_first",
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "status": "completed",
+      "steps": 280,
+      "success": false,
+      "suite": "libero_object",
+      "target_object": "cream_cheese_1",
+      "task_id": 1,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 36.07073011600005,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": true,
+        "in cream_cheese_1 basket_1_contain_region": false
+      },
+      "wrong_first_lift": true
+    },
+    {
+      "condition": "swap",
+      "episode_id": "OBJ-swap-t01-s01",
+      "first_lifted": "alphabet_soup_1",
+      "init_state_id": 1,
+      "outcome": "wrong_object_first",
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "status": "completed",
+      "steps": 280,
+      "success": false,
+      "suite": "libero_object",
+      "target_object": "cream_cheese_1",
+      "task_id": 1,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 37.21520274800014,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": true,
+        "in cream_cheese_1 basket_1_contain_region": false
+      },
+      "wrong_first_lift": true
+    },
+    {
+      "condition": "swap",
+      "episode_id": "OBJ-swap-t01-s02",
+      "first_lifted": "alphabet_soup_1",
+      "init_state_id": 2,
+      "outcome": "wrong_object_first",
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "status": "completed",
+      "steps": 280,
+      "success": false,
+      "suite": "libero_object",
+      "target_object": "cream_cheese_1",
+      "task_id": 1,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 36.27132728499964,
+      "watch_final": {
+        "in alphabet_soup_1 basket_1_contain_region": true,
+        "in cream_cheese_1 basket_1_contain_region": false
+      },
+      "wrong_first_lift": true
+    },
+    {
+      "condition": "swap",
+      "episode_id": "OBJ-swap-t04-s00",
+      "first_lifted": null,
+      "init_state_id": 0,
+      "outcome": "no_lift",
+      "prompt": "pick up the ketchup and place it in the basket",
+      "status": "completed",
+      "steps": 280,
+      "success": false,
+      "suite": "libero_object",
+      "target_object": "ketchup_1",
+      "task_id": 4,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 40.012548519999655,
+      "watch_final": {
+        "in bbq_sauce_1 basket_1_contain_region": false,
+        "in ketchup_1 basket_1_contain_region": false
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "swap",
+      "episode_id": "OBJ-swap-t04-s01",
+      "first_lifted": null,
+      "init_state_id": 1,
+      "outcome": "no_lift",
+      "prompt": "pick up the ketchup and place it in the basket",
+      "status": "completed",
+      "steps": 280,
+      "success": false,
+      "suite": "libero_object",
+      "target_object": "ketchup_1",
+      "task_id": 4,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 40.97668762300009,
+      "watch_final": {
+        "in bbq_sauce_1 basket_1_contain_region": false,
+        "in ketchup_1 basket_1_contain_region": false
+      },
+      "wrong_first_lift": false
+    },
+    {
+      "condition": "swap",
+      "episode_id": "OBJ-swap-t04-s02",
+      "first_lifted": "bbq_sauce_1",
+      "init_state_id": 2,
+      "outcome": "wrong_object_first",
+      "prompt": "pick up the ketchup and place it in the basket",
+      "status": "completed",
+      "steps": 280,
+      "success": false,
+      "suite": "libero_object",
+      "target_object": "ketchup_1",
+      "task_id": 4,
+      "undo": {
+        "applied": false
+      },
+      "wall_clock_seconds": 42.34766441000011,
+      "watch_final": {
+        "in bbq_sauce_1 basket_1_contain_region": true,
+        "in ketchup_1 basket_1_contain_region": false
+      },
+      "wrong_first_lift": true
+    }
+  ],
+  "excluded": [
+    {
+      "episode_id": "GOAL-move-ctrl-t06-s00",
+      "reason": "No valid relocation for plate_1",
+      "status": "excluded"
+    }
+  ]
+}

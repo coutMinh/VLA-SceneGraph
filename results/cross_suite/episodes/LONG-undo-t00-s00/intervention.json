@@ -1,0 +1,60 @@
+{
+  "kind": "none",
+  "stability": {
+    "max_drift_m": 4.235065208001798e-08,
+    "max_tilt_rad": 0.0,
+    "per_object": {
+      "alphabet_soup_1": {
+        "drift_m": 1.7608754266289609e-13,
+        "tilt_rad": 0.0
+      },
+      "basket_1": {
+        "drift_m": 3.1086244689504383e-15,
+        "tilt_rad": 0.0
+      },
+      "butter_1": {
+        "drift_m": 0.0,
+        "tilt_rad": 0.0
+      },
+      "cream_cheese_1": {
+        "drift_m": 0.0,
+        "tilt_rad": 0.0
+      },
+      "ketchup_1": {
+        "drift_m": 4.235065208001798e-08,
+        "tilt_rad": 0.0
+      },
+      "milk_1": {
+        "drift_m": 1.2814589753995896e-09,
+        "tilt_rad": 0.0
+      },
+      "orange_juice_1": {
+        "drift_m": 1.2814588601185252e-09,
+        "tilt_rad": 0.0
+      },
+      "tomato_sauce_1": {
+        "drift_m": 3.337607967779377e-15,
+        "tilt_rad": 0.0
+      }
+    },
+    "stable": true
+  },
+  "undo": {
+    "applied": true,
+    "gripper_qpos": [
+      0.03927338200878964,
+      -0.03942686028701946
+    ],
+    "object": "alphabet_soup_1",
+    "policy_step": 152,
+    "restored_qpos": [
+      -0.10016028776420875,
+      -0.15201577009390707,
+      0.47517012396052544,
+      -0.0023500405564102177,
+      0.002346413729551324,
+      0.7074554706425367,
+      0.7067501175874963
+    ]
+  }
+}
