@@ -80,6 +80,7 @@ def fixture_episode(runtime, entry, folder, *, success=False):
         policy_call_seconds=[0.1],
     )
     write_json(folder / "intervention.json", {"kind": "synthetic_test_only"})
+    write_json(folder / "endpoint_check.json", {"applicable": False})
     return {
         "status": "completed",
         "success": success,

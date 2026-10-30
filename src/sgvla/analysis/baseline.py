@@ -18,6 +18,24 @@ def load_baseline(runtime):
         or expected["policy_sha256"] != runtime.policy_hash
     ):
         raise ValueError("Frozen baseline policy/manifest differs")
+    snapshot_path = runtime.work / "source_snapshot.json"
+    if snapshot_path.exists():
+        snapshot = read_json(snapshot_path)
+        source_files = {
+            path: checksum
+            for path, checksum in snapshot.get("files", {}).items()
+            if path.startswith("src/") and path.endswith(".py")
+        }
+        if (
+            not snapshot.get("local_base_commit")
+            or not source_files
+            or fingerprint(source_files) != expected["implementation_sha256"]
+        ):
+            raise ValueError("Frozen baseline implementation differs from its source snapshot")
+        expected_git_commit = snapshot["local_base_commit"]
+    else:
+        # Compatibility with the original run, which predates source_snapshot.json.
+        expected_git_commit = "1c98fd3efece9194330a038b2c62b7cb2d6a1046"
     pointer = read_json(root / "parity.json")
     report_path = root / pointer["report"]
     report_path.resolve().relative_to(root.resolve())
@@ -45,7 +63,7 @@ def load_baseline(runtime):
             raise ValueError("Invalid frozen E0 completion: " + entry["episode_id"])
         if (
             read_json(item[2] / "manifest.json")["git_commit"]
-            != "1c98fd3efece9194330a038b2c62b7cb2d6a1046"
+            != expected_git_commit
         ):
             raise ValueError("Unexpected frozen baseline source commit")
         done[entry["episode_id"]] = item

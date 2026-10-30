@@ -10,6 +10,9 @@ def render(source):
         rows = list(csv.DictReader(stream))
     columns = [
         "source_id",
+        "title",
+        "year",
+        "venue",
         "dimension",
         "representation",
         "construction",
@@ -25,8 +28,9 @@ def render(source):
     lines = [
         "# Part 1a · Literature matrix",
         "",
-        "Four verified 2D/video sources. Part 1a still needs 3D/4D and manipulation sources;",
-        "this is not the final ten-source matrix. CSV is the source of truth.",
+        f"{len(rows)} source-verified entries spanning 2D/video, 3D mapping, manipulation and graph/VLA interfaces.",
+        "CSV is the source of truth. Verification and reading scopes vary by row; abstract-only",
+        "inspection does not establish full-paper review or the student's personal reading progress.",
         "",
         "| " + " | ".join(columns) + " |",
         "| " + " | ".join(["---"] * len(columns)) + " |",

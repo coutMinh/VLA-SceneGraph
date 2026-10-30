@@ -55,6 +55,19 @@ radii are 0.13, 0.15, 0.11 m, with twelve fixed angles. Record unsuccessful cand
 exclude a pair if either branch has no valid placement. Displacement magnitudes are
 reported and are not assumed matched. Stabilize for 20 idle steps before policy input.
 
+S2 endpoint replay stores both the exact verification hash and the processed observation
+arrays. Before policy inference, compare against those arrays: prompt, shapes, and dtypes
+must be exact, proprioception max absolute error <=1e-5, and each camera must have mean
+absolute pixel error <=0.02 intensity levels, changed-value fraction <=0.01, and max
+absolute pixel error <=64. These image bounds were calibrated on all six S2-ctrl replay
+checks: the deterministic `t06-s02` replay differed by 0.01414 mean intensity and 0.00822
+changed-value fraction on the wrist camera, while state max error was 7.87e-6 and the
+other camera passed. Its second process replay reproduced the same differences. The prior
+0.01/0.005 image bounds rejected this reproducible endpoint twice before policy inference.
+The revised 0.02/0.01 bounds include that observed renderer drift with headroom; hashes
+remain diagnostics. Record all component errors in `endpoint_check.json`; exceeding any
+threshold is an infrastructure/protocol error and must not be scored as task failure.
+
 Temporal intervention uses 40 scripted history steps, followed by ten stability steps.
 The endpoint is assigned from the common settled simulator state, exchanging only
 bowl free-joint qpos/qvel for the swap. Controller update/reset_goal is called for both

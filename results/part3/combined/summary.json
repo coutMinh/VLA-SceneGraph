@@ -1,0 +1,152 @@
+{
+  "baseline_context": {
+    "implementation_sha256": "9f6866cf9662be91310fc6e549bd5491aae4137e9af78180a09ee247032bfd4e",
+    "manifest_sha256": "fe252dd6412e9b88c1ae02e7356826a983bf6c335404013cc4b8f96e0897bd82",
+    "policy_sha256": "536822bf671fb5ba1392ca44eb0a2264c02a54bed981564bee143a7c0ff818e2"
+  },
+  "condition_implementation_hashes": {
+    "S1": "f2dfb19ade6eeafd87c977e41de348f77ede1df072364b10cc44dd016589c1b3",
+    "S2": "5e06c967a012ac494b1682447bd00ea8d3c04770ea739e7314a20f507031c1c3",
+    "S2-ctrl": "5e06c967a012ac494b1682447bd00ea8d3c04770ea739e7314a20f507031c1c3",
+    "T1": "f2dfb19ade6eeafd87c977e41de348f77ede1df072364b10cc44dd016589c1b3",
+    "T1-ctrl": "f2dfb19ade6eeafd87c977e41de348f77ede1df072364b10cc44dd016589c1b3"
+  },
+  "conditions": {
+    "S1": {
+      "planned": 27,
+      "completed": 27,
+      "successes": 23,
+      "task_failures": 4,
+      "infrastructure_error_attempts": 0,
+      "wilson_95": [
+        0.6752131457218702,
+        0.9408407222375568
+      ],
+      "exclusive_first_target_successes": 23,
+      "wrong_first_placements": 1,
+      "no_placement": 3,
+      "matched_e0": 27,
+      "e0_only_success": 4,
+      "condition_only_success": 1,
+      "paired_success_difference": -0.1111111111111111,
+      "paired_exact_two_sided_p": 0.375,
+      "excluded_states": 3
+    },
+    "S2": {
+      "planned": 6,
+      "completed": 6,
+      "successes": 0,
+      "task_failures": 6,
+      "infrastructure_error_attempts": 0,
+      "wilson_95": [
+        2.7755575615628914e-17,
+        0.3903342879021653
+      ],
+      "exclusive_first_target_successes": 0,
+      "wrong_first_placements": 6,
+      "no_placement": 0,
+      "matched_e0": 6,
+      "e0_only_success": 5,
+      "condition_only_success": 0,
+      "paired_success_difference": -0.8333333333333334,
+      "paired_exact_two_sided_p": 0.0625,
+      "excluded_states": 24
+    },
+    "S2-ctrl": {
+      "planned": 6,
+      "completed": 6,
+      "successes": 6,
+      "task_failures": 0,
+      "infrastructure_error_attempts": 2,
+      "wilson_95": [
+        0.6096657120978346,
+        1.0
+      ],
+      "exclusive_first_target_successes": 6,
+      "wrong_first_placements": 0,
+      "no_placement": 0,
+      "matched_e0": 6,
+      "e0_only_success": 0,
+      "condition_only_success": 1,
+      "paired_success_difference": 0.16666666666666666,
+      "paired_exact_two_sided_p": 1.0,
+      "excluded_states": 24
+    },
+    "T1": {
+      "planned": 8,
+      "completed": 8,
+      "successes": 0,
+      "task_failures": 8,
+      "infrastructure_error_attempts": 0,
+      "wilson_95": [
+        0.0,
+        0.32440756488388023
+      ],
+      "exclusive_first_target_successes": 0,
+      "wrong_first_placements": 8,
+      "no_placement": 0,
+      "matched_e0": 8,
+      "e0_only_success": 8,
+      "condition_only_success": 0,
+      "paired_success_difference": -1.0,
+      "paired_exact_two_sided_p": 0.0078125,
+      "excluded_states": 22
+    },
+    "T1-ctrl": {
+      "planned": 8,
+      "completed": 8,
+      "successes": 8,
+      "task_failures": 0,
+      "infrastructure_error_attempts": 0,
+      "wilson_95": [
+        0.6755924351161198,
+        1.0
+      ],
+      "exclusive_first_target_successes": 8,
+      "wrong_first_placements": 0,
+      "no_placement": 0,
+      "matched_e0": 8,
+      "e0_only_success": 0,
+      "condition_only_success": 0,
+      "paired_success_difference": 0.0,
+      "paired_exact_two_sided_p": 1.0,
+      "excluded_states": 22
+    }
+  },
+  "direct_S2_vs_S2_ctrl": {
+    "pairing": [
+      "E0-t01-s00",
+      "E0-t01-s01",
+      "E0-t01-s02",
+      "E0-t06-s00",
+      "E0-t06-s01",
+      "E0-t06-s02"
+    ],
+    "comparison": "S2 success versus S2-ctrl success",
+    "paired_statistics": {
+      "matched_n": 6,
+      "baseline_only_success": 6,
+      "condition_only_success": 0,
+      "discordant_pairs": 6,
+      "success_difference": -1.0,
+      "exact_discordant_two_sided_p": 0.03125,
+      "note": "Exploratory episode-paired test; task clustering and multiplicity not adjusted"
+    }
+  },
+  "temporal_prefix": {
+    "matched_pairs": 8,
+    "identical_input_and_action_prefix_pairs": 0,
+    "exclusive_first_target_bound_satisfied": 0,
+    "exclusive_first_target_bound_violations": 0,
+    "pairs_with_divergent_prefix": 8,
+    "unrestricted_both_target_success_pairs": 0,
+    "interpretation": "The exclusive first-target bound applies only when observations and actions match through the first placement. Unrestricted rollouts may place both objects."
+  },
+  "limitations": [
+    "Verification exclusions restrict task/state coverage",
+    "Failure-cause labels remain provisional until visually validated",
+    "Small, selected task/state sets; episode intervals do not adjust for task clustering.",
+    "S2 landmark displacement magnitudes were not matched between treatment and control.",
+    "Failure-cause descriptions remain coarse where sampled video cannot isolate contact or release."
+  ]
+}

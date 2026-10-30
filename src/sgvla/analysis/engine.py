@@ -24,6 +24,7 @@ ARTIFACTS = (
     "manifest.json",
     "config.json",
     "intervention.json",
+    "endpoint_check.json",
 )
 
 

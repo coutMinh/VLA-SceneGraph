@@ -14,8 +14,48 @@ import pytest
 from sgvla.eval import engine
 from sgvla.eval.manifest import build_manifest, fingerprint, policy_fingerprint, validate_manifest
 from sgvla.eval.scenes import ArrayUnpickler, read_initial_states
+from sgvla.eval.trace import compare_observations
 from sgvla.io import digest, read_json, write_json
 from sgvla.runtime import REPO, Runtime
+
+
+def test_endpoint_comparison_allows_only_small_process_render_drift():
+    reference = {
+        "observation/image": np.zeros((32, 32, 3), dtype=np.uint8),
+        "observation/wrist_image": np.zeros((32, 32, 3), dtype=np.uint8),
+        "observation/state": np.zeros(8, dtype=np.float64),
+        "prompt": "place the bowl on the plate",
+    }
+    actual = {key: value.copy() if isinstance(value, np.ndarray) else value
+              for key, value in reference.items()}
+    actual["observation/state"][0] = 1e-6
+    actual["observation/image"][0, 0, 0] = 4
+    result = compare_observations(reference, actual)
+    assert result["matches"] is True
+    assert result["reference_sha256"] != result["actual_sha256"]
+
+    # The selected bound accepts a sparse low-intensity raster difference,
+    # while a one-pixel-step increase beyond the changed-pixel limit fails.
+    boundary_reference = {key: value.copy() if isinstance(value, np.ndarray) else value
+                          for key, value in reference.items()}
+    boundary_reference["observation/image"] = np.zeros((100, 100, 3), dtype=np.uint8)
+    actual = {key: value.copy() if isinstance(value, np.ndarray) else value
+              for key, value in boundary_reference.items()}
+    actual["observation/image"].reshape(-1)[:300] = 2
+    assert compare_observations(boundary_reference, actual)["matches"] is True
+    actual["observation/image"].reshape(-1)[300] = 2
+    assert compare_observations(boundary_reference, actual)["matches"] is False
+
+    actual = {key: value.copy() if isinstance(value, np.ndarray) else value
+              for key, value in reference.items()}
+    actual["observation/state"][0] = 1e-3
+    assert compare_observations(reference, actual)["matches"] is False
+    actual["observation/state"][0] = 0
+    actual["prompt"] = "place the other bowl on the plate"
+    assert compare_observations(reference, actual)["matches"] is False
+    actual["prompt"] = reference["prompt"]
+    actual["observation/image"][:] = 255
+    assert compare_observations(reference, actual)["matches"] is False
 
 
 @pytest.fixture

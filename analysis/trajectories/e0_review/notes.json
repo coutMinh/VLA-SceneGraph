@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "review_method": "Both camera contact sheets sampled every five frames across the rollout, cross-checked with object poses and official On predicates. This is sampled-frame review, not continuous video playback.",
+  "reviewer": "Codex",
+  "audit": "results/part3/e0_review/audit.json",
+  "reviews": [
+    {
+      "episode_id": "E0-t01-s01",
+      "outcome": "placement_not_achieved_after_target_transport",
+      "observation": "The intended bowl is lifted and transported toward the plate. The other bowl remains at its initial location. Late frames show continued positioning near the plate; the official placement predicate never becomes true.",
+      "fine_cause_confirmed": false
+    },
+    {
+      "episode_id": "E0-t07-s03",
+      "outcome": "placement_not_achieved_after_target_transport",
+      "observation": "The bowl on the stove is lifted and transported toward the plate. The bowl on the cabinet remains still. The rollout stalls near the destination without satisfying On(target, plate). Precise release/alignment/contact cause is unresolved.",
+      "fine_cause_confirmed": false
+    },
+    {
+      "episode_id": "E0-t01-s00",
+      "outcome": "target_placed",
+      "observation": "The intended bowl is transported from next to the ramekin to the plate; terminal placement is confirmed by the official predicate.",
+      "fine_cause_confirmed": true
+    },
+    {
+      "episode_id": "E0-t07-s00",
+      "outcome": "target_placed",
+      "observation": "The intended stove bowl is transported to the plate and satisfies the placement predicate; the cabinet bowl remains at its support.",
+      "fine_cause_confirmed": true
+    }
+  ],
+  "interpretation": "These E0 failures support a coarse transport/placement failure description. They do not demonstrate relational misidentification or establish that a scene graph would repair either episode. Pose-only failure labels for other conditions still require validation."
+}

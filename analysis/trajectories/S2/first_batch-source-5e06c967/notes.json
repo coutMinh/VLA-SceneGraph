@@ -1,0 +1,136 @@
+{
+  "condition": "S2",
+  "source_commit": "5aaefdb3d38751bfbdd50a2effab876e66a2c458",
+  "implementation_sha256": "5e06c967a012ac494b1682447bd00ea8d3c04770ea739e7314a20f507031c1c3",
+  "manifest_sha256": "9e024ae7d6c98ee958c19be7a329328fcb3dbaad6b17272f86e217b067c3377e",
+  "policy_sha256": "536822bf671fb5ba1392ca44eb0a2264c02a54bed981564bee143a7c0ff818e2",
+  "planned": 6,
+  "completed": 6,
+  "successes": 0,
+  "task_failures": 6,
+  "wrong_first_placements": 6,
+  "no_placement": 0,
+  "endpoint_matches": 6,
+  "endpoint_checks": [
+    {
+      "camera": {
+        "observation/image": {
+          "fraction_changed": 7.307610544217687e-05,
+          "mean_abs": 7.307610544217687e-05
+        },
+        "observation/wrist_image": {
+          "fraction_changed": 0.0022387861394557824,
+          "mean_abs": 0.0032552083333333335
+        }
+      },
+      "episode_id": "S2-t01-s00",
+      "matches": true,
+      "state_max_abs": 8.674683708784214e-07,
+      "status": "completed",
+      "success": false
+    },
+    {
+      "camera": {
+        "observation/image": {
+          "fraction_changed": 1.992984693877551e-05,
+          "mean_abs": 1.992984693877551e-05
+        },
+        "observation/wrist_image": {
+          "fraction_changed": 0.00015279549319727892,
+          "mean_abs": 0.00017272534013605442
+        }
+      },
+      "episode_id": "S2-t01-s01",
+      "matches": true,
+      "state_max_abs": 8.673331519867822e-07,
+      "status": "completed",
+      "success": false
+    },
+    {
+      "camera": {
+        "observation/image": {
+          "fraction_changed": 0.00017272534013605442,
+          "mean_abs": 0.00017272534013605442
+        },
+        "observation/wrist_image": {
+          "fraction_changed": 0.0018269026360544218,
+          "mean_abs": 0.0020859906462585035
+        }
+      },
+      "episode_id": "S2-t01-s02",
+      "matches": true,
+      "state_max_abs": 8.67409393763563e-07,
+      "status": "completed",
+      "success": false
+    },
+    {
+      "camera": {
+        "observation/image": {
+          "fraction_changed": 5.314625850340136e-05,
+          "mean_abs": 5.314625850340136e-05
+        },
+        "observation/wrist_image": {
+          "fraction_changed": 0.0021590667517006803,
+          "mean_abs": 0.0027503188775510204
+        }
+      },
+      "episode_id": "S2-t06-s00",
+      "matches": true,
+      "state_max_abs": 8.676759944009627e-07,
+      "status": "completed",
+      "success": false
+    },
+    {
+      "camera": {
+        "observation/image": {
+          "fraction_changed": 0.00010629251700680272,
+          "mean_abs": 0.00010629251700680272
+        },
+        "observation/wrist_image": {
+          "fraction_changed": 0.0021125637755102043,
+          "mean_abs": 0.0026041666666666665
+        }
+      },
+      "episode_id": "S2-t06-s01",
+      "matches": true,
+      "state_max_abs": 8.678192982558564e-07,
+      "status": "completed",
+      "success": false
+    },
+    {
+      "camera": {
+        "observation/image": {
+          "fraction_changed": 0.0003786670918367347,
+          "mean_abs": 0.0007839073129251701
+        },
+        "observation/wrist_image": {
+          "fraction_changed": 0.006138392857142857,
+          "mean_abs": 0.0097921981292517
+        }
+      },
+      "episode_id": "S2-t06-s02",
+      "matches": true,
+      "state_max_abs": 6.106503672116681e-06,
+      "status": "completed",
+      "success": false
+    }
+  ],
+  "storage_review_passed": true,
+  "manual_review_note": "Reviewed both-camera contact sheets for the first five episodes. No obvious rendering discontinuity. Pose traces identify bowl 1 as the first bowl placed on the plate in all five, while S2 targets bowl 2; this agrees with the wrong-first-object metrics. Contact/release timing is not isolated by five-frame samples, so the cause remains provisional.",
+  "review_receipt_sha256": "b2306ff99199093fcb5703785f3df835c6d056b511850b26915c9dc8f7c6ef8d",
+  "selection_sha256": "948c21bc7ce07b2917251906fca886c5df4671fee44721c69de701b7da4916a1",
+  "contact_sheet_sha256": {
+    "S2-t01-s00-agentview.jpg": "c17ba3d736fc408b3195d1c34e2f313a001e568d96ebb174826541c641e6d561",
+    "S2-t01-s00-wrist.jpg": "612a664f1becc5130aced0ae5ee2321529461c2664233b3f2c7740a241d6dfab",
+    "S2-t01-s01-agentview.jpg": "95eb642f0cb5e5b85aa3617750969fe27b8b23a2a38f94bb5415155028e72ce5",
+    "S2-t01-s01-wrist.jpg": "54704dbedb59c03cb82dfb0e929777a2827fd4e6e2d08a92ec350f84fb4c0922",
+    "S2-t01-s02-agentview.jpg": "ad40fdf8a0bccbcee9e998d4acff00b8b2b2e93841584038a2079f19cd07a85a",
+    "S2-t01-s02-wrist.jpg": "ae9bc3eedebb738fa4fbb7775d1518a5fc035412b3ace73ef0f394e9d05baca4",
+    "S2-t06-s00-agentview.jpg": "76c9a61445f715e82ec9db5264a5b0442834f419dca373575df4b66c9937ddaf",
+    "S2-t06-s00-wrist.jpg": "b9506242a28e1d7743fc390e29975c7c9d59424776c230d25c2492e994c952a9",
+    "S2-t06-s01-agentview.jpg": "317c412c8914d6843aa9861d6bec72858f75ac55a03fb9cff70a2990e50b86ab",
+    "S2-t06-s01-wrist.jpg": "da0b8cd7f9f38739d4562aa822e9d95919b64518000d996af53e7cfa1986e690"
+  },
+  "historical_infrastructure_attempts": 0,
+  "historical_attempt_note": null
+}

@@ -105,6 +105,12 @@ def build(runtime, condition, verification, temporal=None, landmarks=None):
             selection = check_row["selections"][condition]
             entry["landmark_intervention"] = selection["recipe"]
             entry["endpoint_sha256"] = selection["endpoint_sha256"]
+            endpoint_file = Path(landmarks).parent / (
+                original["episode_id"] + "-" + condition + ".npz"
+            )
+            entry["endpoint_reference_path"] = str(
+                endpoint_file.resolve().relative_to(runtime.work.resolve())
+            )
         episodes.append(entry)
     if not episodes:
         raise ValueError("No verified episodes for " + condition)
@@ -193,10 +199,14 @@ def validate(manifest, config):
         if condition.startswith("S2"):
             from sgvla.analysis.landmarks import LANDMARK_TASKS
 
+            reference_path = Path(entry.get("endpoint_reference_path", ""))
             if (
                 entry["task_id"] not in LANDMARK_TASKS
                 or entry["landmark_intervention"]["landmark"] != LANDMARK_TASKS[entry["task_id"]]
                 or len(entry.get("endpoint_sha256", "")) != 64
+                or not entry.get("endpoint_reference_path")
+                or reference_path.is_absolute()
+                or ".." in reference_path.parts
             ):
                 raise ValueError("Unsupported landmark intervention")
         ids.add(entry["episode_id"])

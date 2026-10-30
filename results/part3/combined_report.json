@@ -1,0 +1,1473 @@
+{
+  "baseline_context": {
+    "implementation_sha256": "9f6866cf9662be91310fc6e549bd5491aae4137e9af78180a09ee247032bfd4e",
+    "manifest_sha256": "fe252dd6412e9b88c1ae02e7356826a983bf6c335404013cc4b8f96e0897bd82",
+    "policy_sha256": "536822bf671fb5ba1392ca44eb0a2264c02a54bed981564bee143a7c0ff818e2"
+  },
+  "conditions": {
+    "S1": {
+      "episodes": [
+        {
+          "baseline_completion_sha256": "d9f49ede698c96b40cf5c659f1d9bbaf6d7f746ee5dd5b0e82d44e4037c72958",
+          "baseline_success": true,
+          "completion_sha256": "7ad5f0263a8695153a803801a782265db45b79a5a2acf76bc4a81f333dfb7fb3",
+          "episode_id": "S1-t01-s00",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t01-s00",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "bb55d184c21e3025503b2d97dcc83db8af7074c37892eb4ccf52e0c6ee671ab9",
+          "baseline_success": false,
+          "completion_sha256": "eef084f348479f2560ba5c32eddcd4cd85644a4d9cdeb70269159638aeb7aaa2",
+          "episode_id": "S1-t01-s01",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t01-s01",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "7a320d0f70efe58dc4941bae93990e21a92e22bcefda35d7a0f66ea2eb2c9383",
+          "baseline_success": true,
+          "completion_sha256": "02ff31a58a762aa68a104052638cc225b1ad9671aa31286e7010cb2aa589d906",
+          "episode_id": "S1-t01-s02",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t01-s02",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "fe0b7535ec4b5cad32472f4cd1ad54c6822f25395f0014b9286261c921a213fb",
+          "baseline_success": true,
+          "completion_sha256": "ff1588a387532d5ba9f6d3c0d8c2692814476f479c3d77e94f13e699321933ed",
+          "episode_id": "S1-t02-s00",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t02-s00",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "80a44bea908d0ea3fd1ed44232652edce8a9d157cf414642064143eeef2dda68",
+          "baseline_success": true,
+          "completion_sha256": "08764e3ec8455fe352d695762b50a6bf1e7259d2716b03a26afc966f40dfd682",
+          "episode_id": "S1-t02-s01",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t02-s01",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "7ce54e62648bc3c2b46bb7a1035df740dc59b19540f3ff89b9e23ea95387c3a3",
+          "baseline_success": true,
+          "completion_sha256": "e7b1a94c9cf510bb8ccebfad811a02d335e55f7e43dc259492793d585fc2ad38",
+          "episode_id": "S1-t02-s02",
+          "exclusive_first_target_success": false,
+          "first_placed": "akita_black_bowl_1",
+          "paired_e0_id": "E0-t02-s02",
+          "success": false
+        },
+        {
+          "baseline_completion_sha256": "715d7ff9a60e7d37f7aebfc265b6ac21c01d24de2f7899d0d27047f6d9e1866c",
+          "baseline_success": true,
+          "completion_sha256": "e9885d249ecb0792ea4a13d5e307556082188a426b770b69afc5420e0e99476a",
+          "episode_id": "S1-t03-s00",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t03-s00",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "87399b7fcff6fea894bcc3824771d424d31832453f5bd2c47779e10e27b6936c",
+          "baseline_success": true,
+          "completion_sha256": "144472618af4a71b939bc6e39c15263da04e7598025d0bd121d253033f867497",
+          "episode_id": "S1-t03-s01",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t03-s01",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "96a839cbe66b1c8bf6899547230c7619247049f7cad1ad03909427f4d238b570",
+          "baseline_success": true,
+          "completion_sha256": "65692d05a7cbbd29b13a773e3198af9d39c6ef516f0f71a72ccbe9b2898a3e44",
+          "episode_id": "S1-t03-s02",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t03-s02",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "e15956b1f209ecf878d3f3e2bf3d6748c031889a07ae42bbb0c1b0db76f20b57",
+          "baseline_success": true,
+          "completion_sha256": "b3019a96d1c079a19380053fc6ad814ada872d6f20690dad037c1e9ed881f9ce",
+          "episode_id": "S1-t04-s00",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t04-s00",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "31a58f49b28698d4c1a1ff00cca48b16870489c2cf04f61e521d885bb1ed8745",
+          "baseline_success": true,
+          "completion_sha256": "3eeefc1219c90e016972ef5371500a8ff11002ce487c494e2739989f47f143da",
+          "episode_id": "S1-t04-s01",
+          "exclusive_first_target_success": false,
+          "first_placed": null,
+          "paired_e0_id": "E0-t04-s01",
+          "success": false
+        },
+        {
+          "baseline_completion_sha256": "05877a4338b7bbab02c252af6dd8a2c4841c5381d83b8cd1f1d78426e0618960",
+          "baseline_success": true,
+          "completion_sha256": "d77dc9ae4b7d40139a6f95350212d86247bcde10a52a3676c2389ca9202fc230",
+          "episode_id": "S1-t04-s02",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t04-s02",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "f284ae302c6588faa53f4a341da939c5cf31acfcf9fffc2440a30b05d14e7e74",
+          "baseline_success": true,
+          "completion_sha256": "ea56044d9f52b1ce8940766fc37f764277d12b7b13a869af873c0477825ae3d9",
+          "episode_id": "S1-t05-s00",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t05-s00",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "04892e19c9ff5a003d8119325e006bf208004af1e99dce75ca70a61607b3caed",
+          "baseline_success": true,
+          "completion_sha256": "2b73b01d377d4dfb3babc5f649a14d30a1d2ede2b5b170aa2fead57585524453",
+          "episode_id": "S1-t05-s01",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t05-s01",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "63456ca18497aaf266403f5e84babc5277c8f0e85894d75fcc749554c84ef780",
+          "baseline_success": true,
+          "completion_sha256": "09aa20583a664cba95eecec5394de3c0a548dd95198de53934eb3c7087aaedb0",
+          "episode_id": "S1-t05-s02",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t05-s02",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "02411a1429aaff66f623e2f7c2cc36531fb9694033e42e773c5dd70f151f2dcc",
+          "baseline_success": true,
+          "completion_sha256": "cb7146f62c2dda4bede041e63f24900371471a1bb78196c4c2121015e65a1c01",
+          "episode_id": "S1-t06-s00",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t06-s00",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "447f2aed735af42660e3de7b1ec666a16d01e49b9aaf41beb4d8b604175b31a1",
+          "baseline_success": true,
+          "completion_sha256": "35f93405e619c26107bd81ed991a685ca075203d60bd0bf46dc2565d324a3524",
+          "episode_id": "S1-t06-s01",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t06-s01",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "2c7f4787a815bf86e73f3aee3016c9bd4732e3ac7bc2ccc0ad27960e6223c95a",
+          "baseline_success": true,
+          "completion_sha256": "4c86c94f07def77370498c3419f3be4e3027a5934e434d5d770471fdc27d14aa",
+          "episode_id": "S1-t06-s02",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t06-s02",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "8642582cd075fecea6355fb5191e53b51484387715a593b4b2472e8554e8f87a",
+          "baseline_success": true,
+          "completion_sha256": "23b7fc535b2b05f543abdd5aaf8b20613c1ca0e25e7d0513943d55bc16a00534",
+          "episode_id": "S1-t07-s00",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t07-s00",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "1d1dcc38af580639103a2c5fdde8dcecc78724fbbfede2277ab921c24582b070",
+          "baseline_success": true,
+          "completion_sha256": "141467454ad2ffc6495ae5c49c722175c1c65ec7c31564ecab56c6cc65074895",
+          "episode_id": "S1-t07-s01",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t07-s01",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "7fd0554aae8a960ea740a8c4305977b70f94dd1eeb50e80bb0272fe967d095a8",
+          "baseline_success": true,
+          "completion_sha256": "27ca43bf2890c72deb47a4d6ecd8869ca1b7340407a9b1a9b3c3ce933c3a5872",
+          "episode_id": "S1-t07-s02",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t07-s02",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "889de1d45ce380a1286d05713a50589cba2075bc7a74e5db285c8fb537b3e2fe",
+          "baseline_success": true,
+          "completion_sha256": "a9935c824a6080378ca095a21b5f9f8ef9b09c51f12417e444437d28d6274864",
+          "episode_id": "S1-t08-s00",
+          "exclusive_first_target_success": false,
+          "first_placed": null,
+          "paired_e0_id": "E0-t08-s00",
+          "success": false
+        },
+        {
+          "baseline_completion_sha256": "c96a13b377699b32c23279b70abe78c4068149a23b209a34eff183da5cd31a05",
+          "baseline_success": true,
+          "completion_sha256": "49e13b9fb1c65bd9be66aa547a6e507ae2c1d6977b50a2d55e9567013f76c975",
+          "episode_id": "S1-t08-s01",
+          "exclusive_first_target_success": false,
+          "first_placed": null,
+          "paired_e0_id": "E0-t08-s01",
+          "success": false
+        },
+        {
+          "baseline_completion_sha256": "c9ccfd90ba6d4a496e30fb603fd5adb616e01fdbf3b3e9158299d1279f656125",
+          "baseline_success": true,
+          "completion_sha256": "b47a3fd1beee86853c7e3f8c401b1b8e20c5a6c91ff1e7ef2195c2b8aede1c6e",
+          "episode_id": "S1-t08-s02",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t08-s02",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "8bd1a58a661c682e172edf95b80a9532492fea41c2e900808a90ee305f3deaf9",
+          "baseline_success": true,
+          "completion_sha256": "5b402438be3a716c2f38d6065a0daf3f2c14742d5fd8869f2e644375e1e5e892",
+          "episode_id": "S1-t09-s00",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t09-s00",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "36f057db171402cd6da05d566928c6fdde7bf85f77bf8cb3b4b4ccd88de91ae2",
+          "baseline_success": true,
+          "completion_sha256": "8d4d6adc1fa35d1d6ba11d7ca988a5109f66b7fcbcd1ebfc0e0cefd2f62295c2",
+          "episode_id": "S1-t09-s01",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t09-s01",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "62796100131b4dc9a71888c28c330fed46240fe37a690ba89e6909478adf61a5",
+          "baseline_success": true,
+          "completion_sha256": "bf2121d1cf2db2435736a601bc6cc41ec8b8df3280b84bc75c3f09edfebc3a48",
+          "episode_id": "S1-t09-s02",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t09-s02",
+          "success": true
+        }
+      ],
+      "paired_comparison": {
+        "baseline_only_success": 4,
+        "condition_only_success": 1,
+        "discordant_pairs": 5,
+        "exact_discordant_two_sided_p": 0.375,
+        "matched_n": 27,
+        "note": "Exploratory episode-paired test; task clustering and multiplicity not adjusted",
+        "success_difference": -0.1111111111111111
+      },
+      "summary": {
+        "completed": 27,
+        "condition": "S1",
+        "context": {
+          "implementation_sha256": "f2dfb19ade6eeafd87c977e41de348f77ede1df072364b10cc44dd016589c1b3",
+          "manifest_sha256": "fcf6b073c5ec323a19d32575f483d2a4f17c657d2fc1e7c5d66e848095715f21",
+          "policy_sha256": "536822bf671fb5ba1392ca44eb0a2264c02a54bed981564bee143a7c0ff818e2"
+        },
+        "excluded": [
+          {
+            "paired_e0_id": "E0-t00-s00",
+            "reason": "relation_not_unique_under_declared_rules"
+          },
+          {
+            "paired_e0_id": "E0-t00-s01",
+            "reason": "relation_not_unique_under_declared_rules"
+          },
+          {
+            "paired_e0_id": "E0-t00-s02",
+            "reason": "relation_not_unique_under_declared_rules"
+          }
+        ],
+        "exclusive_first_target_successes": 23,
+        "infrastructure_error_attempts": 0,
+        "manual_label_validation": "pending; pose failure labels are provisional",
+        "no_placement": 3,
+        "output_dir": "/home/marimo/vla_scenegraph_work/results/part3/S1/fcf6b073c5ec323a19d32575f483d2a4f17c657d2fc1e7c5d66e848095715f21",
+        "pending_or_invalid": 0,
+        "planned": 27,
+        "success_rate": 0.8518518518518519,
+        "successes": 23,
+        "task_failures": 4,
+        "ties": 0,
+        "uncertainty_note": "Episode-level interval; task dependence not adjusted",
+        "wilson_95": [
+          0.6752131457218702,
+          0.9408407222375568
+        ],
+        "wrong_first_placements": 1
+      }
+    },
+    "S2": {
+      "episodes": [
+        {
+          "baseline_completion_sha256": "d9f49ede698c96b40cf5c659f1d9bbaf6d7f746ee5dd5b0e82d44e4037c72958",
+          "baseline_success": true,
+          "completion_sha256": "80c018f61df565487bcf031908b3a52df51fb63860b4ccbd6a32c803ba3930b2",
+          "episode_id": "S2-t01-s00",
+          "exclusive_first_target_success": false,
+          "first_placed": "akita_black_bowl_1",
+          "paired_e0_id": "E0-t01-s00",
+          "success": false
+        },
+        {
+          "baseline_completion_sha256": "bb55d184c21e3025503b2d97dcc83db8af7074c37892eb4ccf52e0c6ee671ab9",
+          "baseline_success": false,
+          "completion_sha256": "6b51acab4a7f3f79952698ae0df2f19b6bbab853f4973d01213624badcf08070",
+          "episode_id": "S2-t01-s01",
+          "exclusive_first_target_success": false,
+          "first_placed": "akita_black_bowl_1",
+          "paired_e0_id": "E0-t01-s01",
+          "success": false
+        },
+        {
+          "baseline_completion_sha256": "7a320d0f70efe58dc4941bae93990e21a92e22bcefda35d7a0f66ea2eb2c9383",
+          "baseline_success": true,
+          "completion_sha256": "39787bea95ce191065f2fdc348fe70db9fd05623b8e7429b5491c212e2b8cda7",
+          "episode_id": "S2-t01-s02",
+          "exclusive_first_target_success": false,
+          "first_placed": "akita_black_bowl_1",
+          "paired_e0_id": "E0-t01-s02",
+          "success": false
+        },
+        {
+          "baseline_completion_sha256": "02411a1429aaff66f623e2f7c2cc36531fb9694033e42e773c5dd70f151f2dcc",
+          "baseline_success": true,
+          "completion_sha256": "67224b0e12c3cd79fddc094b7d1ced3d9fb783b023d9d187978233b7e78f49bb",
+          "episode_id": "S2-t06-s00",
+          "exclusive_first_target_success": false,
+          "first_placed": "akita_black_bowl_1",
+          "paired_e0_id": "E0-t06-s00",
+          "success": false
+        },
+        {
+          "baseline_completion_sha256": "447f2aed735af42660e3de7b1ec666a16d01e49b9aaf41beb4d8b604175b31a1",
+          "baseline_success": true,
+          "completion_sha256": "7f3222a713505daf0661f1d613a3673fea49fc93763337a205c9eb2c76996b19",
+          "episode_id": "S2-t06-s01",
+          "exclusive_first_target_success": false,
+          "first_placed": "akita_black_bowl_1",
+          "paired_e0_id": "E0-t06-s01",
+          "success": false
+        },
+        {
+          "baseline_completion_sha256": "2c7f4787a815bf86e73f3aee3016c9bd4732e3ac7bc2ccc0ad27960e6223c95a",
+          "baseline_success": true,
+          "completion_sha256": "707445ee806f701ab22fe231ea27be55fbeb9ca873d3a89f9125a3bc1514bc16",
+          "episode_id": "S2-t06-s02",
+          "exclusive_first_target_success": false,
+          "first_placed": "akita_black_bowl_1",
+          "paired_e0_id": "E0-t06-s02",
+          "success": false
+        }
+      ],
+      "paired_comparison": {
+        "baseline_only_success": 5,
+        "condition_only_success": 0,
+        "discordant_pairs": 5,
+        "exact_discordant_two_sided_p": 0.0625,
+        "matched_n": 6,
+        "note": "Exploratory episode-paired test; task clustering and multiplicity not adjusted",
+        "success_difference": -0.8333333333333334
+      },
+      "summary": {
+        "completed": 6,
+        "condition": "S2",
+        "context": {
+          "implementation_sha256": "5e06c967a012ac494b1682447bd00ea8d3c04770ea739e7314a20f507031c1c3",
+          "manifest_sha256": "9e024ae7d6c98ee958c19be7a329328fcb3dbaad6b17272f86e217b067c3377e",
+          "policy_sha256": "536822bf671fb5ba1392ca44eb0a2264c02a54bed981564bee143a7c0ff818e2"
+        },
+        "excluded": [
+          {
+            "paired_e0_id": "E0-t00-s00",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t00-s01",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t00-s02",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t02-s00",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t02-s01",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t02-s02",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t03-s00",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t03-s01",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t03-s02",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t04-s00",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t04-s01",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t04-s02",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t05-s00",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t05-s01",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t05-s02",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t07-s00",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t07-s01",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t07-s02",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t08-s00",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t08-s01",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t08-s02",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t09-s00",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t09-s01",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t09-s02",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          }
+        ],
+        "exclusive_first_target_successes": 0,
+        "infrastructure_error_attempts": 0,
+        "manual_label_validation": "pending; pose failure labels are provisional",
+        "no_placement": 0,
+        "output_dir": "/home/marimo/vla_scenegraph_work/results/part3/S2/9e024ae7d6c98ee958c19be7a329328fcb3dbaad6b17272f86e217b067c3377e",
+        "pending_or_invalid": 0,
+        "planned": 6,
+        "success_rate": 0.0,
+        "successes": 0,
+        "task_failures": 6,
+        "ties": 0,
+        "uncertainty_note": "Episode-level interval; task dependence not adjusted",
+        "wilson_95": [
+          2.7755575615628914e-17,
+          0.3903342879021653
+        ],
+        "wrong_first_placements": 6
+      }
+    },
+    "S2-ctrl": {
+      "episodes": [
+        {
+          "baseline_completion_sha256": "d9f49ede698c96b40cf5c659f1d9bbaf6d7f746ee5dd5b0e82d44e4037c72958",
+          "baseline_success": true,
+          "completion_sha256": "b8c917d4dd3da142cf15cb41b8d0b357a7f8a06dfe69037366cb4cf5fa2e236d",
+          "episode_id": "S2-ctrl-t01-s00",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_1",
+          "paired_e0_id": "E0-t01-s00",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "bb55d184c21e3025503b2d97dcc83db8af7074c37892eb4ccf52e0c6ee671ab9",
+          "baseline_success": false,
+          "completion_sha256": "701fc0ca3b62b487628a8be6db677ad0e6f331d172bfc3a23bd709a56b201c85",
+          "episode_id": "S2-ctrl-t01-s01",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_1",
+          "paired_e0_id": "E0-t01-s01",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "7a320d0f70efe58dc4941bae93990e21a92e22bcefda35d7a0f66ea2eb2c9383",
+          "baseline_success": true,
+          "completion_sha256": "558f087727dc1fc9ebd1ead7db9279afb8d4695dd038acf9eb0dec2030de7863",
+          "episode_id": "S2-ctrl-t01-s02",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_1",
+          "paired_e0_id": "E0-t01-s02",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "02411a1429aaff66f623e2f7c2cc36531fb9694033e42e773c5dd70f151f2dcc",
+          "baseline_success": true,
+          "completion_sha256": "3453f164c545425af8558c4dd21b5a70c82e974cd6bd530918f02388b764d7f4",
+          "episode_id": "S2-ctrl-t06-s00",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_1",
+          "paired_e0_id": "E0-t06-s00",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "447f2aed735af42660e3de7b1ec666a16d01e49b9aaf41beb4d8b604175b31a1",
+          "baseline_success": true,
+          "completion_sha256": "369f731d88d5ed3ed61cd1d922fd7b8b4204087ebbef3bba8bcf8c944b53ef0a",
+          "episode_id": "S2-ctrl-t06-s01",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_1",
+          "paired_e0_id": "E0-t06-s01",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "2c7f4787a815bf86e73f3aee3016c9bd4732e3ac7bc2ccc0ad27960e6223c95a",
+          "baseline_success": true,
+          "completion_sha256": "10f9e10c0bc53c2720a6b70fdd7bb0aaef5aebd5193081c57e388bb4301b1692",
+          "episode_id": "S2-ctrl-t06-s02",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_1",
+          "paired_e0_id": "E0-t06-s02",
+          "success": true
+        }
+      ],
+      "paired_comparison": {
+        "baseline_only_success": 0,
+        "condition_only_success": 1,
+        "discordant_pairs": 1,
+        "exact_discordant_two_sided_p": 1.0,
+        "matched_n": 6,
+        "note": "Exploratory episode-paired test; task clustering and multiplicity not adjusted",
+        "success_difference": 0.16666666666666666
+      },
+      "summary": {
+        "completed": 6,
+        "condition": "S2-ctrl",
+        "context": {
+          "implementation_sha256": "5e06c967a012ac494b1682447bd00ea8d3c04770ea739e7314a20f507031c1c3",
+          "manifest_sha256": "24b7bd89c7a5148c580eb3cea75246a5c094c80479d2851fe08244ec5d8e3ecb",
+          "policy_sha256": "536822bf671fb5ba1392ca44eb0a2264c02a54bed981564bee143a7c0ff818e2"
+        },
+        "excluded": [
+          {
+            "paired_e0_id": "E0-t00-s00",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t00-s01",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t00-s02",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t02-s00",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t02-s01",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t02-s02",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t03-s00",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t03-s01",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t03-s02",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t04-s00",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t04-s01",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t04-s02",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t05-s00",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t05-s01",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t05-s02",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t07-s00",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t07-s01",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t07-s02",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t08-s00",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t08-s01",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t08-s02",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t09-s00",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t09-s01",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          },
+          {
+            "paired_e0_id": "E0-t09-s02",
+            "reason": "destination_or_support_fixture_confound_not_redesigned"
+          }
+        ],
+        "exclusive_first_target_successes": 6,
+        "infrastructure_error_attempts": 2,
+        "manual_label_validation": "pending; pose failure labels are provisional",
+        "no_placement": 0,
+        "output_dir": "/home/marimo/vla_scenegraph_work/results/part3/S2-ctrl/24b7bd89c7a5148c580eb3cea75246a5c094c80479d2851fe08244ec5d8e3ecb",
+        "pending_or_invalid": 0,
+        "planned": 6,
+        "success_rate": 1.0,
+        "successes": 6,
+        "task_failures": 0,
+        "ties": 0,
+        "uncertainty_note": "Episode-level interval; task dependence not adjusted",
+        "wilson_95": [
+          0.6096657120978346,
+          1.0
+        ],
+        "wrong_first_placements": 0
+      }
+    },
+    "T1": {
+      "episodes": [
+        {
+          "baseline_completion_sha256": "54aa95fb40155463f3041053284fe36b27a45dcdd6d1567aae54a5b5f3a43233",
+          "baseline_success": true,
+          "completion_sha256": "2afbf622f75101027c97c0aa1f1d9ac74468bc079a6d82054fa7972b6c01401b",
+          "episode_id": "T1-t00-s00",
+          "exclusive_first_target_success": false,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t00-s00",
+          "success": false
+        },
+        {
+          "baseline_completion_sha256": "6d7c235de5fee54ae9da77e4d38f06f0444773a88197a4b5bb4ed487bc568716",
+          "baseline_success": true,
+          "completion_sha256": "067d916ca2a3268278eff5fefa786ba3edbae3b834dde3d5c01df01126b6b471",
+          "episode_id": "T1-t00-s01",
+          "exclusive_first_target_success": false,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t00-s01",
+          "success": false
+        },
+        {
+          "baseline_completion_sha256": "260997f35e810acb01830be63fe90143371d8b1c65ed0cbff3f2b14854c55f06",
+          "baseline_success": true,
+          "completion_sha256": "3bd3f9b5920846db2a5ffc41bf6e96b225f93818817905bd7de4c8435cb4d70e",
+          "episode_id": "T1-t00-s02",
+          "exclusive_first_target_success": false,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t00-s02",
+          "success": false
+        },
+        {
+          "baseline_completion_sha256": "80a44bea908d0ea3fd1ed44232652edce8a9d157cf414642064143eeef2dda68",
+          "baseline_success": true,
+          "completion_sha256": "1fe0d6e3ac8eb0b60412b15c503eef5de6098944316dcbcf3e268b4415d0d06c",
+          "episode_id": "T1-t02-s01",
+          "exclusive_first_target_success": false,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t02-s01",
+          "success": false
+        },
+        {
+          "baseline_completion_sha256": "7ce54e62648bc3c2b46bb7a1035df740dc59b19540f3ff89b9e23ea95387c3a3",
+          "baseline_success": true,
+          "completion_sha256": "6afdfc3d4aed6bf2764aee6ca9ae916feb24ca4c546827b4b559737dec8d87af",
+          "episode_id": "T1-t02-s02",
+          "exclusive_first_target_success": false,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t02-s02",
+          "success": false
+        },
+        {
+          "baseline_completion_sha256": "889de1d45ce380a1286d05713a50589cba2075bc7a74e5db285c8fb537b3e2fe",
+          "baseline_success": true,
+          "completion_sha256": "6cb86577bfb34e726c6eb5d3e5df5b4b3120282ac049f1b9d56c63e9c7f6ffb2",
+          "episode_id": "T1-t08-s00",
+          "exclusive_first_target_success": false,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t08-s00",
+          "success": false
+        },
+        {
+          "baseline_completion_sha256": "c96a13b377699b32c23279b70abe78c4068149a23b209a34eff183da5cd31a05",
+          "baseline_success": true,
+          "completion_sha256": "796effe567f419841cdb75482099e42a68bcc9ccee6aff8f6c075629852daf69",
+          "episode_id": "T1-t08-s01",
+          "exclusive_first_target_success": false,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t08-s01",
+          "success": false
+        },
+        {
+          "baseline_completion_sha256": "c9ccfd90ba6d4a496e30fb603fd5adb616e01fdbf3b3e9158299d1279f656125",
+          "baseline_success": true,
+          "completion_sha256": "896b59b70cb6e317389fd44011afa7b2baad37325f5d63bfe4fb7f6cd5575e6d",
+          "episode_id": "T1-t08-s02",
+          "exclusive_first_target_success": false,
+          "first_placed": "akita_black_bowl_2",
+          "paired_e0_id": "E0-t08-s02",
+          "success": false
+        }
+      ],
+      "paired_comparison": {
+        "baseline_only_success": 8,
+        "condition_only_success": 0,
+        "discordant_pairs": 8,
+        "exact_discordant_two_sided_p": 0.0078125,
+        "matched_n": 8,
+        "note": "Exploratory episode-paired test; task clustering and multiplicity not adjusted",
+        "success_difference": -1.0
+      },
+      "summary": {
+        "completed": 8,
+        "condition": "T1",
+        "context": {
+          "implementation_sha256": "f2dfb19ade6eeafd87c977e41de348f77ede1df072364b10cc44dd016589c1b3",
+          "manifest_sha256": "a5bd55498dd3ad679ab461d84b4518e9cf757990ff0a7c1cd856ae73c5638505",
+          "policy_sha256": "536822bf671fb5ba1392ca44eb0a2264c02a54bed981564bee143a7c0ff818e2"
+        },
+        "excluded": [
+          {
+            "paired_e0_id": "E0-t01-s00",
+            "reason": "endpoint_input_mismatch_or_unstable_intervention"
+          },
+          {
+            "paired_e0_id": "E0-t01-s01",
+            "reason": "endpoint_input_mismatch_or_unstable_intervention"
+          },
+          {
+            "paired_e0_id": "E0-t01-s02",
+            "reason": "endpoint_input_mismatch_or_unstable_intervention"
+          },
+          {
+            "paired_e0_id": "E0-t02-s00",
+            "reason": "initial_target_relation_not_unique"
+          },
+          {
+            "paired_e0_id": "E0-t03-s00",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t03-s01",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t03-s02",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t04-s00",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t04-s01",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t04-s02",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t05-s00",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t05-s01",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t05-s02",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t06-s00",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t06-s01",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t06-s02",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t07-s00",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t07-s01",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t07-s02",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t09-s00",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t09-s01",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t09-s02",
+            "reason": "different_supports_or_drawer_not_verified"
+          }
+        ],
+        "exclusive_first_target_successes": 0,
+        "infrastructure_error_attempts": 0,
+        "manual_label_validation": "pending; pose failure labels are provisional",
+        "no_placement": 0,
+        "output_dir": "/home/marimo/vla_scenegraph_work/results/part3/T1/a5bd55498dd3ad679ab461d84b4518e9cf757990ff0a7c1cd856ae73c5638505",
+        "pending_or_invalid": 0,
+        "planned": 8,
+        "success_rate": 0.0,
+        "successes": 0,
+        "task_failures": 8,
+        "ties": 0,
+        "uncertainty_note": "Episode-level interval; task dependence not adjusted",
+        "wilson_95": [
+          0.0,
+          0.32440756488388023
+        ],
+        "wrong_first_placements": 8
+      }
+    },
+    "T1-ctrl": {
+      "episodes": [
+        {
+          "baseline_completion_sha256": "54aa95fb40155463f3041053284fe36b27a45dcdd6d1567aae54a5b5f3a43233",
+          "baseline_success": true,
+          "completion_sha256": "c5f5ffc7b2acff411f644b690d7060dbf5a11b1feb135fd2f2f8d1e9c905e259",
+          "episode_id": "T1-ctrl-t00-s00",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_1",
+          "paired_e0_id": "E0-t00-s00",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "6d7c235de5fee54ae9da77e4d38f06f0444773a88197a4b5bb4ed487bc568716",
+          "baseline_success": true,
+          "completion_sha256": "d770437a1811bb5349e815c1019249e9aca4ecc0b879e2ecb340a1e52295fa14",
+          "episode_id": "T1-ctrl-t00-s01",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_1",
+          "paired_e0_id": "E0-t00-s01",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "260997f35e810acb01830be63fe90143371d8b1c65ed0cbff3f2b14854c55f06",
+          "baseline_success": true,
+          "completion_sha256": "868ab8084a733bfffed727ae5db04254f33f3406e634ac898c3b7552b056340d",
+          "episode_id": "T1-ctrl-t00-s02",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_1",
+          "paired_e0_id": "E0-t00-s02",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "80a44bea908d0ea3fd1ed44232652edce8a9d157cf414642064143eeef2dda68",
+          "baseline_success": true,
+          "completion_sha256": "64c13746c9404b04c86a133c41c1b0a2ce44c5bddfd156942160052a230b001a",
+          "episode_id": "T1-ctrl-t02-s01",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_1",
+          "paired_e0_id": "E0-t02-s01",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "7ce54e62648bc3c2b46bb7a1035df740dc59b19540f3ff89b9e23ea95387c3a3",
+          "baseline_success": true,
+          "completion_sha256": "d4ab9c91ce2ef9fc46b37a8fff18684d3d6a39fe985937d787aa0beea3985c1d",
+          "episode_id": "T1-ctrl-t02-s02",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_1",
+          "paired_e0_id": "E0-t02-s02",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "889de1d45ce380a1286d05713a50589cba2075bc7a74e5db285c8fb537b3e2fe",
+          "baseline_success": true,
+          "completion_sha256": "1fd361774d639812eee53d90862322765a3d387446b3905e069636afa32be04b",
+          "episode_id": "T1-ctrl-t08-s00",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_1",
+          "paired_e0_id": "E0-t08-s00",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "c96a13b377699b32c23279b70abe78c4068149a23b209a34eff183da5cd31a05",
+          "baseline_success": true,
+          "completion_sha256": "04c91df64c5b66b1730730bc108e085cc2019cecfc6e8228dde8b03367e45368",
+          "episode_id": "T1-ctrl-t08-s01",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_1",
+          "paired_e0_id": "E0-t08-s01",
+          "success": true
+        },
+        {
+          "baseline_completion_sha256": "c9ccfd90ba6d4a496e30fb603fd5adb616e01fdbf3b3e9158299d1279f656125",
+          "baseline_success": true,
+          "completion_sha256": "6642177682fc10ae23fa39e9f868599d01d49288b8760dcb7dad47333d9a091c",
+          "episode_id": "T1-ctrl-t08-s02",
+          "exclusive_first_target_success": true,
+          "first_placed": "akita_black_bowl_1",
+          "paired_e0_id": "E0-t08-s02",
+          "success": true
+        }
+      ],
+      "paired_comparison": {
+        "baseline_only_success": 0,
+        "condition_only_success": 0,
+        "discordant_pairs": 0,
+        "exact_discordant_two_sided_p": 1.0,
+        "matched_n": 8,
+        "note": "Exploratory episode-paired test; task clustering and multiplicity not adjusted",
+        "success_difference": 0.0
+      },
+      "summary": {
+        "completed": 8,
+        "condition": "T1-ctrl",
+        "context": {
+          "implementation_sha256": "f2dfb19ade6eeafd87c977e41de348f77ede1df072364b10cc44dd016589c1b3",
+          "manifest_sha256": "9aa8c77f0cb91a25c52800f64056ce05fdc5c9405c1cbe74369b2e0f8f8a3ad9",
+          "policy_sha256": "536822bf671fb5ba1392ca44eb0a2264c02a54bed981564bee143a7c0ff818e2"
+        },
+        "excluded": [
+          {
+            "paired_e0_id": "E0-t01-s00",
+            "reason": "endpoint_input_mismatch_or_unstable_intervention"
+          },
+          {
+            "paired_e0_id": "E0-t01-s01",
+            "reason": "endpoint_input_mismatch_or_unstable_intervention"
+          },
+          {
+            "paired_e0_id": "E0-t01-s02",
+            "reason": "endpoint_input_mismatch_or_unstable_intervention"
+          },
+          {
+            "paired_e0_id": "E0-t02-s00",
+            "reason": "initial_target_relation_not_unique"
+          },
+          {
+            "paired_e0_id": "E0-t03-s00",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t03-s01",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t03-s02",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t04-s00",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t04-s01",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t04-s02",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t05-s00",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t05-s01",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t05-s02",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t06-s00",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t06-s01",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t06-s02",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t07-s00",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t07-s01",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t07-s02",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t09-s00",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t09-s01",
+            "reason": "different_supports_or_drawer_not_verified"
+          },
+          {
+            "paired_e0_id": "E0-t09-s02",
+            "reason": "different_supports_or_drawer_not_verified"
+          }
+        ],
+        "exclusive_first_target_successes": 8,
+        "infrastructure_error_attempts": 0,
+        "manual_label_validation": "pending; pose failure labels are provisional",
+        "no_placement": 0,
+        "output_dir": "/home/marimo/vla_scenegraph_work/results/part3/T1-ctrl/9aa8c77f0cb91a25c52800f64056ce05fdc5c9405c1cbe74369b2e0f8f8a3ad9",
+        "pending_or_invalid": 0,
+        "planned": 8,
+        "success_rate": 1.0,
+        "successes": 8,
+        "task_failures": 0,
+        "ties": 0,
+        "uncertainty_note": "Episode-level interval; task dependence not adjusted",
+        "wilson_95": [
+          0.6755924351161198,
+          1.0
+        ],
+        "wrong_first_placements": 0
+      }
+    }
+  },
+  "limitations": [
+    "Verification exclusions restrict task/state coverage",
+    "Failure-cause labels remain provisional until visually validated"
+  ],
+  "manual_review_queue": [
+    {
+      "agentview": "/home/marimo/vla_scenegraph_work/results/part3/S1/fcf6b073c5ec323a19d32575f483d2a4f17c657d2fc1e7c5d66e848095715f21/episodes/S1-t02-s02/attempt-d01d83dc037d/agentview.mp4",
+      "baseline_completion_sha256": "7ce54e62648bc3c2b46bb7a1035df740dc59b19540f3ff89b9e23ea95387c3a3",
+      "baseline_success": true,
+      "completion_sha256": "e7b1a94c9cf510bb8ccebfad811a02d335e55f7e43dc259492793d585fc2ad38",
+      "condition": "S1",
+      "episode_id": "S1-t02-s02",
+      "exclusive_first_target_success": false,
+      "first_placed": "akita_black_bowl_1",
+      "paired_e0_id": "E0-t02-s02",
+      "review_status": "pending",
+      "success": false,
+      "wrist": "/home/marimo/vla_scenegraph_work/results/part3/S1/fcf6b073c5ec323a19d32575f483d2a4f17c657d2fc1e7c5d66e848095715f21/episodes/S1-t02-s02/attempt-d01d83dc037d/wrist.mp4"
+    },
+    {
+      "agentview": "/home/marimo/vla_scenegraph_work/results/part3/S1/fcf6b073c5ec323a19d32575f483d2a4f17c657d2fc1e7c5d66e848095715f21/episodes/S1-t04-s01/attempt-970547e77eba/agentview.mp4",
+      "baseline_completion_sha256": "31a58f49b28698d4c1a1ff00cca48b16870489c2cf04f61e521d885bb1ed8745",
+      "baseline_success": true,
+      "completion_sha256": "3eeefc1219c90e016972ef5371500a8ff11002ce487c494e2739989f47f143da",
+      "condition": "S1",
+      "episode_id": "S1-t04-s01",
+      "exclusive_first_target_success": false,
+      "first_placed": null,
+      "paired_e0_id": "E0-t04-s01",
+      "review_status": "pending",
+      "success": false,
+      "wrist": "/home/marimo/vla_scenegraph_work/results/part3/S1/fcf6b073c5ec323a19d32575f483d2a4f17c657d2fc1e7c5d66e848095715f21/episodes/S1-t04-s01/attempt-970547e77eba/wrist.mp4"
+    },
+    {
+      "agentview": "/home/marimo/vla_scenegraph_work/results/part3/S1/fcf6b073c5ec323a19d32575f483d2a4f17c657d2fc1e7c5d66e848095715f21/episodes/S1-t08-s00/attempt-a11f3223893e/agentview.mp4",
+      "baseline_completion_sha256": "889de1d45ce380a1286d05713a50589cba2075bc7a74e5db285c8fb537b3e2fe",
+      "baseline_success": true,
+      "completion_sha256": "a9935c824a6080378ca095a21b5f9f8ef9b09c51f12417e444437d28d6274864",
+      "condition": "S1",
+      "episode_id": "S1-t08-s00",
+      "exclusive_first_target_success": false,
+      "first_placed": null,
+      "paired_e0_id": "E0-t08-s00",
+      "review_status": "pending",
+      "success": false,
+      "wrist": "/home/marimo/vla_scenegraph_work/results/part3/S1/fcf6b073c5ec323a19d32575f483d2a4f17c657d2fc1e7c5d66e848095715f21/episodes/S1-t08-s00/attempt-a11f3223893e/wrist.mp4"
+    },
+    {
+      "agentview": "/home/marimo/vla_scenegraph_work/results/part3/S1/fcf6b073c5ec323a19d32575f483d2a4f17c657d2fc1e7c5d66e848095715f21/episodes/S1-t01-s00/attempt-d3219465d309/agentview.mp4",
+      "baseline_completion_sha256": "d9f49ede698c96b40cf5c659f1d9bbaf6d7f746ee5dd5b0e82d44e4037c72958",
+      "baseline_success": true,
+      "completion_sha256": "7ad5f0263a8695153a803801a782265db45b79a5a2acf76bc4a81f333dfb7fb3",
+      "condition": "S1",
+      "episode_id": "S1-t01-s00",
+      "exclusive_first_target_success": true,
+      "first_placed": "akita_black_bowl_2",
+      "paired_e0_id": "E0-t01-s00",
+      "review_status": "pending",
+      "success": true,
+      "wrist": "/home/marimo/vla_scenegraph_work/results/part3/S1/fcf6b073c5ec323a19d32575f483d2a4f17c657d2fc1e7c5d66e848095715f21/episodes/S1-t01-s00/attempt-d3219465d309/wrist.mp4"
+    },
+    {
+      "agentview": "/home/marimo/vla_scenegraph_work/results/part3/S1/fcf6b073c5ec323a19d32575f483d2a4f17c657d2fc1e7c5d66e848095715f21/episodes/S1-t01-s01/attempt-fe3577db5718/agentview.mp4",
+      "baseline_completion_sha256": "bb55d184c21e3025503b2d97dcc83db8af7074c37892eb4ccf52e0c6ee671ab9",
+      "baseline_success": false,
+      "completion_sha256": "eef084f348479f2560ba5c32eddcd4cd85644a4d9cdeb70269159638aeb7aaa2",
+      "condition": "S1",
+      "episode_id": "S1-t01-s01",
+      "exclusive_first_target_success": true,
+      "first_placed": "akita_black_bowl_2",
+      "paired_e0_id": "E0-t01-s01",
+      "review_status": "pending",
+      "success": true,
+      "wrist": "/home/marimo/vla_scenegraph_work/results/part3/S1/fcf6b073c5ec323a19d32575f483d2a4f17c657d2fc1e7c5d66e848095715f21/episodes/S1-t01-s01/attempt-fe3577db5718/wrist.mp4"
+    },
+    {
+      "agentview": "/home/marimo/vla_scenegraph_work/results/part3/T1/a5bd55498dd3ad679ab461d84b4518e9cf757990ff0a7c1cd856ae73c5638505/episodes/T1-t00-s00/attempt-65a4c1220d1f/agentview.mp4",
+      "baseline_completion_sha256": "54aa95fb40155463f3041053284fe36b27a45dcdd6d1567aae54a5b5f3a43233",
+      "baseline_success": true,
+      "completion_sha256": "2afbf622f75101027c97c0aa1f1d9ac74468bc079a6d82054fa7972b6c01401b",
+      "condition": "T1",
+      "episode_id": "T1-t00-s00",
+      "exclusive_first_target_success": false,
+      "first_placed": "akita_black_bowl_2",
+      "paired_e0_id": "E0-t00-s00",
+      "review_status": "pending",
+      "success": false,
+      "wrist": "/home/marimo/vla_scenegraph_work/results/part3/T1/a5bd55498dd3ad679ab461d84b4518e9cf757990ff0a7c1cd856ae73c5638505/episodes/T1-t00-s00/attempt-65a4c1220d1f/wrist.mp4"
+    },
+    {
+      "agentview": "/home/marimo/vla_scenegraph_work/results/part3/T1/a5bd55498dd3ad679ab461d84b4518e9cf757990ff0a7c1cd856ae73c5638505/episodes/T1-t00-s01/attempt-a4b3c1ac85ee/agentview.mp4",
+      "baseline_completion_sha256": "6d7c235de5fee54ae9da77e4d38f06f0444773a88197a4b5bb4ed487bc568716",
+      "baseline_success": true,
+      "completion_sha256": "067d916ca2a3268278eff5fefa786ba3edbae3b834dde3d5c01df01126b6b471",
+      "condition": "T1",
+      "episode_id": "T1-t00-s01",
+      "exclusive_first_target_success": false,
+      "first_placed": "akita_black_bowl_2",
+      "paired_e0_id": "E0-t00-s01",
+      "review_status": "pending",
+      "success": false,
+      "wrist": "/home/marimo/vla_scenegraph_work/results/part3/T1/a5bd55498dd3ad679ab461d84b4518e9cf757990ff0a7c1cd856ae73c5638505/episodes/T1-t00-s01/attempt-a4b3c1ac85ee/wrist.mp4"
+    },
+    {
+      "agentview": "/home/marimo/vla_scenegraph_work/results/part3/T1/a5bd55498dd3ad679ab461d84b4518e9cf757990ff0a7c1cd856ae73c5638505/episodes/T1-t00-s02/attempt-a4121e78c45c/agentview.mp4",
+      "baseline_completion_sha256": "260997f35e810acb01830be63fe90143371d8b1c65ed0cbff3f2b14854c55f06",
+      "baseline_success": true,
+      "completion_sha256": "3bd3f9b5920846db2a5ffc41bf6e96b225f93818817905bd7de4c8435cb4d70e",
+      "condition": "T1",
+      "episode_id": "T1-t00-s02",
+      "exclusive_first_target_success": false,
+      "first_placed": "akita_black_bowl_2",
+      "paired_e0_id": "E0-t00-s02",
+      "review_status": "pending",
+      "success": false,
+      "wrist": "/home/marimo/vla_scenegraph_work/results/part3/T1/a5bd55498dd3ad679ab461d84b4518e9cf757990ff0a7c1cd856ae73c5638505/episodes/T1-t00-s02/attempt-a4121e78c45c/wrist.mp4"
+    },
+    {
+      "agentview": "/home/marimo/vla_scenegraph_work/results/part3/T1-ctrl/9aa8c77f0cb91a25c52800f64056ce05fdc5c9405c1cbe74369b2e0f8f8a3ad9/episodes/T1-ctrl-t00-s00/attempt-1a42429578e8/agentview.mp4",
+      "baseline_completion_sha256": "54aa95fb40155463f3041053284fe36b27a45dcdd6d1567aae54a5b5f3a43233",
+      "baseline_success": true,
+      "completion_sha256": "c5f5ffc7b2acff411f644b690d7060dbf5a11b1feb135fd2f2f8d1e9c905e259",
+      "condition": "T1-ctrl",
+      "episode_id": "T1-ctrl-t00-s00",
+      "exclusive_first_target_success": true,
+      "first_placed": "akita_black_bowl_1",
+      "paired_e0_id": "E0-t00-s00",
+      "review_status": "pending",
+      "success": true,
+      "wrist": "/home/marimo/vla_scenegraph_work/results/part3/T1-ctrl/9aa8c77f0cb91a25c52800f64056ce05fdc5c9405c1cbe74369b2e0f8f8a3ad9/episodes/T1-ctrl-t00-s00/attempt-1a42429578e8/wrist.mp4"
+    },
+    {
+      "agentview": "/home/marimo/vla_scenegraph_work/results/part3/T1-ctrl/9aa8c77f0cb91a25c52800f64056ce05fdc5c9405c1cbe74369b2e0f8f8a3ad9/episodes/T1-ctrl-t00-s01/attempt-17b6efa71856/agentview.mp4",
+      "baseline_completion_sha256": "6d7c235de5fee54ae9da77e4d38f06f0444773a88197a4b5bb4ed487bc568716",
+      "baseline_success": true,
+      "completion_sha256": "d770437a1811bb5349e815c1019249e9aca4ecc0b879e2ecb340a1e52295fa14",
+      "condition": "T1-ctrl",
+      "episode_id": "T1-ctrl-t00-s01",
+      "exclusive_first_target_success": true,
+      "first_placed": "akita_black_bowl_1",
+      "paired_e0_id": "E0-t00-s01",
+      "review_status": "pending",
+      "success": true,
+      "wrist": "/home/marimo/vla_scenegraph_work/results/part3/T1-ctrl/9aa8c77f0cb91a25c52800f64056ce05fdc5c9405c1cbe74369b2e0f8f8a3ad9/episodes/T1-ctrl-t00-s01/attempt-17b6efa71856/wrist.mp4"
+    },
+    {
+      "agentview": "/home/marimo/vla_scenegraph_work/results/part3/S2/9e024ae7d6c98ee958c19be7a329328fcb3dbaad6b17272f86e217b067c3377e/episodes/S2-t01-s00/attempt-fcb32a698048/agentview.mp4",
+      "baseline_completion_sha256": "d9f49ede698c96b40cf5c659f1d9bbaf6d7f746ee5dd5b0e82d44e4037c72958",
+      "baseline_success": true,
+      "completion_sha256": "80c018f61df565487bcf031908b3a52df51fb63860b4ccbd6a32c803ba3930b2",
+      "condition": "S2",
+      "episode_id": "S2-t01-s00",
+      "exclusive_first_target_success": false,
+      "first_placed": "akita_black_bowl_1",
+      "paired_e0_id": "E0-t01-s00",
+      "review_status": "pending",
+      "success": false,
+      "wrist": "/home/marimo/vla_scenegraph_work/results/part3/S2/9e024ae7d6c98ee958c19be7a329328fcb3dbaad6b17272f86e217b067c3377e/episodes/S2-t01-s00/attempt-fcb32a698048/wrist.mp4"
+    },
+    {
+      "agentview": "/home/marimo/vla_scenegraph_work/results/part3/S2/9e024ae7d6c98ee958c19be7a329328fcb3dbaad6b17272f86e217b067c3377e/episodes/S2-t01-s01/attempt-495e337a09cb/agentview.mp4",
+      "baseline_completion_sha256": "bb55d184c21e3025503b2d97dcc83db8af7074c37892eb4ccf52e0c6ee671ab9",
+      "baseline_success": false,
+      "completion_sha256": "6b51acab4a7f3f79952698ae0df2f19b6bbab853f4973d01213624badcf08070",
+      "condition": "S2",
+      "episode_id": "S2-t01-s01",
+      "exclusive_first_target_success": false,
+      "first_placed": "akita_black_bowl_1",
+      "paired_e0_id": "E0-t01-s01",
+      "review_status": "pending",
+      "success": false,
+      "wrist": "/home/marimo/vla_scenegraph_work/results/part3/S2/9e024ae7d6c98ee958c19be7a329328fcb3dbaad6b17272f86e217b067c3377e/episodes/S2-t01-s01/attempt-495e337a09cb/wrist.mp4"
+    },
+    {
+      "agentview": "/home/marimo/vla_scenegraph_work/results/part3/S2/9e024ae7d6c98ee958c19be7a329328fcb3dbaad6b17272f86e217b067c3377e/episodes/S2-t01-s02/attempt-570b56148417/agentview.mp4",
+      "baseline_completion_sha256": "7a320d0f70efe58dc4941bae93990e21a92e22bcefda35d7a0f66ea2eb2c9383",
+      "baseline_success": true,
+      "completion_sha256": "39787bea95ce191065f2fdc348fe70db9fd05623b8e7429b5491c212e2b8cda7",
+      "condition": "S2",
+      "episode_id": "S2-t01-s02",
+      "exclusive_first_target_success": false,
+      "first_placed": "akita_black_bowl_1",
+      "paired_e0_id": "E0-t01-s02",
+      "review_status": "pending",
+      "success": false,
+      "wrist": "/home/marimo/vla_scenegraph_work/results/part3/S2/9e024ae7d6c98ee958c19be7a329328fcb3dbaad6b17272f86e217b067c3377e/episodes/S2-t01-s02/attempt-570b56148417/wrist.mp4"
+    },
+    {
+      "agentview": "/home/marimo/vla_scenegraph_work/results/part3/S2-ctrl/24b7bd89c7a5148c580eb3cea75246a5c094c80479d2851fe08244ec5d8e3ecb/episodes/S2-ctrl-t01-s00/attempt-040feb59c93a/agentview.mp4",
+      "baseline_completion_sha256": "d9f49ede698c96b40cf5c659f1d9bbaf6d7f746ee5dd5b0e82d44e4037c72958",
+      "baseline_success": true,
+      "completion_sha256": "b8c917d4dd3da142cf15cb41b8d0b357a7f8a06dfe69037366cb4cf5fa2e236d",
+      "condition": "S2-ctrl",
+      "episode_id": "S2-ctrl-t01-s00",
+      "exclusive_first_target_success": true,
+      "first_placed": "akita_black_bowl_1",
+      "paired_e0_id": "E0-t01-s00",
+      "review_status": "pending",
+      "success": true,
+      "wrist": "/home/marimo/vla_scenegraph_work/results/part3/S2-ctrl/24b7bd89c7a5148c580eb3cea75246a5c094c80479d2851fe08244ec5d8e3ecb/episodes/S2-ctrl-t01-s00/attempt-040feb59c93a/wrist.mp4"
+    },
+    {
+      "agentview": "/home/marimo/vla_scenegraph_work/results/part3/S2-ctrl/24b7bd89c7a5148c580eb3cea75246a5c094c80479d2851fe08244ec5d8e3ecb/episodes/S2-ctrl-t01-s01/attempt-0f5e67ad36c1/agentview.mp4",
+      "baseline_completion_sha256": "bb55d184c21e3025503b2d97dcc83db8af7074c37892eb4ccf52e0c6ee671ab9",
+      "baseline_success": false,
+      "completion_sha256": "701fc0ca3b62b487628a8be6db677ad0e6f331d172bfc3a23bd709a56b201c85",
+      "condition": "S2-ctrl",
+      "episode_id": "S2-ctrl-t01-s01",
+      "exclusive_first_target_success": true,
+      "first_placed": "akita_black_bowl_1",
+      "paired_e0_id": "E0-t01-s01",
+      "review_status": "pending",
+      "success": true,
+      "wrist": "/home/marimo/vla_scenegraph_work/results/part3/S2-ctrl/24b7bd89c7a5148c580eb3cea75246a5c094c80479d2851fe08244ec5d8e3ecb/episodes/S2-ctrl-t01-s01/attempt-0f5e67ad36c1/wrist.mp4"
+    }
+  ],
+  "temporal_pairs": [
+    {
+      "actions_equal_until_first_placement": false,
+      "bound_applicable_to_recorded_pair": false,
+      "bound_satisfied": null,
+      "compared_policy_steps": 75,
+      "exclusive_first_target_success_sum": 1,
+      "inputs_equal_until_first_placement": false,
+      "paired_e0_id": "E0-t00-s00",
+      "unrestricted_target_success_sum": 1
+    },
+    {
+      "actions_equal_until_first_placement": false,
+      "bound_applicable_to_recorded_pair": false,
+      "bound_satisfied": null,
+      "compared_policy_steps": 76,
+      "exclusive_first_target_success_sum": 1,
+      "inputs_equal_until_first_placement": false,
+      "paired_e0_id": "E0-t00-s01",
+      "unrestricted_target_success_sum": 1
+    },
+    {
+      "actions_equal_until_first_placement": false,
+      "bound_applicable_to_recorded_pair": false,
+      "bound_satisfied": null,
+      "compared_policy_steps": 71,
+      "exclusive_first_target_success_sum": 1,
+      "inputs_equal_until_first_placement": false,
+      "paired_e0_id": "E0-t00-s02",
+      "unrestricted_target_success_sum": 1
+    },
+    {
+      "actions_equal_until_first_placement": false,
+      "bound_applicable_to_recorded_pair": false,
+      "bound_satisfied": null,
+      "compared_policy_steps": 94,
+      "exclusive_first_target_success_sum": 1,
+      "inputs_equal_until_first_placement": false,
+      "paired_e0_id": "E0-t02-s01",
+      "unrestricted_target_success_sum": 1
+    },
+    {
+      "actions_equal_until_first_placement": false,
+      "bound_applicable_to_recorded_pair": false,
+      "bound_satisfied": null,
+      "compared_policy_steps": 89,
+      "exclusive_first_target_success_sum": 1,
+      "inputs_equal_until_first_placement": false,
+      "paired_e0_id": "E0-t02-s02",
+      "unrestricted_target_success_sum": 1
+    },
+    {
+      "actions_equal_until_first_placement": false,
+      "bound_applicable_to_recorded_pair": false,
+      "bound_satisfied": null,
+      "compared_policy_steps": 89,
+      "exclusive_first_target_success_sum": 1,
+      "inputs_equal_until_first_placement": false,
+      "paired_e0_id": "E0-t08-s00",
+      "unrestricted_target_success_sum": 1
+    },
+    {
+      "actions_equal_until_first_placement": false,
+      "bound_applicable_to_recorded_pair": false,
+      "bound_satisfied": null,
+      "compared_policy_steps": 88,
+      "exclusive_first_target_success_sum": 1,
+      "inputs_equal_until_first_placement": false,
+      "paired_e0_id": "E0-t08-s01",
+      "unrestricted_target_success_sum": 1
+    },
+    {
+      "actions_equal_until_first_placement": false,
+      "bound_applicable_to_recorded_pair": false,
+      "bound_satisfied": null,
+      "compared_policy_steps": 87,
+      "exclusive_first_target_success_sum": 1,
+      "inputs_equal_until_first_placement": false,
+      "paired_e0_id": "E0-t08-s02",
+      "unrestricted_target_success_sum": 1
+    }
+  ],
+  "combined_source_contexts": {
+    "S1": {
+      "implementation_sha256": "f2dfb19ade6eeafd87c977e41de348f77ede1df072364b10cc44dd016589c1b3",
+      "manifest_sha256": "fcf6b073c5ec323a19d32575f483d2a4f17c657d2fc1e7c5d66e848095715f21",
+      "policy_sha256": "536822bf671fb5ba1392ca44eb0a2264c02a54bed981564bee143a7c0ff818e2"
+    },
+    "S2": {
+      "implementation_sha256": "5e06c967a012ac494b1682447bd00ea8d3c04770ea739e7314a20f507031c1c3",
+      "manifest_sha256": "9e024ae7d6c98ee958c19be7a329328fcb3dbaad6b17272f86e217b067c3377e",
+      "policy_sha256": "536822bf671fb5ba1392ca44eb0a2264c02a54bed981564bee143a7c0ff818e2"
+    },
+    "S2-ctrl": {
+      "implementation_sha256": "5e06c967a012ac494b1682447bd00ea8d3c04770ea739e7314a20f507031c1c3",
+      "manifest_sha256": "24b7bd89c7a5148c580eb3cea75246a5c094c80479d2851fe08244ec5d8e3ecb",
+      "policy_sha256": "536822bf671fb5ba1392ca44eb0a2264c02a54bed981564bee143a7c0ff818e2"
+    },
+    "T1": {
+      "implementation_sha256": "f2dfb19ade6eeafd87c977e41de348f77ede1df072364b10cc44dd016589c1b3",
+      "manifest_sha256": "a5bd55498dd3ad679ab461d84b4518e9cf757990ff0a7c1cd856ae73c5638505",
+      "policy_sha256": "536822bf671fb5ba1392ca44eb0a2264c02a54bed981564bee143a7c0ff818e2"
+    },
+    "T1-ctrl": {
+      "implementation_sha256": "f2dfb19ade6eeafd87c977e41de348f77ede1df072364b10cc44dd016589c1b3",
+      "manifest_sha256": "9aa8c77f0cb91a25c52800f64056ce05fdc5c9405c1cbe74369b2e0f8f8a3ad9",
+      "policy_sha256": "536822bf671fb5ba1392ca44eb0a2264c02a54bed981564bee143a7c0ff818e2"
+    }
+  },
+  "source_report_sha256": {
+    "legacy": "888af8f9ecb394b11ee4ccc1ea05d0617b25b516971aa8677980d32abee7d651",
+    "current": "f8d87aeda25e90f182797716be17b195f3bf4e02b8268e4df6f1d0fea0bf9ff4"
+  }
+}

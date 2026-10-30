@@ -1,0 +1,131 @@
+{
+  "review": {
+    "completion_sha256": {
+      "S2-t01-s00": "80c018f61df565487bcf031908b3a52df51fb63860b4ccbd6a32c803ba3930b2",
+      "S2-t01-s01": "6b51acab4a7f3f79952698ae0df2f19b6bbab853f4973d01213624badcf08070",
+      "S2-t01-s02": "39787bea95ce191065f2fdc348fe70db9fd05623b8e7429b5491c212e2b8cda7",
+      "S2-t06-s00": "67224b0e12c3cd79fddc094b7d1ced3d9fb783b023d9d187978233b7e78f49bb",
+      "S2-t06-s01": "7f3222a713505daf0661f1d613a3673fea49fc93763337a205c9eb2c76996b19"
+    },
+    "context": {
+      "implementation_sha256": "5e06c967a012ac494b1682447bd00ea8d3c04770ea739e7314a20f507031c1c3",
+      "manifest_sha256": "9e024ae7d6c98ee958c19be7a329328fcb3dbaad6b17272f86e217b067c3377e",
+      "policy_sha256": "536822bf671fb5ba1392ca44eb0a2264c02a54bed981564bee143a7c0ff818e2"
+    },
+    "created_at_utc": "2026-10-29T07:18:01.628158+00:00",
+    "episodes": [
+      "S2-t01-s00",
+      "S2-t01-s01",
+      "S2-t01-s02",
+      "S2-t06-s00",
+      "S2-t06-s01"
+    ],
+    "manual_trajectory_review": "separate visual review required",
+    "passed": true,
+    "remaining_storage_estimate_bytes": 1059795,
+    "task_failures": [
+      "S2-t01-s00",
+      "S2-t01-s01",
+      "S2-t01-s02",
+      "S2-t06-s00",
+      "S2-t06-s01"
+    ]
+  },
+  "review_sha256": "b2306ff99199093fcb5703785f3df835c6d056b511850b26915c9dc8f7c6ef8d",
+  "selection": {
+    "condition": "S2",
+    "episodes": [
+      "S2-t01-s00",
+      "S2-t01-s01",
+      "S2-t01-s02",
+      "S2-t06-s00",
+      "S2-t06-s01"
+    ],
+    "review_note": "Reviewed both-camera contact sheets for all five first-batch episodes. The simulation/render streams are continuous with no obvious jumps or encoding corruption. Pose traces identify bowl 1 as the first bowl placed on the plate in all five, while the S2 target is bowl 2; this agrees with the wrong-first-object metrics. Contact/release timing is not isolated by five-frame samples, so the wrong-object cause remains provisional.",
+    "review_status": "complete",
+    "reviewed_at_utc": "2026-10-29T07:28:19.653276+00:00",
+    "rows": [
+      {
+        "camera": "agentview",
+        "episode_id": "S2-t01-s00",
+        "path": "/home/marimo/vla_scenegraph_work/results/part3/S2/9e024ae7d6c98ee958c19be7a329328fcb3dbaad6b17272f86e217b067c3377e/visual_review/first_batch/S2-t01-s00-agentview.jpg",
+        "sha256": "c17ba3d736fc408b3195d1c34e2f313a001e568d96ebb174826541c641e6d561",
+        "steps": 220,
+        "success": false
+      },
+      {
+        "camera": "wrist",
+        "episode_id": "S2-t01-s00",
+        "path": "/home/marimo/vla_scenegraph_work/results/part3/S2/9e024ae7d6c98ee958c19be7a329328fcb3dbaad6b17272f86e217b067c3377e/visual_review/first_batch/S2-t01-s00-wrist.jpg",
+        "sha256": "612a664f1becc5130aced0ae5ee2321529461c2664233b3f2c7740a241d6dfab",
+        "steps": 220,
+        "success": false
+      },
+      {
+        "camera": "agentview",
+        "episode_id": "S2-t01-s01",
+        "path": "/home/marimo/vla_scenegraph_work/results/part3/S2/9e024ae7d6c98ee958c19be7a329328fcb3dbaad6b17272f86e217b067c3377e/visual_review/first_batch/S2-t01-s01-agentview.jpg",
+        "sha256": "95eb642f0cb5e5b85aa3617750969fe27b8b23a2a38f94bb5415155028e72ce5",
+        "steps": 220,
+        "success": false
+      },
+      {
+        "camera": "wrist",
+        "episode_id": "S2-t01-s01",
+        "path": "/home/marimo/vla_scenegraph_work/results/part3/S2/9e024ae7d6c98ee958c19be7a329328fcb3dbaad6b17272f86e217b067c3377e/visual_review/first_batch/S2-t01-s01-wrist.jpg",
+        "sha256": "54704dbedb59c03cb82dfb0e929777a2827fd4e6e2d08a92ec350f84fb4c0922",
+        "steps": 220,
+        "success": false
+      },
+      {
+        "camera": "agentview",
+        "episode_id": "S2-t01-s02",
+        "path": "/home/marimo/vla_scenegraph_work/results/part3/S2/9e024ae7d6c98ee958c19be7a329328fcb3dbaad6b17272f86e217b067c3377e/visual_review/first_batch/S2-t01-s02-agentview.jpg",
+        "sha256": "ad40fdf8a0bccbcee9e998d4acff00b8b2b2e93841584038a2079f19cd07a85a",
+        "steps": 220,
+        "success": false
+      },
+      {
+        "camera": "wrist",
+        "episode_id": "S2-t01-s02",
+        "path": "/home/marimo/vla_scenegraph_work/results/part3/S2/9e024ae7d6c98ee958c19be7a329328fcb3dbaad6b17272f86e217b067c3377e/visual_review/first_batch/S2-t01-s02-wrist.jpg",
+        "sha256": "ae9bc3eedebb738fa4fbb7775d1518a5fc035412b3ace73ef0f394e9d05baca4",
+        "steps": 220,
+        "success": false
+      },
+      {
+        "camera": "agentview",
+        "episode_id": "S2-t06-s00",
+        "path": "/home/marimo/vla_scenegraph_work/results/part3/S2/9e024ae7d6c98ee958c19be7a329328fcb3dbaad6b17272f86e217b067c3377e/visual_review/first_batch/S2-t06-s00-agentview.jpg",
+        "sha256": "76c9a61445f715e82ec9db5264a5b0442834f419dca373575df4b66c9937ddaf",
+        "steps": 220,
+        "success": false
+      },
+      {
+        "camera": "wrist",
+        "episode_id": "S2-t06-s00",
+        "path": "/home/marimo/vla_scenegraph_work/results/part3/S2/9e024ae7d6c98ee958c19be7a329328fcb3dbaad6b17272f86e217b067c3377e/visual_review/first_batch/S2-t06-s00-wrist.jpg",
+        "sha256": "b9506242a28e1d7743fc390e29975c7c9d59424776c230d25c2492e994c952a9",
+        "steps": 220,
+        "success": false
+      },
+      {
+        "camera": "agentview",
+        "episode_id": "S2-t06-s01",
+        "path": "/home/marimo/vla_scenegraph_work/results/part3/S2/9e024ae7d6c98ee958c19be7a329328fcb3dbaad6b17272f86e217b067c3377e/visual_review/first_batch/S2-t06-s01-agentview.jpg",
+        "sha256": "317c412c8914d6843aa9861d6bec72858f75ac55a03fb9cff70a2990e50b86ab",
+        "steps": 220,
+        "success": false
+      },
+      {
+        "camera": "wrist",
+        "episode_id": "S2-t06-s01",
+        "path": "/home/marimo/vla_scenegraph_work/results/part3/S2/9e024ae7d6c98ee958c19be7a329328fcb3dbaad6b17272f86e217b067c3377e/visual_review/first_batch/S2-t06-s01-wrist.jpg",
+        "sha256": "da0b8cd7f9f38739d4562aa822e9d95919b64518000d996af53e7cfa1986e690",
+        "steps": 220,
+        "success": false
+      }
+    ]
+  },
+  "selection_sha256": "948c21bc7ce07b2917251906fca886c5df4671fee44721c69de701b7da4916a1"
+}

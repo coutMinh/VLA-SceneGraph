@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "method": "Both camera contact sheets sampled every five frames, checked with official identity-specific placement metrics",
+  "review_status": "complete for the protocol-selected three failures and two successes",
+  "reviews": [
+    {
+      "episode_id": "S1-t01-s00",
+      "outcome": "target_bowl_2_placed_first",
+      "observation": "The bowl next to the cookie box is lifted and placed on the plate; the original bowl near the ramekin stays at its initial location."
+    },
+    {
+      "episode_id": "S1-t01-s01",
+      "outcome": "target_bowl_2_placed_first",
+      "observation": "The instruction-selected bowl next to the cookie box is transported to the plate while the other bowl remains near the ramekin."
+    },
+    {
+      "episode_id": "S1-t02-s02",
+      "outcome": "wrong_bowl_1_placed_first",
+      "observation": "The identity-specific placement metric records bowl 1 as the first placed object; the target bowl 2 is not placed within 220 actions. The sampled views show repeated bowl handling, but do not resolve the precise selection error."
+    },
+    {
+      "episode_id": "S1-t04-s01",
+      "outcome": "timeout_no_placement_cause_unresolved",
+      "observation": "No bowl is placed by the 220-action limit. The arm approaches the bowls and remains around the container area; the five-frame samples cannot distinguish reach, grasp, or release failure."
+    },
+    {
+      "episode_id": "S1-t08-s00",
+      "outcome": "timeout_no_placement_cause_unresolved",
+      "observation": "The arm moves among the bowls, but neither bowl reaches a valid placement by the 220-action limit. The sampled views do not establish whether a stable grasp occurred."
+    }
+  ],
+  "limitations": "Contact sheets sample every five frames; exact contact, grasp, and release timing require continuous video review. Failure labels remain coarse where the video and identity-specific predicates do not identify a cause."
+}

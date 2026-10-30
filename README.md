@@ -6,11 +6,11 @@ Implementation and progress are organized by Part and experiment ID, independent
 | Part | Status | Entry point |
 |---|---|---|
 | 1 — Study | Four verified 2D/video scene-graph sources and notes; study incomplete | [Literature matrix](study/literature_matrix.md) |
-| 2 — Reproduction | Setup/smoke passed; resumable E0 evaluator and parity harness implemented, GPU runs pending | [E0 procedure](repro/E0.md), [smoke](results/part2/smoke_2026-10-28/README.md), [setup](SETUP.md) |
+| 2 — Reproduction | Setup/smoke passed; reduced 50-episode E0 pilot and official-client parity passed | [E0 run record](results/part2/e0/molab-2026-10-29/README.md), [E0 procedure](repro/E0.md), [smoke](results/part2/smoke_2026-10-28/README.md) |
 | 3 — Analysis | Spatial (S1, S2/S2-ctrl) and temporal (T1/T1-ctrl) conditions not run | [Part status](docs/PART_STATUS.md) |
 | 4 — Improvement | Proposal/prototype not implemented | [Part status](docs/PART_STATUS.md) |
 
-The smoke succeeded on one LIBERO Spatial task 0/init state 0 episode after 74 steps. It validates execution and is not a benchmark estimate. The E0 implementation now supports a fixed 50-episode Spatial manifest, validated resume, all-object-pose traces, seeded policy requests and a three-state official-client parity gate. GPU parity and E0 have not run: Molab was exhausted and the user requested implementation only. The pilot will not be reported as a full official-suite reproduction.
+The retained smoke succeeded on one LIBERO Spatial task 0/init state 0 episode after 74 steps. The reduced E0 pilot then completed all 50 episodes on Molab: 48 succeeded, two reached the 220-step limit, and no infrastructure errors occurred. Official-client parity passed on task 0 with three initial states. E0 supports a fixed manifest, validated resume, object-pose/camera/action/proprioception/latency traces and seeded policy requests. This reduced pilot is not a full official-suite reproduction; manual trajectory review remains open.
 
 ## Layout
 

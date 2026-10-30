@@ -97,7 +97,8 @@ From `examples/libero/main.py` at this commit:
 The completed Part 2 smoke runs only Spatial/task 0/init 0. It is a **smoke test**, never a benchmark
 estimate. The smoke check requires a valid dummy action chunk, actual GPU evidence and a
 complete episode with decodable MP4; the episode does not have to succeed.
-The smoke check has passed. Part 2 E0 still requires the resumable evaluator and official-client comparison.
+The smoke check has passed. The resumable evaluator and official-client comparison have
+also run for the reduced E0 pilot; see [the Molab run record](../results/part2/e0/molab-2026-10-29/README.md).
 
 ## Flow convention correction for the plan
 

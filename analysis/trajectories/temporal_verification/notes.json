@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "review_method": "Agentview contact sheets sampled every five frames across each full scripted prelude; independent simulator checks cover endpoint equality and penetration/drift.",
+  "reviewed_episode_ids": [
+    "E0-t00-s00", "E0-t00-s01", "E0-t00-s02", "E0-t02-s01",
+    "E0-t02-s02", "E0-t08-s00", "E0-t08-s01", "E0-t08-s02"
+  ],
+  "observation": "Both bowl paths remain in the agentview scene in the sampled frames and finish in exchanged positions. The robot stays idle. No gross out-of-frame movement is seen; brief robot occlusion between sampled frames is not ruled out.",
+  "policy_pair_diagnostics": {
+    "matched_pairs": 8,
+    "identical_policy_start_hashes": 8,
+    "identical_first_action_chunks": 8,
+    "pairs_diverging_at_second_policy_input": 8,
+    "pairs_diverging_at_second_policy_action_chunk": 8,
+    "pairs_eligible_for_prefix_bound": 0,
+    "outcome": "T1 target bowl 1 success 0/8; T1-ctrl target bowl 1 success 8/8; T1 first placed bowl 2 in 8/8. The identical observation/action prefix does not extend beyond the first five executed policy steps."
+  },
+  "interpretation": "The outcomes are consistent with failure to bind the instruction's historical location to object identity. Because later observations and actions diverge, this comparison cannot claim the exclusive first-target bound or isolate the full rollout effect from post-start dynamics.",
+  "scope": "Synthetic simulator intervention with known object identity. This review does not establish perception-based tracking accuracy or continuous visibility in the wrist camera."
+}

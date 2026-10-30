@@ -1,0 +1,14 @@
+{
+  "condition": "T1-ctrl",
+  "review_status": "complete",
+  "method": "Both agentview and wrist contact sheets sampled every five frames; identity-specific completion metrics checked for each episode.",
+  "episodes": [
+    {"episode_id": "T1-ctrl-t00-s00", "success": true, "first_placed": "akita_black_bowl_1", "steps": 75},
+    {"episode_id": "T1-ctrl-t00-s01", "success": true, "first_placed": "akita_black_bowl_1", "steps": 96},
+    {"episode_id": "T1-ctrl-t00-s02", "success": true, "first_placed": "akita_black_bowl_1", "steps": 71},
+    {"episode_id": "T1-ctrl-t02-s01", "success": true, "first_placed": "akita_black_bowl_1", "steps": 94},
+    {"episode_id": "T1-ctrl-t02-s02", "success": true, "first_placed": "akita_black_bowl_1", "steps": 89}
+  ],
+  "observation": "All five first place akita_black_bowl_1, matching the selected target and the official predicate. No visible scene or trace corruption in the reviewed samples.",
+  "limitations": "Contact sheets sample every five frames; they do not establish precise contact, grasp, or release timing."
+}

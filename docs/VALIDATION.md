@@ -1,16 +1,17 @@
 # Validation · Part 2 setup and smoke
 
-## E0 implementation-only CPU validation — 2026-10-29
+## Initial E0 implementation validation — 2026-10-29
 
 - Windows Python 3.12: **37 passed, 2 skipped**. The skips are existing Linux
-  process-lifecycle checks. GPU/model inference and physics were not run or mocked
-  as research results; Molab was exhausted and the user requested implementation only.
+  process-lifecycle checks. At this initial implementation-validation stage, GPU/model
+  inference and physics were not run or mocked as research results.
 - Tests include real FFmpeg MP4 encoding/decoding, partial/killed attempts, corrupt
   videos/traces/config/pointers, completed task-failure resume, infrastructure-error
   retry/denominator exclusion, duplicate registry protection and interrupted-run indexing.
 - Batch tests enforce the five-episode inspection boundary and resume at the next
   manifest entry. Parity comparisons reject observation/action/outcome differences;
-  missing parity prevents E0. The actual official-client/GPU comparison remains pending.
+  missing parity prevents E0. The later live official-client/GPU comparison passed; see
+  the runtime record below.
 - The source verifier read all pinned Spatial BDDL/initial-state archives using NumPy
   and a restricted archive reader (no torch/MuJoCo). The generated report reproduces
   exactly; `configs/e0_manifest.json` matches the manifest builder and contains the
@@ -23,8 +24,30 @@
 - Original retained smoke/dummy artifact hashes still match their manifests.
   No upstream source edits, remote pushes or new GPU experiments were performed.
 
-Next runtime acceptance is documented in [repro/E0.md](../repro/E0.md). CPU results
-do not establish renderer/physics stability, GPU seeded-noise determinism or parity.
+## Live Molab runtime validation — 2026-10-29
+
+- Molab was fast-forwarded from the older checkout to the latest pushed implementation,
+  commit `1c98fd3efece9194330a038b2c62b7cb2d6a1046`, before setup or evaluation.
+- RTX PRO 6000 Blackwell Server Edition; policy server used JAX 0.5.3 on CUDA. The
+  pinned pi0_libero checkpoint loaded. The official client completed rendering with OSMesa.
+- Parity passed for task 0 and initial states 0, 1, 2. Policy inputs were byte-identical;
+  actions, chunks, observations, step counts and success results matched (atol 1e-5,
+  rtol 0), with policy RNG controlled.
+- Fixed manifest: 50 Spatial episodes, tasks 0-9 × states 0-4, seed 7; SHA-256
+  `fe252dd6412e9b88c1ae02e7356826a983bf6c335404013cc4b8f96e0897bd82`. The first batch
+  passed artifact review before the remaining workload ran.
+- Final validated count: 50/50; 48 success, 2 task failures at the 220-step cap, 0
+  infrastructure errors, 0 pending/invalid. Overall success 0.96, Wilson 95% interval
+  [0.865399, 0.988961]; interval does not adjust for within-task dependence. Task 1 and
+  task 7 each had 4/5 successes; all other tasks had 5/5.
+- The two failed episodes were `E0-t01-s01` and `E0-t07-s03`. The evaluator's saved
+  videos/traces passed decoding and integrity checks. Manual visual trajectory review
+  remains pending. Raw run and summary are on Molab at
+  `/home/marimo/vla_scenegraph_work/results/part2/e0/fe252dd6412e9b88c1ae02e7356826a983bf6c335404013cc4b8f96e0897bd82/`.
+  A concise local record is [here](../results/part2/e0/molab-2026-10-29/README.md).
+
+The pilot is a reduced run, not a full official-suite reproduction. Its result does not
+establish scene-graph improvements; S1/S2/T1 comparison conditions remain future work.
 
 ## Part-based organization and compatibility checks
 
