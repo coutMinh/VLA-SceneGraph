@@ -153,7 +153,7 @@ python -m sgvla.xsuite.report <results-dir> results/xsuite              # summar
 python scripts/plot_results.py                                          # media/success_overview.png
 ```
 
-Local CPU checks: `pip install -e '.[dev]'`, then `pytest -q` and `ruff check .`.
+Local CPU checks: `pip install -e '.[dev]'` (add `media` for figures/GIFs), then `pytest -q` and `ruff check .`.
 
 Study notes (Part 1): [literature matrix](study/literature_matrix.md),
 [scene-graph synthesis](study/scene_graph_synthesis.md),
