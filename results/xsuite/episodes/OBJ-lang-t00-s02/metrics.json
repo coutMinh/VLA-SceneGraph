@@ -1,0 +1,127 @@
+{
+  "condition": "lang",
+  "episode_id": "OBJ-lang-t00-s02",
+  "first_lifted": "salad_dressing_1",
+  "first_lifted_policy_step": 63,
+  "frames": 150,
+  "intervention_kind": "none",
+  "max_rise_m": {
+    "alphabet_soup_1": 0.0,
+    "basket_1": 0.0,
+    "butter_1": 0.0,
+    "cream_cheese_1": 0.0,
+    "milk_1": 0.0,
+    "salad_dressing_1": 0.23144871242940224,
+    "tomato_sauce_1": 0.0
+  },
+  "max_steps": 280,
+  "object_names": [
+    "alphabet_soup_1",
+    "basket_1",
+    "butter_1",
+    "cream_cheese_1",
+    "milk_1",
+    "salad_dressing_1",
+    "tomato_sauce_1"
+  ],
+  "phase_labels": {
+    "0": "settling",
+    "1": "policy",
+    "2": "terminal",
+    "5": "intervention_settling"
+  },
+  "policy_call_seconds": [
+    0.0898713360002148,
+    0.12764707599990288,
+    0.12687452199998006,
+    0.21322704299973338,
+    0.15050025899972752,
+    0.18263585699969553,
+    0.14804920599999605,
+    0.16807216100005462,
+    0.17642781800032026,
+    0.15652745599982154,
+    0.14520000299989988,
+    0.14804739800001698,
+    0.1032923140001003,
+    0.12076285399962217,
+    0.17194520499970167,
+    0.14604312899973593,
+    0.13287441400007083,
+    0.14223158799995872,
+    0.1373716279999826,
+    0.15795547500010798,
+    0.1568706729999576,
+    0.15520117400001254,
+    0.15238832499971977,
+    0.12262760099974912
+  ],
+  "policy_observation_hashes": [
+    "096d18bcf3499778e5cf6bc17519f9b48e033652a0c61af736a42e6b9c173e78",
+    "3decaea53fc25fea6183d2a7057808d257bc579e464a5662b684653b2f7940b1",
+    "ac1c4e2465094cc7a335e250b4947d257f636658526056e80f0216106178cdc6",
+    "83f2d3d288741dea8dbb7dd5f596e2bbefe779405435955ca390cb8ec9a47705",
+    "e9f86a8c43082e6c14e2a9823a8d106964bc97ee6fd50bbf470b9098370f8004",
+    "5bced2c82a83ecc9f8a304ee48fa2a0fc0f4a1832c191255afde133ea3861acc",
+    "a257cccf4a2a9e87f55d63280c06943a91b463dc8c80dbcf9bd1df698a20dc57",
+    "8cfb8f43e47ed3713b6307e3a09b8034befcc3594d0cd47f964ac837cc1e94c5",
+    "80691ca2bec70ebe3ba4df7b603a6c1d8cd1257d731bcf2ce939fc296437f093",
+    "5eeac2c96190d51de51e9891d35206573b9695a45c5697f6f701adc4fd5338d8",
+    "664869271d0204d2a1ff4667a34111834354f83ff6e6597271d7b73214f43596",
+    "4d0ca3fe635daa141d84213b5beb7e47e34870c488b1237eba215a2425a951f8",
+    "083128b90372046650f4e98da8909c75dfba7c05b5f2f11062635fabf33c4e0e",
+    "f5eda9fd11748687ce495298fe9feada919c7d5a23d680f61ff0f508e9434892",
+    "0197a5e1de2955509a15cd4e6191a82dc66c5231c9b292beb00041d79ce9f2c5",
+    "6ce92334ce6284458cc4f6a393ac324371a0b7dd24b18a234959d42fa48700f4",
+    "c8a35c08cb1772605a0586f9533b96bee28a2d85da7772640bf00f4703e0a207",
+    "69776cd849c1c0c06943ce4d937cb9286c5f3cc2dc8a6afe7b8cc00ff1ffddd8",
+    "3ec6c1f97fa89b347be8fd7ba6803afd636704944067ee9db2c8a02795ecdc72",
+    "76469550dfc563c65c973f5f93b339f3fd861658525278f92c2ee50f4bdb79f6",
+    "939b0bc6c83fcd5683780dca354b001ed29557509de09667bebfd0ecba8c9732",
+    "f3e4f24819399758018391f4a4bba923736b7fe4daa9128075cc7a02f9b010ac",
+    "5c1eaa5de1a8f42e603516dbc5ed4fca5a1b66e1e4041004cdfb7c624ba66f17",
+    "15f415d49689e2d6368c04ee56dacf77fca2d7175fa2dc557e1485efb6eb657f"
+  ],
+  "policy_seed": 1518227192,
+  "policy_start_frame": 30,
+  "prompt": "pick up the salad dressing and place it in the basket",
+  "server_metadata": {
+    "sgvla": {
+      "backend": "jax",
+      "config_sha256": "3974be2ae6ea751c4f679ac154b8844b6e0e353697851e9fd7a1f6bd0613d658",
+      "model_config": "pi0_libero",
+      "num_steps": 10,
+      "openpi_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+      "policy_seed": 0,
+      "policy_sha256": "536822bf671fb5ba1392ca44eb0a2264c02a54bed981564bee143a7c0ff818e2",
+      "rng_protocol": "sgvla-seeded-noise-v1"
+    }
+  },
+  "source": {
+    "bddl_sha256": "df088984da13131f8332ee0f13a7896c6a97afd02ee5007a42e8fc5e0893571e",
+    "initial_state_sha256": "c32d4a747226838da2165bb7f7fac747f86fdf174beb6d72f9c1bbf4829ee70d",
+    "official_prompt": "pick up the alphabet soup and place it in the basket",
+    "task_name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket"
+  },
+  "status": "completed",
+  "steps": 119,
+  "success": true,
+  "suite": "libero_object",
+  "target_object": "salad_dressing_1",
+  "undo": {
+    "applied": false
+  },
+  "wall_clock_seconds": 20.786412456000107,
+  "watch": [
+    "in alphabet_soup_1 basket_1_contain_region",
+    "in salad_dressing_1 basket_1_contain_region"
+  ],
+  "watch_final": [
+    false,
+    true
+  ],
+  "watch_first_true_step": [
+    null,
+    119
+  ]
+}

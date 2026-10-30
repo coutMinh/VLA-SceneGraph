@@ -1,0 +1,117 @@
+{
+  "condition": "move-ctrl",
+  "episode_id": "GOAL-move-ctrl-t06-s01",
+  "first_lifted": "cream_cheese_1",
+  "first_lifted_policy_step": 62,
+  "frames": 138,
+  "intervention_kind": "relocate",
+  "max_rise_m": {
+    "akita_black_bowl_1": 0.00036238437140168056,
+    "cream_cheese_1": 0.1687254104793896,
+    "plate_1": 0.0,
+    "wine_bottle_1": 0.0
+  },
+  "max_steps": 300,
+  "object_names": [
+    "akita_black_bowl_1",
+    "cream_cheese_1",
+    "flat_stove_1",
+    "plate_1",
+    "wine_bottle_1",
+    "wine_rack_1",
+    "wooden_cabinet_1"
+  ],
+  "phase_labels": {
+    "0": "settling",
+    "1": "policy",
+    "2": "terminal",
+    "5": "intervention_settling"
+  },
+  "policy_call_seconds": [
+    0.18295846899991375,
+    0.21258060299987847,
+    0.29045453799972165,
+    0.29528627999980017,
+    0.2079082870000093,
+    0.21856296399982966,
+    0.23026351399994383,
+    0.20009119300038947,
+    0.10104721100015013,
+    0.16393336299961447,
+    0.09502315899999303,
+    0.14057154300007824,
+    0.14244431599991003,
+    0.16550140799972723,
+    0.1930393349998667,
+    0.1137425090000761,
+    0.1105437470000652,
+    0.19500864499968884,
+    0.25700275899998815,
+    0.15662674599980164,
+    0.20640989599996828,
+    0.26133190300015485
+  ],
+  "policy_observation_hashes": [
+    "e14cc659e6f0045a2b80c053c5a1750ec198085205f4a2ecb114a0c657b89898",
+    "2c557191ba7ecd4995c23b307868c1b3040faf3abaff6c20c874102bd284a50f",
+    "58dab6c42517074787ad3ce0ac496979a524c5460193207f5186f0dcb0f50d37",
+    "e70cbe2f830c9ddb46e6848ea0c208dcd456cfe7271373683296d26a849c240f",
+    "8f634512ba89ac5ce724bef82732dc84e584a3ddbc0b28b45c2df764ccc32624",
+    "b76a08ce6f91849e8c72f0c9c6fe3d7ef3cc1c6866886d5929d17f320d59f5c9",
+    "9c975a33a85fc1a6c5c64ab0f2bda467156622a77e6b349d9bf7b10b9294f5a0",
+    "009c22f0f35dce9eb9021cb693bc28b6bc3d5a5ce4e4c667d27a7dd3e86b7ed1",
+    "1da9a3eda06b43e20bdeafaa67a01a59e510b475c058efcae1de6d907aafe38e",
+    "1438a09e0ac67625f98f01f53ac6ecb8d609139774c1a30e16f76103143fc78f",
+    "cf5bcde8bbc2c7e80429012da0906994dc390a8754dd8252daac3ef893ea3050",
+    "c833f200249c7babd46a2c683147f7c6411495f60ce037221ed6f4d7f931c9d7",
+    "94f7824dc9a5d9ea06dfc3e1b32442a570f3cd2033594f63cc14f544131c026e",
+    "8941b5e8b695d99feedf246d4ee2f81028cb61c577df25b4f5bde62909bb0549",
+    "5da6d81cc41133d1632f9cb81d2a618637bf1dcab02f72114386cb98dba2a672",
+    "d8ab8af0c574b771b27b2de0642a331a8036d09ce9175fb72caa20745a101535",
+    "7e8e21fa09f9b2a20b5cbc86a892b37fb67a7f5bc1ec39cd56a8b2ad6b50f2fb",
+    "9a0afd249dbc95e18aa7d50b79e5793e3ad94d7b64e5337b5a63856ec82537c9",
+    "1fbde9ab589cb4d82187434ac1b42dd1eb08bed45521ae20ec6214e0aeff5635",
+    "58a001df6b9776b7f254b1a193e70e9b940933433f30fc3c6b69592106fb4f3c",
+    "3c89be5771cc197d010809620cf30128770119698e6666095c45d4d4a71e6c03",
+    "949736b50bc2cdcf5baea4e38736500893309883f66f90f4e67e7bf9975c3465"
+  ],
+  "policy_seed": 2241585127,
+  "policy_start_frame": 30,
+  "prompt": "put the cream cheese in the bowl",
+  "server_metadata": {
+    "sgvla": {
+      "backend": "jax",
+      "config_sha256": "3974be2ae6ea751c4f679ac154b8844b6e0e353697851e9fd7a1f6bd0613d658",
+      "model_config": "pi0_libero",
+      "num_steps": 10,
+      "openpi_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+      "policy_seed": 0,
+      "policy_sha256": "536822bf671fb5ba1392ca44eb0a2264c02a54bed981564bee143a7c0ff818e2",
+      "rng_protocol": "sgvla-seeded-noise-v1"
+    }
+  },
+  "source": {
+    "bddl_sha256": "81c54eace32b92466598103b3b6e8435ce90f10996ef18cec4a35fe6c4d31a98",
+    "initial_state_sha256": "b0bf9f7f6fee93024cc58c7577a476b5d8604277ff915a11dadcbc2e35789571",
+    "official_prompt": "put the cream cheese in the bowl",
+    "task_name": "put_the_cream_cheese_in_the_bowl"
+  },
+  "status": "completed",
+  "steps": 107,
+  "success": true,
+  "suite": "libero_goal",
+  "target_object": "cream_cheese_1",
+  "undo": {
+    "applied": false
+  },
+  "wall_clock_seconds": 25.454221951999898,
+  "watch": [
+    "on cream_cheese_1 akita_black_bowl_1"
+  ],
+  "watch_final": [
+    true
+  ],
+  "watch_first_true_step": [
+    107
+  ]
+}

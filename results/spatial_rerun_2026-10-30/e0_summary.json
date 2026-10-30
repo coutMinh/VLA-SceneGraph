@@ -1,0 +1,131 @@
+{
+  "completed": 50,
+  "context": {
+    "implementation_sha256": "dd5705f2662b99446a281cc2ef4006cf5c70d4c80ad0acd45252b4372ce00a7d",
+    "manifest_sha256": "fe252dd6412e9b88c1ae02e7356826a983bf6c335404013cc4b8f96e0897bd82",
+    "policy_sha256": "536822bf671fb5ba1392ca44eb0a2264c02a54bed981564bee143a7c0ff818e2"
+  },
+  "output_dir": "/home/marimo/vla_scenegraph_work/results/part2/e0/fe252dd6412e9b88c1ae02e7356826a983bf6c335404013cc4b8f96e0897bd82",
+  "pending_or_invalid": 0,
+  "per_task": [
+    {
+      "completed": 5,
+      "planned": 5,
+      "success_rate": 1.0,
+      "successes": 5,
+      "task_id": 0,
+      "wilson_95": [
+        0.5655175352168251,
+        1.0
+      ]
+    },
+    {
+      "completed": 5,
+      "planned": 5,
+      "success_rate": 1.0,
+      "successes": 5,
+      "task_id": 1,
+      "wilson_95": [
+        0.5655175352168251,
+        1.0
+      ]
+    },
+    {
+      "completed": 5,
+      "planned": 5,
+      "success_rate": 1.0,
+      "successes": 5,
+      "task_id": 2,
+      "wilson_95": [
+        0.5655175352168251,
+        1.0
+      ]
+    },
+    {
+      "completed": 5,
+      "planned": 5,
+      "success_rate": 1.0,
+      "successes": 5,
+      "task_id": 3,
+      "wilson_95": [
+        0.5655175352168251,
+        1.0
+      ]
+    },
+    {
+      "completed": 5,
+      "planned": 5,
+      "success_rate": 0.8,
+      "successes": 4,
+      "task_id": 4,
+      "wilson_95": [
+        0.37553462976252533,
+        0.9637758913675698
+      ]
+    },
+    {
+      "completed": 5,
+      "planned": 5,
+      "success_rate": 1.0,
+      "successes": 5,
+      "task_id": 5,
+      "wilson_95": [
+        0.5655175352168251,
+        1.0
+      ]
+    },
+    {
+      "completed": 5,
+      "planned": 5,
+      "success_rate": 1.0,
+      "successes": 5,
+      "task_id": 6,
+      "wilson_95": [
+        0.5655175352168251,
+        1.0
+      ]
+    },
+    {
+      "completed": 5,
+      "planned": 5,
+      "success_rate": 1.0,
+      "successes": 5,
+      "task_id": 7,
+      "wilson_95": [
+        0.5655175352168251,
+        1.0
+      ]
+    },
+    {
+      "completed": 5,
+      "planned": 5,
+      "success_rate": 1.0,
+      "successes": 5,
+      "task_id": 8,
+      "wilson_95": [
+        0.5655175352168251,
+        1.0
+      ]
+    },
+    {
+      "completed": 5,
+      "planned": 5,
+      "success_rate": 1.0,
+      "successes": 5,
+      "task_id": 9,
+      "wilson_95": [
+        0.5655175352168251,
+        1.0
+      ]
+    }
+  ],
+  "planned": 50,
+  "scope": "reduced Spatial pilot; not an official full-suite benchmark",
+  "success_rate": 0.98,
+  "successes": 49,
+  "uncertainty_note": "Episode-level Wilson interval; not adjusted for within-task dependence",
+  "wilson_95": [
+    0.8950455641036219,
+    0.9964607407283539
+  ]
+}

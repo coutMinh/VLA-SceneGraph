@@ -1,0 +1,109 @@
+{
+  "condition": "E0",
+  "episode_id": "GOAL-E0-t06-s01",
+  "first_lifted": "cream_cheese_1",
+  "first_lifted_policy_step": 55,
+  "frames": 120,
+  "intervention_kind": "none",
+  "max_rise_m": {
+    "akita_black_bowl_1": 0.0,
+    "cream_cheese_1": 0.15889062280335287,
+    "plate_1": 0.0,
+    "wine_bottle_1": 0.0
+  },
+  "max_steps": 300,
+  "object_names": [
+    "akita_black_bowl_1",
+    "cream_cheese_1",
+    "flat_stove_1",
+    "plate_1",
+    "wine_bottle_1",
+    "wine_rack_1",
+    "wooden_cabinet_1"
+  ],
+  "phase_labels": {
+    "0": "settling",
+    "1": "policy",
+    "2": "terminal",
+    "5": "intervention_settling"
+  },
+  "policy_call_seconds": [
+    0.089689577000172,
+    0.08885757200005173,
+    0.0866011680000156,
+    0.1502664829999958,
+    0.08787317800033634,
+    0.08938587800003006,
+    0.08657731700031945,
+    0.08919674000026134,
+    0.0898064519997206,
+    0.15916061799998715,
+    0.09000051900011385,
+    0.1560313509999105,
+    0.08910134100005962,
+    0.1713782690003427,
+    0.08906698100008725,
+    0.08648376800010737,
+    0.1643049190001875,
+    0.08733332499969038
+  ],
+  "policy_observation_hashes": [
+    "689dffafa50b6e1accf69340311854986ec2507141861f7993f36679ada75565",
+    "229e92ecea37f6998756361cfd1ff7912e728eef43093f5057ff7490080e5f38",
+    "d39e636ee2627cdec6601063b73fe71e81cfd075e74bf40d21129ac1007b9655",
+    "b61ae4ca1b30efdf4f2320ee7cad8002132eec76d4a3b4c499be44d9ab250677",
+    "a358e721c4ae083eee153d8c8a447760b7b3821d453f23510ed470c39c9ec673",
+    "db237b8ef0e8f9b70dc13ef937740f7cd4aad69d01b50560f63d1a446bc428f9",
+    "b2b86db3f8db1a99c1e8c8f496404ef58c21722aae14bbb595f411cc888d366d",
+    "1024d2f9bc182a30a2b9fd3b7f282e07656286051e3c139b63949afe0a8f49bf",
+    "82c245f47dfabbc1a0f5f00781523b030edbfacbac232bccea3e6de9cfa1ad76",
+    "b9fc9d472d94d799e61fdbfbfe3d0f9b93045de2a90d66a40ca58daad4645130",
+    "0d704eca61749d8c3e6e6961b593365b218aa13a171fba1734eed167f4b15bb8",
+    "935a909949ec5493f74e59d5bc3afa3e44c4d1277534f88a28ed372c3015783a",
+    "5294def1502fc792dee0bbd0c5303c450e7e2304ba1cb8539556246228f4702a",
+    "0fec4987ceed8fe7b912013e5bfacb65b271ca1c6deb19563740737991074c21",
+    "96cc150d6b4f8179d679d5729d4a2116e63fcd1c41b09f090d1d24d157a5dc9d",
+    "c2075616589af9809540a0de88bf1069731597ac2729f33853030ddfb086db3b",
+    "eb816f7c27cc7ec3678c044658323346223c81f7dce33ccc7bea0f5807aaf7c9",
+    "aa1d515e2f2d99505d00db7fc4b5f79ea42e51aeac4f8407c64455fc6e90afae"
+  ],
+  "policy_seed": 2241585127,
+  "policy_start_frame": 30,
+  "prompt": "put the cream cheese in the bowl",
+  "server_metadata": {
+    "sgvla": {
+      "backend": "jax",
+      "config_sha256": "3974be2ae6ea751c4f679ac154b8844b6e0e353697851e9fd7a1f6bd0613d658",
+      "model_config": "pi0_libero",
+      "num_steps": 10,
+      "openpi_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+      "policy_seed": 0,
+      "policy_sha256": "536822bf671fb5ba1392ca44eb0a2264c02a54bed981564bee143a7c0ff818e2",
+      "rng_protocol": "sgvla-seeded-noise-v1"
+    }
+  },
+  "source": {
+    "bddl_sha256": "81c54eace32b92466598103b3b6e8435ce90f10996ef18cec4a35fe6c4d31a98",
+    "initial_state_sha256": "b0bf9f7f6fee93024cc58c7577a476b5d8604277ff915a11dadcbc2e35789571",
+    "official_prompt": "put the cream cheese in the bowl",
+    "task_name": "put_the_cream_cheese_in_the_bowl"
+  },
+  "status": "completed",
+  "steps": 89,
+  "success": true,
+  "suite": "libero_goal",
+  "target_object": "cream_cheese_1",
+  "undo": {
+    "applied": false
+  },
+  "wall_clock_seconds": 20.08758090900028,
+  "watch": [
+    "on cream_cheese_1 akita_black_bowl_1"
+  ],
+  "watch_final": [
+    true
+  ],
+  "watch_first_true_step": [
+    89
+  ]
+}

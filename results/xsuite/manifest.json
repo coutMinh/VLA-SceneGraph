@@ -1,0 +1,856 @@
+{
+  "episodes": [
+    {
+      "condition": "E0",
+      "episode_id": "OBJ-E0-t00-s00",
+      "init_state_id": 0,
+      "max_steps": 280,
+      "policy_seed": 1011315181,
+      "suite": "libero_object",
+      "task_id": 0
+    },
+    {
+      "condition": "E0",
+      "episode_id": "OBJ-E0-t00-s01",
+      "init_state_id": 1,
+      "max_steps": 280,
+      "policy_seed": 266150553,
+      "suite": "libero_object",
+      "task_id": 0
+    },
+    {
+      "condition": "E0",
+      "episode_id": "OBJ-E0-t00-s02",
+      "init_state_id": 2,
+      "max_steps": 280,
+      "policy_seed": 1518227192,
+      "suite": "libero_object",
+      "task_id": 0
+    },
+    {
+      "condition": "E0",
+      "episode_id": "OBJ-E0-t01-s00",
+      "init_state_id": 0,
+      "max_steps": 280,
+      "policy_seed": 4165522153,
+      "suite": "libero_object",
+      "task_id": 1
+    },
+    {
+      "condition": "E0",
+      "episode_id": "OBJ-E0-t01-s01",
+      "init_state_id": 1,
+      "max_steps": 280,
+      "policy_seed": 2020025143,
+      "suite": "libero_object",
+      "task_id": 1
+    },
+    {
+      "condition": "E0",
+      "episode_id": "OBJ-E0-t01-s02",
+      "init_state_id": 2,
+      "max_steps": 280,
+      "policy_seed": 114639272,
+      "suite": "libero_object",
+      "task_id": 1
+    },
+    {
+      "condition": "E0",
+      "episode_id": "OBJ-E0-t04-s00",
+      "init_state_id": 0,
+      "max_steps": 280,
+      "policy_seed": 1705903594,
+      "suite": "libero_object",
+      "task_id": 4
+    },
+    {
+      "condition": "E0",
+      "episode_id": "OBJ-E0-t04-s01",
+      "init_state_id": 1,
+      "max_steps": 280,
+      "policy_seed": 4200969677,
+      "suite": "libero_object",
+      "task_id": 4
+    },
+    {
+      "condition": "E0",
+      "episode_id": "OBJ-E0-t04-s02",
+      "init_state_id": 2,
+      "max_steps": 280,
+      "policy_seed": 1762192795,
+      "suite": "libero_object",
+      "task_id": 4
+    },
+    {
+      "condition": "swap",
+      "episode_id": "OBJ-swap-t00-s00",
+      "init_state_id": 0,
+      "max_steps": 280,
+      "policy_seed": 1011315181,
+      "suite": "libero_object",
+      "task_id": 0
+    },
+    {
+      "condition": "swap",
+      "episode_id": "OBJ-swap-t00-s01",
+      "init_state_id": 1,
+      "max_steps": 280,
+      "policy_seed": 266150553,
+      "suite": "libero_object",
+      "task_id": 0
+    },
+    {
+      "condition": "swap",
+      "episode_id": "OBJ-swap-t00-s02",
+      "init_state_id": 2,
+      "max_steps": 280,
+      "policy_seed": 1518227192,
+      "suite": "libero_object",
+      "task_id": 0
+    },
+    {
+      "condition": "swap",
+      "episode_id": "OBJ-swap-t01-s00",
+      "init_state_id": 0,
+      "max_steps": 280,
+      "policy_seed": 4165522153,
+      "suite": "libero_object",
+      "task_id": 1
+    },
+    {
+      "condition": "swap",
+      "episode_id": "OBJ-swap-t01-s01",
+      "init_state_id": 1,
+      "max_steps": 280,
+      "policy_seed": 2020025143,
+      "suite": "libero_object",
+      "task_id": 1
+    },
+    {
+      "condition": "swap",
+      "episode_id": "OBJ-swap-t01-s02",
+      "init_state_id": 2,
+      "max_steps": 280,
+      "policy_seed": 114639272,
+      "suite": "libero_object",
+      "task_id": 1
+    },
+    {
+      "condition": "swap",
+      "episode_id": "OBJ-swap-t04-s00",
+      "init_state_id": 0,
+      "max_steps": 280,
+      "policy_seed": 1705903594,
+      "suite": "libero_object",
+      "task_id": 4
+    },
+    {
+      "condition": "swap",
+      "episode_id": "OBJ-swap-t04-s01",
+      "init_state_id": 1,
+      "max_steps": 280,
+      "policy_seed": 4200969677,
+      "suite": "libero_object",
+      "task_id": 4
+    },
+    {
+      "condition": "swap",
+      "episode_id": "OBJ-swap-t04-s02",
+      "init_state_id": 2,
+      "max_steps": 280,
+      "policy_seed": 1762192795,
+      "suite": "libero_object",
+      "task_id": 4
+    },
+    {
+      "condition": "swap-ctrl",
+      "episode_id": "OBJ-swap-ctrl-t00-s00",
+      "init_state_id": 0,
+      "max_steps": 280,
+      "policy_seed": 1011315181,
+      "suite": "libero_object",
+      "task_id": 0
+    },
+    {
+      "condition": "swap-ctrl",
+      "episode_id": "OBJ-swap-ctrl-t00-s01",
+      "init_state_id": 1,
+      "max_steps": 280,
+      "policy_seed": 266150553,
+      "suite": "libero_object",
+      "task_id": 0
+    },
+    {
+      "condition": "swap-ctrl",
+      "episode_id": "OBJ-swap-ctrl-t00-s02",
+      "init_state_id": 2,
+      "max_steps": 280,
+      "policy_seed": 1518227192,
+      "suite": "libero_object",
+      "task_id": 0
+    },
+    {
+      "condition": "swap-ctrl",
+      "episode_id": "OBJ-swap-ctrl-t01-s00",
+      "init_state_id": 0,
+      "max_steps": 280,
+      "policy_seed": 4165522153,
+      "suite": "libero_object",
+      "task_id": 1
+    },
+    {
+      "condition": "swap-ctrl",
+      "episode_id": "OBJ-swap-ctrl-t01-s01",
+      "init_state_id": 1,
+      "max_steps": 280,
+      "policy_seed": 2020025143,
+      "suite": "libero_object",
+      "task_id": 1
+    },
+    {
+      "condition": "swap-ctrl",
+      "episode_id": "OBJ-swap-ctrl-t01-s02",
+      "init_state_id": 2,
+      "max_steps": 280,
+      "policy_seed": 114639272,
+      "suite": "libero_object",
+      "task_id": 1
+    },
+    {
+      "condition": "swap-ctrl",
+      "episode_id": "OBJ-swap-ctrl-t04-s00",
+      "init_state_id": 0,
+      "max_steps": 280,
+      "policy_seed": 1705903594,
+      "suite": "libero_object",
+      "task_id": 4
+    },
+    {
+      "condition": "swap-ctrl",
+      "episode_id": "OBJ-swap-ctrl-t04-s01",
+      "init_state_id": 1,
+      "max_steps": 280,
+      "policy_seed": 4200969677,
+      "suite": "libero_object",
+      "task_id": 4
+    },
+    {
+      "condition": "swap-ctrl",
+      "episode_id": "OBJ-swap-ctrl-t04-s02",
+      "init_state_id": 2,
+      "max_steps": 280,
+      "policy_seed": 1762192795,
+      "suite": "libero_object",
+      "task_id": 4
+    },
+    {
+      "condition": "lang",
+      "episode_id": "OBJ-lang-t00-s00",
+      "init_state_id": 0,
+      "max_steps": 280,
+      "policy_seed": 1011315181,
+      "suite": "libero_object",
+      "task_id": 0
+    },
+    {
+      "condition": "lang",
+      "episode_id": "OBJ-lang-t00-s01",
+      "init_state_id": 1,
+      "max_steps": 280,
+      "policy_seed": 266150553,
+      "suite": "libero_object",
+      "task_id": 0
+    },
+    {
+      "condition": "lang",
+      "episode_id": "OBJ-lang-t00-s02",
+      "init_state_id": 2,
+      "max_steps": 280,
+      "policy_seed": 1518227192,
+      "suite": "libero_object",
+      "task_id": 0
+    },
+    {
+      "condition": "lang",
+      "episode_id": "OBJ-lang-t01-s00",
+      "init_state_id": 0,
+      "max_steps": 280,
+      "policy_seed": 4165522153,
+      "suite": "libero_object",
+      "task_id": 1
+    },
+    {
+      "condition": "lang",
+      "episode_id": "OBJ-lang-t01-s01",
+      "init_state_id": 1,
+      "max_steps": 280,
+      "policy_seed": 2020025143,
+      "suite": "libero_object",
+      "task_id": 1
+    },
+    {
+      "condition": "lang",
+      "episode_id": "OBJ-lang-t01-s02",
+      "init_state_id": 2,
+      "max_steps": 280,
+      "policy_seed": 114639272,
+      "suite": "libero_object",
+      "task_id": 1
+    },
+    {
+      "condition": "lang",
+      "episode_id": "OBJ-lang-t04-s00",
+      "init_state_id": 0,
+      "max_steps": 280,
+      "policy_seed": 1705903594,
+      "suite": "libero_object",
+      "task_id": 4
+    },
+    {
+      "condition": "lang",
+      "episode_id": "OBJ-lang-t04-s01",
+      "init_state_id": 1,
+      "max_steps": 280,
+      "policy_seed": 4200969677,
+      "suite": "libero_object",
+      "task_id": 4
+    },
+    {
+      "condition": "lang",
+      "episode_id": "OBJ-lang-t04-s02",
+      "init_state_id": 2,
+      "max_steps": 280,
+      "policy_seed": 1762192795,
+      "suite": "libero_object",
+      "task_id": 4
+    },
+    {
+      "condition": "E0",
+      "episode_id": "GOAL-E0-t08-s00",
+      "init_state_id": 0,
+      "max_steps": 300,
+      "policy_seed": 3684909477,
+      "suite": "libero_goal",
+      "task_id": 8
+    },
+    {
+      "condition": "E0",
+      "episode_id": "GOAL-E0-t08-s01",
+      "init_state_id": 1,
+      "max_steps": 300,
+      "policy_seed": 721048354,
+      "suite": "libero_goal",
+      "task_id": 8
+    },
+    {
+      "condition": "E0",
+      "episode_id": "GOAL-E0-t08-s02",
+      "init_state_id": 2,
+      "max_steps": 300,
+      "policy_seed": 3132318228,
+      "suite": "libero_goal",
+      "task_id": 8
+    },
+    {
+      "condition": "E0",
+      "episode_id": "GOAL-E0-t06-s00",
+      "init_state_id": 0,
+      "max_steps": 300,
+      "policy_seed": 3694830726,
+      "suite": "libero_goal",
+      "task_id": 6
+    },
+    {
+      "condition": "E0",
+      "episode_id": "GOAL-E0-t06-s01",
+      "init_state_id": 1,
+      "max_steps": 300,
+      "policy_seed": 2241585127,
+      "suite": "libero_goal",
+      "task_id": 6
+    },
+    {
+      "condition": "E0",
+      "episode_id": "GOAL-E0-t06-s02",
+      "init_state_id": 2,
+      "max_steps": 300,
+      "policy_seed": 143726594,
+      "suite": "libero_goal",
+      "task_id": 6
+    },
+    {
+      "condition": "E0",
+      "episode_id": "GOAL-E0-t01-s00",
+      "init_state_id": 0,
+      "max_steps": 300,
+      "policy_seed": 530795328,
+      "suite": "libero_goal",
+      "task_id": 1
+    },
+    {
+      "condition": "E0",
+      "episode_id": "GOAL-E0-t01-s01",
+      "init_state_id": 1,
+      "max_steps": 300,
+      "policy_seed": 2026463400,
+      "suite": "libero_goal",
+      "task_id": 1
+    },
+    {
+      "condition": "E0",
+      "episode_id": "GOAL-E0-t01-s02",
+      "init_state_id": 2,
+      "max_steps": 300,
+      "policy_seed": 809953408,
+      "suite": "libero_goal",
+      "task_id": 1
+    },
+    {
+      "condition": "move",
+      "episode_id": "GOAL-move-t08-s00",
+      "init_state_id": 0,
+      "max_steps": 300,
+      "moved_object": "plate_1",
+      "policy_seed": 3684909477,
+      "suite": "libero_goal",
+      "task_id": 8
+    },
+    {
+      "condition": "move",
+      "episode_id": "GOAL-move-t08-s01",
+      "init_state_id": 1,
+      "max_steps": 300,
+      "moved_object": "plate_1",
+      "policy_seed": 721048354,
+      "suite": "libero_goal",
+      "task_id": 8
+    },
+    {
+      "condition": "move",
+      "episode_id": "GOAL-move-t08-s02",
+      "init_state_id": 2,
+      "max_steps": 300,
+      "moved_object": "plate_1",
+      "policy_seed": 3132318228,
+      "suite": "libero_goal",
+      "task_id": 8
+    },
+    {
+      "condition": "move",
+      "episode_id": "GOAL-move-t06-s00",
+      "init_state_id": 0,
+      "max_steps": 300,
+      "moved_object": "akita_black_bowl_1",
+      "policy_seed": 3694830726,
+      "suite": "libero_goal",
+      "task_id": 6
+    },
+    {
+      "condition": "move",
+      "episode_id": "GOAL-move-t06-s01",
+      "init_state_id": 1,
+      "max_steps": 300,
+      "moved_object": "akita_black_bowl_1",
+      "policy_seed": 2241585127,
+      "suite": "libero_goal",
+      "task_id": 6
+    },
+    {
+      "condition": "move",
+      "episode_id": "GOAL-move-t06-s02",
+      "init_state_id": 2,
+      "max_steps": 300,
+      "moved_object": "akita_black_bowl_1",
+      "policy_seed": 143726594,
+      "suite": "libero_goal",
+      "task_id": 6
+    },
+    {
+      "condition": "move",
+      "episode_id": "GOAL-move-t01-s00",
+      "init_state_id": 0,
+      "max_steps": 300,
+      "moved_object": "akita_black_bowl_1",
+      "policy_seed": 530795328,
+      "suite": "libero_goal",
+      "task_id": 1
+    },
+    {
+      "condition": "move",
+      "episode_id": "GOAL-move-t01-s01",
+      "init_state_id": 1,
+      "max_steps": 300,
+      "moved_object": "akita_black_bowl_1",
+      "policy_seed": 2026463400,
+      "suite": "libero_goal",
+      "task_id": 1
+    },
+    {
+      "condition": "move",
+      "episode_id": "GOAL-move-t01-s02",
+      "init_state_id": 2,
+      "max_steps": 300,
+      "moved_object": "akita_black_bowl_1",
+      "policy_seed": 809953408,
+      "suite": "libero_goal",
+      "task_id": 1
+    },
+    {
+      "condition": "move-ctrl",
+      "episode_id": "GOAL-move-ctrl-t08-s00",
+      "init_state_id": 0,
+      "max_steps": 300,
+      "moved_object": "cream_cheese_1",
+      "policy_seed": 3684909477,
+      "suite": "libero_goal",
+      "task_id": 8
+    },
+    {
+      "condition": "move-ctrl",
+      "episode_id": "GOAL-move-ctrl-t08-s01",
+      "init_state_id": 1,
+      "max_steps": 300,
+      "moved_object": "cream_cheese_1",
+      "policy_seed": 721048354,
+      "suite": "libero_goal",
+      "task_id": 8
+    },
+    {
+      "condition": "move-ctrl",
+      "episode_id": "GOAL-move-ctrl-t08-s02",
+      "init_state_id": 2,
+      "max_steps": 300,
+      "moved_object": "cream_cheese_1",
+      "policy_seed": 3132318228,
+      "suite": "libero_goal",
+      "task_id": 8
+    },
+    {
+      "condition": "move-ctrl",
+      "episode_id": "GOAL-move-ctrl-t06-s00",
+      "init_state_id": 0,
+      "max_steps": 300,
+      "moved_object": "plate_1",
+      "policy_seed": 3694830726,
+      "suite": "libero_goal",
+      "task_id": 6
+    },
+    {
+      "condition": "move-ctrl",
+      "episode_id": "GOAL-move-ctrl-t06-s01",
+      "init_state_id": 1,
+      "max_steps": 300,
+      "moved_object": "plate_1",
+      "policy_seed": 2241585127,
+      "suite": "libero_goal",
+      "task_id": 6
+    },
+    {
+      "condition": "move-ctrl",
+      "episode_id": "GOAL-move-ctrl-t06-s02",
+      "init_state_id": 2,
+      "max_steps": 300,
+      "moved_object": "plate_1",
+      "policy_seed": 143726594,
+      "suite": "libero_goal",
+      "task_id": 6
+    },
+    {
+      "condition": "move-ctrl",
+      "episode_id": "GOAL-move-ctrl-t01-s00",
+      "init_state_id": 0,
+      "max_steps": 300,
+      "moved_object": "cream_cheese_1",
+      "policy_seed": 530795328,
+      "suite": "libero_goal",
+      "task_id": 1
+    },
+    {
+      "condition": "move-ctrl",
+      "episode_id": "GOAL-move-ctrl-t01-s01",
+      "init_state_id": 1,
+      "max_steps": 300,
+      "moved_object": "cream_cheese_1",
+      "policy_seed": 2026463400,
+      "suite": "libero_goal",
+      "task_id": 1
+    },
+    {
+      "condition": "move-ctrl",
+      "episode_id": "GOAL-move-ctrl-t01-s02",
+      "init_state_id": 2,
+      "max_steps": 300,
+      "moved_object": "cream_cheese_1",
+      "policy_seed": 809953408,
+      "suite": "libero_goal",
+      "task_id": 1
+    },
+    {
+      "condition": "E0",
+      "episode_id": "LONG-E0-t00-s00",
+      "init_state_id": 0,
+      "max_steps": 520,
+      "policy_seed": 305428698,
+      "suite": "libero_10",
+      "task_id": 0
+    },
+    {
+      "condition": "E0",
+      "episode_id": "LONG-E0-t00-s01",
+      "init_state_id": 1,
+      "max_steps": 520,
+      "policy_seed": 1843349137,
+      "suite": "libero_10",
+      "task_id": 0
+    },
+    {
+      "condition": "E0",
+      "episode_id": "LONG-E0-t00-s02",
+      "init_state_id": 2,
+      "max_steps": 520,
+      "policy_seed": 3388317669,
+      "suite": "libero_10",
+      "task_id": 0
+    },
+    {
+      "condition": "E0",
+      "episode_id": "LONG-E0-t01-s00",
+      "init_state_id": 0,
+      "max_steps": 520,
+      "policy_seed": 4131512287,
+      "suite": "libero_10",
+      "task_id": 1
+    },
+    {
+      "condition": "E0",
+      "episode_id": "LONG-E0-t01-s01",
+      "init_state_id": 1,
+      "max_steps": 520,
+      "policy_seed": 3858837417,
+      "suite": "libero_10",
+      "task_id": 1
+    },
+    {
+      "condition": "E0",
+      "episode_id": "LONG-E0-t01-s02",
+      "init_state_id": 2,
+      "max_steps": 520,
+      "policy_seed": 1340902789,
+      "suite": "libero_10",
+      "task_id": 1
+    },
+    {
+      "condition": "E0",
+      "episode_id": "LONG-E0-t07-s00",
+      "init_state_id": 0,
+      "max_steps": 520,
+      "policy_seed": 1570770976,
+      "suite": "libero_10",
+      "task_id": 7
+    },
+    {
+      "condition": "E0",
+      "episode_id": "LONG-E0-t07-s01",
+      "init_state_id": 1,
+      "max_steps": 520,
+      "policy_seed": 1795386804,
+      "suite": "libero_10",
+      "task_id": 7
+    },
+    {
+      "condition": "E0",
+      "episode_id": "LONG-E0-t07-s02",
+      "init_state_id": 2,
+      "max_steps": 520,
+      "policy_seed": 1195939659,
+      "suite": "libero_10",
+      "task_id": 7
+    },
+    {
+      "condition": "pre",
+      "episode_id": "LONG-pre-t00-s00",
+      "init_state_id": 0,
+      "max_steps": 520,
+      "policy_seed": 305428698,
+      "suite": "libero_10",
+      "task_id": 0
+    },
+    {
+      "condition": "pre",
+      "episode_id": "LONG-pre-t00-s01",
+      "init_state_id": 1,
+      "max_steps": 520,
+      "policy_seed": 1843349137,
+      "suite": "libero_10",
+      "task_id": 0
+    },
+    {
+      "condition": "pre",
+      "episode_id": "LONG-pre-t00-s02",
+      "init_state_id": 2,
+      "max_steps": 520,
+      "policy_seed": 3388317669,
+      "suite": "libero_10",
+      "task_id": 0
+    },
+    {
+      "condition": "pre",
+      "episode_id": "LONG-pre-t01-s00",
+      "init_state_id": 0,
+      "max_steps": 520,
+      "policy_seed": 4131512287,
+      "suite": "libero_10",
+      "task_id": 1
+    },
+    {
+      "condition": "pre",
+      "episode_id": "LONG-pre-t01-s01",
+      "init_state_id": 1,
+      "max_steps": 520,
+      "policy_seed": 3858837417,
+      "suite": "libero_10",
+      "task_id": 1
+    },
+    {
+      "condition": "pre",
+      "episode_id": "LONG-pre-t01-s02",
+      "init_state_id": 2,
+      "max_steps": 520,
+      "policy_seed": 1340902789,
+      "suite": "libero_10",
+      "task_id": 1
+    },
+    {
+      "condition": "pre",
+      "episode_id": "LONG-pre-t07-s00",
+      "init_state_id": 0,
+      "max_steps": 520,
+      "policy_seed": 1570770976,
+      "suite": "libero_10",
+      "task_id": 7
+    },
+    {
+      "condition": "pre",
+      "episode_id": "LONG-pre-t07-s01",
+      "init_state_id": 1,
+      "max_steps": 520,
+      "policy_seed": 1795386804,
+      "suite": "libero_10",
+      "task_id": 7
+    },
+    {
+      "condition": "pre",
+      "episode_id": "LONG-pre-t07-s02",
+      "init_state_id": 2,
+      "max_steps": 520,
+      "policy_seed": 1195939659,
+      "suite": "libero_10",
+      "task_id": 7
+    },
+    {
+      "condition": "undo",
+      "episode_id": "LONG-undo-t00-s00",
+      "init_state_id": 0,
+      "max_steps": 520,
+      "policy_seed": 305428698,
+      "suite": "libero_10",
+      "task_id": 0
+    },
+    {
+      "condition": "undo",
+      "episode_id": "LONG-undo-t00-s01",
+      "init_state_id": 1,
+      "max_steps": 520,
+      "policy_seed": 1843349137,
+      "suite": "libero_10",
+      "task_id": 0
+    },
+    {
+      "condition": "undo",
+      "episode_id": "LONG-undo-t00-s02",
+      "init_state_id": 2,
+      "max_steps": 520,
+      "policy_seed": 3388317669,
+      "suite": "libero_10",
+      "task_id": 0
+    },
+    {
+      "condition": "undo",
+      "episode_id": "LONG-undo-t01-s00",
+      "init_state_id": 0,
+      "max_steps": 520,
+      "policy_seed": 4131512287,
+      "suite": "libero_10",
+      "task_id": 1
+    },
+    {
+      "condition": "undo",
+      "episode_id": "LONG-undo-t01-s01",
+      "init_state_id": 1,
+      "max_steps": 520,
+      "policy_seed": 3858837417,
+      "suite": "libero_10",
+      "task_id": 1
+    },
+    {
+      "condition": "undo",
+      "episode_id": "LONG-undo-t01-s02",
+      "init_state_id": 2,
+      "max_steps": 520,
+      "policy_seed": 1340902789,
+      "suite": "libero_10",
+      "task_id": 1
+    },
+    {
+      "condition": "undo",
+      "episode_id": "LONG-undo-t07-s00",
+      "init_state_id": 0,
+      "max_steps": 520,
+      "policy_seed": 1570770976,
+      "suite": "libero_10",
+      "task_id": 7
+    },
+    {
+      "condition": "undo",
+      "episode_id": "LONG-undo-t07-s01",
+      "init_state_id": 1,
+      "max_steps": 520,
+      "policy_seed": 1795386804,
+      "suite": "libero_10",
+      "task_id": 7
+    },
+    {
+      "condition": "undo",
+      "episode_id": "LONG-undo-t07-s02",
+      "init_state_id": 2,
+      "max_steps": 520,
+      "policy_seed": 1195939659,
+      "suite": "libero_10",
+      "task_id": 7
+    }
+  ],
+  "idle_prelude": {
+    "post_intervention_steps": 20,
+    "settle_steps": 10
+  },
+  "kind": "xsuite_followup",
+  "rules": {
+    "basket_drop_height_m": 0.12,
+    "basket_settle_steps": 40,
+    "lift_threshold_m": 0.05,
+    "move_angles": 12,
+    "move_clearance_m": 0.07,
+    "move_radii_m": [
+      0.12,
+      0.15,
+      0.1
+    ],
+    "penetration_max_m": 0.004,
+    "stable_drift_max_m": 0.01,
+    "stable_tilt_max_rad": 0.25,
+    "undo_hold_steps": 20,
+    "workspace_margin_m": 0.03
+  },
+  "schema": 1,
+  "sha256": "268949d38229b7e2fa4aa7494e1d63a8bb3bdf7f8b2f43986b4ec85e1c7171f6"
+}

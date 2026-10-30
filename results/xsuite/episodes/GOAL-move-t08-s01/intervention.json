@@ -1,0 +1,214 @@
+{
+  "angle_rad": 1.5707963267948966,
+  "candidates": [
+    {
+      "angle_rad": 0.0,
+      "clearance_m": 0.26914549465462245,
+      "inside": false,
+      "radius_m": 0.12
+    },
+    {
+      "angle_rad": 0.5235987755982988,
+      "clearance_m": 0.22486027340687414,
+      "inside": false,
+      "radius_m": 0.12
+    },
+    {
+      "angle_rad": 1.0471975511965976,
+      "clearance_m": 0.16775709973893296,
+      "inside": false,
+      "radius_m": 0.12
+    },
+    {
+      "angle_rad": 1.5707963267948966,
+      "clearance_m": 0.10577118297002469,
+      "inside": true,
+      "penetration_m": 0.008933086853378942,
+      "radius_m": 0.12
+    },
+    {
+      "angle_rad": 2.0943951023931953,
+      "clearance_m": 0.0651190493446239,
+      "inside": true,
+      "radius_m": 0.12
+    },
+    {
+      "angle_rad": 2.6179938779914944,
+      "clearance_m": 0.05260518959522473,
+      "inside": true,
+      "radius_m": 0.12
+    },
+    {
+      "angle_rad": 3.141592653589793,
+      "clearance_m": 0.05954643116545812,
+      "inside": true,
+      "radius_m": 0.12
+    },
+    {
+      "angle_rad": 3.665191429188092,
+      "clearance_m": 0.11959080682831792,
+      "inside": false,
+      "radius_m": 0.12
+    },
+    {
+      "angle_rad": 4.1887902047863905,
+      "clearance_m": 0.17931465667769522,
+      "inside": false,
+      "radius_m": 0.12
+    },
+    {
+      "angle_rad": 4.71238898038469,
+      "clearance_m": 0.22873076126600933,
+      "inside": false,
+      "radius_m": 0.12
+    },
+    {
+      "angle_rad": 5.235987755982989,
+      "clearance_m": 0.26342185687358355,
+      "inside": false,
+      "radius_m": 0.12
+    },
+    {
+      "angle_rad": 5.759586531581287,
+      "clearance_m": 0.2807114285441719,
+      "inside": false,
+      "radius_m": 0.12
+    },
+    {
+      "angle_rad": 0.0,
+      "clearance_m": 0.29413395889322114,
+      "inside": false,
+      "radius_m": 0.15
+    },
+    {
+      "angle_rad": 0.5235987755982988,
+      "clearance_m": 0.24324543645023453,
+      "inside": false,
+      "radius_m": 0.15
+    },
+    {
+      "angle_rad": 1.0471975511965976,
+      "clearance_m": 0.17647583347053555,
+      "inside": false,
+      "radius_m": 0.15
+    },
+    {
+      "angle_rad": 1.5707963267948966,
+      "clearance_m": 0.09975015334171362,
+      "inside": true,
+      "penetration_m": 0.008933086853378938,
+      "radius_m": 0.15
+    },
+    {
+      "angle_rad": 2.0943951023931953,
+      "clearance_m": 0.03558479159039406,
+      "inside": true,
+      "radius_m": 0.15
+    },
+    {
+      "angle_rad": 2.6179938779914944,
+      "clearance_m": 0.036923650340662605,
+      "inside": true,
+      "radius_m": 0.15
+    },
+    {
+      "angle_rad": 3.141592653589793,
+      "clearance_m": 0.04833679054013508,
+      "inside": true,
+      "radius_m": 0.15
+    },
+    {
+      "angle_rad": 3.665191429188092,
+      "clearance_m": 0.1256251361645139,
+      "inside": false,
+      "radius_m": 0.15
+    },
+    {
+      "angle_rad": 4.1887902047863905,
+      "clearance_m": 0.19518300672277347,
+      "inside": false,
+      "radius_m": 0.15
+    },
+    {
+      "angle_rad": 4.71238898038469,
+      "clearance_m": 0.25159774427785075,
+      "inside": false,
+      "radius_m": 0.15
+    },
+    {
+      "angle_rad": 5.235987755982989,
+      "clearance_m": 0.2909348154440286,
+      "inside": false,
+      "radius_m": 0.15
+    },
+    {
+      "angle_rad": 5.759586531581287,
+      "clearance_m": 0.31048809338391664,
+      "inside": false,
+      "radius_m": 0.15
+    },
+    {
+      "angle_rad": 0.0,
+      "clearance_m": 0.253092153780666,
+      "inside": false,
+      "radius_m": 0.1
+    },
+    {
+      "angle_rad": 0.5235987755982988,
+      "clearance_m": 0.214066989573623,
+      "inside": false,
+      "radius_m": 0.1
+    },
+    {
+      "angle_rad": 1.0471975511965976,
+      "clearance_m": 0.16474706164891187,
+      "inside": false,
+      "radius_m": 0.1
+    },
+    {
+      "angle_rad": 1.5707963267948966,
+      "clearance_m": 0.11407238864130888,
+      "inside": true,
+      "penetration_m": 0.0005352023381743853,
+      "radius_m": 0.1
+    }
+  ],
+  "displacement_m": 0.1,
+  "kind": "relocate",
+  "object": "plate_1",
+  "qpos": [
+    0.0587273028635663,
+    0.0656875534884217,
+    0.9024995937037765,
+    0.7071068091225368,
+    -2.660582485677985e-05,
+    1.2059981468124706e-05,
+    0.7071067526471744
+  ],
+  "stability": {
+    "max_drift_m": 0.0004433800169231338,
+    "max_tilt_rad": 0.001372934110476298,
+    "per_object": {
+      "akita_black_bowl_1": {
+        "drift_m": 2.7860764072852784e-07,
+        "tilt_rad": 0.0
+      },
+      "cream_cheese_1": {
+        "drift_m": 0.0004433800169231338,
+        "tilt_rad": 0.001372934110476298
+      },
+      "plate_1": {
+        "drift_m": 0.00031527599719834913,
+        "tilt_rad": 0.0005655968665381922
+      },
+      "wine_bottle_1": {
+        "drift_m": 2.6288158013135993e-07,
+        "tilt_rad": 0.0
+      }
+    },
+    "stable": true
+  },
+  "undo": {
+    "applied": false
+  }
+}

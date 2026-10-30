@@ -1,0 +1,105 @@
+{
+  "condition": "move-ctrl",
+  "episode_id": "GOAL-move-ctrl-t01-s00",
+  "first_lifted": "akita_black_bowl_1",
+  "first_lifted_policy_step": 47,
+  "frames": 110,
+  "intervention_kind": "relocate",
+  "max_rise_m": {
+    "akita_black_bowl_1": 0.15751251129019728,
+    "cream_cheese_1": 0.0,
+    "plate_1": 0.0,
+    "wine_bottle_1": 0.0
+  },
+  "max_steps": 300,
+  "object_names": [
+    "akita_black_bowl_1",
+    "cream_cheese_1",
+    "flat_stove_1",
+    "plate_1",
+    "wine_bottle_1",
+    "wine_rack_1",
+    "wooden_cabinet_1"
+  ],
+  "phase_labels": {
+    "0": "settling",
+    "1": "policy",
+    "2": "terminal",
+    "5": "intervention_settling"
+  },
+  "policy_call_seconds": [
+    0.09146477900003447,
+    0.1801416330004031,
+    0.2584045890002926,
+    0.09962030399992727,
+    0.10522915499996088,
+    0.2201909559998967,
+    0.2947266930000296,
+    0.27181200099994385,
+    0.26972064599976875,
+    0.18986744299991187,
+    0.22871091900015017,
+    0.29363996199981557,
+    0.2749935749998258,
+    0.2034151190000557,
+    0.3000503100001879,
+    0.18045162299995354
+  ],
+  "policy_observation_hashes": [
+    "2cfcad289286db5dc61b3e534a86fbf7c8f158808d3bda245bb00f930893d795",
+    "b243e335be8304463ec8626e53f2cb32bc74ddb90d66a8c8e2ad43dfa01a5b11",
+    "746c74f869879e302732428af58c308f23568fec9f674b930ea74826c608570f",
+    "60646e6f1b3b9678179cb1f4c13fe49232c3bef421e6c9bc6ca50d52ecca9eb3",
+    "ab840c5edf37f085f91a1a5269275c3c19ca09dc81f3ffd367050a12e419d05d",
+    "6a9d8cfe1be962109dfa4122d4b0de0693b1b415da2371e072dbfb0b70abeb8e",
+    "6d709428c924ea0e07ad8c44b0368f8e71940b5c0d0665e861ac7fe3afdaebf0",
+    "51367472ece72f31bc8a72eb5b20caee0549f41a7b160139cea4ee5034427005",
+    "884411bdc14d40075805a88d374276564e74e42e2c70dc1d4382827767128cea",
+    "c576e03616babf7fe956dca6f61c0f7750e6785943df65ce25d1fc2a1fbc407b",
+    "ffcb7d7bda7c4dcee58237d984d56403208a2d8204c9e4c672d570cbac7136b3",
+    "1b51cc37a970dca5dc2a9d73df9ac6b4615d2df2d701c99079f4a2aa03754d57",
+    "e49ce67ef67b5a535e028fa12560864a825ba6263a59ec353f58cc684118a086",
+    "3b60775f56e50bb75eef01313835939a94ab1b5bbe651d6f58704b48c3306c45",
+    "28ae7c53af7394c1717f07ddaac5ae661a472a634f40e5563dde0372915fa7a0",
+    "c0563986ea369cff7e48a61963609fe42b109a39689a1ac43f0d720d4aea3ce8"
+  ],
+  "policy_seed": 530795328,
+  "policy_start_frame": 30,
+  "prompt": "put the bowl on the stove",
+  "server_metadata": {
+    "sgvla": {
+      "backend": "jax",
+      "config_sha256": "3974be2ae6ea751c4f679ac154b8844b6e0e353697851e9fd7a1f6bd0613d658",
+      "model_config": "pi0_libero",
+      "num_steps": 10,
+      "openpi_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+      "policy_seed": 0,
+      "policy_sha256": "536822bf671fb5ba1392ca44eb0a2264c02a54bed981564bee143a7c0ff818e2",
+      "rng_protocol": "sgvla-seeded-noise-v1"
+    }
+  },
+  "source": {
+    "bddl_sha256": "c6812d6c988be830412aa6fc4801af04d60f8c4565d2625763b6a0f2b843a87f",
+    "initial_state_sha256": "de7c6712e95293b329ffce7f7eacaaf39a88521affc56ad233836dfde9b74f48",
+    "official_prompt": "put the bowl on the stove",
+    "task_name": "put_the_bowl_on_the_stove"
+  },
+  "status": "completed",
+  "steps": 79,
+  "success": true,
+  "suite": "libero_goal",
+  "target_object": "akita_black_bowl_1",
+  "undo": {
+    "applied": false
+  },
+  "wall_clock_seconds": 22.467077279000023,
+  "watch": [
+    "on akita_black_bowl_1 flat_stove_1_cook_region"
+  ],
+  "watch_final": [
+    true
+  ],
+  "watch_first_true_step": [
+    79
+  ]
+}

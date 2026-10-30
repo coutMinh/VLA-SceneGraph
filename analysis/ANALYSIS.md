@@ -1,5 +1,7 @@
 # Fresh Spatial rerun findings - 2026-10-30
 
+The cross-suite follow-up (Object / Goal / Long) is in [CROSS_SUITE.md](CROSS_SUITE.md).
+
 This is a preliminary evidence summary, not the complete assignment claim matrix. A formal Part 3 report still needs the required strength/limitation table and final reviewed-trajectory counts.
 
 ## Run scope

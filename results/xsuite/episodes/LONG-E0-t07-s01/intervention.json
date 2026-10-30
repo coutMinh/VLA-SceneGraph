@@ -1,0 +1,33 @@
+{
+  "kind": "none",
+  "stability": {
+    "max_drift_m": 4.235065196789465e-08,
+    "max_tilt_rad": 0.0,
+    "per_object": {
+      "alphabet_soup_1": {
+        "drift_m": 1.760902775244063e-13,
+        "tilt_rad": 0.0
+      },
+      "basket_1": {
+        "drift_m": 3.1086244689504383e-15,
+        "tilt_rad": 0.0
+      },
+      "cream_cheese_1": {
+        "drift_m": 0.0,
+        "tilt_rad": 0.0
+      },
+      "ketchup_1": {
+        "drift_m": 4.235065196789465e-08,
+        "tilt_rad": 0.0
+      },
+      "tomato_sauce_1": {
+        "drift_m": 0.0,
+        "tilt_rad": 0.0
+      }
+    },
+    "stable": true
+  },
+  "undo": {
+    "applied": false
+  }
+}

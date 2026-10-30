@@ -1,0 +1,55 @@
+{
+  "measurement": "client-side elapsed time around client.infer call, in milliseconds",
+  "aggregation": "all policy calls pooled within each condition; p95 uses nearest-rank ceil(0.95*n)",
+  "conditions": {
+    "E0": {
+      "episodes": 50,
+      "policy_calls": 1115,
+      "mean_ms": 92.6654,
+      "median_ms": 92.9,
+      "p95_ms_nearest_rank": 95.9776
+    },
+    "S1": {
+      "episodes": 27,
+      "policy_calls": 730,
+      "mean_ms": 92.9764,
+      "median_ms": 93.1109,
+      "p95_ms_nearest_rank": 95.906
+    },
+    "T1": {
+      "episodes": 8,
+      "policy_calls": 352,
+      "mean_ms": 93.0448,
+      "median_ms": 93.1089,
+      "p95_ms_nearest_rank": 95.6175
+    },
+    "T1-ctrl": {
+      "episodes": 8,
+      "policy_calls": 134,
+      "mean_ms": 93.27,
+      "median_ms": 93.2108,
+      "p95_ms_nearest_rank": 96.2611
+    },
+    "S2": {
+      "episodes": 6,
+      "policy_calls": 264,
+      "mean_ms": 93.3709,
+      "median_ms": 93.271,
+      "p95_ms_nearest_rank": 95.9483
+    },
+    "S2-ctrl": {
+      "episodes": 6,
+      "policy_calls": 151,
+      "mean_ms": 92.9795,
+      "median_ms": 93.0993,
+      "p95_ms_nearest_rank": 95.6459
+    }
+  },
+  "overall": {
+    "episodes": 105,
+    "policy_calls": 2746,
+    "mean_ms": 92.9113,
+    "median_ms": 93.0596,
+    "p95_ms_nearest_rank": 95.8741
+  }
+}

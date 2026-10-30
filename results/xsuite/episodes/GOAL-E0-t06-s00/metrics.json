@@ -1,0 +1,121 @@
+{
+  "condition": "E0",
+  "episode_id": "GOAL-E0-t06-s00",
+  "first_lifted": "cream_cheese_1",
+  "first_lifted_policy_step": 91,
+  "frames": 150,
+  "intervention_kind": "none",
+  "max_rise_m": {
+    "akita_black_bowl_1": 0.002314892129629098,
+    "cream_cheese_1": 0.12809742044471584,
+    "plate_1": 0.0,
+    "wine_bottle_1": 0.0
+  },
+  "max_steps": 300,
+  "object_names": [
+    "akita_black_bowl_1",
+    "cream_cheese_1",
+    "flat_stove_1",
+    "plate_1",
+    "wine_bottle_1",
+    "wine_rack_1",
+    "wooden_cabinet_1"
+  ],
+  "phase_labels": {
+    "0": "settling",
+    "1": "policy",
+    "2": "terminal",
+    "5": "intervention_settling"
+  },
+  "policy_call_seconds": [
+    0.09526700200012783,
+    0.15128694799977893,
+    0.08805976399980864,
+    0.09736919700026192,
+    0.09205042199982927,
+    0.157010592000006,
+    0.12090581400025258,
+    0.0877037879999989,
+    0.08882556800017483,
+    0.09576392999997552,
+    0.09164056999998138,
+    0.09392136799988293,
+    0.09744411300016509,
+    0.09345217000009143,
+    0.09530718899986823,
+    0.17578532200013797,
+    0.0974404560001858,
+    0.08665188199984186,
+    0.09047700900009659,
+    0.0895223350003107,
+    0.09191116600004534,
+    0.11469777799993608,
+    0.08799790900002336,
+    0.1427989220001109
+  ],
+  "policy_observation_hashes": [
+    "494eb1c17d6c7016efb097eff20b05b370b4afe4939a504eba1e88b27c3e69c9",
+    "178fb55db48d2a8c00c68c579a83cd593fefef77ed42ddd7b321fcf3487cf679",
+    "eb54d21ba1f14ef11e5a1af443bcc9ea2ff0d919e554eecc6a8cd914592ba78c",
+    "3d0246dd3f54f6a9ba9b5251810e22f1e45e2e1c484be84f4f345bbe45807268",
+    "5ab5874ef1b595407b92419a12e859da6c82f0525a1e3ecbf5402a87918160ab",
+    "4599e119e5ffb5d700cbfda1778f560030827d437399232662db616236dcff45",
+    "6d6118585e464de9f677635a0a215a10a0c72a455319b7bba4da6aadbe796efb",
+    "fc318bdf8c902e58422269ece7a59d4cfa3276a4b063e2d49ff699cb4f11dc36",
+    "0aa526e393b2a2b6850a0a2100c5d3bdba65cde38c8ab53734bf010ae4d7c2a6",
+    "9f06da4000777e41b9ebc53687184bff71084eb306a7d37682b71ae3dd0a6eed",
+    "cfc30aa74333880aabec0fe34136e5f7d34d6c8b2d7c0d95fbde7a3633dd1164",
+    "144a8b76979957e9db568cb82ed56742859d43773fbc83c222195ac236f508b2",
+    "be5b777474252443f83b47a12b261ef6cea24f968bb477a1c2b7ba4e7488103b",
+    "badacffd4075d82d8618ca398f94212322ce18ca4e8a6c1020f9ded35cd6cbba",
+    "8c5fdddddf3fbf5ccb71d5d6942476361fe279737f5ec41063f5deda11457db3",
+    "0486f6674f25b8d50f550e5d19dcdaec906620c66726ef49b0d303f5040bd6bf",
+    "f40d8c36692887b0425893c025effdfeed7e6e6d7f0df66b18b2e38e7505ba7b",
+    "e50592c28d97763b72ee1a27d69a81f68ac972057486822e4ae50d14e6e2d2da",
+    "a7cd160a486d60f101a8d2c39226818a95e6f391a25b80164e49678be2fe1138",
+    "5d3bbbd6d9532f98d1da6dca1c5287bf6fc2ca333951083512a69fbad613d7fe",
+    "eb0a0326d9505c3c15728994bfa43262e0804d9452fafc7cbb0900887e740c08",
+    "9567179d14989afd39c1a57177cf028b71c97a9d878d8dc36906c1f68dc183ca",
+    "6b129e6e16905dbfb2a93309bea40cfbd2fa007c9db0a2aa2c97852bf87f3849",
+    "f40968ac313909c5c7ff202eac78a97d98855382f433ae07c7d067f9be61927e"
+  ],
+  "policy_seed": 3694830726,
+  "policy_start_frame": 30,
+  "prompt": "put the cream cheese in the bowl",
+  "server_metadata": {
+    "sgvla": {
+      "backend": "jax",
+      "config_sha256": "3974be2ae6ea751c4f679ac154b8844b6e0e353697851e9fd7a1f6bd0613d658",
+      "model_config": "pi0_libero",
+      "num_steps": 10,
+      "openpi_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+      "policy_seed": 0,
+      "policy_sha256": "536822bf671fb5ba1392ca44eb0a2264c02a54bed981564bee143a7c0ff818e2",
+      "rng_protocol": "sgvla-seeded-noise-v1"
+    }
+  },
+  "source": {
+    "bddl_sha256": "81c54eace32b92466598103b3b6e8435ce90f10996ef18cec4a35fe6c4d31a98",
+    "initial_state_sha256": "4c1fbda31f6ee43e7870a66e67002608468f29ab7cad3fca0c42b705aac62ed6",
+    "official_prompt": "put the cream cheese in the bowl",
+    "task_name": "put_the_cream_cheese_in_the_bowl"
+  },
+  "status": "completed",
+  "steps": 119,
+  "success": true,
+  "suite": "libero_goal",
+  "target_object": "cream_cheese_1",
+  "undo": {
+    "applied": false
+  },
+  "wall_clock_seconds": 24.967357537000225,
+  "watch": [
+    "on cream_cheese_1 akita_black_bowl_1"
+  ],
+  "watch_final": [
+    true
+  ],
+  "watch_first_true_step": [
+    119
+  ]
+}

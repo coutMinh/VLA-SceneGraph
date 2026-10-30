@@ -45,3 +45,10 @@ The complete validated archive is
 It contains all 105 indexed episodes with both camera videos, numerical traces, metrics, manifests, the runtime registry, source snapshot, runtime-adjustment record, protocols, logs, and reviews. The archive build deep-validated video decoding and numeric traces before packaging; local member hashes matched that validated manifest after download. The new run is separate from the historical 48/50 E0 report.
 
 The top-level `results/registry.csv` preserves its six earlier rows and appends all 108 rows from the fresh runtime registry. The archive retains the original runtime registry file. Fresh registry paths use the original Molab absolute paths; use `exports/episode_index.csv` and the extracted archive tree for local navigation.
+
+## Cross-suite follow-up (2026-10-30)
+
+- In the repo: [protocol](XSUITE_PROTOCOL.md), `results/xsuite/` (manifest, per-episode `metrics.json` + `intervention.json`, `summary.{md,json}`), [analysis](../analysis/CROSS_SUITE.md), GIFs under `media/xsuite/`.
+- Outside the repo: the complete archive (both MP4s, `trajectory.npz` with object poses / sim state / policy chunks, error records of infrastructure attempts) is `Homework/NganLe/artifacts/xsuite/2026-10-30/xsuite-268949d38229b7e2.zip`. It is 61,155,948 bytes, SHA-256 `7f80008dd368bd32b3230a78514d227f4e091f8cbbb6e70fb844222f0ecb4c2f`. An extracted copy sits next to it. The hash was identical on molab and locally.
+- Runtime root on molab: `$SGVLA_WORK/results/xsuite/268949d38229b7e2/<episode-id>/`.
+- Spatial rerun summaries used by the README figure were copied to `results/spatial_rerun_2026-10-30/` from the validated 2026-10-30 archive.

@@ -1,0 +1,66 @@
+{
+  "attempts": [
+    {
+      "inside": true,
+      "offset_m": [
+        0,
+        0
+      ],
+      "speed_mps": 4.762175014594961e-14
+    }
+  ],
+  "kind": "place_in_basket",
+  "object": "alphabet_soup_1",
+  "qpos": [
+    -0.00962839325793314,
+    0.25099127674555494,
+    0.49216988490925817,
+    -0.0023499800728538477,
+    0.0023463220046712778,
+    0.7074562244994341,
+    0.7067493634830623
+  ],
+  "region": "basket_1_contain_region",
+  "stability": {
+    "max_drift_m": 0.0006458920374630741,
+    "max_tilt_rad": 0.00872990989915009,
+    "per_object": {
+      "alphabet_soup_1": {
+        "drift_m": 5.551169010422706e-14,
+        "tilt_rad": 0.0
+      },
+      "basket_1": {
+        "drift_m": 2.988100064654782e-08,
+        "tilt_rad": 0.0
+      },
+      "butter_1": {
+        "drift_m": 0.0,
+        "tilt_rad": 0.0
+      },
+      "cream_cheese_1": {
+        "drift_m": 2.8985915182585444e-13,
+        "tilt_rad": 0.0
+      },
+      "ketchup_1": {
+        "drift_m": 4.2350651856879677e-08,
+        "tilt_rad": 0.0
+      },
+      "milk_1": {
+        "drift_m": 1.2814589753995896e-09,
+        "tilt_rad": 0.0
+      },
+      "orange_juice_1": {
+        "drift_m": 0.0006458920374630741,
+        "tilt_rad": 0.00872990989915009
+      },
+      "tomato_sauce_1": {
+        "drift_m": 5.204170427930421e-15,
+        "tilt_rad": 0.0
+      }
+    },
+    "stable": true
+  },
+  "undo": {
+    "applied": false
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "attempts": [
+    {
+      "inside": true,
+      "offset_m": [
+        0,
+        0
+      ],
+      "speed_mps": 4.779602305114872e-14
+    }
+  ],
+  "kind": "place_in_basket",
+  "object": "alphabet_soup_1",
+  "qpos": [
+    -0.005391735791057257,
+    0.25448849240285365,
+    0.49216988490925817,
+    -0.0023499800728541114,
+    0.002346322004671578,
+    0.707456224499434,
+    0.706749363483062
+  ],
+  "region": "basket_1_contain_region",
+  "stability": {
+    "max_drift_m": 4.235065196789465e-08,
+    "max_tilt_rad": 0.0,
+    "per_object": {
+      "alphabet_soup_1": {
+        "drift_m": 5.551185381692446e-14,
+        "tilt_rad": 0.0
+      },
+      "basket_1": {
+        "drift_m": 2.988100064654794e-08,
+        "tilt_rad": 0.0
+      },
+      "cream_cheese_1": {
+        "drift_m": 0.0,
+        "tilt_rad": 0.0
+      },
+      "ketchup_1": {
+        "drift_m": 4.235065196789465e-08,
+        "tilt_rad": 0.0
+      },
+      "tomato_sauce_1": {
+        "drift_m": 0.0,
+        "tilt_rad": 0.0
+      }
+    },
+    "stable": true
+  },
+  "undo": {
+    "applied": false
+  }
+}

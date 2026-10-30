@@ -1,0 +1,50 @@
+{
+  "angle_rad": 0.0,
+  "candidates": [
+    {
+      "angle_rad": 0.0,
+      "clearance_m": 0.11807943662708421,
+      "inside": true,
+      "penetration_m": 1.4554018380038261e-05,
+      "radius_m": 0.12
+    }
+  ],
+  "displacement_m": 0.12,
+  "kind": "relocate",
+  "object": "cream_cheese_1",
+  "qpos": [
+    0.06629775526580087,
+    0.1107114598402813,
+    0.9089068919632399,
+    -8.113551145762927e-32,
+    -1.80419720165739e-18,
+    1.6953404328706786e-17,
+    1.0
+  ],
+  "stability": {
+    "max_drift_m": 2.7860764072852795e-07,
+    "max_tilt_rad": 0.0,
+    "per_object": {
+      "akita_black_bowl_1": {
+        "drift_m": 2.7860764072852795e-07,
+        "tilt_rad": 0.0
+      },
+      "cream_cheese_1": {
+        "drift_m": 6.287397535942318e-08,
+        "tilt_rad": 0.0
+      },
+      "plate_1": {
+        "drift_m": 2.538189875621061e-07,
+        "tilt_rad": 0.0
+      },
+      "wine_bottle_1": {
+        "drift_m": 2.6288158013135993e-07,
+        "tilt_rad": 0.0
+      }
+    },
+    "stable": true
+  },
+  "undo": {
+    "applied": false
+  }
+}

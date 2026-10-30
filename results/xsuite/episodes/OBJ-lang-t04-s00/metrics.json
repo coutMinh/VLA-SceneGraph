@@ -1,0 +1,127 @@
+{
+  "condition": "lang",
+  "episode_id": "OBJ-lang-t04-s00",
+  "first_lifted": "bbq_sauce_1",
+  "first_lifted_policy_step": 60,
+  "frames": 148,
+  "intervention_kind": "none",
+  "max_rise_m": {
+    "alphabet_soup_1": 0.0,
+    "basket_1": 0.0,
+    "bbq_sauce_1": 0.23140180495945903,
+    "cream_cheese_1": 0.0,
+    "ketchup_1": 0.0,
+    "milk_1": 0.0,
+    "salad_dressing_1": 0.0
+  },
+  "max_steps": 280,
+  "object_names": [
+    "alphabet_soup_1",
+    "basket_1",
+    "bbq_sauce_1",
+    "cream_cheese_1",
+    "ketchup_1",
+    "milk_1",
+    "salad_dressing_1"
+  ],
+  "phase_labels": {
+    "0": "settling",
+    "1": "policy",
+    "2": "terminal",
+    "5": "intervention_settling"
+  },
+  "policy_call_seconds": [
+    0.09472908299994742,
+    0.23160028000029342,
+    0.14401677900013965,
+    0.2141579780000029,
+    0.22198704799984625,
+    0.17628045599985853,
+    0.09214384999995673,
+    0.12978695899982995,
+    0.18621880199998486,
+    0.14850383699968006,
+    0.0951672910000525,
+    0.1912534590001087,
+    0.1951345659999788,
+    0.18936698400011664,
+    0.18775329399977636,
+    0.20890250399997967,
+    0.19393612100020619,
+    0.1922397890002685,
+    0.17330529900027614,
+    0.1102047079998556,
+    0.20946373800006768,
+    0.1294481850000011,
+    0.21522362399991835,
+    0.21379635399989638
+  ],
+  "policy_observation_hashes": [
+    "43a057cf9742646fc126b1b0e35ceb6ef751c2a0b6792fdec196dee2cbfa4fb6",
+    "4d250a996d648d9dbb70721dd49cbc2bcc0edc33e5c14e038060ee08470419c3",
+    "4c9ee1d32a2a1f5850822b33548243fc10bb1dbd07fda107558237bbb8f6ab6a",
+    "53e36caa2b99a411a743f740359ceb9a4e7955b42ecaf1bf6c008bba84f3f272",
+    "dffb9f38fec97c965f28acb6d169ef39a426e1e843380a2a8283c1b9fe73ca3a",
+    "7111f881c1705fd453e29e622e90e32139e89fb71f7ef1c69f08911c43ae4067",
+    "70eda9597c26df3f4b918ba49d3bda501f3574f6afc1989cfc6c6ee047ab3748",
+    "e9b88bc1f08d9a8c699893e6defb08c9f20ddd78abe0c786bacab92504b54a17",
+    "08e32bd72eb799277fdfb00778efec4e141831a76f6bc25dc5a1aa06ac7d4e6a",
+    "8183a4dd6a3991bf026949c197b16be724c424d6b37c94f1f73d3799043e0a70",
+    "864d075d0cfd67e8c50c341d8b7f79bee8b4a37a8b656e526ff789487e1c0fc2",
+    "9119f7da472a8161bf60a0f5fe08d8bd12ce5bf90827baa4a42276a507658609",
+    "2f5aeba4bdac53cc12e27352362bb61ba950726db9c0e19df899a1bcccd0807c",
+    "128ca7ea3ef29295e42cf6239945e452be18ac8e4539f910828fb1a0c97875fa",
+    "f736b785c5f7a194be5460dbba8e2202dbfbb8e30900774f2069dddd3a07ff9e",
+    "839015fb83077c6f7999776532bb80187e8894eb66d08e0bf7c7b9e2e330cd12",
+    "61e2635aa49650168655202783f1281f948ffd1538b1a440ef062a64c97337f3",
+    "4364960ddff3fed59f89ba1fb8d994b4b82a40ac2d5d7f62e44f770e9d94cf7e",
+    "798ca400319762677d3100ab4ac3863b83a32ce3a9d49a6e8255fbd641bab61a",
+    "92d6f9bb4931bfe5db519f8b95c6708588455acb0a52541f3b4312ab731394e1",
+    "f72a0abfd181eaac8d7cfe2a5913b7196a2ea82de1d373d2d584e434c40545c7",
+    "291fdbffe074a4de50718d9131c2c1c9cf618a70ba4e50f280caeaf9cc43403b",
+    "9dd45c6348cf996c8543ec65cd0857fc818514fbbe971df7cfe5928335828515",
+    "269e5f145e7cdbef42311a3e8a07839fb96e81fa539dc92b13cae73b3dc603dc"
+  ],
+  "policy_seed": 1705903594,
+  "policy_start_frame": 30,
+  "prompt": "pick up the bbq sauce and place it in the basket",
+  "server_metadata": {
+    "sgvla": {
+      "backend": "jax",
+      "config_sha256": "3974be2ae6ea751c4f679ac154b8844b6e0e353697851e9fd7a1f6bd0613d658",
+      "model_config": "pi0_libero",
+      "num_steps": 10,
+      "openpi_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+      "policy_seed": 0,
+      "policy_sha256": "536822bf671fb5ba1392ca44eb0a2264c02a54bed981564bee143a7c0ff818e2",
+      "rng_protocol": "sgvla-seeded-noise-v1"
+    }
+  },
+  "source": {
+    "bddl_sha256": "4a4e545483a3fe30cf0ef3dc05bfe5e6ad5e37c94b4376dfa73fe1b60e75b319",
+    "initial_state_sha256": "9359944dfbca3fa06c085d345386047f2c88ad51506492c7b3707321c9f03ee1",
+    "official_prompt": "pick up the ketchup and place it in the basket",
+    "task_name": "pick_up_the_ketchup_and_place_it_in_the_basket"
+  },
+  "status": "completed",
+  "steps": 117,
+  "success": true,
+  "suite": "libero_object",
+  "target_object": "bbq_sauce_1",
+  "undo": {
+    "applied": false
+  },
+  "wall_clock_seconds": 19.582380105000084,
+  "watch": [
+    "in ketchup_1 basket_1_contain_region",
+    "in bbq_sauce_1 basket_1_contain_region"
+  ],
+  "watch_final": [
+    false,
+    true
+  ],
+  "watch_first_true_step": [
+    null,
+    117
+  ]
+}

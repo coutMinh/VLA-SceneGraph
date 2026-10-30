@@ -28,9 +28,11 @@ def render(source):
     lines = [
         "# Part 1a · Literature matrix",
         "",
-        f"{len(rows)} source-verified entries spanning 2D/video, 3D mapping, manipulation and graph/VLA interfaces.",
+        f"{len(rows)} source-verified entries spanning 2D/video, 3D mapping, manipulation "
+        "and graph/VLA interfaces.",
         "CSV is the source of truth. Verification and reading scopes vary by row; abstract-only",
-        "inspection does not establish full-paper review or the student's personal reading progress.",
+        "inspection does not establish full-paper review or the student's personal reading "
+        "progress.",
         "",
         "| " + " | ".join(columns) + " |",
         "| " + " | ".join(["---"] * len(columns)) + " |",
