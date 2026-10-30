@@ -113,51 +113,19 @@ T1 does not test memory cleanly, because the input prefixes diverge
 ([Spatial findings](results/spatial/README.md)). E0 is a reduced 50-episode pilot, not a
 full-suite reproduction. No graph-augmented policy has been evaluated yet.
 
-## Repository layout
+## Implementation details
 
-```text
-src/sgvla/
-  baselines/openpi/   pinned openpi setup, policy server, seeded-noise client, smoke episode
-  eval/               scene verification, manifests, resumable E0 evaluator, traces, parity
-  analysis/           Spatial S1/S2/T1 interventions, verification, outcome labels, reports
-  cross_suite/        Object/Goal/Long conditions (spec), simulator interventions, runner, report
-configs/              pinned runtime config and frozen E0 manifest
-results/
-  spatial/            E0 + S1/S2/T1 reports and findings (README.md)
-  cross_suite/        manifest, per-episode metrics, summary.{md,json}, findings (README.md)
-  registry.csv        every recorded run
-docs/
-  protocols/          scene, Spatial and cross-suite protocols (declared before the runs)
-  reproduction/       setup on molab, pi0 pipeline walkthrough, deviations, E0 procedure
-  ARTIFACTS.md        where raw videos and traces live
-media/                README chart and GIFs
-scripts/              plot_results.py, make_gif.py
-tests/                CPU tests (manifests, resume/corruption, reports)
-```
-
-Raw videos and traces are kept outside the repository: the Spatial rerun archive is
-68 MB and the cross-suite archive 61 MB, both with SHA-256 manifests. See
-[docs/ARTIFACTS.md](docs/ARTIFACTS.md).
-
-## Reproduce
-
-GPU work runs on a Linux GPU host (we used molab, RTX PRO 6000 Blackwell). Setup is
-described in [docs/reproduction/SETUP.md](docs/reproduction/SETUP.md). In short: install
-the pinned openpi server (Python 3.11) and LIBERO client (Python 3.8) environments,
-download `pi0_libero`, and start the policy server.
-
-```sh
-export W=$HOME/vla_scenegraph_work C=$W/configs/part2_smoke.json
-python -m sgvla --work $W --config $C start server
-# Spatial E0 / S1-S2-T1: docs/reproduction/E0_PROCEDURE.md, docs/protocols/SPATIAL.md
-# Cross-suite (90 episodes; resumable; several workers per suite can share the claim files)
-$W/envs/client/bin/python -m sgvla.cross_suite --work $W --config $C --dry   # interventions only
-$W/envs/client/bin/python -m sgvla.cross_suite --work $W --config $C --suite libero_object
-python -m sgvla.cross_suite.report <results-dir> results/cross_suite         # summary.{md,json}
-python scripts/plot_results.py                                                # media/success_overview.png
-```
-
-Local CPU checks: `pip install -e '.[dev]'` (add `media` for figures/GIFs), then `pytest -q` and `ruff check .`.
-
-How the pinned π0 pipeline works: [docs/reproduction/PIPELINE.md](docs/reproduction/PIPELINE.md);
-scope and deviations from the official evaluation: [docs/reproduction/DEVIATIONS.md](docs/reproduction/DEVIATIONS.md).
+- **Compute.** All rollouts ran on [molab](https://molab.marimo.io) (RTX PRO 6000
+  Blackwell, OSMesa rendering). The official `pi0_libero` checkpoint (openpi, JAX)
+  is served over a websocket. LIBERO runs as a separate Python 3.8 client.
+- **Paired, resumable runs.** Each condition shares a seeded policy-noise sequence
+  with its baseline. Episodes are claimed from a fixed manifest, so several workers
+  can share a suite and an interrupted run resumes where it stopped.
+- **Labels.** Interventions are scripted simulator state edits. Success uses LIBERO's
+  own goal predicates, and failure labels come from the logged object poses.
+- **Code.** `src/sgvla/`: `baselines/`, `eval/` (E0), `analysis/` (Spatial S1/S2/T1),
+  `cross_suite/` (Object/Goal/Long).
+- **Data.** Results: `results/`. Protocols and setup: `docs/`.
+- **Raw evidence.** Videos and traces (68 MB + 61 MB) are kept outside the repo; see
+  [docs/ARTIFACTS.md](docs/ARTIFACTS.md).
+- **Setup.** Setup and reproduction steps: [docs/reproduction/SETUP.md](docs/reproduction/SETUP.md).
