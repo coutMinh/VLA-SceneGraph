@@ -90,19 +90,51 @@ Spatial findings: [results/spatial/](results/spatial/README.md).
 
 ## Example episodes
 
-Each clip shows agent view and wrist view, as the policy sees them (rotated 180°).
+The large view is the agent camera and the inset is the wrist camera, the same frames the policy sees.
+Each row pairs a working case with a failure. Details are in the
+[findings](results/cross_suite/README.md).
 
-| Baseline | Intervention |
-|---|---|
-| ![](media/cross_suite/OBJ-E0-t00-s00.gif) | ![](media/cross_suite/OBJ-swap-t00-s00.gif) |
-| ![](media/cross_suite/GOAL-move-t01-s00.gif) | ![](media/cross_suite/GOAL-move-t06-s01.gif) |
-| ![](media/spatial/S2-ctrl-t01-s00.gif) | ![](media/spatial/S2-t01-s00.gif) |
-| ![](media/spatial/T1-ctrl-t00-s00.gif) | ![](media/spatial/T1-t00-s00.gif) |
-| ![](media/cross_suite/LONG-pre-t01-s01.gif) | ![](media/cross_suite/LONG-undo-t00-s00.gif) |
-| ![](media/spatial/S1-t01-s00.gif) | ![](media/spatial/S1-t08-s00.gif) |
+**LIBERO-Object: the named object, or whatever sits at the usual spot?**
 
-More examples: [media/](media/) (Spatial E0 success `E0-t01-s00`, the only E0
-failure `E0-t04-s02`).
+<table><tr>
+<td width="50%" valign="top"><img src="media/cross_suite/OBJ-E0-t00-s00.gif" width="100%"><br><b>OBJ-E0</b>: <i>"pick up the alphabet soup and place it in the basket"</i><br>✅ Soup placed in the basket.</td>
+<td width="50%" valign="top"><img src="media/cross_suite/OBJ-swap-t00-s00.gif" width="100%"><br><b>OBJ-swap</b>: same instruction, but the soup and the salad dressing have swapped places.<br>❌ Grabs the <b>dressing</b> at the soup's usual spot and never reaches the basket.</td>
+</tr></table>
+
+**LIBERO-Goal: does π0 follow an object that has moved?**
+
+<table><tr>
+<td width="50%" valign="top"><img src="media/cross_suite/GOAL-move-t01-s00.gif" width="100%"><br><b>GOAL-move</b>: <i>"put the bowl on the stove"</i>, with the bowl moved 12 cm.<br>✅ Follows the bowl to its new position.</td>
+<td width="50%" valign="top"><img src="media/cross_suite/GOAL-move-t06-s01.gif" width="100%"><br><b>GOAL-move</b>: <i>"put the cream cheese in the bowl"</i>, with the bowl moved 12 cm.<br>❌ Carries the cheese to the bowl's <b>old</b> position (0 cm from it).</td>
+</tr></table>
+
+**LIBERO-Spatial S2: a landmark moves, so the instruction now means the other bowl**
+
+<table><tr>
+<td width="50%" valign="top"><img src="media/spatial/S2-ctrl-t01-s00.gif" width="100%"><br><b>S2-ctrl</b>: <i>"…the black bowl next to the ramekin…"</i>. The ramekin moves but the target bowl stays the same.<br>✅ Correct bowl placed.</td>
+<td width="50%" valign="top"><img src="media/spatial/S2-t01-s00.gif" width="100%"><br><b>S2</b>: same instruction, but the ramekin now sits next to the <b>other</b> bowl.<br>❌ Places the bowl at the trained position (6/6 episodes).</td>
+</tr></table>
+
+**LIBERO-Spatial T1: the instruction refers to the scene before a swap**
+
+<table><tr>
+<td width="50%" valign="top"><img src="media/spatial/T1-ctrl-t00-s00.gif" width="100%"><br><b>T1-ctrl</b>: <i>"…the bowl that was between the plate and the ramekin at the start…"</i>, no swap.<br>✅ Correct bowl placed.</td>
+<td width="50%" valign="top"><img src="media/spatial/T1-t00-s00.gif" width="100%"><br><b>T1</b>: same instruction, but the bowls are swapped before the start.<br>❌ Places the bowl now at the old position. Expected for a policy with no history.</td>
+</tr></table>
+
+**LIBERO-Long: is task progress read from the scene?**
+
+<table><tr>
+<td width="50%" valign="top"><img src="media/cross_suite/LONG-pre-t01-s01.gif" width="100%"><br><b>LONG-pre</b>: <i>"put both the cream cheese box and the butter in the basket"</i>, with the cream cheese already in the basket.<br>❌ Pushes boxes around and never lifts anything.</td>
+<td width="50%" valign="top"><img src="media/cross_suite/LONG-undo-t00-s00.gif" width="100%"><br><b>LONG-undo</b>: <i>"put both the alphabet soup and the tomato sauce in the basket"</i>. The soup is taken out of the basket after it is placed.<br>❌ Places the sauce, then idles. It never goes back for the soup.</td>
+</tr></table>
+
+**LIBERO-Spatial S1: the instruction names the other, identical bowl**
+
+<table><tr>
+<td width="50%" valign="top"><img src="media/spatial/S1-t01-s00.gif" width="100%"><br><b>S1</b>: <i>"…the black bowl next to the cookie box…"</i> (bowl 2).<br>✅ Bowl 2 placed. With the scene unchanged, the policy follows language in 22/27 episodes.</td>
+<td width="50%" valign="top"><img src="media/spatial/S1-t08-s00.gif" width="100%"><br><b>S1</b>: <i>"…the black bowl next to the ramekin…"</i> (bowl 2).<br>❌ Hovers over the bowls and places none.</td>
+</tr></table>
 
 ## Caveats
 
