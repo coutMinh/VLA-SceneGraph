@@ -33,7 +33,7 @@ S2-ctrl 6/6, T1-ctrl 8/8, OBJ-swap-ctrl 7/9 and GOAL-move-ctrl 8/8.
 
 ### Cross-suite follow-up: Object / Goal / Long
 
-The protocol was declared before any rollout ([XSUITE_PROTOCOL](docs/XSUITE_PROTOCOL.md)).
+The protocol was declared before any rollout ([protocol](docs/protocols/CROSS_SUITE.md)).
 Each condition runs 3 tasks × initial states 0–2, with policy noise paired to the
 suite's E0.
 
@@ -50,9 +50,9 @@ suite's E0.
 | | **LONG-pre** | the first sub-goal is already done at the start | **3/9** |
 | | **LONG-undo** | the first placed object is returned to its start pose mid-episode | **0/9** |
 
-Full per-episode tables: [results/xsuite/summary.md](results/xsuite/summary.md) ·
-analysis: [analysis/CROSS_SUITE.md](analysis/CROSS_SUITE.md) ·
-Spatial analysis: [analysis/ANALYSIS.md](analysis/ANALYSIS.md).
+Per-episode table: [results/cross_suite/summary.md](results/cross_suite/summary.md) ·
+findings: [results/cross_suite/](results/cross_suite/README.md) ·
+Spatial findings: [results/spatial/](results/spatial/README.md).
 
 ## Insights
 
@@ -94,11 +94,11 @@ Each clip shows agent view and wrist view, as the policy sees them (rotated 180�
 
 | Baseline | Intervention |
 |---|---|
-| ![](media/xsuite/OBJ-E0-t00-s00.gif) | ![](media/xsuite/OBJ-swap-t00-s00.gif) |
-| ![](media/xsuite/GOAL-move-t01-s00.gif) | ![](media/xsuite/GOAL-move-t06-s01.gif) |
+| ![](media/cross_suite/OBJ-E0-t00-s00.gif) | ![](media/cross_suite/OBJ-swap-t00-s00.gif) |
+| ![](media/cross_suite/GOAL-move-t01-s00.gif) | ![](media/cross_suite/GOAL-move-t06-s01.gif) |
 | ![](media/spatial/S2-ctrl-t01-s00.gif) | ![](media/spatial/S2-t01-s00.gif) |
 | ![](media/spatial/T1-ctrl-t00-s00.gif) | ![](media/spatial/T1-t00-s00.gif) |
-| ![](media/xsuite/LONG-pre-t01-s01.gif) | ![](media/xsuite/LONG-undo-t00-s00.gif) |
+| ![](media/cross_suite/LONG-pre-t01-s01.gif) | ![](media/cross_suite/LONG-undo-t00-s00.gif) |
 | ![](media/spatial/S1-t01-s00.gif) | ![](media/spatial/S1-t08-s00.gif) |
 
 More examples: [media/](media/) (Spatial E0 success `E0-t01-s00`, the only E0
@@ -110,25 +110,29 @@ Each condition is small (6–27 episodes, 2–9 tasks) and clustered by task. Al
 p-values in the analysis are exploratory. Interventions are scripted simulator
 state edits, not robot actions. Displacements differ between treatment and control.
 T1 does not test memory cleanly, because the input prefixes diverge
-([ANALYSIS](analysis/ANALYSIS.md)). E0 is a reduced 50-episode pilot, not a
+([Spatial findings](results/spatial/README.md)). E0 is a reduced 50-episode pilot, not a
 full-suite reproduction. No graph-augmented policy has been evaluated yet.
 
 ## Repository layout
 
 ```text
 src/sgvla/
-  baselines/openpi/   setup, policy server, seeded-noise adapter, smoke episode
+  baselines/openpi/   pinned openpi setup, policy server, seeded-noise client, smoke episode
   eval/               scene verification, manifests, resumable E0 evaluator, traces, parity
   analysis/           Spatial S1/S2/T1 interventions, verification, outcome labels, reports
-  xsuite/             cross-suite conditions (spec), simulator interventions, runner, report
+  cross_suite/        Object/Goal/Long conditions (spec), simulator interventions, runner, report
 configs/              pinned runtime config and frozen E0 manifest
-docs/                 protocols (scene, Part 3, cross-suite), setup notes, status, artifacts
-study/                Part 1: literature matrix, scene-graph synthesis, diffusion vs flow matching
-repro/                Part 2: pipeline explanation, deviations, E0 procedure
-analysis/             Part 3: ANALYSIS.md (Spatial), CROSS_SUITE.md, reviewed contact sheets
-results/              registry.csv, Part 2/3 summaries, spatial_rerun_2026-10-30/, xsuite/
-media/                README figure and GIFs (scripts/plot_results.py, scripts/make_gif.py)
-tests/                CPU tests for manifests, resume/corruption, reports
+results/
+  spatial/            E0 + S1/S2/T1 reports and findings (README.md)
+  cross_suite/        manifest, per-episode metrics, summary.{md,json}, findings (README.md)
+  registry.csv        every recorded run
+docs/
+  protocols/          scene, Spatial and cross-suite protocols (declared before the runs)
+  reproduction/       setup on molab, pi0 pipeline walkthrough, deviations, E0 procedure
+  ARTIFACTS.md        where raw videos and traces live
+media/                README chart and GIFs
+scripts/              plot_results.py, make_gif.py
+tests/                CPU tests (manifests, resume/corruption, reports)
 ```
 
 Raw videos and traces are kept outside the repository: the Spatial rerun archive is
@@ -138,25 +142,22 @@ Raw videos and traces are kept outside the repository: the Spatial rerun archive
 ## Reproduce
 
 GPU work runs on a Linux GPU host (we used molab, RTX PRO 6000 Blackwell). Setup is
-described in [SETUP.md](SETUP.md). In short: install the pinned openpi server
-(Python 3.11) and LIBERO client (Python 3.8) environments, download `pi0_libero`,
-and start the policy server.
+described in [docs/reproduction/SETUP.md](docs/reproduction/SETUP.md). In short: install
+the pinned openpi server (Python 3.11) and LIBERO client (Python 3.8) environments,
+download `pi0_libero`, and start the policy server.
 
 ```sh
 export W=$HOME/vla_scenegraph_work C=$W/configs/part2_smoke.json
 python -m sgvla --work $W --config $C start server
-# Spatial E0 / Part 3: see repro/E0.md and docs/PART3_PROTOCOL.md
+# Spatial E0 / S1-S2-T1: docs/reproduction/E0_PROCEDURE.md, docs/protocols/SPATIAL.md
 # Cross-suite (90 episodes; resumable; several workers per suite can share the claim files)
-$W/envs/client/bin/python -m sgvla.xsuite --work $W --config $C --dry   # interventions only
-$W/envs/client/bin/python -m sgvla.xsuite --work $W --config $C --suite libero_object
-python -m sgvla.xsuite.report <results-dir> results/xsuite              # summary.{md,json}
-python scripts/plot_results.py                                          # media/success_overview.png
+$W/envs/client/bin/python -m sgvla.cross_suite --work $W --config $C --dry   # interventions only
+$W/envs/client/bin/python -m sgvla.cross_suite --work $W --config $C --suite libero_object
+python -m sgvla.cross_suite.report <results-dir> results/cross_suite         # summary.{md,json}
+python scripts/plot_results.py                                                # media/success_overview.png
 ```
 
 Local CPU checks: `pip install -e '.[dev]'` (add `media` for figures/GIFs), then `pytest -q` and `ruff check .`.
 
-Study notes (Part 1): [literature matrix](study/literature_matrix.md),
-[scene-graph synthesis](study/scene_graph_synthesis.md),
-[diffusion vs flow matching](study/diffusion_vs_flow_matching.md).
-Reproduction (Part 2): [pipeline](repro/PIPELINE.md), [deviations](repro/DEVIATIONS.md).
-Status by Part: [docs/PART_STATUS.md](docs/PART_STATUS.md).
+How the pinned π0 pipeline works: [docs/reproduction/PIPELINE.md](docs/reproduction/PIPELINE.md);
+scope and deviations from the official evaluation: [docs/reproduction/DEVIATIONS.md](docs/reproduction/DEVIATIONS.md).

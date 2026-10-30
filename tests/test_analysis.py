@@ -22,7 +22,7 @@ def setup(tmp_path, monkeypatch):
     config = read_json(REPO / "configs/part2_smoke.json")
     write_json(tmp_path / "config.json", config)
     runtime = Runtime(tmp_path, tmp_path / "config.json")
-    source = read_json(REPO / "results/part2/scene_verification/scene_report.json")
+    source = read_json(REPO / "tests/fixtures/scene_report.json")
     write_json(tmp_path / "docs/scene_report.json", source)
     e0 = build_manifest(source, config)
     baseline_root = tmp_path / "baseline"

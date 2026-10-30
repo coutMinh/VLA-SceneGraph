@@ -14,8 +14,8 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
-SPATIAL = ROOT / "results/spatial_rerun_2026-10-30"
-XSUITE = ROOT / "results/xsuite/summary.json"
+SPATIAL = ROOT / "results/spatial"
+CROSS_SUITE = ROOT / "results/cross_suite/summary.json"
 ROLE_COLOR = {"baseline": "#2a78d6", "control": "#1baf7a", "intervention": "#eb6834"}
 INK, MUTED, SURFACE = "#0b0b0b", "#52514e", "#fcfcfb"
 
@@ -28,7 +28,7 @@ def role(name):
 
 def rows():
     e0 = json.loads((SPATIAL / "e0_summary.json").read_text())
-    part3 = json.loads((SPATIAL / "part3_report.json").read_text())["conditions"]
+    part3 = json.loads((SPATIAL / "report.json").read_text())["conditions"]
     spatial = [("E0", e0["successes"], e0["completed"])]
     for name in ("S1", "S2-ctrl", "S2", "T1-ctrl", "T1"):
         s = part3[name]["summary"]
@@ -39,7 +39,7 @@ def rows():
         "libero_goal": "LIBERO-Goal",
         "libero_10": "LIBERO-Long",
     }
-    xs = json.loads(XSUITE.read_text())["conditions"]
+    xs = json.loads(CROSS_SUITE.read_text())["conditions"]
     for suite, title in titles.items():
         groups.append(
             (title, [(r["condition"], r["successes"], r["n"]) for r in xs if r["suite"] == suite])

@@ -69,7 +69,7 @@ def runtime(tmp_path, monkeypatch):
 
 @pytest.fixture
 def manifest(runtime):
-    report = read_json(REPO / "results/part2/scene_verification/scene_report.json")
+    report = read_json(REPO / "tests/fixtures/scene_report.json")
     return build_manifest(report, runtime.config)
 
 
@@ -398,6 +398,6 @@ def test_source_checksum_detects_local_initial_file_changes(tmp_path):
     from sgvla.eval.scenes import verify_scenes
 
     report = verify_scenes(source)
-    assert report == read_json(REPO / "results/part2/scene_verification/scene_report.json")
+    assert report == read_json(REPO / "tests/fixtures/scene_report.json")
     assert all(t["initial_state_count"] == 50 for t in report["tasks"])
     assert digest(source / "examples/libero/main.py") == report["official_client_sha256"]
