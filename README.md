@@ -145,19 +145,7 @@ T1 does not test memory cleanly, because the input prefixes diverge
 ([Spatial findings](results/spatial/README.md)). E0 is a reduced 50-episode pilot, not a
 full-suite reproduction. No graph-augmented policy has been evaluated yet.
 
-## Implementation details
+## Experiment runtime
 
-- **Compute.** All rollouts ran on [molab](https://molab.marimo.io) (RTX PRO 6000
-  Blackwell, OSMesa rendering). The official `pi0_libero` checkpoint (openpi, JAX)
-  is served over a websocket. LIBERO runs as a separate Python 3.8 client.
-- **Paired, resumable runs.** Each condition shares a seeded policy-noise sequence
-  with its baseline. Episodes are claimed from a fixed manifest, so several workers
-  can share a suite and an interrupted run resumes where it stopped.
-- **Labels.** Interventions are scripted simulator state edits. Success uses LIBERO's
-  own goal predicates, and failure labels come from the logged object poses.
-- **Code.** `src/sgvla/`: `baselines/`, `eval/` (E0), `analysis/` (Spatial S1/S2/T1),
-  `cross_suite/` (Object/Goal/Long).
-- **Data.** Results: `results/`. Protocols and setup: `docs/`.
-- **Raw evidence.** Videos and traces (68 MB + 61 MB) are kept outside the repo; see
-  [docs/ARTIFACTS.md](docs/ARTIFACTS.md).
-- **Setup.** Setup and reproduction steps: [docs/reproduction/SETUP.md](docs/reproduction/SETUP.md).
+All experiments were run in a [molab](https://molab.marimo.io) notebook runtime
+with an NVIDIA RTX PRO 6000 Blackwell GPU, using the official `pi0_libero` checkpoint.
